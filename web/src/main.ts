@@ -14,6 +14,7 @@ import { renderDomain } from './pages/domain';
 import { renderSearch } from './pages/search';
 import { renderGraph } from './pages/graph';
 import { renderTrends } from './pages/trends';
+import { renderPapers } from './pages/papers';
 import { renderArchive } from './pages/archive';
 import { renderReport } from './pages/report';
 import { watchSystemTheme } from './theme';
@@ -81,6 +82,8 @@ async function renderRoute(route: Route, manifest: Manifest): Promise<HTMLElemen
       return renderGraph(manifest);
     case 'trends':
       return renderTrends(manifest);
+    case 'papers':
+      return renderPapers(manifest);
     case 'archive':
       return renderArchive(manifest);
     case 'report':

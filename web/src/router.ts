@@ -5,6 +5,7 @@ export type Route =
   | { name: 'domain'; slug: string }
   | { name: 'graph' }
   | { name: 'trends' }
+  | { name: 'papers' }
   | { name: 'search'; q: string }
   | { name: 'archive' }
   | { name: 'report'; date: string }
@@ -26,6 +27,8 @@ export function parseHash(hash: string): Route {
       return { name: 'graph' };
     case 'trends':
       return { name: 'trends' };
+    case 'papers':
+      return { name: 'papers' };
     case 'archive':
       return { name: 'archive' };
     case 'report':
@@ -45,6 +48,8 @@ export function routeToHash(route: Route): string {
       return '#/graph';
     case 'trends':
       return '#/trends';
+    case 'papers':
+      return '#/papers';
     case 'archive':
       return '#/archive';
     case 'report':

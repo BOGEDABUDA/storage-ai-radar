@@ -12,6 +12,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 from . import categories, mdparse
@@ -26,6 +27,41 @@ _SECTION_ALIASES = {
 def _section_of(raw: str) -> str:
     key = raw.replace("📖", "").strip()
     return _SECTION_ALIASES.get(key, "regular")
+
+
+def _title_key(title: str) -> str:
+    """标题归一化键：去空白、小写。用于合并同一期同一分类里的重复文章。"""
+    return re.sub(r"[\s\u3000]+", "", title).lower()
+
+
+def dedupe(records: list[dict]) -> tuple[list[dict], int]:
+    """合并同一期同一分类内的重复文章（同标题）。
+
+    语料里同一篇文章会被多个公众号转发，导致同一分类下出现 2~6 条同名记录
+    （实测 216 条）。合并时保留首个条目的 id 以维持引用稳定，摘要取「非空且最长」
+    的那条（实测有 123 组同名但摘要不同）。跨分类的多标签与跨日期的重复播报
+    属于不同信息，这里不合并。
+
+    返回 (去重后记录, 合并掉的条数)。
+    """
+    merged: dict[str, dict] = {}
+    order: list[str] = []
+    removed = 0
+    for record in records:
+        key = _title_key(record["title"])
+        existing = merged.get(key)
+        if existing is None:
+            merged[key] = record
+            order.append(key)
+            continue
+        removed += 1
+        existing["merged_count"] = existing.get("merged_count", 1) + 1
+        # 摘要：优先保留非空且更长的
+        if len(record["summary"]) > len(existing["summary"]):
+            existing["summary"] = record["summary"]
+        if not existing["time_hint"] and record["time_hint"]:
+            existing["time_hint"] = record["time_hint"]
+    return [merged[key] for key in order], removed
 
 
 def parse_file(path: Path, date: str, category_name: str, category_slug: str) -> list[dict]:
@@ -90,6 +126,7 @@ def parse_file(path: Path, date: str, category_name: str, category_slug: str) ->
 def parse_all(source: Path) -> tuple[list[dict], list[str]]:
     warnings: list[str] = []
     all_records: list[dict] = []
+    duplicates_removed = 0
     total_dir = source / "total"
     dates = sorted(p.name for p in total_dir.iterdir() if p.is_dir())
 
@@ -99,8 +136,12 @@ def parse_all(source: Path) -> tuple[list[dict], list[str]]:
             category_name = md.stem
             slug = categories.slug_for(category_name)
             try:
-                all_records.extend(parse_file(md, date, category_name, slug))
+                records, removed = dedupe(parse_file(md, date, category_name, slug))
+                all_records.extend(records)
+                duplicates_removed += removed
             except Exception as exc:
                 warnings.append(f"{date}/{md.name}: 解析失败 {type(exc).__name__}: {exc}")
+    # 去重条数属于正常统计信息，不计入 warnings（warnings 只放真正的问题）
+    parse_all.last_duplicates_removed = duplicates_removed  # type: ignore[attr-defined]
     warnings.extend(categories.take_warnings())
     return all_records, warnings

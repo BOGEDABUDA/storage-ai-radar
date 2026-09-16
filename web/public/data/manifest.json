@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-09-16T20:14:26+08:00",
+  "generated_at": "2026-09-17T01:53:35+08:00",
   "source_label": "Daily Report",
   "report_count": 42,
-  "article_count": 15192,
+  "article_count": 14976,
   "digest_count": 794,
   "detail_count": 798,
   "sources_attached": 794,
   "empty_summaries": 32,
+  "duplicates_merged": 216,
   "dates": [
     "2026-04-29",
     "2026-05-04",
@@ -55,7 +56,7 @@
     {
       "key": "ai-inference-acceleration",
       "name": "AI推理加速优化技术",
-      "article_count": 1186,
+      "article_count": 1177,
       "digest_count": 84,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -64,7 +65,7 @@
     {
       "key": "ai-model-agent-rag",
       "name": "AI模型及Agent_RAG等技术",
-      "article_count": 5670,
+      "article_count": 5575,
       "digest_count": 80,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -73,7 +74,7 @@
     {
       "key": "near-memory-computing",
       "name": "近存加速_存内计算",
-      "article_count": 218,
+      "article_count": 215,
       "digest_count": 82,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -82,7 +83,7 @@
     {
       "key": "new-media",
       "name": "新介质",
-      "article_count": 231,
+      "article_count": 223,
       "digest_count": 80,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -91,7 +92,7 @@
     {
       "key": "storage-semantics-protocol",
       "name": "新存储设备语义_协议",
-      "article_count": 194,
+      "article_count": 193,
       "digest_count": 80,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -100,7 +101,7 @@
     {
       "key": "high-capacity-storage",
       "name": "大容量存储设备",
-      "article_count": 281,
+      "article_count": 277,
       "digest_count": 80,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -127,7 +128,7 @@
     {
       "key": "model-benchmarking",
       "name": "模型性能的测评分析",
-      "article_count": 807,
+      "article_count": 797,
       "digest_count": 80,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",
@@ -136,7 +137,7 @@
     {
       "key": "others",
       "name": "其他",
-      "article_count": 6386,
+      "article_count": 6300,
       "digest_count": 84,
       "first_seen": "2026-04-29",
       "last_seen": "2026-09-14",

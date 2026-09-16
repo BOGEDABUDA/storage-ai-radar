@@ -89,6 +89,10 @@ def build(source: Path | None = None) -> dict:
         "sources_attached": attached,
         # 源数据中确有少量文章「总结」为空（爬取/总结环节未产出），非解析缺陷
         "empty_summaries": sum(1 for r in articles if not r["summary"]),
+        # 同一期同一分类里因多账号转发产生的重复文章，已在解析阶段合并
+        "duplicates_merged": sum(
+            r.get("merged_count", 1) - 1 for r in articles if r.get("merged_count", 1) > 1
+        ),
         "dates": dates,
         "categories": cat_meta,
         "index_fields": INDEX_FIELDS,
@@ -171,6 +175,23 @@ def build(source: Path | None = None) -> dict:
             "（先运行 python3 -m pipeline.extract_entities）"
         )
 
+    # ---- papers.json（学术论文推荐，依赖 pipeline/papers.json + papers_cache.json）----
+    from . import build_papers
+
+    papers_payload = build_papers.build()
+    if papers_payload["stats"]["unique_papers"] > 0:
+        sizes["papers.json"] = _write_json(
+            paths.WEB_DATA_DIR / "papers.json", papers_payload, compact=True
+        )
+        manifest["papers"] = papers_payload["stats"]
+        papers_stats = papers_payload["stats"]
+    else:
+        papers_stats = None
+        warnings.append(
+            "未找到论文抽取结果，已跳过学术论文推荐"
+            "（先运行 python3 -m pipeline.extract_papers）"
+        )
+
     finished = datetime.now(CST)
     report = {
         "started_at": started.isoformat(timespec="seconds"),
@@ -181,11 +202,15 @@ def build(source: Path | None = None) -> dict:
         "counts": {
             "reports": len(dates),
             "articles": len(articles),
+            "articles_merged": sum(
+                r.get("merged_count", 1) - 1 for r in articles if r.get("merged_count", 1) > 1
+            ),
             "digests": len(digests),
             "details": len(details),
         },
         "sources_attached": attached,
         "graph_stats": graph_stats,
+        "papers_stats": papers_stats,
         "output_bytes": sizes,
         "output_bytes_total": sum(sizes.values()),
         "warnings": warnings,
@@ -203,6 +228,8 @@ def main() -> int:
         f"[构建完成] {counts['reports']} 期 · {counts['articles']} 篇文章 · "
         f"{counts['digests']} 条洞察 · {counts['details']} 条详细要点"
     )
+    if counts.get("articles_merged"):
+        print(f"[去重] 合并同一期同一分类内的重复文章 {counts['articles_merged']} 条")
     print(f"[原文引用] {report['sources_attached']} 条洞察挂上了来源链接")
     if report.get("graph_stats"):
         stats = report["graph_stats"]
@@ -212,6 +239,12 @@ def main() -> int:
         )
         print(
             f"[趋势] 上升 {stats['rising']} · 新兴 {stats['new']} · 退潮 {stats['fading']}"
+        )
+    if report.get("papers_stats"):
+        stats = report["papers_stats"]
+        print(
+            f"[学术论文] 论文推荐条目 {stats['paper_entries']} → 唯一论文 {stats['unique_papers']} · "
+            f"arXiv 命中 {stats['resolved']}（含英文摘要 {stats['with_abstract']}）"
         )
     print(f"[产物体积] {report['output_bytes_total'] / 1024 / 1024:.2f} MB → {report['output_dir']}")
     if report["warnings"]:

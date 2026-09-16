@@ -1,7 +1,7 @@
 /** 领域页：单研究方向的文章趋势、洞察时间线。 */
 
 import { h } from '../lib/dom';
-import { categoryColor, loadDigests, loadTimeline } from '../lib/data';
+import { categoryColor, loadDigests, loadPapers, loadTimeline } from '../lib/data';
 import { lineChart, mountResponsive } from '../lib/charts';
 import { cnDate, n, shortDate } from '../lib/format';
 import { renderDigest } from '../components/digest';
@@ -49,6 +49,22 @@ function sidePanel(manifest: Manifest, active: string, timeline: { series: Timel
   return panel;
 }
 
+function renderPaperCompact(paper: import('../lib/types').Paper): HTMLElement {
+  const color = categoryColor(paper.primary_category);
+  return h(
+    'div',
+    { class: 'paper-mini', style: { '--cat': color } as unknown as CSSStyleDeclaration },
+    h(
+      'div',
+      { class: 'paper-mini__head' },
+      h('a', { class: 'paper-mini__title', href: paper.links.arxiv_abs ?? paper.links.scholar, target: '_blank', rel: 'noopener noreferrer' }, paper.title),
+      paper.arxiv ? h('span', { class: 'chip paper-chip--ok' }, `arXiv:${paper.arxiv.id}`) : h('span', { class: 'chip paper-chip--unresolved' }, '搜索'),
+    ),
+    h('div', { class: 'paper-mini__meta' }, [paper.primary_date, paper.venue || paper.arxiv?.published, paper.arxiv?.authors?.slice(0, 2).join(', ')].filter(Boolean).join(' · ')),
+    h('p', { class: 'paper-mini__summary' }, paper.summary.slice(0, 180) + (paper.summary.length > 180 ? '…' : '')),
+  );
+}
+
 export async function renderDomain(manifest: Manifest, slug: string): Promise<HTMLElement> {
   const meta = manifest.categories.find((c) => c.key === slug);
   if (!meta) {
@@ -60,7 +76,8 @@ export async function renderDomain(manifest: Manifest, slug: string): Promise<HT
     );
   }
 
-  const [timeline, digests] = await Promise.all([loadTimeline(), loadDigests()]);
+  const [timeline, digests, papersFile] = await Promise.all([loadTimeline(), loadDigests(), loadPapers()]);
+  const domainPapers = papersFile.papers.filter((p) => p.categories.includes(slug)).slice(0, 8);
   const series = timeline.series.find((s) => s.category === slug);
   const color = categoryColor(slug);
   const own = digests.filter((d) => d.category === slug).slice().reverse(); // 最新在前
@@ -128,6 +145,23 @@ export async function renderDomain(manifest: Manifest, slug: string): Promise<HT
       ),
       chartHost,
     ),
+    domainPapers.length > 0
+      ? h(
+          'section',
+          { class: 'section' },
+          h(
+            'h2',
+            { class: 'section-title' },
+            '该领域的学术论文',
+            h(
+              'a',
+              { class: 'section-title__note', href: '#/papers' },
+              `共 ${papersFile.papers.filter((p) => p.categories.includes(slug)).length} 篇 · 查看全部 →`,
+            ),
+          ),
+          h('div', { class: 'paper-list paper-list--compact' }, ...domainPapers.map((p) => renderPaperCompact(p))),
+        )
+      : null,
     h(
       'section',
       { class: 'section' },

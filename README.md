@@ -24,6 +24,45 @@ cd web && pnpm preview  # 本地预览 http://localhost:4173/storage-ai-radar/
 | **P1** | 解析层 + 数据契约 + 站点核心（概览/领域/检索/归档）+ 明暗三态主题 + GitHub Pages 部署 | ✅ 已完成 |
 | **P2** | 实体抽取（DeepSeek + 增量缓存）+ 知识图谱 + 趋势跟踪 | ✅ 已完成 |
 | **P3** | Agent 服务（FTS5 中文 RAG + 流式问答 + 引用）+ 站点侧栏 | ✅ 已完成 |
+| **P4** | 文章去重 + 学术论文推荐（arXiv 解析 + Scholar/arXiv 链接） | ✅ 已完成 |
+
+## P4：去重与学术论文推荐
+
+### 一、去重
+
+语料里同一篇文章会被多个公众号转发，导致同一期同一分类下出现 2~6 条同名记录。
+解析阶段按「日期 + 分类 + 归一化标题」合并，**15,192 → 14,976 条**（合并 216 条，
+涉及 205 条记录）；合并时保留首个条目的 id 以维持引用稳定，摘要取「非空且最长」
+（实测 123 组同名但摘要不同）。
+
+另有**跨领域多标签**（2,136 条）与**跨日期重复播报**（3,608 条）两类"看起来像重复"的记录：
+它们携带的信息不同，**数据层保留**，但在**展示层**（检索结果、Agent 引用来源）
+按「日期 + 归一化标题」归并成一条并合并领域标签，避免视觉重复。
+
+### 二、学术论文推荐
+
+`论文推荐` 板块里存的是中文科技媒体标题，真正的论文名嵌在摘要正文里。因此分三步：
+
+| 步骤 | 做法 | 结果 |
+|---|---|---|
+| 1. 抽取 | 正则预抽 arXiv 编号 + 书名号英文标题，再由 DeepSeek 逐条判定并抽取论文名/会议/年份/作者 | 3,293 条 → 1,519 条判定为论文，1,472 条抽到标题 |
+| 2. 解析 | arXiv API：有编号按 ID 直查，否则标题检索 + 相似度匹配 | 见 `papers.json` 的 `stats` |
+| 3. 归并 | 同一篇论文多期被反复推荐（最多 6 次）→ 合并成一条，日期/领域取并集 | 817 篇唯一论文 |
+
+**准确率防护**（都是实测踩出来的）：
+- **领域闸门**：论文名 "ATLAS" 这类通用缩写曾命中**希格斯玻色子**论文，
+  现在直接拒绝 `hep-*` / `astro-ph*` / `nucl-*` / `gr-qc` 领域的匹配
+- **ID 与论文名冲突**：摘要里的 arXiv 编号可能指向同一段文字里提到的**另一篇**论文；
+  只有抽取结果是"像完整标题"的长串时才用它质疑编号，短方法名（AFlex、AHE）
+  不触发校验，避免误判
+- **CJK 归一化**：归一化函数曾只保留 `[a-z0-9]`，导致所有中文论文标题塌缩成同一个缓存键，
+  一篇的解析结果会被套用到全部中文论文上
+
+每张论文卡片都给出 **中文摘要**（来自语料）+ **英文原摘要**（可折叠，来自 arXiv）+
+**arXiv 原文 / PDF / Google Scholar / arXiv 搜索 / 查看该期日报** 链接；
+未匹配到 arXiv 的也一定提供两个搜索链接兜底。
+
+**独立页** `#/papers`（按领域/年份筛选、搜索、只看已匹配）+ **各领域页**的「该领域的学术论文」区块。
 
 ## P3：本机 Agent
 
@@ -69,8 +108,18 @@ node agent/server.mjs             # 启动
 ## 测试
 
 ```bash
-python3 -m unittest discover -s tests -t .   # 24 项：解析/契约/幂等/只读/图谱趋势
+python3 -m unittest discover -s tests -t .   # 28 项：解析/契约/幂等/只读/图谱趋势/去重/论文
 node --test agent/test.mjs                   # 8 项：检索词解析/上下文预算/端点/CORS
+```
+
+## 新增一期日报后
+
+```bash
+./rebuild.sh                                  # 解析 → 构建前端
+python3 -m pipeline.extract_entities          # 图谱实体（增量）
+python3 -m pipeline.extract_papers            # 论文身份（增量）
+python3 -m pipeline.resolve_papers            # arXiv 解析（增量、限速）
+python3 -m pipeline.build_index               # 刷新 Agent 检索索引
 ```
 
 ## P2：知识图谱与趋势（实测结果）
@@ -117,6 +166,10 @@ node --test agent/test.mjs                   # 8 项：检索词解析/上下文
 |---|---|
 | ![检索](docs/screenshots/5-search.png) | ![Agent](docs/screenshots/6-agent.png) |
 
+| 学术论文推荐 | 领域页的论文区块 |
+|---|---|
+| ![论文](docs/screenshots/7-papers.png) | ![领域论文](docs/screenshots/8-domain-papers.png) |
+
 > 截图取自线上站点（浅色主题）。Agent 面板取自本机预览，回答里单列了「现有资料未覆盖」一节。
 
 ## 语料规模（实测）
@@ -124,7 +177,7 @@ node --test agent/test.mjs                   # 8 项：检索词解析/上下文
 | 指标 | 数值 |
 |---|---|
 | 报告期数 | 42（2026-04-29 → 2026-09-14） |
-| 文章摘要 | 15,192 篇 |
+| 文章摘要 | 14,976 篇（原始 15,192，合并 216 条重复） |
 | 精选洞察 | 794 条（774 条带视角 + 20 条自由标题） |
 | 详细要点 | 798 条（原文引用覆盖 794/794） |
 | 研究方向 | 10 个 |
@@ -148,6 +201,11 @@ pipeline/   只读解析语料（Python 标准库，零 pip 依赖）
   analyze_trends.py   图谱与趋势的确定性计算
   aliases.json        实体别名归一表（可手工扩充）
   entities.json       抽取结果（提交进仓库，可离线复现）
+  extract_papers.py   从论文推荐板块抽取论文身份（LLM + 增量缓存）
+  resolve_papers.py   用 arXiv API 解析论文（限速 1 请求/3 秒、可续跑）
+  build_papers.py     汇总为 web/public/data/papers.json
+  papers.json         论文抽取结果（提交进仓库）
+  papers_cache.json   arXiv 解析结果（提交进仓库）
   build_index.py      构建 insight.sqlite 检索索引（Agent 用）
   build.py            编排入口：python3 -m pipeline.build
   readonly_guard.py   只读保证：快照 / 校验

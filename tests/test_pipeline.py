@@ -26,7 +26,7 @@ from pipeline import readonly_guard  # noqa: E402
 WEB_DATA = ROOT / "web" / "public" / "data"
 
 EXPECTED_REPORTS = 42
-EXPECTED_ARTICLES = 15192
+EXPECTED_ARTICLES = 14976
 EXPECTED_DIGESTS = 794
 EXPECTED_CATEGORIES = 10
 
@@ -335,6 +335,76 @@ class TestGraphTrends(unittest.TestCase):
             self.assertIsInstance(self.trends[key], list)
             ids = [item["id"] for item in self.trends[key]]
             self.assertEqual(len(set(ids)), len(ids), f"{key} 存在重复实体")
+
+
+class TestDedupeAndPapers(unittest.TestCase):
+    """去重与学术论文推荐（P4）。"""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.manifest = json.loads((WEB_DATA / "manifest.json").read_text(encoding="utf-8"))
+        cls.papers_path = WEB_DATA / "papers.json"
+        cls.papers = json.loads(cls.papers_path.read_text(encoding="utf-8")) if cls.papers_path.exists() else None
+
+    def test_exact_duplicates_merged(self) -> None:
+        """同一期同一分类内不允许再有同名文章（多账号转发产生的重复已合并）。"""
+        seen: set[tuple[str, str, str]] = set()
+        duplicates: list[str] = []
+        for date in self.manifest["dates"]:
+            rows = json.loads((WEB_DATA / "articles" / f"{date}.json").read_text(encoding="utf-8"))
+            for row in rows:
+                key = (row["date"], row["category"], "".join(row["title"].split()).lower())
+                if key in seen:
+                    duplicates.append(row["title"])
+                seen.add(key)
+        self.assertEqual(duplicates, [], f"仍存在未合并的重复文章：{duplicates[:3]}")
+        self.assertEqual(self.manifest["duplicates_merged"], 216, "合并条数与实测不符")
+        self.assertEqual(self.manifest["article_count"], EXPECTED_ARTICLES)
+
+    def test_cross_category_articles_kept(self) -> None:
+        """跨领域多标签属于有用信息，不应被合并掉。"""
+        by_key: dict[tuple[str, str], set[str]] = {}
+        for date in self.manifest["dates"]:
+            rows = json.loads((WEB_DATA / "articles" / f"{date}.json").read_text(encoding="utf-8"))
+            for row in rows:
+                by_key.setdefault((row["date"], "".join(row["title"].split()).lower()), set()).add(row["category"])
+        multi = sum(1 for cats in by_key.values() if len(cats) > 1)
+        self.assertGreater(multi, 1000, "跨领域多标签文章数量异常偏少，可能被误合并")
+
+    @unittest.skipUnless(WEB_DATA.joinpath("papers.json").exists(), "papers.json 尚未生成")
+    def test_papers_shape_and_dedup(self) -> None:
+        papers = self.papers["papers"]
+        self.assertTrue(papers)
+        ids = [p["id"] for p in papers]
+        self.assertEqual(len(set(ids)), len(ids), "论文 id 必须唯一（同一篇不应重复出现）")
+
+        arxiv_ids = [p["arxiv"]["id"] for p in papers if p["arxiv"]]
+        self.assertEqual(len(set(arxiv_ids)), len(arxiv_ids), "同一篇 arXiv 论文不应重复列出")
+
+        for paper in papers:
+            self.assertTrue(paper["title"], "论文标题为空")
+            self.assertTrue(paper["categories"], "论文缺少领域标签")
+            self.assertTrue(paper["dates"], "论文缺少推荐日期")
+            # 解析不到也必须给出搜索链接兜底
+            self.assertTrue(paper["links"]["scholar"].startswith("https://scholar.google.com/"))
+            self.assertTrue(paper["links"]["arxiv_search"].startswith("https://arxiv.org/"))
+
+    @unittest.skipUnless(WEB_DATA.joinpath("papers.json").exists(), "papers.json 尚未生成")
+    def test_resolved_papers_have_real_metadata(self) -> None:
+        resolved = [p for p in self.papers["papers"] if p["arxiv"]]
+        for paper in resolved:
+            arxiv = paper["arxiv"]
+            self.assertRegex(arxiv["id"], r"^\d{4}\.\d{4,5}$")
+            self.assertEqual(arxiv["url"], f"https://arxiv.org/abs/{arxiv['id']}")
+            self.assertTrue(arxiv["title"])
+            self.assertTrue(arxiv["abstract"], f"{arxiv['id']} 缺少英文摘要")
+            # 领域闸门：不应出现与语料无关的学科
+            primary = (arxiv["categories"] or [""])[0]
+            self.assertFalse(
+                primary.startswith(("hep-", "astro-ph", "nucl-", "gr-qc")),
+                f"{arxiv['id']} 属于无关学科 {primary}，领域闸门失效",
+            )
+        self.assertEqual(len(resolved), self.papers["stats"]["resolved"])
 
 
 if __name__ == "__main__":

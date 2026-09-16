@@ -75,7 +75,7 @@ test('索引存在时的检索行为', { skip: !HAS_INDEX }, () => {
   try {
     const stats = indexStats(db);
     assert.equal(stats.digests, 794);
-    assert.equal(stats.articles, 15192);
+    assert.equal(stats.articles, 14976);
 
     const digests = searchDigests(db, { q: '存内计算', limit: 5 });
     assert.ok(digests.length > 0, '应能检索到洞察');
@@ -123,7 +123,7 @@ test('HTTP 端点：health / search / CORS / 参数校验', { skip: !HAS_INDEX }
           healthy = true;
           const body = await res.json();
           assert.equal(body.ok, true);
-          assert.equal(body.index.articles, 15192);
+          assert.equal(body.index.articles, 14976);
           break;
         }
       } catch {

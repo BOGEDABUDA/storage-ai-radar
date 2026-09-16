@@ -293,9 +293,25 @@ export function buildContext(digests, articles) {
     blocks.push({ kind: 'digest', id: d.id, date: d.date, title: d.topic, category: d.category, text });
   }
 
+  // 展示层去重：同一篇文章可能因被归入多个领域而检索出多条，
+  // 归并成一条并把领域名合并，避免同一份内容占用两次上下文预算。
+  const seen = new Map();
   for (const a of articles) {
+    const key = `${a.date}|${String(a.title).replace(/[\s\u3000]+/g, '').toLowerCase()}`;
+    const existing = seen.get(key);
+    if (existing) {
+      if (!existing.categoryNames.includes(a.category_name)) existing.categoryNames.push(a.category_name);
+      existing.duplicated += 1;
+      continue;
+    }
+    seen.set(key, { article: a, categoryNames: [a.category_name], duplicated: 1 });
+  }
+
+  for (const { article: a, categoryNames, duplicated } of seen.values()) {
     const summary = a.summary || '（该篇原文摘要为空）';
-    const text = `[文章 ${a.date} · ${a.category_name} · ${a.section === 'paper' ? '论文推荐' : '普通推文'}] ${a.title}\n${summary}`;
+    const tag = a.section === 'paper' ? '论文推荐' : '普通推文';
+    const dup = duplicated > 1 ? `（同期被 ${duplicated} 个领域收录）` : '';
+    const text = `[文章 ${a.date} · ${categoryNames.join('/')} · ${tag}${dup}] ${a.title}\n${summary}`;
     if (used + text.length > CONTEXT_BUDGET) break;
     used += text.length;
     blocks.push({ kind: 'article', id: a.id, date: a.date, title: a.title, category: a.category, text });

@@ -4,6 +4,7 @@ import { h } from '../lib/dom';
 import { loadIndex } from '../lib/data';
 import { highlight, n, sectionLabel } from '../lib/format';
 import { createSearchEngine, type SearchEngine } from '../search/client';
+import { groupByArticle } from '../lib/dedupe';
 import type { IndexFile, Manifest, SearchHit, Section } from '../lib/types';
 
 let engine: SearchEngine | null = null;
@@ -53,11 +54,18 @@ function searchIndex(index: IndexFile, filters: Filters, limit: number): { hits:
   }
 
   hits.sort((a, b) => b.score - a.score || (a.date < b.date ? 1 : -1));
-  return { hits: hits.slice(0, limit), total: hits.length };
+  const grouped = groupByArticle(hits);
+  return {
+    hits: grouped.slice(0, limit).map((g) => ({ ...g.hit, categories: g.categories, duplicated: g.duplicated })),
+    total: grouped.length,
+  };
 }
 
 function resultRow(hit: SearchHit, q: string, manifest: Manifest): HTMLElement {
-  const name = manifest.categories.find((c) => c.key === hit.category)?.name ?? hit.category;
+  const nameOf = (key: string): string =>
+    manifest.categories.find((c) => c.key === key)?.name ?? key;
+  const categories = hit.categories && hit.categories.length > 0 ? hit.categories : [hit.category];
+
   return h(
     'article',
     { class: 'result' },
@@ -66,9 +74,15 @@ function resultRow(hit: SearchHit, q: string, manifest: Manifest): HTMLElement {
       'div',
       { class: 'result__meta' },
       h('span', {}, hit.date),
-      h('a', { href: `#/domain/${encodeURIComponent(hit.category)}` }, name),
+      // 同一篇文章可能被归入多个领域：展示为一个标签组，而不是重复列出多条
+      ...categories.map((key) =>
+        h('a', { class: 'chip', href: `#/domain/${encodeURIComponent(key)}` }, nameOf(key)),
+      ),
       h('span', {}, sectionLabel(hit.section)),
       h('a', { href: `#/report/${hit.date}` }, '查看该期'),
+      (hit.duplicated ?? 1) > 1
+        ? h('span', { class: 'muted' }, `原 ${hit.duplicated} 条重复收录`)
+        : null,
     ),
     h('p', { class: 'result__summary' }, highlight(hit.snippet, q)),
   );

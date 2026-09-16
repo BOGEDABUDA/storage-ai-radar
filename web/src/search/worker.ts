@@ -120,8 +120,28 @@ function runQuery(message: QueryMessage): void {
   }
 
   hits.sort((a, b) => b.sortKey - a.sortKey);
-  const total = hits.length;
-  const top = hits.slice(0, limit).map(({ sortKey: _sortKey, ...hit }) => hit);
+
+  // 展示层去重：同一篇文章可能因被归入多个领域而出现多条记录，按（日期+标题）归并
+  const seen = new Map<string, SearchHit & { sortKey: number; categories: string[]; duplicated: number }>();
+  const order: string[] = [];
+  for (const hit of hits) {
+    const key = `${hit.date}|${hit.title.replace(/[\s\u3000]+/g, '').toLowerCase()}`;
+    const existing = seen.get(key);
+    if (existing) {
+      existing.duplicated += 1;
+      if (!existing.categories.includes(hit.category)) existing.categories.push(hit.category);
+      continue;
+    }
+    seen.set(key, { ...hit, categories: [hit.category], duplicated: 1 });
+    order.push(key);
+  }
+
+  const grouped = order.map((key) => {
+    const { sortKey: _sortKey, ...rest } = seen.get(key)!;
+    return rest;
+  });
+  const total = grouped.length;
+  const top = grouped.slice(0, limit);
   post({ type: 'results', id: message.id, hits: top, total });
 }
 

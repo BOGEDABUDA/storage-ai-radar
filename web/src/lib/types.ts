@@ -83,6 +83,10 @@ export interface SearchHit {
   title: string;
   snippet: string;
   score: number;
+  /** 展示层归并后，该文被归入的全部领域（含 category 本身） */
+  categories?: string[];
+  /** 归并掉的重复条数（含自身） */
+  duplicated?: number;
 }
 
 /* ------------------------------------------------------------------ P2：图谱与趋势 */
@@ -198,4 +202,58 @@ export interface TrendsFile {
   metrics: MetricSeries[];
   metric_observations: MetricObservationGroup[];
   entity_perspective: EntityPerspective[];
+}
+
+/* ------------------------------------------------------------------ 学术论文推荐 */
+
+export interface PaperArxiv {
+  id: string;
+  title: string;
+  abstract: string;
+  published: string | null;
+  authors: string[];
+  categories: string[];
+  journal_ref: string | null;
+  url: string;
+}
+
+export interface PaperLinks {
+  arxiv_abs: string | null;
+  arxiv_pdf: string | null;
+  scholar: string;
+  arxiv_search: string;
+}
+
+export interface Paper {
+  id: string;
+  /** 展示用标题：优先 arXiv 真实标题，其次抽出的论文名，最后回落媒体标题 */
+  title: string;
+  report_title: string;
+  summary: string;
+  paper_title: string;
+  venue: string;
+  year: number | null;
+  authors: string;
+  arxiv_id: string | null;
+  dates: string[];
+  categories: string[];
+  report_titles: string[];
+  status: string;
+  confidence: number | null;
+  arxiv: PaperArxiv | null;
+  links: PaperLinks;
+  primary_date: string | null;
+  primary_category: string;
+}
+
+export interface PapersFile {
+  generated_at: string | null;
+  stats: {
+    paper_entries: number;
+    unique_papers: number;
+    resolved: number;
+    with_abstract: number;
+    unmatched: number;
+  };
+  papers: Paper[];
 }
