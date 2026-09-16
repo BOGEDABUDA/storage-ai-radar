@@ -219,6 +219,9 @@ export function createAgentPanel(): { element: HTMLElement; open: (question?: st
   }
 
   function offlineView(): HTMLElement {
+    // 从公网 HTTPS 页面请求本机 loopback 会被浏览器的「本地网络访问」策略拦截，
+    // 这不是服务没起来，而是浏览器限制；必须明确告诉用户该走本机预览。
+    const fromPublicHttps = location.protocol === 'https:';
     return h(
       'div',
       { class: 'agent-offline' },
@@ -228,7 +231,18 @@ export function createAgentPanel(): { element: HTMLElement; open: (question?: st
         { class: 'muted' },
         '站点本身是纯静态的，图谱、趋势、检索都不依赖 Agent；只有「自由问答」需要它在本机运行。',
       ),
-      h('p', {}, '在本机启动：'),
+      fromPublicHttps
+        ? h(
+            'div',
+            { class: 'notice' },
+            h('strong', {}, '当前页面来自公网（HTTPS）。'),
+            '浏览器会拦截它对本机 127.0.0.1 的请求（Local Network Access 策略），' +
+              '即使 Agent 已在运行也可能连不上。要用问答，请改用本机预览：',
+            h('pre', {}, h('code', {}, 'cd storage-ai-radar/web && pnpm preview\n# 然后打开 http://localhost:4173/storage-ai-radar/')),
+            h('span', { class: 'muted' }, '本机预览与 Agent 同属 loopback 地址空间，不受该策略限制。'),
+          )
+        : null,
+      h('p', {}, '在本机启动 Agent：'),
       h('pre', {}, h('code', {}, 'cd storage-ai-radar\npython3 -m pipeline.build_index   # 首次\nnode agent/server.mjs')),
       h(
         'p',

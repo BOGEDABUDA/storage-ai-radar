@@ -84,6 +84,10 @@ function corsHeaders(origin) {
   const headers = {
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    // 浏览器的本地网络访问策略（Local/Private Network Access）要求：
+    // 公网站点（如 github.io）请求 loopback 地址时，服务端必须显式允许，
+    // 否则会被 CORS 拦截为 "Permission was denied ... loopback address space"
+    'Access-Control-Allow-Private-Network': 'true',
     'Access-Control-Max-Age': '86400',
     Vary: 'Origin',
   };

@@ -38,6 +38,21 @@ node agent/server.mjs             # 启动
 站点右上角 **✦ Agent** 按钮会探测本机服务；探测不到时显示启动指引，**图谱/趋势/检索完全不受影响**
 （已在 headless Chrome 中实测：Agent 停掉后图谱仍渲染 261 个节点）。
 
+> ⚠️ **浏览器限制（实测）**：从 `https://bogedabuda.github.io` 这类**公网页面**请求本机
+> `127.0.0.1` 会被浏览器的**本地网络访问（Local Network Access / Private Network Access）策略**拦截，
+> 报 `Permission was denied for this request to access the 'loopback' address space`。
+> 服务端已返回 `Access-Control-Allow-Private-Network: true`，但 Chrome 138+ 改为需要用户授权，
+> 部分版本/策略下仍会直接拒绝。
+>
+> **因此要使用问答，推荐走本机预览**（与 Agent 同属 loopback 地址空间，不受该限制）：
+>
+> ```bash
+> cd web && pnpm preview
+> # 打开 http://localhost:4173/storage-ai-radar/  →  右上角 ✦ Agent
+> ```
+>
+> 站点会检测自身是否来自 HTTPS 公网，并在这种情况下直接提示改用本机预览，而不是笼统报「未连接」。
+
 | 能力 | 说明 |
 |---|---|
 | 中文全文检索 | FTS5 `trigram`；<3 字符的词自动退化为 LIKE 扫描 |

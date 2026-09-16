@@ -52,7 +52,12 @@ node agent/server.mjs
 - 默认只绑 `127.0.0.1`，不对外监听
 - API key 只从环境变量 / `agent/.env` / 日报脚本（只读）读取，**绝不下发到浏览器**
 - CORS 白名单默认只允许 `https://bogedabuda.github.io` 与本地预览端口
-  （`http://localhost` 属浏览器安全上下文，因此 HTTPS 站点可以直接调用它）
+- 响应带 `Access-Control-Allow-Private-Network: true`：公网站点请求 loopback 地址时，
+  浏览器的本地网络访问策略要求服务端显式允许
+- 但 Chrome 138+ 改为需要**用户授权**，实测从 github.io 调用仍会被拒绝
+  （`Permission was denied ... loopback address space`）。
+  因此**推荐用本机预览访问站点**：`cd web && pnpm preview` → `http://localhost:4173/storage-ai-radar/`，
+  它与 Agent 同属 loopback 地址空间，不受该策略限制（已实测问答全流程可用）
 - 可选 `RADAR_AGENT_TOKEN` 启用 Bearer Token 鉴权
 
 ## 测试
