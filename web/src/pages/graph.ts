@@ -15,6 +15,7 @@ import {
 
 import { h, s } from '../lib/dom';
 import { categoryColor, loadDigests, loadGraph } from '../lib/data';
+import { openAgent } from '../lib/agentBus';
 import { n } from '../lib/format';
 import { sparkline } from '../lib/charts';
 import type { Digest, GraphEdge, GraphNode, Manifest } from '../lib/types';
@@ -413,6 +414,18 @@ export async function renderGraph(manifest: Manifest): Promise<HTMLElement> {
         { class: 'filters', style: { marginBottom: 'var(--space-3)' } },
         h('span', { class: 'chip' }, ENTITY_TYPE_LABEL[source.etype] ?? source.etype),
         h('a', { class: 'chip', href: `#/domain/${encodeURIComponent(source.category)}`, style: { color } }, categoryName),
+      ),
+    );
+
+    detail.appendChild(
+      h(
+        'button',
+        {
+          class: 'filter-pill agent-deep',
+          type: 'button',
+          onclick: () => openAgent(`关于「${source.label}」，语料里有哪些关键进展与量化数据？`),
+        },
+        '✦ 用 Agent 深挖',
       ),
     );
 

@@ -5,6 +5,7 @@ import { categoryColor, loadDigests, loadTimeline } from '../lib/data';
 import { lineChart, mountResponsive } from '../lib/charts';
 import { cnDate, n, shortDate } from '../lib/format';
 import { renderDigest } from '../components/digest';
+import { openAgent } from '../lib/agentBus';
 import type { Manifest, TimelineSeries } from '../lib/types';
 
 function sidePanel(manifest: Manifest, active: string, timeline: { series: TimelineSeries[] }): HTMLElement {
@@ -101,6 +102,15 @@ export async function renderDomain(manifest: Manifest, slug: string): Promise<HT
       meta.is_catch_all
         ? h('span', { class: 'chip chip--catch-all' }, '异质汇总分类，不参与热度排名')
         : null,
+      h(
+        'button',
+        {
+          class: 'filter-pill agent-deep',
+          type: 'button',
+          onclick: () => openAgent(`「${meta.name}」这个方向近期有哪些关键进展？请给出量化数据与时间线。`),
+        },
+        '✦ 用 Agent 追踪这一领域',
+      ),
     ),
   );
 

@@ -23,7 +23,40 @@ cd web && pnpm preview  # 本地预览 http://localhost:4173/storage-ai-radar/
 |---|---|---|
 | **P1** | 解析层 + 数据契约 + 站点核心（概览/领域/检索/归档）+ 明暗三态主题 + GitHub Pages 部署 | ✅ 已完成 |
 | **P2** | 实体抽取（DeepSeek + 增量缓存）+ 知识图谱 + 趋势跟踪 | ✅ 已完成 |
-| **P3** | Agent 服务（FTS5 中文 RAG + 流式问答 + 引用）+ 站点侧栏 | 待实现 |
+| **P3** | Agent 服务（FTS5 中文 RAG + 流式问答 + 引用）+ 站点侧栏 | ✅ 已完成 |
+
+## P3：本机 Agent
+
+零 npm 依赖（`node:http` + `node:sqlite` + `fetch`），默认只绑 `127.0.0.1:8787`。
+
+```bash
+python3 -m pipeline.build_index   # 建检索索引（~97 MB，5.5 秒，不进仓库）
+cp agent/.env.example agent/.env  # 填 DeepSeek API key（不填也能用检索）
+node agent/server.mjs             # 启动
+```
+
+站点右上角 **✦ Agent** 按钮会探测本机服务；探测不到时显示启动指引，**图谱/趋势/检索完全不受影响**
+（已在 headless Chrome 中实测：Agent 停掉后图谱仍渲染 261 个节点）。
+
+| 能力 | 说明 |
+|---|---|
+| 中文全文检索 | FTS5 `trigram`；<3 字符的词自动退化为 LIKE 扫描 |
+| 问句理解 | 剥离疑问词/停用词 + 识别「和/与/及/或」连接词 |
+| 召回排序 | OR 召回 4 倍候选 → 按「命中几个检索词」重排（不会因某个词配不上而整体落空） |
+| 流式问答 | SSE：`sources` → `delta`* → `done`，带 `[n]` 引用角标 |
+| 原文深挖 | `articles/` 353 MB 不入库，按日期只读读取（避免再造一份 ~1.6 GB 索引） |
+| 分享 | 问题可写进链接：`#/graph?ask=...` |
+
+**实测效果**（问「存内计算和近存加速有什么区别？」）：34 条来源、引用 21 条，模型主动指出
+「资料没有给出两者的正式定义」，并单列「资料内部的口径冲突」与「现有资料未覆盖」两节——
+即不编造、不抹平矛盾。
+
+## 测试
+
+```bash
+python3 -m unittest discover -s tests -t .   # 24 项：解析/契约/幂等/只读/图谱趋势
+node --test agent/test.mjs                   # 8 项：检索词解析/上下文预算/端点/CORS
+```
 
 ## P2：知识图谱与趋势（实测结果）
 
@@ -84,6 +117,7 @@ pipeline/   只读解析语料（Python 标准库，零 pip 依赖）
   analyze_trends.py   图谱与趋势的确定性计算
   aliases.json        实体别名归一表（可手工扩充）
   entities.json       抽取结果（提交进仓库，可离线复现）
+  build_index.py      构建 insight.sqlite 检索索引（Agent 用）
   build.py            编排入口：python3 -m pipeline.build
   readonly_guard.py   只读保证：快照 / 校验
   paths.py            路径与写入门禁（拒绝写入数据源）
@@ -91,6 +125,11 @@ web/        Vite + TypeScript 静态站（唯一运行时依赖 d3-force，图�
   public/data/        派生数据（随仓库提交，CI 直接用）
   src/search/         全文检索 Web Worker（中文子串匹配 + AND 语义）
 agent/      Node 零依赖 Agent 服务（P3）
+  server.mjs          HTTP + SSE 服务与路由
+  rag.mjs             检索、问句切词、上下文组装
+  llm.mjs             DeepSeek 流式客户端与 key 解析
+  test.mjs            8 项测试（node --test）
+  .env.example        配置样例（agent/.env 已 gitignore）
 tests/      unittest（17 项：契约/边界/幂等/只读）
 ```
 

@@ -10,7 +10,7 @@ dist/
 pipeline/cache/
 pipeline/build_report.json
 insight.sqlite
-insight.sqlite-journal
+insight.sqlite-*
 
 # Python
 __pycache__/

@@ -217,26 +217,25 @@ class TestHermeticBuild(unittest.TestCase):
             self.assertEqual(report["counts"]["digests"], EXPECTED_DIGESTS)
             self.assertEqual(report["warnings"], [], "构建不应产生告警")
 
-            first = {
-                p.relative_to(data_dir): p.read_bytes()
-                for p in sorted(data_dir.rglob("*.json"))
-                if p.name != "manifest.json"
-            }
-            manifest_before = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
-            _run_build(data_dir, tmp_path / "build_report.json")
-            second = {
-                p.relative_to(data_dir): p.read_bytes()
-                for p in sorted(data_dir.rglob("*.json"))
-                if p.name != "manifest.json"
-            }
-            manifest_after = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
+            def snapshot() -> dict[str, str]:
+                """除时间戳外应完全一致：所有 JSON 去掉 generated_at 后做规范化比较。"""
+                out: dict[str, str] = {}
+                for path in sorted(data_dir.rglob("*.json")):
+                    data = json.loads(path.read_text(encoding="utf-8"))
+                    if isinstance(data, dict):
+                        data.pop("generated_at", None)
+                    out[str(path.relative_to(data_dir))] = json.dumps(
+                        data, sort_keys=True, ensure_ascii=False
+                    )
+                return out
 
-            self.assertEqual(first.keys(), second.keys())
+            first = snapshot()
+            _run_build(data_dir, tmp_path / "build_report.json")
+            second = snapshot()
+
+            self.assertEqual(first.keys(), second.keys(), "两次构建产出的文件集合不一致")
             for key in first:
                 self.assertEqual(first[key], second[key], f"{key} 两次构建不一致（非幂等）")
-            manifest_before.pop("generated_at")
-            manifest_after.pop("generated_at")
-            self.assertEqual(manifest_before, manifest_after)
 
 
 class TestReadOnly(unittest.TestCase):

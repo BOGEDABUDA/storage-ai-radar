@@ -58,7 +58,7 @@ function themeToggle(): HTMLElement {
   return group;
 }
 
-export function renderHeader(): HTMLElement {
+export function renderHeader(onOpenAgent?: () => void): HTMLElement {
   const nav = h('nav', { class: 'site-nav', 'aria-label': '主导航' });
 
   const header = h(
@@ -77,6 +77,16 @@ export function renderHeader(): HTMLElement {
       themeToggle(),
     ),
   );
+
+  if (onOpenAgent) {
+    nav.appendChild(
+      h(
+        'button',
+        { class: 'nav-agent', type: 'button', title: '打开本机 Agent 问答', onclick: onOpenAgent },
+        '✦ Agent',
+      ),
+    );
+  }
 
   const links = new Map<string, HTMLAnchorElement>();
   for (const item of NAV) {

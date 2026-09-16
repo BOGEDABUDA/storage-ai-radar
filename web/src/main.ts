@@ -7,6 +7,8 @@ import { h, clear } from './lib/dom';
 import { loadManifest } from './lib/data';
 import { onRouteChange, type Route } from './router';
 import { renderHeader, syncHeader } from './components/header';
+import { createAgentPanel } from './components/agent';
+import { registerAgentOpener } from './lib/agentBus';
 import { renderOverview } from './pages/overview';
 import { renderDomain } from './pages/domain';
 import { renderSearch } from './pages/search';
@@ -106,10 +108,13 @@ async function main(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) throw new Error('缺少 #app 容器');
 
-  const header = renderHeader();
+  const agent = createAgentPanel();
+  registerAgentOpener((question) => agent.open(question));
+
+  const header = renderHeader(() => agent.open());
   const mainEl = h('main', { id: 'main', class: 'site-main' });
   const footer = renderFooter();
-  app.append(header, mainEl, footer);
+  app.append(header, mainEl, agent.element, footer);
 
   let manifest: Manifest | null = null;
   let run = 0;
@@ -135,10 +140,25 @@ async function main(): Promise<void> {
     }
   }
 
+  // 支持把问题直接写进链接： #/graph?ask=... 会自动打开 Agent 并提问（便于分享深挖结论）
+  let lastAsk: string | null = null;
+  function handleAsk(): void {
+    const query = window.location.hash.split('?')[1] ?? '';
+    const ask = new URLSearchParams(query).get('ask');
+    if (ask && ask !== lastAsk) {
+      lastAsk = ask;
+      agent.open(ask);
+    } else if (!ask) {
+      lastAsk = null;
+    }
+  }
+
   onRouteChange((route) => {
     void render(route);
     window.scrollTo({ top: 0, behavior: 'auto' });
   });
+  window.addEventListener('hashchange', handleAsk);
+  handleAsk();
 }
 
 void main();
