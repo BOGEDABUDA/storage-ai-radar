@@ -78,7 +78,7 @@ Daily Report（只读，绝不写入）
         │
         │  pipeline/  （Python 3 标准库，内容哈希缓存，幂等）
         ▼
-  web/data/*.json（分片派生数据）  +  insight.sqlite（FTS5 全量索引）
+  web/public/data/*.json（分片派生数据）  +  insight.sqlite（FTS5 全量索引）
         │                                    │
         ├──→ 静态站 web/（Vite + TS）        └──→ Agent 服务 agent/（Node 26，localhost:8787）
         │         │                                        ▲
@@ -112,7 +112,7 @@ Daily Report（只读，绝不写入）
 | `parse_articles.py` | `total/<date>/<分类>.md` | 15,192 篇文章（板块、标题、时间、总结） |
 | `parse_detail.py` | `output/<date>/<分类>_详细.md` | 399 条扩展要点 + 原文链接 |
 | `build_index.py` | 以上全部 + `articles/` 正文 | `insight.sqlite`（FTS5） |
-| `build.py` | 编排以上，产出全部 web 数据 | `web/data/*` + `insight.sqlite` |
+| `build.py` | 编排以上，产出全部 web 数据 | `web/public/data/*` + `insight.sqlite` |
 
 **健壮性要求**：
 - 自由标题（无 `商业视角`/`学术/技术视角` 前缀）归入 `perspective="topic"`，不丢数据
@@ -120,7 +120,7 @@ Daily Report（只读，绝不写入）
 - 单文件解析失败记入 `pipeline/build_report.json` 的 `warnings[]`，不中断整体构建
 - 幂等：同一输入重复运行产出字节级一致（`generated_at` 除外）
 
-### 4.2 数据契约（`web/data/`）
+### 4.2 数据契约（`web/public/data/`）
 
 **`manifest.json`**
 ```json
@@ -317,7 +317,7 @@ Daily Report（只读，绝不写入）
 | 边界 | 自由标题归入 `perspective="topic"`；缺失视角不报错 |
 | 幂等 | 连续两次构建产出除 `generated_at` 外字节一致 |
 | 只读 | 构建前后哈希清单一致 |
-| 契约 | 所有 `web/data/*.json` 通过 JSON Schema 形状校验（字段存在且类型正确） |
+| 契约 | 所有 `web/public/data/*.json` 通过 JSON Schema 形状校验（字段存在且类型正确） |
 
 ---
 

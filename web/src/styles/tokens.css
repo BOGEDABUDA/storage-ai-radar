@@ -1,0 +1,132 @@
+/* ==========================================================================
+   设计令牌 · 清新学术风
+   浅色：纸白底 + 墨色字 + 靛青/灰绿/陶土三色强调，1px 细描边，无重阴影
+   深色：整体降饱和，保持可读对比，不刺眼
+   ========================================================================== */
+
+:root {
+  /* 字体：全部使用系统中文字体栈，不依赖外部 CDN（境内容器/网络下 Google Fonts 不可达） */
+  --font-serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN",
+    "STSong", "SimSun", Georgia, "Times New Roman", serif;
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+    "Source Han Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "IBM Plex Mono", Menlo, Consolas, "Liberation Mono",
+    monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.9rem;
+  --fs-3xl: 2.4rem;
+
+  --lh-tight: 1.3;
+  --lh-base: 1.75;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --radius-sm: 3px;
+  --radius: 5px;
+  --radius-lg: 8px;
+
+  --content-max: 1180px;
+  --reading-max: 46rem;
+
+  --transition: 160ms ease;
+}
+
+/* ---------- 浅色（默认） ---------- */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #fbfbf9;
+  --bg-elev: #ffffff;
+  --bg-subtle: #f4f4f0;
+  --bg-inset: #eeeeea;
+
+  --ink: #1f2933;
+  --ink-soft: #4a5560;
+  --ink-faint: #7b8794;
+  --ink-ghost: #a8b0b8;
+
+  --rule: #e3e3de;
+  --rule-strong: #cfcfc7;
+
+  --accent: #2f6f8f;
+  --accent-hover: #245a75;
+  --accent-soft: #e8f1f6;
+  --sage: #5b8c6e;
+  --sage-soft: #ebf2ed;
+  --clay: #b4633a;
+  --clay-soft: #f7ede7;
+
+  --selection: #d8e7ef;
+  --shadow-card: 0 1px 2px rgba(31, 41, 51, 0.04);
+  --grid-line: rgba(31, 41, 51, 0.055);
+  --chart-grid: rgba(31, 41, 51, 0.09);
+
+  /* 10 个领域的分类色（柔和学术色系，明暗各一套） */
+  --cat-ai-inference-acceleration: #2f6f8f;
+  --cat-ai-model-agent-rag: #4e7c8a;
+  --cat-near-memory-computing: #5b8c6e;
+  --cat-new-media: #7a6a9b;
+  --cat-storage-semantics-protocol: #9b6a7c;
+  --cat-high-capacity-storage: #a8873c;
+  --cat-high-reliability-storage: #b4633a;
+  --cat-cost-effective-storage: #6b7f4e;
+  --cat-model-benchmarking: #8a6f52;
+  --cat-others: #8b939b;
+}
+
+/* ---------- 深色 ---------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #12161a;
+  --bg-elev: #171c21;
+  --bg-subtle: #1b2127;
+  --bg-inset: #202730;
+
+  --ink: #e6e8e6;
+  --ink-soft: #a8b0b4;
+  --ink-faint: #7a848a;
+  --ink-ghost: #5b646a;
+
+  --rule: #2a3036;
+  --rule-strong: #3a4249;
+
+  --accent: #6fa8c7;
+  --accent-hover: #8bbdd6;
+  --accent-soft: #1a262e;
+  --sage: #86b99a;
+  --sage-soft: #1a241e;
+  --clay: #d08a63;
+  --clay-soft: #2a1f19;
+
+  --selection: #24343e;
+  --shadow-card: none;
+  --grid-line: rgba(230, 232, 230, 0.045);
+  --chart-grid: rgba(230, 232, 230, 0.1);
+
+  --cat-ai-inference-acceleration: #6fa8c7;
+  --cat-ai-model-agent-rag: #7fa9b5;
+  --cat-near-memory-computing: #86b99a;
+  --cat-new-media: #a79bc0;
+  --cat-storage-semantics-protocol: #c194a4;
+  --cat-high-capacity-storage: #cdaa63;
+  --cat-high-reliability-storage: #d08a63;
+  --cat-cost-effective-storage: #9aae7c;
+  --cat-model-benchmarking: #b59a7e;
+  --cat-others: #7d858c;
+}

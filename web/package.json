@@ -1,0 +1,18 @@
+{
+  "name": "storage-ai-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lab Insight Radar — 存储 / AI 基础设施领域洞察雷达",
+  "packageManager": "pnpm@12.4.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^8.3.0"
+  }
+}

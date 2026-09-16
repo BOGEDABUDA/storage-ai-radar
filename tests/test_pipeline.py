@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT))
 from pipeline import categories, mdparse, parse_articles, parse_detail, parse_digest, paths  # noqa: E402
 from pipeline import readonly_guard  # noqa: E402
 
-WEB_DATA = ROOT / "web" / "data"
+WEB_DATA = ROOT / "web" / "public" / "data"
 
 EXPECTED_REPORTS = 42
 EXPECTED_ARTICLES = 15192

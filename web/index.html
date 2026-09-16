@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>领域洞察雷达 · Lab Insight Radar</title>
+    <meta
+      name="description"
+      content="存储与 AI 基础设施领域的进展跟踪：知识图谱、趋势分析与全文检索。数据来自 42 期每日信息简报。"
+    />
+    <!--
+      主题在首屏渲染前确定，避免明暗切换闪烁（FOUC）。
+      不引用任何外部字体 CDN：境内网络下 Google Fonts 不可达，全部使用系统中文字体栈。
+    -->
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem('radar-theme') || 'auto';
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var resolved = mode === 'auto' ? (prefersDark ? 'dark' : 'light') : mode;
+          document.documentElement.setAttribute('data-theme', resolved);
+          document.documentElement.setAttribute('data-theme-mode', mode);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.setAttribute('data-theme-mode', 'auto');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="app" class="app-shell"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

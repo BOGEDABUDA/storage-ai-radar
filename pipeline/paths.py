@@ -15,7 +15,10 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_SOURCE = "/Users/boding/.openclaw/workspace/Daily Report"
 
 # 产物根目录；可用 RADAR_DATA_DIR 覆盖（便于测试时写入临时目录）
-WEB_DATA_DIR = Path(os.environ.get("RADAR_DATA_DIR", str(PROJECT_ROOT / "web" / "data")))
+# 放在 web/public/ 下，Vite 会原样拷贝到 dist/，前端按 BASE_URL + "data/..." 取用
+WEB_DATA_DIR = Path(
+    os.environ.get("RADAR_DATA_DIR", str(PROJECT_ROOT / "web" / "public" / "data"))
+)
 ARTICLES_DATA_DIR = WEB_DATA_DIR / "articles"
 
 # 构建报告留在 pipeline/ 下且不发布（含本机绝对路径，仅用于本地排障）
