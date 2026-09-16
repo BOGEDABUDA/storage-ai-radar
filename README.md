@@ -103,6 +103,22 @@ node --test agent/test.mjs                   # 8 项：检索词解析/上下文
 这样图谱构建可离线复现，也让抽取结果可被 review。文本变化时按内容 SHA-256 自动重抽。
 
 
+## 界面
+
+| 概览 | 领域页 |
+|---|---|
+| ![概览](docs/screenshots/1-overview.png) | ![领域](docs/screenshots/2-domain.png) |
+
+| 知识图谱 | 趋势跟踪 |
+|---|---|
+| ![图谱](docs/screenshots/3-graph.png) | ![趋势](docs/screenshots/4-trends.png) |
+
+| 全文检索 | Agent 问答（本机） |
+|---|---|
+| ![检索](docs/screenshots/5-search.png) | ![Agent](docs/screenshots/6-agent.png) |
+
+> 截图取自线上站点（浅色主题）。Agent 面板取自本机预览，回答里单列了「现有资料未覆盖」一节。
+
 ## 语料规模（实测）
 
 | 指标 | 数值 |
