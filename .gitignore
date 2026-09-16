@@ -1,0 +1,19 @@
+# 密钥（绝不提交）
+.env
+agent/.env
+
+# 依赖与构建产物
+node_modules/
+dist/
+
+# 流水线缓存与本地索引（可重新生成）
+pipeline/cache/
+insight.sqlite
+insight.sqlite-journal
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
