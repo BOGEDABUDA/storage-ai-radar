@@ -286,13 +286,13 @@ Daily Report（只读，绝不写入）
 **安全与隐私**
 - API key 只存在本机 `.env`（`.gitignore` 已排除），绝不进仓库、绝不出现在前端
 - 服务默认只绑 `127.0.0.1:8787`（不对外监听）
-- CORS 白名单：`https://bogedaornot.github.io` + `http://localhost:*`
+- CORS 白名单：`https://bogedabuda.github.io` + `http://localhost:*`
 - 前端探测失败时**优雅降级**为纯检索模式，不弹错误、不影响静态功能
 
 ### 4.6 部署
 
 - 用 `gh auth login` 授权后：创建仓库 → 开启 Pages（Source = GitHub Actions）→ 推送
-- 仓库名：**`storage-ai-radar`**（可改），地址 `https://bogedaornot.github.io/storage-ai-radar/`
+- 仓库名：**`storage-ai-radar`**（可改），地址 `https://bogedabuda.github.io/storage-ai-radar/`
 - Vite `base` 必须配成 `/storage-ai-radar/`（否则子路径下资源 404）
 - `.github/workflows/deploy.yml`：push 到 `main` → `pnpm install` → `pnpm build` → `upload-pages-artifact` → `deploy-pages`
 - **CI 不解析语料**（语料只在波哥本机、CI 取不到）：派生数据随仓库提交，CI 只做构建与部署
@@ -390,7 +390,7 @@ storage-ai-radar/
 ## 8. 已确认决策（2026-09-16 波哥确认）
 
 1. **仓库可见性**：使用 **public 仓库**。派生数据（15,192 篇文章标题 + AI 摘要、794 条精选洞察）公开可读，波哥已确认接受（内容均为微信公众号公开文章的聚合，不含内部数据）。原始 `articles/` 正文 353 MB **不发布**。
-2. **仓库名**：**`storage-ai-radar`**，站点地址 `https://bogedaornot.github.io/storage-ai-radar/`。
+2. **仓库名**：**`storage-ai-radar`**，站点地址 `https://bogedabuda.github.io/storage-ai-radar/`。
 3. **P2 实体抽取**：**同意调用 DeepSeek** 处理 794 条精选洞察（按内容 SHA-256 缓存，重跑零成本，首次约数百次请求）。
 4. **方案选型**：采用方案 A（零依赖、本地优先、静态优先）。
 5. **交付方式**：分 P1 → P2 → P3 三阶段，每阶段独立验收并各有一份实现计划。

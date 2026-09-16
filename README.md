@@ -2,7 +2,7 @@
 
 把 OpenClaw 日报语料（存储 / AI 基础设施，42 期，2026-04-29 → 2026-09-14）变成**可浏览、可检索、可看趋势**的知识库，并发布到 GitHub Pages。
 
-线上地址：https://bogedaornot.github.io/storage-ai-radar/
+线上地址：https://bogedabuda.github.io/storage-ai-radar/
 
 ## 三条硬约束
 
