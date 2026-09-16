@@ -8,6 +8,7 @@ dist/
 
 # 流水线缓存与本地索引（可重新生成）
 pipeline/cache/
+pipeline/build_report.json
 insight.sqlite
 insight.sqlite-journal
 
