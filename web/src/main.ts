@@ -10,6 +10,8 @@ import { renderHeader, syncHeader } from './components/header';
 import { renderOverview } from './pages/overview';
 import { renderDomain } from './pages/domain';
 import { renderSearch } from './pages/search';
+import { renderGraph } from './pages/graph';
+import { renderTrends } from './pages/trends';
 import { renderArchive } from './pages/archive';
 import { renderReport } from './pages/report';
 import { watchSystemTheme } from './theme';
@@ -73,6 +75,10 @@ async function renderRoute(route: Route, manifest: Manifest): Promise<HTMLElemen
       return renderDomain(manifest, route.slug);
     case 'search':
       return renderSearch(manifest, route.q);
+    case 'graph':
+      return renderGraph(manifest);
+    case 'trends':
+      return renderTrends(manifest);
     case 'archive':
       return renderArchive(manifest);
     case 'report':

@@ -143,6 +143,34 @@ def build(source: Path | None = None) -> dict:
         paths.WEB_DATA_DIR / "timeline.json", {"dates": dates, "series": series}
     )
 
+    # ---- graph.json + trends.json（P2，依赖 entities.json 的实体抽取结果）----
+    from . import analyze_trends, extract_entities
+
+    graph_stats = None
+    if extract_entities.ENTITIES_PATH.is_file():
+        store = extract_entities.load_store()
+        entries = store.get("entries", {})
+        graph = analyze_trends.build_graph(digests, entries, dates)
+        trends = analyze_trends.build_trends(digests, entries, {"dates": dates, "series": series}, dates)
+        graph["model"] = store.get("model")
+        sizes["graph.json"] = _write_json(paths.WEB_DATA_DIR / "graph.json", graph, compact=True)
+        sizes["trends.json"] = _write_json(paths.WEB_DATA_DIR / "trends.json", trends, compact=True)
+        graph_stats = {
+            "entities_total": graph["stats"]["entities_total"],
+            "entities_in_graph": graph["stats"]["entities_in_graph"],
+            "edges": graph["stats"]["edges"],
+            "metrics": len(trends["metrics"]),
+            "rising": len(trends["rising_entities"]),
+            "new": len(trends["new_entities"]),
+            "fading": len(trends["fading_entities"]),
+        }
+        manifest["graph"] = graph["stats"]
+    else:
+        warnings.append(
+            "未找到 pipeline/entities.json，已跳过知识图谱与趋势分析"
+            "（先运行 python3 -m pipeline.extract_entities）"
+        )
+
     finished = datetime.now(CST)
     report = {
         "started_at": started.isoformat(timespec="seconds"),
@@ -157,6 +185,7 @@ def build(source: Path | None = None) -> dict:
             "details": len(details),
         },
         "sources_attached": attached,
+        "graph_stats": graph_stats,
         "output_bytes": sizes,
         "output_bytes_total": sum(sizes.values()),
         "warnings": warnings,
@@ -175,6 +204,15 @@ def main() -> int:
         f"{counts['digests']} 条洞察 · {counts['details']} 条详细要点"
     )
     print(f"[原文引用] {report['sources_attached']} 条洞察挂上了来源链接")
+    if report.get("graph_stats"):
+        stats = report["graph_stats"]
+        print(
+            f"[知识图谱] {stats['entities_total']} 个实体 → 入图 {stats['entities_in_graph']} 个 · "
+            f"{stats['edges']} 条边 · 指标 {stats['metrics']} 项"
+        )
+        print(
+            f"[趋势] 上升 {stats['rising']} · 新兴 {stats['new']} · 退潮 {stats['fading']}"
+        )
     print(f"[产物体积] {report['output_bytes_total'] / 1024 / 1024:.2f} MB → {report['output_dir']}")
     if report["warnings"]:
         print(f"[告警] {len(report['warnings'])} 条：")

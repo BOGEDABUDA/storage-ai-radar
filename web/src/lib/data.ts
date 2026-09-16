@@ -1,6 +1,6 @@
 /** 数据加载：派生数据是静态 JSON，全部按 BASE_URL 前缀取用并做内存缓存。 */
 
-import type { Article, Digest, IndexFile, Manifest, Timeline } from './types';
+import type { Article, Digest, GraphFile, IndexFile, Manifest, Timeline, TrendsFile } from './types';
 
 const cache = new Map<string, Promise<unknown>>();
 
@@ -40,6 +40,14 @@ export function loadTimeline(): Promise<Timeline> {
 
 export function loadIndex(): Promise<IndexFile> {
   return cached('index', () => getJSON<IndexFile>('articles.index.json'));
+}
+
+export function loadGraph(): Promise<GraphFile> {
+  return cached('graph', () => getJSON<GraphFile>('graph.json'));
+}
+
+export function loadTrends(): Promise<TrendsFile> {
+  return cached('trends', () => getJSON<TrendsFile>('trends.json'));
 }
 
 export function loadShard(date: string): Promise<Article[]> {

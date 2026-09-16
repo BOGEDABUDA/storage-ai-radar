@@ -3,6 +3,8 @@
 export type Route =
   | { name: 'overview' }
   | { name: 'domain'; slug: string }
+  | { name: 'graph' }
+  | { name: 'trends' }
   | { name: 'search'; q: string }
   | { name: 'archive' }
   | { name: 'report'; date: string }
@@ -20,6 +22,10 @@ export function parseHash(hash: string): Route {
       return segments[1] ? { name: 'domain', slug: decodeURIComponent(segments[1]) } : { name: 'overview' };
     case 'search':
       return { name: 'search', q: query.get('q') ?? '' };
+    case 'graph':
+      return { name: 'graph' };
+    case 'trends':
+      return { name: 'trends' };
     case 'archive':
       return { name: 'archive' };
     case 'report':
@@ -35,6 +41,10 @@ export function routeToHash(route: Route): string {
       return `#/domain/${encodeURIComponent(route.slug)}`;
     case 'search':
       return route.q ? `#/search?q=${encodeURIComponent(route.q)}` : '#/search';
+    case 'graph':
+      return '#/graph';
+    case 'trends':
+      return '#/trends';
     case 'archive':
       return '#/archive';
     case 'report':

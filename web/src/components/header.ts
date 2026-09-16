@@ -14,6 +14,8 @@ interface NavItem {
 const NAV: NavItem[] = [
   { label: '概览', hash: '#/', section: 'overview' },
   { label: '领域', hash: '#/domain/ai-inference-acceleration', section: 'domain' },
+  { label: '图谱', hash: '#/graph', section: 'graph' },
+  { label: '趋势', hash: '#/trends', section: 'trends' },
   { label: '检索', hash: '#/search', section: 'search' },
   { label: '归档', hash: '#/archive', section: 'archive' },
 ];

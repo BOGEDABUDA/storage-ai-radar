@@ -12,6 +12,8 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/d3-force": "^3.0.10",
+    "d3-force": "^3.0.0",
     "typescript": "~5.9.3",
     "vite": "^8.3.0"
   }

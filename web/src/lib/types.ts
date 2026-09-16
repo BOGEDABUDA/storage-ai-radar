@@ -84,3 +84,118 @@ export interface SearchHit {
   snippet: string;
   score: number;
 }
+
+/* ------------------------------------------------------------------ P2：图谱与趋势 */
+
+export type EntityType = 'company' | 'institution' | 'tech' | 'product' | 'paper' | 'person' | 'metric' | 'category';
+
+export interface GraphNode {
+  id: string;
+  label: string;
+  kind: 'entity' | 'category';
+  etype: EntityType;
+  category: string;
+  mentions: number;
+  /** 实体节点才有 */
+  first_seen?: string;
+  last_seen?: string;
+  business?: number;
+  technical?: number;
+  /** 42 期提及次数 */
+  series?: number[];
+  digests?: string[];
+}
+
+export interface GraphEdge {
+  source: string;
+  target: string;
+  kind: 'co_occurs' | 'belongs_to';
+  weight: number;
+}
+
+export interface GraphFile {
+  generated_at: string;
+  model?: string;
+  dates: string[];
+  stats: {
+    digests: number;
+    entities_total: number;
+    entities_in_graph: number;
+    edges: number;
+    min_mentions: number;
+    min_cooccur: number;
+  };
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+}
+
+export interface TrendCategory {
+  category: string;
+  name: string;
+  is_catch_all: boolean;
+  momentum: number;
+  direction: 'up' | 'flat' | 'down';
+  recent_articles: number;
+  baseline_articles: number;
+  article_counts: number[];
+  digest_counts: number[];
+  business: number;
+  technical: number;
+  topic: number;
+}
+
+export interface TrendEntity {
+  id: string;
+  label: string;
+  etype: EntityType;
+  category: string;
+  mentions: number;
+  recent: number;
+  baseline: number;
+  momentum: number;
+  first_seen: string;
+}
+
+export interface MetricSeries {
+  key: string;
+  subject: string;
+  label: string;
+  unit: string | null;
+  count: number;
+  points: { date: string; value: number }[];
+  first: number;
+  last: number;
+  change: number | null;
+}
+
+export interface MetricObservationGroup {
+  label: string;
+  unit: string | null;
+  count: number;
+  subjects: number;
+  observations: { date: string; subject: string; value: number; unit: string | null }[];
+}
+
+export interface EntityPerspective {
+  id: string;
+  label: string;
+  etype: EntityType;
+  category: string;
+  mentions: number;
+  business: number;
+  technical: number;
+  /** (商业 − 学术) / 总数，+1 全商业，−1 全学术 */
+  lean: number;
+}
+
+export interface TrendsFile {
+  generated_at: string;
+  window: { recent: number; baseline: number };
+  categories: TrendCategory[];
+  rising_entities: TrendEntity[];
+  new_entities: TrendEntity[];
+  fading_entities: TrendEntity[];
+  metrics: MetricSeries[];
+  metric_observations: MetricObservationGroup[];
+  entity_perspective: EntityPerspective[];
+}

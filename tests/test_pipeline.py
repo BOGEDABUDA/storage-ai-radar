@@ -253,5 +253,90 @@ class TestReadOnly(unittest.TestCase):
         self.assertEqual(readonly_guard.diff(before, after), {"added": [], "removed": [], "changed": []})
 
 
+class TestGraphTrends(unittest.TestCase):
+    """P2：知识图谱与趋势产物的契约断言。"""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        graph_path = WEB_DATA / "graph.json"
+        trends_path = WEB_DATA / "trends.json"
+        if not graph_path.exists() or not trends_path.exists():
+            raise unittest.SkipTest("graph.json / trends.json 尚未生成")
+        cls.graph = json.loads(graph_path.read_text(encoding="utf-8"))
+        cls.trends = json.loads(trends_path.read_text(encoding="utf-8"))
+        cls.entities = json.loads((ROOT / "pipeline" / "entities.json").read_text(encoding="utf-8"))
+        cls.manifest = json.loads((WEB_DATA / "manifest.json").read_text(encoding="utf-8"))
+
+    def test_extraction_covers_every_digest(self) -> None:
+        """抽取结果必须覆盖全部 794 条洞察，且每条都有 hash。"""
+        entries = self.entities["entries"]
+        self.assertEqual(len(entries), EXPECTED_DIGESTS)
+        for digest_id, row in entries.items():
+            self.assertTrue(row.get("hash"), f"{digest_id} 缺少内容哈希")
+
+    def test_graph_shape_and_edges_resolve(self) -> None:
+        nodes = self.graph["nodes"]
+        edges = self.graph["edges"]
+        self.assertTrue(nodes, "图谱节点为空")
+        self.assertTrue(edges, "图谱边为空")
+
+        ids = [node["id"] for node in nodes]
+        self.assertEqual(len(set(ids)), len(ids), "节点 id 必须唯一")
+        known = set(ids)
+
+        for edge in edges:
+            self.assertIn(edge["source"], known, f"边源节点不存在：{edge['source']}")
+            self.assertIn(edge["target"], known, f"边目标节点不存在：{edge['target']}")
+            self.assertIn(edge["kind"], {"co_occurs", "belongs_to"})
+            self.assertGreaterEqual(edge["weight"], 1)
+
+        # 共现边必须达到最小权重阈值，避免噪声边
+        for edge in edges:
+            if edge["kind"] == "co_occurs":
+                self.assertGreaterEqual(edge["weight"], self.graph["stats"]["min_cooccur"])
+
+    def test_entity_nodes_meet_threshold_and_series_align(self) -> None:
+        """入图实体都达到最小提及量；逐期序列长度必须与期数一致。"""
+        period = len(self.graph["dates"])
+        self.assertEqual(period, EXPECTED_REPORTS)
+        entity_nodes = [n for n in self.graph["nodes"] if n["kind"] == "entity"]
+        self.assertTrue(entity_nodes)
+        threshold = self.graph["stats"]["min_mentions"]
+        for node in entity_nodes:
+            self.assertGreaterEqual(node["mentions"], threshold, f"{node['label']} 低于入图阈值")
+            self.assertEqual(len(node["series"]), period, f"{node['label']} 序列长度不等于期数")
+            self.assertEqual(sum(node["series"]), node["mentions"], f"{node['label']} 序列之和与提及数不符")
+
+    def test_trends_categories_and_directions(self) -> None:
+        categories = self.trends["categories"]
+        self.assertEqual(len(categories), EXPECTED_CATEGORIES)
+        for category in categories:
+            self.assertIn(category["direction"], {"up", "flat", "down"})
+            self.assertIsInstance(category["momentum"], (int, float))
+            self.assertEqual(len(category["article_counts"]), EXPECTED_REPORTS)
+
+    def test_metric_series_are_subject_scoped(self) -> None:
+        """关键正确性：指标序列必须绑定主体，不能只按指标名合并不同主体。"""
+        for metric in self.trends["metrics"]:
+            self.assertTrue(metric["subject"], f"{metric['label']} 缺少主体")
+            self.assertGreaterEqual(metric["count"], 3, f"{metric['label']} 数据点不足")
+            self.assertEqual(len(metric["points"]), metric["count"])
+            self.assertEqual(metric["points"], sorted(metric["points"], key=lambda p: p["date"]))
+
+    def test_entity_perspective_lean_range(self) -> None:
+        rows = self.trends["entity_perspective"]
+        self.assertTrue(rows, "实体视角样本为空")
+        for row in rows:
+            self.assertGreaterEqual(row["business"] + row["technical"], 3)
+            self.assertGreaterEqual(row["lean"], -1.0)
+            self.assertLessEqual(row["lean"], 1.0)
+
+    def test_rising_new_fading_are_disjoint_lists(self) -> None:
+        for key in ("rising_entities", "new_entities", "fading_entities"):
+            self.assertIsInstance(self.trends[key], list)
+            ids = [item["id"] for item in self.trends[key]]
+            self.assertEqual(len(set(ids)), len(ids), f"{key} 存在重复实体")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

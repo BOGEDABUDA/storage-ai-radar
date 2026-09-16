@@ -311,4 +311,119 @@ export function mountResponsive(
   };
 }
 
+/**
+ * 稀疏指标序列图：横轴是按完整期数时间轴，只在真实观测到的日期上画点，
+ * 点之间用虚线连接，避免把稀疏采样画成连续趋势而误导读者。
+ */
+export function sparseLineChart(
+  dates: string[],
+  points: { date: string; value: number }[],
+  options: { width: number; height?: number; color?: string; unit?: string | null },
+): SVGElement {
+  const width = Math.max(options.width, 240);
+  const height = options.height ?? 180;
+  const color = options.color ?? 'var(--accent)';
+  const padLeft = 54;
+  const padRight = 14;
+  const padTop = 16;
+  const padBottom = 28;
+
+  const svg = s('svg', {
+    class: 'chart',
+    viewBox: `0 0 ${width} ${height}`,
+    width: String(width),
+    height: String(height),
+    role: 'img',
+  });
+
+  const values = points.map((p) => p.value);
+  if (values.length === 0) return svg;
+  const rawMin = Math.min(...values);
+  const rawMax = Math.max(...values);
+  const min = rawMin === rawMax ? rawMin - Math.abs(rawMin || 1) * 0.1 : rawMin;
+  const max = rawMin === rawMax ? rawMax + Math.abs(rawMax || 1) * 0.1 : rawMax;
+  const plotW = width - padLeft - padRight;
+  const plotH = height - padTop - padBottom;
+  const indexOf = new Map(dates.map((date, index) => [date, index]));
+  const span = Math.max(dates.length - 1, 1);
+  const x = (date: string): number => padLeft + ((indexOf.get(date) ?? 0) / span) * plotW;
+  const y = (value: number): number => padTop + plotH - ((value - min) / (max - min)) * plotH;
+
+  for (let i = 0; i <= 3; i += 1) {
+    const value = min + ((max - min) / 3) * i;
+    const gy = y(value);
+    svg.appendChild(
+      s('line', {
+        x1: String(padLeft),
+        y1: String(gy),
+        x2: String(width - padRight),
+        y2: String(gy),
+        class: i === 0 ? 'axis-line' : 'grid-line',
+      }),
+    );
+    svg.appendChild(
+      s(
+        'text',
+        { x: String(padLeft - 8), y: String(gy + 3), 'text-anchor': 'end' },
+        formatCompact(value),
+      ),
+    );
+  }
+
+  const sorted = [...points].sort((a, b) => (a.date < b.date ? -1 : 1));
+  if (sorted.length > 1) {
+    svg.appendChild(
+      s('polyline', {
+        points: sorted.map((p) => `${x(p.date)},${y(p.value)}`).join(' '),
+        style: { stroke: color, fill: 'none', strokeDasharray: '4 3' },
+        'stroke-width': '1.4',
+        'stroke-linejoin': 'round',
+      }),
+    );
+  }
+  for (const point of sorted) {
+    svg.appendChild(s('circle', { cx: String(x(point.date)), cy: String(y(point.value)), r: '3.2', style: { fill: color } }));
+  }
+  // 只标注首末两点，避免密集时重叠
+  for (const point of [sorted[0]!, sorted[sorted.length - 1]!]) {
+    svg.appendChild(
+      s(
+        'text',
+        {
+          x: String(x(point.date)),
+          y: String(y(point.value) - 8),
+          'text-anchor': 'middle',
+          style: { fill: 'var(--ink-soft)' },
+        },
+        `${formatCompact(point.value)}${options.unit ?? ''}`,
+      ),
+    );
+  }
+  const labelEvery = Math.max(1, Math.ceil(dates.length / 5));
+  dates.forEach((date, index) => {
+    if (index % labelEvery !== 0 && index !== dates.length - 1) return;
+    svg.appendChild(
+      s(
+        'text',
+        {
+          x: String(x(date)),
+          y: String(height - padBottom + 16),
+          'text-anchor': index === 0 ? 'start' : index === dates.length - 1 ? 'end' : 'middle',
+        },
+        date.slice(5),
+      ),
+    );
+  });
+  return svg;
+}
+
+function formatCompact(value: number): string {
+  const abs = Math.abs(value);
+  if (abs >= 1e8) return `${(value / 1e8).toFixed(1)}亿`;
+  if (abs >= 1e4) return `${(value / 1e4).toFixed(1)}万`;
+  if (abs >= 100) return String(Math.round(value));
+  if (abs >= 1) return value.toFixed(1).replace(/\.0$/, '');
+  return value.toPrecision(2);
+}
+
 export { SVG_NS };
