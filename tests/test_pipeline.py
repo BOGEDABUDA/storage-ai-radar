@@ -153,6 +153,20 @@ class TestContracts(unittest.TestCase):
             self.manifest["digest_count"],
         )
 
+    def test_manifest_includes_derived_stats(self) -> None:
+        """manifest 必须包含 graph / papers 的统计。
+
+        回归：manifest.json 曾在 graph/papers 统计补全**之前**就被写出，
+        导致 manifest["graph"] / manifest["papers"] 永远落不到文件里。
+        """
+        self.assertIn("graph", self.manifest, "manifest 缺少 graph 统计")
+        self.assertIn("papers", self.manifest, "manifest 缺少 papers 统计")
+        self.assertEqual(self.manifest["graph"]["digests"], self.manifest["digest_count"])
+        self.assertGreater(self.manifest["papers"]["unique_papers"], 0)
+        self.assertGreaterEqual(
+            self.manifest["papers"]["resolved"], 0
+        )
+
     def test_no_local_absolute_path_published(self) -> None:
         """公开产物不得泄露本机绝对路径。"""
         raw = (WEB_DATA / "manifest.json").read_text(encoding="utf-8")

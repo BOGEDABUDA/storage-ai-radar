@@ -205,7 +205,7 @@ export async function renderPapers(manifest: Manifest): Promise<HTMLElement> {
       h(
         'p',
         { class: 'page-lede' },
-        `从 42 期日报的「论文推荐」板块共 `,
+        `从 ${manifest.report_count} 期日报的「论文推荐」板块共 `,
         h('strong', {}, n(stats.paper_entries)),
         ` 条媒体摘要中，抽出 `,
         h('strong', {}, n(stats.unique_papers)),

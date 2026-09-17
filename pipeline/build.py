@@ -98,8 +98,9 @@ def build(source: Path | None = None) -> dict:
         "index_fields": INDEX_FIELDS,
     }
 
+    # 注意：manifest.json 必须等 graph/trends/papers 的统计补全之后再写，
+    # 否则 manifest["graph"] / manifest["papers"] 永远落不到文件里。
     sizes = {
-        "manifest.json": _write_json(paths.WEB_DATA_DIR / "manifest.json", manifest),
         "digests.json": _write_json(paths.WEB_DATA_DIR / "digests.json", digests, compact=True),
     }
 
@@ -191,6 +192,8 @@ def build(source: Path | None = None) -> dict:
             "未找到论文抽取结果，已跳过学术论文推荐"
             "（先运行 python3 -m pipeline.extract_papers）"
         )
+
+    sizes["manifest.json"] = _write_json(paths.WEB_DATA_DIR / "manifest.json", manifest)
 
     finished = datetime.now(CST)
     report = {

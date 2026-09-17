@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:13:13+08:00",
+  "generated_at": "2026-09-18T00:15:52+08:00",
   "source_label": "Daily Report",
   "report_count": 43,
   "article_count": 15482,
@@ -152,5 +152,20 @@
     "s",
     "t",
     "l"
-  ]
+  ],
+  "graph": {
+    "digests": 814,
+    "entities_total": 1739,
+    "entities_in_graph": 507,
+    "edges": 1485,
+    "min_mentions": 2,
+    "min_cooccur": 2
+  },
+  "papers": {
+    "paper_entries": 1572,
+    "unique_papers": 927,
+    "resolved": 513,
+    "with_abstract": 513,
+    "unmatched": 414
+  }
 }
