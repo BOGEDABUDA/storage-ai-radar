@@ -14,6 +14,45 @@ import type { Manifest, Paper } from '../lib/types';
 
 const MAX_CARDS = 120;
 
+type SortKey = 'date-desc' | 'date-asc' | 'pub-desc' | 'pub-asc' | 'mentions' | 'title';
+
+const SORT_OPTIONS: { key: SortKey; label: string }[] = [
+  { key: 'date-desc', label: '推荐时间（新→旧）' },
+  { key: 'date-asc', label: '推荐时间（旧→新）' },
+  { key: 'pub-desc', label: '论文发表时间（新→旧）' },
+  { key: 'pub-asc', label: '论文发表时间（旧→新）' },
+  { key: 'mentions', label: '被推荐次数' },
+  { key: 'title', label: '标题' },
+];
+
+/** 未匹配到 arXiv 的论文没有发表时间，统一排到末尾（而不是当成最早）。 */
+function sortPapers(list: Paper[], key: SortKey): Paper[] {
+  const sorted = [...list];
+  const published = (p: Paper): string => p.arxiv?.published ?? '';
+  switch (key) {
+    case 'date-asc':
+      return sorted.sort((a, b) => (a.primary_date ?? '').localeCompare(b.primary_date ?? ''));
+    case 'pub-desc':
+      return sorted.sort((a, b) => {
+        if (!published(a)) return 1;
+        if (!published(b)) return -1;
+        return published(b).localeCompare(published(a));
+      });
+    case 'pub-asc':
+      return sorted.sort((a, b) => {
+        if (!published(a)) return 1;
+        if (!published(b)) return -1;
+        return published(a).localeCompare(published(b));
+      });
+    case 'mentions':
+      return sorted.sort((a, b) => b.dates.length - a.dates.length || (b.primary_date ?? '').localeCompare(a.primary_date ?? ''));
+    case 'title':
+      return sorted.sort((a, b) => a.title.localeCompare(b.title, 'zh-Hans-CN'));
+    default:
+      return sorted.sort((a, b) => (b.primary_date ?? '').localeCompare(a.primary_date ?? ''));
+  }
+}
+
 function paperCard(paper: Paper, manifest: Manifest): HTMLElement {
   const resolved = Boolean(paper.arxiv);
   const categoryNames = paper.categories.map(
@@ -102,13 +141,13 @@ export async function renderPapers(manifest: Manifest): Promise<HTMLElement> {
     );
   }
 
-  const state = { query: '', category: '', resolvedOnly: false, expanded: false };
+  const state = { query: '', category: '', resolvedOnly: false, expanded: false, sort: 'date-desc' as SortKey };
   const listHost = h('div', { class: 'paper-list' });
   const counter = h('span', { class: 'muted' });
 
   function visible(): Paper[] {
     const query = state.query.trim().toLowerCase();
-    return papers.filter((paper) => {
+    const filtered = papers.filter((paper) => {
       if (state.resolvedOnly && !paper.arxiv) return false;
       if (state.category && !paper.categories.includes(state.category)) return false;
       if (query) {
@@ -117,6 +156,7 @@ export async function renderPapers(manifest: Manifest): Promise<HTMLElement> {
       }
       return true;
     });
+    return sortPapers(filtered, state.sort);
   }
 
   function render(): void {
@@ -177,6 +217,19 @@ export async function renderPapers(manifest: Manifest): Promise<HTMLElement> {
     render();
   });
 
+  const sortSelect = h(
+    'select',
+    { 'aria-label': '排序方式' },
+    ...SORT_OPTIONS.map((option) =>
+      h('option', { value: option.key, selected: option.key === state.sort ? '' : null }, option.label),
+    ),
+  ) as HTMLSelectElement;
+  sortSelect.addEventListener('change', () => {
+    state.sort = sortSelect.value as SortKey;
+    state.expanded = false;   // 换排序后重新折叠，避免一次渲染上千张卡片
+    render();
+  });
+
   const resolvedToggle = h(
     'button',
     {
@@ -228,7 +281,7 @@ export async function renderPapers(manifest: Manifest): Promise<HTMLElement> {
         ),
       ),
     ),
-    h('div', { class: 'search-bar' }, searchInput, categorySelect, resolvedToggle),
+    h('div', { class: 'search-bar' }, searchInput, categorySelect, sortSelect, resolvedToggle),
     h('div', { class: 'result-meta' }, counter),
     listHost,
   );

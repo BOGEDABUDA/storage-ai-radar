@@ -157,9 +157,11 @@ def build() -> dict:
         target["primary_category"] = target["categories"][0] if target["categories"] else "others"
         papers.append(target)
 
-    # 排序：已匹配到 arXiv 的（有真实标题与英文摘要）排前面，其次按最近推荐日期
-    papers.sort(key=lambda p: p["primary_date"] or "", reverse=True)
-    papers.sort(key=lambda p: p["arxiv"] is None)
+    # 数据层只给一个稳定的默认序：按最近推荐日期倒序。
+    # 「是否已匹配 arXiv」属于筛选维度，不作为排序依据——否则页面会呈现
+    # 「已匹配的一整段 + 未匹配的一整段」的断层，读起来不像顺序。
+    # 具体的排序方式交给前端的排序选择器。
+    papers.sort(key=lambda p: (p["primary_date"] or ""), reverse=True)
 
     return {
         "generated_at": datetime.now(CST).isoformat(timespec="seconds"),
