@@ -1,0 +1,71 @@
+
+[1m==> 检测新增期数（数据源：/Users/boding/.openclaw/workspace/Daily Report）[0m
+2026-09-18 00:23:17  已完成期数 43 · 已发布 43 · 待发布 无
+2026-09-18 00:23:17  没有新内容，结束
+
+[1m==> 检测新增期数（数据源：/Users/boding/.openclaw/workspace/Daily Report）[0m
+2026-09-18 00:23:38  已完成期数 43 · 已发布 42 · 待发布 2026-09-17
+2026-09-18 00:23:38  （--check 模式，不做任何改动）
+
+[1m==> 检测新增期数（数据源：/Users/boding/.openclaw/workspace/Daily Report）[0m
+2026-09-18 00:23:38  已完成期数 43 · 已发布 42 · 待发布 2026-09-17
+
+[1m==> 检测新增期数（数据源：/Users/boding/.openclaw/workspace/Daily Report）[0m
+2026-09-18 00:23:43  已完成期数 43 · 已发布 42 · 待发布 2026-09-17
+
+[1m==> 1/10 建立只读基线快照[0m
+[只读快照] 27317 个文件 → /Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar/pipeline/cache/readonly_snapshot.json
+
+[1m==> 2/10 增量抽取实体（仅新洞察）[0m
+[完成] 共 814 条：复用 814，新抽取 0，失败 0，耗时 0s → /Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar/pipeline/entities.json
+
+[1m==> 3/10 增量抽取论文（仅新论文推荐）[0m
+[解析] 论文推荐条目 3435 条（含 arXiv ID 157，含《英文标题》 593）
+[完成] 共 3435 条：复用 3435，新抽 0，失败 0，耗时 0s
+[结果] 判定为论文 1572 条，其中抽到标题 1524 条 → /Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar/pipeline/papers.json
+
+[1m==> 4/10 增量 arXiv 解析（限速 1 请求/3 秒）[0m
+[解析] 唯一论文 1197 条，待处理 0 条（限速 3.0s/请求）
+[解析] 没有需要处理的条目
+
+[1m==> 5/10 重建派生数据[0m
+[构建完成] 43 期 · 15482 篇文章 · 814 条洞察 · 818 条详细要点
+[去重] 合并同一期同一分类内的重复文章 218 条
+[原文引用] 814 条洞察挂上了来源链接
+[知识图谱] 1739 个实体 → 入图 507 个 · 1485 条边 · 指标 9 项
+[趋势] 上升 43 · 新兴 21 · 退潮 1
+[学术论文] 论文推荐条目 1572 → 唯一论文 927 · arXiv 命中 513（含英文摘要 513）
+[产物体积] 29.62 MB → /Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar/web/public/data
+
+[1m==> 5/10 构建前端[0m
+$ tsc --noEmit && vite build
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 60 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  1.58 kB │ gzip:  0.95 kB
+dist/assets/worker-DM9_SSC0.js   2.25 kB
+dist/assets/index-Cze4-MYz.css  29.67 kB │ gzip:  6.03 kB
+dist/assets/index-D36a9ln_.js   76.64 kB │ gzip: 27.60 kB
+
+✓ built in 110ms
+
+[1m==> 6/10 重建 Agent 检索索引[0m
+[索引完成] 洞察 814 · 文章 15482
+[索引体积] 98.7 MB → /Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar/insight.sqlite
+[耗时] 6.1s
+
+[1m==> 7/10 只读校验（语料必须零改动）[0m
+[只读校验] ✅ 通过：27317 个文件全部未被修改
+
+[1m==> 本地自检（起 preview 于 :4199 核对页面与数据）[0m
+2026-09-18 00:24:08    ✓ /
+2026-09-18 00:24:08    ✓ /data/manifest.json
+2026-09-18 00:24:08    ✓ /data/digests.json
+2026-09-18 00:24:08    ✓ /data/graph.json
+2026-09-18 00:24:08    ✓ /data/trends.json
+2026-09-18 00:24:08    ✓ /data/papers.json
+2026-09-18 00:24:08  本地自检通过
+
+[1m==> 9/10 提交并推送[0m
