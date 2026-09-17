@@ -154,6 +154,61 @@ print("NO")
 INNER_PY
 }
 
+# ---------------------------------------------------------------- 口径自检
+# 语料的分类框架若发生变化（增删/改名），categories.py 必须同步，否则网页 URL 会退化
+# 成哈希 slug、分类配色与排序也会丢。这里每次发布前自动对比，不一致就明确告警。
+# 别名表与趋势常量属于"分析口味"，不参与同步检查，只报告覆盖率供参考。
+check_taxonomy() {
+  python3 - <<'INNER_PY'
+import collections, glob, json, os, sys
+sys.path.insert(0, os.environ.get("ROOT", "."))
+from pipeline import categories
+
+src = os.environ.get("SRC", "")
+suffix = "_详细.md"
+
+seen = collections.Counter()
+for path in glob.glob(f"{src}/total/*/*.md"):
+    seen[os.path.basename(path)[:-3]] += 1
+for path in glob.glob(f"{src}/output/*/*{suffix}"):
+    seen[os.path.basename(path)[:-len(suffix)]] += 1
+
+known = set(categories.NAME_TO_SLUG)
+unknown = sorted(set(seen) - known)
+missing = sorted(known - set(seen))
+
+print(f"  分类框架：语料 {len(seen)} 个 · categories.py {len(known)} 个")
+if unknown:
+    print(f"  ⚠ 语料里出现未登记的分类：{unknown}")
+    print("    → 这些分类会退化为哈希 URL（能显示但链接难看、无配色与排序）")
+    print("    → 请把分类名与 slug 补进 pipeline/categories.py 的 CATEGORIES")
+if missing:
+    print(f"  ⚠ categories.py 登记了但语料未出现：{missing}")
+    print("    → 若是分类被改名或删除，请更新 categories.py")
+if not unknown and not missing:
+    print("  ✓ 分类框架一致，无需同步")
+
+# 别名覆盖率（仅供参考，不需要同步）
+store = os.path.join(os.environ.get("ROOT", "."), "pipeline", "entities.json")
+if os.path.exists(store):
+    entries = json.load(open(store, encoding="utf-8")).get("entries", {})
+    names = collections.Counter()
+    for row in entries.values():
+        for entity in row.get("entities", []):
+            names[entity["name"]] += 1
+    alias_map = {}
+    if os.path.exists(os.path.join(os.environ.get("ROOT", "."), "pipeline", "aliases.json")):
+        raw = json.load(open(os.path.join(os.environ.get("ROOT", "."), "pipeline", "aliases.json"), encoding="utf-8"))
+        for canonical, aliases in (raw.get("canonical") or {}).items():
+            for alias in aliases:
+                alias_map[alias.strip().lower()] = canonical
+    covered = sum(count for name, count in names.items() if name.strip().lower() in alias_map)
+    total = sum(names.values())
+    print(f"  别名表：{len(alias_map)} 个别名，覆盖 {covered}/{total} 次提及"
+          f"（{covered / total * 100 if total else 0:.1f}%）— 未覆盖不代表有问题，只是同一实体的不同写法不会自动合并")
+INNER_PY
+}
+
 # ---------------------------------------------------------------- 本地自检
 self_check() {
   local expect_dates="$1"
@@ -210,6 +265,9 @@ BLOCKED="$(echo "$DETECT" | python3 -c 'import json,sys; b=json.load(sys.stdin)[
 
 log "已完成期数 $COMPLETE_N · 已发布 $PUBLISHED_N · 待发布 ${NEW_DATES:-无}"
 [ -n "$BLOCKED" ] && log "跳过（未完成或仍在写入）：$BLOCKED"
+
+step "口径自检"
+ROOT="$ROOT" SRC="$SOURCE_DIR" check_taxonomy 2>&1 | tee -a "$LOG_FILE" >&2
 
 if [ -z "$NEW_DATES" ]; then
   log "没有新内容，结束"
@@ -287,6 +345,16 @@ fi
 
 # 9) 提交并推送
 step "9/10 提交并推送"
+# 你的网络直连 github.com 被阻断，推送必须走代理。代理没起来就早失败，
+# 给出明确提示而不是卡住或抛一堆 git 错误。
+PROXY_URL="$(git config --get 'http.https://github.com/.proxy' || true)"
+if [ -n "$PROXY_URL" ]; then
+  if curl -s -o /dev/null --max-time 8 -x "$PROXY_URL" https://github.com; then
+    log "推送代理可用：$PROXY_URL"
+  else
+    die "推送代理 $PROXY_URL 不通，无法推送到 GitHub。请确认代理在运行；若只想本地构建请加 --no-push"
+  fi
+fi
 if ! git config --get "http.https://github.com/.proxy" >/dev/null 2>&1; then
   log "提示：未配置 github.com 代理，若推送因网络失败请设置："
   log "  git config --local http.https://github.com/.proxy http://127.0.0.1:8001"
