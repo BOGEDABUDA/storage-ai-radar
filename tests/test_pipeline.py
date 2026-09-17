@@ -25,9 +25,12 @@ from pipeline import readonly_guard  # noqa: E402
 
 WEB_DATA = ROOT / "web" / "public" / "data"
 
-EXPECTED_REPORTS = 42
-EXPECTED_ARTICLES = 14976
-EXPECTED_DIGESTS = 794
+# 语料会随日报工作流持续增长（本次会话期间就从 42 期长到 43 期），
+# 因此这里只断言"下限"与内部一致性，不对具体数字做快照式断言。
+MIN_REPORTS = 42
+MIN_ARTICLES = 14000
+MIN_DIGESTS = 790
+MIN_ENTITY_MENTIONS = 2
 EXPECTED_CATEGORIES = 10
 
 
@@ -134,11 +137,21 @@ class TestContracts(unittest.TestCase):
         cls.index = json.loads((WEB_DATA / "articles.index.json").read_text(encoding="utf-8"))
 
     def test_counts(self) -> None:
-        self.assertEqual(self.manifest["report_count"], EXPECTED_REPORTS)
-        self.assertEqual(self.manifest["article_count"], EXPECTED_ARTICLES)
-        self.assertEqual(self.manifest["digest_count"], EXPECTED_DIGESTS)
+        self.assertGreaterEqual(self.manifest["report_count"], MIN_REPORTS)
+        self.assertGreaterEqual(self.manifest["article_count"], MIN_ARTICLES)
+        self.assertGreaterEqual(self.manifest["digest_count"], MIN_DIGESTS)
         self.assertEqual(len(self.manifest["categories"]), EXPECTED_CATEGORIES)
-        self.assertEqual(len(self.digests), EXPECTED_DIGESTS)
+        # 契约：manifest 的计数必须与产物本身一致
+        self.assertEqual(len(self.digests), self.manifest["digest_count"])
+        self.assertEqual(len(self.manifest["dates"]), self.manifest["report_count"])
+        self.assertEqual(
+            sum(c["article_count"] for c in self.manifest["categories"]),
+            self.manifest["article_count"],
+        )
+        self.assertEqual(
+            sum(c["digest_count"] for c in self.manifest["categories"]),
+            self.manifest["digest_count"],
+        )
 
     def test_no_local_absolute_path_published(self) -> None:
         """公开产物不得泄露本机绝对路径。"""
@@ -150,7 +163,7 @@ class TestContracts(unittest.TestCase):
         ids = [d["id"] for d in self.digests]
         self.assertEqual(len(set(ids)), len(ids), "洞察 id 必须唯一")
         with_sources = sum(1 for d in self.digests if d["sources"])
-        self.assertEqual(with_sources, EXPECTED_DIGESTS, "每条洞察都应挂上原文来源")
+        self.assertEqual(with_sources, len(self.digests), "每条洞察都应挂上原文来源")
 
     def test_digest_fields_nonempty(self) -> None:
         for d in self.digests:
@@ -190,12 +203,18 @@ class TestContracts(unittest.TestCase):
         self.assertEqual(empty, self.manifest["empty_summaries"])
 
     def test_timeline_sums_match(self) -> None:
-        self.assertEqual(sum(sum(s["article_counts"]) for s in self.timeline["series"]), EXPECTED_ARTICLES)
-        self.assertEqual(sum(sum(s["digest_counts"]) for s in self.timeline["series"]), EXPECTED_DIGESTS)
-        self.assertEqual(len(self.timeline["dates"]), EXPECTED_REPORTS)
+        self.assertEqual(
+            sum(sum(s["article_counts"]) for s in self.timeline["series"]),
+            self.manifest["article_count"],
+        )
+        self.assertEqual(
+            sum(sum(s["digest_counts"]) for s in self.timeline["series"]),
+            self.manifest["digest_count"],
+        )
+        self.assertEqual(len(self.timeline["dates"]), self.manifest["report_count"])
 
     def test_index_rows_match_articles(self) -> None:
-        self.assertEqual(len(self.index["rows"]), EXPECTED_ARTICLES)
+        self.assertEqual(len(self.index["rows"]), self.manifest["article_count"])
         self.assertEqual(self.index["fields"], ["i", "d", "c", "s", "t", "l"])
 
     def test_catch_all_flagged(self) -> None:
@@ -212,9 +231,9 @@ class TestHermeticBuild(unittest.TestCase):
             data_dir = tmp_path / "data"
             report = _run_build(data_dir, tmp_path / "build_report.json")
 
-            self.assertEqual(report["counts"]["reports"], EXPECTED_REPORTS)
-            self.assertEqual(report["counts"]["articles"], EXPECTED_ARTICLES)
-            self.assertEqual(report["counts"]["digests"], EXPECTED_DIGESTS)
+            self.assertGreaterEqual(report["counts"]["reports"], MIN_REPORTS)
+            self.assertGreaterEqual(report["counts"]["articles"], MIN_ARTICLES)
+            self.assertGreaterEqual(report["counts"]["digests"], MIN_DIGESTS)
             self.assertEqual(report["warnings"], [], "构建不应产生告警")
 
             def snapshot() -> dict[str, str]:
@@ -269,7 +288,7 @@ class TestGraphTrends(unittest.TestCase):
     def test_extraction_covers_every_digest(self) -> None:
         """抽取结果必须覆盖全部 794 条洞察，且每条都有 hash。"""
         entries = self.entities["entries"]
-        self.assertEqual(len(entries), EXPECTED_DIGESTS)
+        self.assertEqual(len(entries), self.manifest["digest_count"])
         for digest_id, row in entries.items():
             self.assertTrue(row.get("hash"), f"{digest_id} 缺少内容哈希")
 
@@ -297,7 +316,7 @@ class TestGraphTrends(unittest.TestCase):
     def test_entity_nodes_meet_threshold_and_series_align(self) -> None:
         """入图实体都达到最小提及量；逐期序列长度必须与期数一致。"""
         period = len(self.graph["dates"])
-        self.assertEqual(period, EXPECTED_REPORTS)
+        self.assertEqual(period, self.manifest["report_count"])
         entity_nodes = [n for n in self.graph["nodes"] if n["kind"] == "entity"]
         self.assertTrue(entity_nodes)
         threshold = self.graph["stats"]["min_mentions"]
@@ -312,7 +331,7 @@ class TestGraphTrends(unittest.TestCase):
         for category in categories:
             self.assertIn(category["direction"], {"up", "flat", "down"})
             self.assertIsInstance(category["momentum"], (int, float))
-            self.assertEqual(len(category["article_counts"]), EXPECTED_REPORTS)
+            self.assertEqual(len(category["article_counts"]), self.manifest["report_count"])
 
     def test_metric_series_are_subject_scoped(self) -> None:
         """关键正确性：指标序列必须绑定主体，不能只按指标名合并不同主体。"""
@@ -358,8 +377,8 @@ class TestDedupeAndPapers(unittest.TestCase):
                     duplicates.append(row["title"])
                 seen.add(key)
         self.assertEqual(duplicates, [], f"仍存在未合并的重复文章：{duplicates[:3]}")
-        self.assertEqual(self.manifest["duplicates_merged"], 216, "合并条数与实测不符")
-        self.assertEqual(self.manifest["article_count"], EXPECTED_ARTICLES)
+        self.assertGreater(self.manifest["duplicates_merged"], 0, "应至少合并过一些重复文章")
+        self.assertGreaterEqual(self.manifest["article_count"], MIN_ARTICLES)
 
     def test_cross_category_articles_kept(self) -> None:
         """跨领域多标签属于有用信息，不应被合并掉。"""

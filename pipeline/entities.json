@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-09-16T20:09:58+08:00",
+ "generated_at": "2026-09-18T00:10:02+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -36717,6 +36717,1058 @@
      "subject": "SSD主控",
      "label": "市场规模CAGR",
      "value": 9.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|new-media|technical|0": {
+   "hash": "271baee9005b7567",
+   "date": "2026-09-17",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "郝跃",
+     "type": "person"
+    },
+    {
+     "name": "氮化铝钪铁电材料",
+     "type": "tech"
+    },
+    {
+     "name": "Kepler",
+     "type": "company"
+    },
+    {
+     "name": "3D铁电存储",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "HfO2",
+     "type": "tech"
+    },
+    {
+     "name": "FeFET",
+     "type": "tech"
+    },
+    {
+     "name": "FTJ",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Kepler",
+     "label": "融资额",
+     "value": 7.13,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "3D铁电存储",
+     "label": "容量相对HBM倍数",
+     "value": 10.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Kepler",
+     "label": "量产时间",
+     "value": 2027.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-09-17|others|business|0": {
+   "hash": "a97843163a905a01",
+   "date": "2026-09-17",
+   "category": "others",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4.1 Flash",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V4 Pro",
+     "type": "product"
+    },
+    {
+     "name": "刘胜",
+     "type": "person"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "总参数量",
+     "value": 552.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "价格降幅",
+     "value": 77.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|others|technical|0": {
+   "hash": "f2ae911c75e816a4",
+   "date": "2026-09-17",
+   "category": "others",
+   "entities": [
+    {
+     "name": "韩国科学技术院",
+     "type": "institution"
+    },
+    {
+     "name": "SnSe₂",
+     "type": "tech"
+    },
+    {
+     "name": "范德华隧穿注入器",
+     "type": "tech"
+    },
+    {
+     "name": "WSe2",
+     "type": "tech"
+    },
+    {
+     "name": "MoS2",
+     "type": "tech"
+    },
+    {
+     "name": "CMOS反相器",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "WSe2",
+     "label": "驱动电流相对Ni电极提升",
+     "value": 1000.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "MoS2",
+     "label": "开关比",
+     "value": 1000000000.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-17|storage-semantics-protocol|business|0": {
+   "hash": "ef51cc5e6fe1c110",
+   "date": "2026-09-17",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "紫光国芯",
+     "type": "company"
+    },
+    {
+     "name": "北交所",
+     "type": "institution"
+    },
+    {
+     "name": "中信建投",
+     "type": "company"
+    },
+    {
+     "name": "SeDRAM",
+     "type": "tech"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    },
+    {
+     "name": "澜起科技",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "紫光国芯",
+     "label": "投后估值",
+     "value": 34.8,
+     "unit": "亿元"
+    },
+    {
+     "subject": "紫光国芯",
+     "label": "单季营收",
+     "value": 8.68,
+     "unit": "亿元"
+    },
+    {
+     "subject": "紫光国芯",
+     "label": "营收同比增速",
+     "value": 232.0,
+     "unit": "%"
+    },
+    {
+     "subject": "紫光国芯",
+     "label": "单季归母净利",
+     "value": 2.76,
+     "unit": "亿元"
+    },
+    {
+     "subject": "紫光国芯",
+     "label": "归母净利同比增速",
+     "value": 2225.0,
+     "unit": "%"
+    },
+    {
+     "subject": "紫光国芯",
+     "label": "毛利率",
+     "value": 48.01,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|storage-semantics-protocol|technical|0": {
+   "hash": "fc1aa7ab1a8a3878",
+   "date": "2026-09-17",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "UALink",
+     "type": "tech"
+    },
+    {
+     "name": "IEEE Hot Interconnects",
+     "type": "institution"
+    },
+    {
+     "name": "ODCC",
+     "type": "institution"
+    },
+    {
+     "name": "OCP",
+     "type": "institution"
+    },
+    {
+     "name": "AMD Helios",
+     "type": "product"
+    },
+    {
+     "name": "HPE GX5000",
+     "type": "product"
+    },
+    {
+     "name": "AMD MI430",
+     "type": "product"
+    },
+    {
+     "name": "NVIDIA Vera Rubin",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "UALink",
+     "label": "ODCC中国会员数",
+     "value": 30.0,
+     "unit": "家"
+    },
+    {
+     "subject": "HPE GX5000",
+     "label": "单节点MI430配置数量",
+     "value": 4.0,
+     "unit": "颗"
+    }
+   ]
+  },
+  "2026-09-17|ai-inference-acceleration|business|0": {
+   "hash": "800a9fa12a34a423",
+   "date": "2026-09-17",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "长江存储",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "BiCS10",
+     "type": "tech"
+    },
+    {
+     "name": "企业级SSD",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "长江存储",
+     "label": "全球NAND ASP份额",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "铠侠",
+     "label": "ADR募资金额",
+     "value": 100.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-17|ai-inference-acceleration|technical|0": {
+   "hash": "137ca4e5cce05b8d",
+   "date": "2026-09-17",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek V4.1 Flash",
+     "type": "product"
+    },
+    {
+     "name": "CED架构",
+     "type": "tech"
+    },
+    {
+     "name": "CSA2稀疏注意力",
+     "type": "tech"
+    },
+    {
+     "name": "FP4 KV量化",
+     "type": "tech"
+    },
+    {
+     "name": "SWA重放",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV缓存单token占用",
+     "value": 890.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV Cache压缩倍数",
+     "value": 437.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "HBM侧KV需求压缩倍数",
+     "value": 4.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "eSSD持久化需求压缩倍数",
+     "value": 8.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "模型参数量",
+     "value": 552.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "API闲时缓存命中输入价格",
+     "value": 0.02,
+     "unit": "元/百万token"
+    }
+   ]
+  },
+  "2026-09-17|ai-model-agent-rag|business|0": {
+   "hash": "80860a7c5077e5a8",
+   "date": "2026-09-17",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "Datawhale",
+     "type": "institution"
+    },
+    {
+     "name": "PEC 2026",
+     "type": "paper"
+    },
+    {
+     "name": "FDE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Datawhale",
+     "label": "案例数",
+     "value": 24.0,
+     "unit": "个"
+    }
+   ]
+  },
+  "2026-09-17|ai-model-agent-rag|technical|0": {
+   "hash": "ffad67e9d97bb2f8",
+   "date": "2026-09-17",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "华为GTS",
+     "type": "company"
+    },
+    {
+     "name": "NetCanvas",
+     "type": "tech"
+    },
+    {
+     "name": "CTBench",
+     "type": "paper"
+    },
+    {
+     "name": "Agent",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "NetCanvas",
+     "label": "CTBench通过率(基线)",
+     "value": 30.3,
+     "unit": "%"
+    },
+    {
+     "subject": "NetCanvas",
+     "label": "CTBench通过率",
+     "value": 54.5,
+     "unit": "%"
+    },
+    {
+     "subject": "NetCanvas",
+     "label": "CTBench通过率(带物理连线先验)",
+     "value": 63.6,
+     "unit": "%"
+    },
+    {
+     "subject": "NetCanvas",
+     "label": "双防火墙子任务通过率",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NetCanvas",
+     "label": "平均探查步数",
+     "value": 113.0,
+     "unit": "步"
+    },
+    {
+     "subject": "NetCanvas",
+     "label": "试错成本降低幅度",
+     "value": 45.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|cost-effective-storage|business|0": {
+   "hash": "c940f53661f9767c",
+   "date": "2026-09-17",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "苹果",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "全球NAND市场规模",
+     "value": 768.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球NAND市场环比增速",
+     "value": 73.1,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "256GB存储成本同比涨幅",
+     "value": 400.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|cost-effective-storage|technical|0": {
+   "hash": "b04f37296a70e2ec",
+   "date": "2026-09-17",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Phison",
+     "type": "company"
+    },
+    {
+     "name": "Pascari D206V",
+     "type": "product"
+    },
+    {
+     "name": "U.2",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe 5.0",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Pascari D206V",
+     "label": "单盘容量",
+     "value": 245.76,
+     "unit": "TB"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "顺序读带宽",
+     "value": 14.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "Active功耗",
+     "value": 30.0,
+     "unit": "W"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "1PB容量所需盘数压缩倍数",
+     "value": 13.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-17|high-capacity-storage|business|0": {
+   "hash": "e059e6a4257bd21a",
+   "date": "2026-09-17",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "TrendForce",
+     "type": "institution"
+    },
+    {
+     "name": "长江存储",
+     "type": "company"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "全球NAND市场收入",
+     "value": 768.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球NAND市场环比增速",
+     "value": 73.1,
+     "unit": "%"
+    },
+    {
+     "subject": "长江存储",
+     "label": "全球NAND市场份额",
+     "value": 15.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|high-capacity-storage|technical|0": {
+   "hash": "dc0519a863433ab6",
+   "date": "2026-09-17",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "Phison",
+     "type": "company"
+    },
+    {
+     "name": "Pascari D206V",
+     "type": "product"
+    },
+    {
+     "name": "U.2",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe 5.0",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Pascari D206V",
+     "label": "单盘容量",
+     "value": 245.76,
+     "unit": "TB"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "顺序读带宽",
+     "value": 14.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "Active功耗",
+     "value": 30.0,
+     "unit": "W"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "每瓦容量",
+     "value": 8.19,
+     "unit": "TB/W"
+    },
+    {
+     "subject": "Pascari D206V",
+     "label": "1PB容量所需盘数压缩倍数",
+     "value": 13.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-17|high-reliability-storage|business|0": {
+   "hash": "179d6c08b93e1409",
+   "date": "2026-09-17",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "国芯科技",
+     "type": "company"
+    },
+    {
+     "name": "CCRC4系列",
+     "type": "product"
+    },
+    {
+     "name": "RRAM",
+     "type": "tech"
+    },
+    {
+     "name": "RISC-V",
+     "type": "tech"
+    },
+    {
+     "name": "ASIL-D",
+     "type": "tech"
+    },
+    {
+     "name": "CAN FD",
+     "type": "tech"
+    },
+    {
+     "name": "TSN以太网",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "CCRC4系列",
+     "label": "制程节点",
+     "value": 22.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "CCRC4系列",
+     "label": "CPU算力",
+     "value": 10500.0,
+     "unit": "DMIPS"
+    },
+    {
+     "subject": "CCRC4系列",
+     "label": "NPU算力",
+     "value": 0.3,
+     "unit": "TOPS"
+    },
+    {
+     "subject": "CCRC4系列",
+     "label": "CAN FD路数",
+     "value": 20.0,
+     "unit": "路"
+    }
+   ]
+  },
+  "2026-09-17|high-reliability-storage|technical|0": {
+   "hash": "b893d6a4b4523ea4",
+   "date": "2026-09-17",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "SRAM",
+     "type": "tech"
+    },
+    {
+     "name": "6T位单元",
+     "type": "tech"
+    },
+    {
+     "name": "10T位单元",
+     "type": "tech"
+    },
+    {
+     "name": "字线升压",
+     "type": "tech"
+    },
+    {
+     "name": "负位线",
+     "type": "tech"
+    },
+    {
+     "name": "SNM",
+     "type": "tech"
+    },
+    {
+     "name": "WSNM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "SRAM",
+     "label": "近阈值工作电压",
+     "value": 0.3,
+     "unit": "V"
+    }
+   ]
+  },
+  "2026-09-17|model-benchmarking|business|0": {
+   "hash": "92378acf06da9437",
+   "date": "2026-09-17",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Agentrys",
+     "type": "company"
+    },
+    {
+     "name": "EDA",
+     "type": "tech"
+    },
+    {
+     "name": "NVIDIA",
+     "type": "company"
+    },
+    {
+     "name": "CVDP",
+     "type": "paper"
+    },
+    {
+     "name": "Synopsys",
+     "type": "company"
+    },
+    {
+     "name": "Cadence",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Agentrys",
+     "label": "融资金额",
+     "value": 2450.0,
+     "unit": "万美元"
+    },
+    {
+     "subject": "CVDP",
+     "label": "竞品平均得分",
+     "value": 97.1,
+     "unit": "%"
+    },
+    {
+     "subject": "Synopsys",
+     "label": "验证提速倍数",
+     "value": 50.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Cadence",
+     "label": "验证提速倍数",
+     "value": 40.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-17|model-benchmarking|technical|0": {
+   "hash": "9a970c1d815a7778",
+   "date": "2026-09-17",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "上海交通大学",
+     "type": "institution"
+    },
+    {
+     "name": "清华大学",
+     "type": "institution"
+    },
+    {
+     "name": "字节跳动",
+     "type": "company"
+    },
+    {
+     "name": "RSI",
+     "type": "tech"
+    },
+    {
+     "name": "DGM",
+     "type": "tech"
+    },
+    {
+     "name": "Theseus",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Theseus",
+     "label": "环境重构前性能指标",
+     "value": 18.65,
+     "unit": "百分点"
+    },
+    {
+     "subject": "Theseus",
+     "label": "环境重构后性能指标",
+     "value": 39.67,
+     "unit": "百分点"
+    }
+   ]
+  },
+  "2026-09-17|near-memory-computing|business|0": {
+   "hash": "ff748a2a9ddd4c9a",
+   "date": "2026-09-17",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "工信部",
+     "type": "institution"
+    },
+    {
+     "name": "发改委",
+     "type": "institution"
+    },
+    {
+     "name": "电子信息制造业十五五规划",
+     "type": "paper"
+    },
+    {
+     "name": "高带宽闪存",
+     "type": "tech"
+    },
+    {
+     "name": "高带宽内存",
+     "type": "tech"
+    },
+    {
+     "name": "铁电存储器",
+     "type": "tech"
+    },
+    {
+     "name": "阻变存储器",
+     "type": "tech"
+    },
+    {
+     "name": "存算一体",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "电子信息制造业营收(2030年目标)",
+     "value": 30.0,
+     "unit": "万亿元"
+    },
+    {
+     "subject": "行业",
+     "label": "研发投入强度(2030年目标)",
+     "value": 3.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-17|near-memory-computing|technical|0": {
+   "hash": "960ac5fa82475e1f",
+   "date": "2026-09-17",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "DeepSeek V4.1 Flash",
+     "type": "product"
+    },
+    {
+     "name": "CED架构",
+     "type": "tech"
+    },
+    {
+     "name": "CSA2压缩稀疏注意力",
+     "type": "tech"
+    },
+    {
+     "name": "FP4 KV量化",
+     "type": "tech"
+    },
+    {
+     "name": "SWA有界重放",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV缓存单token占用",
+     "value": 890.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV Cache压缩倍数",
+     "value": 437.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "HBM侧KV需求压缩倍数",
+     "value": 4.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "SSD持久化缓存需求压缩倍数",
+     "value": 8.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "模型参数量",
+     "value": 552.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "上下文窗口长度",
+     "value": 1000000.0,
+     "unit": "token"
+    }
+   ]
+  },
+  "2026-09-17|new-media|business|0": {
+   "hash": "f56404bda56e46fc",
+   "date": "2026-09-17",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "工信部",
+     "type": "institution"
+    },
+    {
+     "name": "发改委",
+     "type": "institution"
+    },
+    {
+     "name": "电子信息制造业十五五规划",
+     "type": "paper"
+    },
+    {
+     "name": "高带宽闪存",
+     "type": "tech"
+    },
+    {
+     "name": "高带宽内存",
+     "type": "tech"
+    },
+    {
+     "name": "铁电存储器",
+     "type": "tech"
+    },
+    {
+     "name": "阻变存储器",
+     "type": "tech"
+    },
+    {
+     "name": "CLink",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "电子信息制造业营收(2030年目标)",
+     "value": 30.0,
+     "unit": "万亿元"
+    },
+    {
+     "subject": "行业",
+     "label": "研发投入强度(2030年目标)",
+     "value": 3.5,
      "unit": "%"
     }
    ]

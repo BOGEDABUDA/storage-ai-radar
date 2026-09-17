@@ -329,6 +329,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--limit", type=int, default=0, help="本次最多解析多少条")
     parser.add_argument("--only-ids", action="store_true", help="只解析带 arXiv 编号的（最准最快）")
     parser.add_argument("--retry-failed", action="store_true", help="重试未匹配/网络失败的")
+    parser.add_argument("--only-status", default=None,
+                        help="只处理缓存中处于指定状态的条目（如 network_error），用于精准补跑")
     parser.add_argument("--rate", type=float, default=RATE_LIMIT_SECONDS, help="请求间隔秒数")
     args = parser.parse_args(argv)
 
@@ -348,6 +350,8 @@ def main(argv: list[str] | None = None) -> int:
     for target in targets:
         cached = queries.get(target["key"])
         if cached is None:
+            todo.append(target)
+        elif args.only_status and cached.get("status") == args.only_status:
             todo.append(target)
         elif args.retry_failed and cached.get("status") in {
             "not_found",

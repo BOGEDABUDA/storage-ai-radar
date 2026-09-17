@@ -74,8 +74,9 @@ test('索引存在时的检索行为', { skip: !HAS_INDEX }, () => {
   const db = openIndex(DB_PATH);
   try {
     const stats = indexStats(db);
-    assert.equal(stats.digests, 794);
-    assert.equal(stats.articles, 14976);
+    // 语料会随日报工作流增长，只断下限
+    assert.ok(stats.digests >= 790, `洞察数异常偏少：${stats.digests}`);
+    assert.ok(stats.articles >= 14000, `文章数异常偏少：${stats.articles}`);
 
     const digests = searchDigests(db, { q: '存内计算', limit: 5 });
     assert.ok(digests.length > 0, '应能检索到洞察');
@@ -123,7 +124,7 @@ test('HTTP 端点：health / search / CORS / 参数校验', { skip: !HAS_INDEX }
           healthy = true;
           const body = await res.json();
           assert.equal(body.ok, true);
-          assert.equal(body.index.articles, 14976);
+          assert.ok(body.index.articles >= 14000, `文章数异常偏少：${body.index.articles}`);
           break;
         }
       } catch {
