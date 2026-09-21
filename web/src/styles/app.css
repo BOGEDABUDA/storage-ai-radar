@@ -1697,3 +1697,63 @@ mark {
   font-size: var(--fs-xs);
   color: var(--ink-soft);
 }
+
+/* ==========================================================================
+   图谱全屏：详情面板改为浮窗
+   ========================================================================== */
+
+.graph-meta .graph-fullscreen {
+  flex-shrink: 0;
+}
+
+.graph-stage:fullscreen,
+.graph-stage.is-pseudo-fullscreen {
+  display: block;
+  position: relative;
+  background: var(--bg);
+  padding: 0;
+}
+
+.graph-stage.is-pseudo-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+}
+
+.graph-stage:fullscreen .graph-canvas,
+.graph-stage.is-pseudo-fullscreen .graph-canvas {
+  height: 100vh;
+  border: 0;
+  border-radius: 0;
+}
+
+/* 全屏时详情面板以浮窗形式存在，不挤占画布 */
+.graph-stage:fullscreen .graph-side,
+.graph-stage.is-pseudo-fullscreen .graph-side {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  width: min(380px, calc(100vw - var(--space-6)));
+  max-height: calc(100vh - var(--space-8));
+  overflow-y: auto;
+  margin: 0;
+  z-index: 5;
+  background: color-mix(in srgb, var(--bg-elev) 94%, transparent);
+  backdrop-filter: blur(8px) saturate(150%);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.16);
+}
+
+/* 浮窗里显示一个关闭提示（全屏下点击画布空白处也可关闭） */
+.graph-stage:fullscreen .graph-side::after,
+.graph-stage.is-pseudo-fullscreen .graph-side::after {
+  content: "Esc 退出全屏";
+  display: block;
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+}

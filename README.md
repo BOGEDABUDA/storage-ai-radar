@@ -207,6 +207,10 @@ python3 -m pipeline.build_index               # 刷新 Agent 检索索引
 |---|---|
 | ![论文](docs/screenshots/7-papers.png) | ![领域论文](docs/screenshots/8-domain-papers.png) |
 
+图谱支持全屏查看，全屏时详情面板以浮窗形式浮在画布右上角（Esc 退出）：
+
+![图谱全屏](docs/screenshots/9-graph-fullscreen.png)
+
 > 截图取自线上站点（浅色主题）。Agent 面板取自本机预览，回答里单列了「现有资料未覆盖」一节。
 
 ## 语料规模（实测）

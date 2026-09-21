@@ -125,6 +125,8 @@ export async function renderGraph(manifest: Manifest): Promise<HTMLElement> {
   let simulation: Simulation<SimNode, SimLink> | null = null;
   /** 由 renderGraphView 注入：按当前标签集合刷新显示（模拟停止后选择节点也能立即生效） */
   let refreshLabelVisibility: (() => void) | null = null;
+  /** 由 renderGraphView 注入：把当前布局重新适配到画布（尺寸变化后调用） */
+  let refitView: (() => void) | null = null;
 
   function renderGraphView(): void {
     resize();
@@ -289,6 +291,8 @@ export async function renderGraph(manifest: Manifest): Promise<HTMLElement> {
     };
 
     // 先把模拟同步跑到收敛再绘制：布局确定、无需等待动画，截图与首屏都稳定。
+    refitView = fitToView;
+
     sim.stop();
     for (let i = 0; i < 320; i += 1) sim.tick();
     computeLabels();
@@ -611,6 +615,47 @@ export async function renderGraph(manifest: Manifest): Promise<HTMLElement> {
     '重置',
   );
 
+  // 全屏时详情面板改为浮窗：两者必须同处一个全屏容器内，面板才能浮在画布之上
+  const detailPanel = h('aside', { class: 'side-panel graph-side' }, detail);
+  const stage = h('div', { class: 'split graph-split graph-stage' }, canvas, detailPanel);
+
+  const fullscreenButton = h(
+    'button',
+    {
+      class: 'filter-pill graph-fullscreen',
+      type: 'button',
+      title: '全屏查看图谱（Esc 退出）',
+      onclick: () => {
+        if (document.fullscreenElement === stage) {
+          void document.exitFullscreen();
+        } else {
+          void stage.requestFullscreen?.().catch(() => {
+            // 某些环境（如 iframe 未授权）不支持 Fullscreen API，退化为内嵌放大
+            stage.classList.add('is-pseudo-fullscreen');
+          });
+        }
+      },
+    },
+    '⛶ 全屏',
+  );
+
+  const syncFullscreenUi = (): void => {
+    const active =
+      document.fullscreenElement === stage || stage.classList.contains('is-pseudo-fullscreen');
+    fullscreenButton.textContent = active ? '⤡ 退出全屏' : '⛶ 全屏';
+    // 尺寸变了必须重新测量画布并把布局重新适配，否则会缩在角落
+    requestAnimationFrame(() => {
+      resize();
+      refitView?.();
+    });
+  };
+
+  document.addEventListener('fullscreenchange', syncFullscreenUi);
+  // 离开页面时清理监听，避免路由切换后仍持有旧引用
+  const cleanupFullscreen = (): void => {
+    document.removeEventListener('fullscreenchange', syncFullscreenUi);
+  };
+
   const page = h(
     'div',
     { class: 'container' },
@@ -629,18 +674,22 @@ export async function renderGraph(manifest: Manifest): Promise<HTMLElement> {
     ),
     h('div', { class: 'search-bar' }, searchInput, minMentions, reset),
     h('div', { class: 'graph-controls' }, typePills, categoryPills),
-    h('div', { class: 'graph-meta' }, statLine),
-    h(
-      'div',
-      { class: 'split graph-split' },
-      canvas,
-      h('aside', { class: 'side-panel graph-side' }, detail),
-    ),
+    h('div', { class: 'graph-meta' }, statLine, fullscreenButton),
+    stage,
   );
 
   selectNode(null);
   // 等布局完成后再测量画布尺寸
   requestAnimationFrame(() => renderGraphView());
+
+  // 路由切走后清理全局监听
+  const observer = new MutationObserver(() => {
+    if (!page.isConnected) {
+      cleanupFullscreen();
+      observer.disconnect();
+    }
+  });
+  queueMicrotask(() => observer.observe(document.body, { childList: true, subtree: true }));
 
   return page;
 }
