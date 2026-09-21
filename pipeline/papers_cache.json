@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-18T00:13:09+08:00",
+ "generated_at": "2026-09-22T00:21:40+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -25528,6 +25528,941 @@
    "title": "面向存储技术的铁电材料:从基础原理到应用",
    "kind": "method",
    "checked_at": "2026-09-18T00:13:09+08:00"
+  },
+  "id:2609.18094": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.18094",
+   "match": {
+    "arxiv_id": "2609.18094",
+    "version": "1",
+    "title": "Agora: Git as Shared Memory for Collective AutoResearch",
+    "abstract": "Autonomous research loops such as AutoResearch show that one coding agent can improve a training setup unattended. Run several of them and each session starts from scratch, so more agents tend to mean more duplicated search rather than more discovery. Agora is a shared memory for such agents: research is recorded as an append-only directed acyclic graph (DAG) stored in Git, so that every claim is a commit anyone can check out and rerun. Each result, insight, hypothesis, verification, and report is an immutable commit whose parent edges say what it builds on; a derived index exposes the frontier, the neglected branches, and the verification status of each claim, and a diversity-aware selection rule keeps the community from collapsing onto one leader. We describe the system and report its first sustained use: a run of nearly 12 days in which 13 language-model workers, with no assigned tasks and no central planner, worked on a weight-transfer problem. Given 141 pretrained donor models and a frozen 119.6M-parameter attention-SSM hybrid whose dimensions match no donor, the workers had to initialize the target without training data or gradient updates. They published 1,703 contributions and drove the evaluator from 3.39 to 1.899 bits per byte, closing 62% of the gap to a trained GPT-2 124M. The winning recipe compresses donor next-token statistics into the target's embedding and output head, then adds a short-range context signal through sparse edits to attention, feed-forward, and state-space blocks. Its 145-commit ancestry spans 15 accounts, and 165 independent reproductions were posted, none of which failed. We describe the single mid-run human intervention that pulled the community out of a monoculture, what the trace does and does not establish, and the controlled comparison that would settle whether shared research state improves discovery per unit of compute.",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "authors": [
+     "Yifan Zhang",
+     "Yunheng Zou",
+     "Shaokun Zhang",
+     "Jian Hu",
+     "Hao Zhang",
+     "Binfeng Xu",
+     "Jan Kautz",
+     "Yi Dong"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Agora: Git as Shared Memory for Collective AutoResearch",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:05+08:00"
+  },
+  "id:2609.20804": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.20804",
+   "match": {
+    "arxiv_id": "2609.20804",
+    "version": "1",
+    "title": "An Empirical Study of Harness Design for Coding Agents",
+    "abstract": "Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while three components are varied: planning, action space, and context management. Across four models evaluated on SWE-Bench Verified and Terminal-Bench 2.1, we evaluate 176 matched settings spanning five context-management strategies, four context-window budgets, and targeted ablations of planning and action space. We find that: (1) Context management becomes increasingly valuable as the context-window budget tightens, with most of its benefit coming from preventing context-overflow failures. (2) Staging rule-based elision before LLM-based summarization provides the strongest overall efficiency among the context-management strategies, whereas making elided content recoverable adds machinery that models rarely use and yields no accuracy gain. (3) Planning shifts from an accuracy scaffold for weaker models to a cost saver for stronger models, with little change in accuracy. (4) Predefined tools improve performance for models with weaker bash proficiency, whereas bash-capable models can operate effectively with a bash-only interface and achieve substantially lower cost, especially on command-line-centric tasks. Trajectory-level analysis explains these effects: context management extends execution trajectories without substantially altering agent behavior, planning changes where trajectories stop, and the action space changes the granularity at which code is written. These findings inform model- and budget-aware harness design and provide a modular framework for evaluating future harness components.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     "Run-Ze Fan",
+     "Zihao Zhang",
+     "Simin Ma",
+     "Yebowen Hu",
+     "Shouju Wang",
+     "Kaiqiang Song",
+     "Fei Liu",
+     "Hamed Zamani",
+     "Xiaoyang Wang"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG",
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": "43 pages"
+   },
+   "score": 1.0,
+   "title": "An Empirical Study of Harness Design for Coding Agents",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:08+08:00"
+  },
+  "id:2609.15818": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.15818",
+   "match": {
+    "arxiv_id": "2609.15818",
+    "version": "2",
+    "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+    "abstract": "As AI agents become participants in the development of their successors, they reshape both the production of intelligence and the role of human researchers. We introduce Atria Dawn Preview, a foundation agentic language model designed for scientific research and engineering workflows, with the goal of expanding the frontier of agent productivity in the real world. This model is trained via a Verifiable Experience Pipeline that connects tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks spanning real-world research, engineering, and digital work, Atria Dawn Preview is competitive with frontier agents and achieves the highest reported score on five of them. Beyond standalone performance, we examine the real research-and-development process behind this model as a case study of human--AI collaboration, analyzing 769 task records from 56 participants together with agent logs. When asked to evaluate completed tasks under comparable conditions, participants rated about one-third of completed AI-assisted tasks as infeasible without AI. More strikingly, agents frequently propose methods and implement revisions, while humans retain most final decisions and guide exploration through judgment and feedback. These observations indicate a shift from task-level execution to project-level partnership, with human effort concentrating on what is worth pursuing and how evidence should guide research. Progress toward more autonomous AI research must therefore advance both the capacity for discovery and the capacity for meaningful human oversight, preserving accountable human authority over the risks and direction of continued development.",
+    "published": "2026-09-14",
+    "updated": "2026-09-17",
+    "authors": [
+     "Honglin Guo",
+     "Tao Gui",
+     "Kun Cai",
+     "Haodong Chen",
+     "Yicheng Chen",
+     "Guanting Dong",
+     "Qiming Ge",
+     "Yuyang Hu",
+     "Zixian Huang",
+     "Jiajie Jin",
+     "Alexander Lam",
+     "Yining Li"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "23 pages, 10 figures, https://github.com/atria-asi/Atria-Dawn-Preview"
+   },
+   "score": 1.0,
+   "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:11+08:00"
+  },
+  "id:2608.26226": {
+   "status": "matched_by_id",
+   "query": "id_list=2608.26226",
+   "match": {
+    "arxiv_id": "2608.26226",
+    "version": "1",
+    "title": "LLM Agents for Time-Series: A Survey",
+    "abstract": "LLM-based agents are increasingly being developed for time-series problems, but their design choices vary substantially across task settings. This survey adopts a problem-driven taxonomy that organizes these systems by the time-series problems they address rather than by isolated technical components. We group existing systems into four categories: forecasting and reasoning, augmentation and synthesis, anomaly detection and diagnosis, and decision support. Within each category, we examine how task requirements shape agent architecture, tool use, and memory design. We further summarize representative datasets and environments, and compare reported model performance under shared or closely related settings. Overall, this survey offers a task-oriented guide to designing LLM-based agents for time-series problems and identifies open gaps for future work.",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "authors": [
+     "Yilong Chen",
+     "Xiao Qin",
+     "Chenghao Liu",
+     "Liang Wu",
+     "Noelle I. Samia",
+     "Kaize Ding"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to Findings of EMNLP 2026"
+   },
+   "score": 1.0,
+   "title": "LLM Agents for Time-Series: A Survey",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:15+08:00"
+  },
+  "id:2609.11873": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.11873",
+   "match": {
+    "arxiv_id": "2609.11873",
+    "version": "2",
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "abstract": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.",
+    "published": "2026-09-10",
+    "updated": "2026-09-15",
+    "authors": [
+     "Yi Duan",
+     "Ying Liu",
+     "Zirui Tang",
+     "Haodong Chen",
+     "Jun Zhou",
+     "Yumou Liu",
+     "Bangrui Xu",
+     "Yukai Wu",
+     "Sidi Chen",
+     "Yuhan Zhou",
+     "Haoyu Wang",
+     "Xiaoyou Yu"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:18+08:00"
+  },
+  "id:2609.11638": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.11638",
+   "match": {
+    "arxiv_id": "2609.11638",
+    "version": "1",
+    "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "abstract": "We present Vidu S2, which comprises Vidu S2-Avatar, a real-time interactive digital-character model, and Vidu S2-Editing, a real-time video editing model. Moreover, we explore the feasibility of real-time spatial video generation for both Vidu S2-Avatar and Vidu S2-Editing. Compared with Vidu S1, Vidu S2-Avatar supports real-time 720p video generation, generation with dynamic references that can be updated at any moment, and stronger instruction following, such as dancing. Vidu S2-Editing supports editing a video stream in real time, including style rendering, clothing replacement, character replacement, and background replacement. Experiments show that Vidu S2 outperforms all baselines. A playable online demo is available at https://vidu.com/vidu-stream.",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "authors": [
+     "Jintao Zhang",
+     "Kai Jiang",
+     "Jintao Chen",
+     "Xu Wang",
+     "Deyuan Liu",
+     "Jungang Li",
+     "Dechuang Chen",
+     "Ming Lin",
+     "Jingjiang Zhou",
+     "Haopeng Jin",
+     "Qi Jia",
+     "Xiaohang Wang"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:22+08:00"
+  },
+  "id:2608.25924": {
+   "status": "matched_by_id",
+   "query": "id_list=2608.25924",
+   "match": {
+    "arxiv_id": "2608.25924",
+    "version": "1",
+    "title": "Visual General Intelligence: A White Paper",
+    "abstract": "This paper reconsiders intelligence from a vision-centered perspective and examines whether intelligence emerging from visual experience and learning may provide a pathway toward AGI. In the language domain, beginning with the introduction of the Transformer architecture, the GPT series has demonstrated transfer to unseen tasks through autoregressive language modeling on web-scale text combined with aggressive scaling. This raises a natural question, namely, what capabilities and forms of intelligence can emerge from visual modalities such as images, videos, and geometry? In this paper, we discuss whether visual intelligence can serve as a pathway toward AGI, referred to in this paper as visual general intelligence (VGI), by bringing together contributors from diverse standpoints and affiliations. Our aim is not to offer a single definition of visual intelligence, but to clarify the principles that computer vision should pursue in the AGI era, the visual input modalities, the benchmarks, the learning paradigms, and the relationship between vision, when taken as the core, and other modalities such as language.",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "authors": [
+     "Hirokatsu Kataoka",
+     "Yoshihiro Fukuhara",
+     "Yonglong Tian",
+     "Shangzhe Wu",
+     "Oishi Deb",
+     "Ryousuke Yamada",
+     "Christian Rupprecht",
+     "Jianyuan Wang",
+     "Kohsuke Ide",
+     "Koichi Namekata",
+     "Xianzheng Ma",
+     "Yiming Chen"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Visual General Intelligence: A White Paper",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:26+08:00"
+  },
+  "id:2605.10628": {
+   "status": "matched_by_id",
+   "query": "id_list=2605.10628",
+   "match": {
+    "arxiv_id": "2605.10628",
+    "version": "2",
+    "title": "Hyper-FSAD: Training-Free and Language-Free Few-Shot Anomaly Detection via Sparse Hyper Matching",
+    "abstract": "Few-shot anomaly detection (FSAD) is particularly valuable when only a few normal images are available in a new target domain, while anomalous cases are rare, diverse, and difficult to enumerate in advance. However, existing methods often still require task-specific fitting or language prompts, and their patch-level retrieval commonly relies on brittle nearest-neighbor or fixed Top-$p$ rules. We propose \\textbf{Hyper-FSAD}, a training-free and language-free framework that performs support-only inference with a frozen visual encoder. We formulate FSAD as support-only scoring in frozen feature space and establish the selective stability of sparse retrieval and sufficient conditions for normal--anomaly separation. Guided by this analysis, \\textbf{Sparse Hyper Matching} uses \\textit{sparsemax} to adaptively select support patches for each query patch, exactly suppressing below-threshold distractors without a manually specified retrieval hyperparameter. \\textbf{Dual-Branch Image Scoring} further combines local reconstruction discrepancies with support-conditioned global <CLS> deviation. Across four industrial and two medical benchmarks, Hyper-FSAD achieves the best overall performance across the 1/2/4-shot settings, while requiring only 52.6\\,ms per image and 0.89\\,GB GPU memory. The code will be released.",
+    "published": "2026-05-11",
+    "updated": "2026-08-12",
+    "authors": [
+     "Guohuan Xie",
+     "Xin He",
+     "Dingying Fan",
+     "Siqi Li",
+     "Yun Liu"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "工业视觉的＂重训练＂时代正在被改写",
+   "kind": "id",
+   "checked_at": "2026-09-22T00:19:29+08:00"
+  },
+  "t:4z ssd a semantic aware four zone ssd architecture for balancing write amplification and flash level parallelism": {
+   "status": "no_results",
+   "query": "ti:\"4Z-SSD: A Semantic-Aware Four-Zone SSD Architecture for Balancing Write Amplification and Flash-Level Parallelism\"",
+   "match": null,
+   "title": "4Z-SSD: A Semantic-Aware Four-Zone SSD Architecture for Balancing Write Amplification and Flash-Level Parallelism",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:19:33+08:00"
+  },
+  "t:accurate and interpretable log based fault diagnosis using large language models": {
+   "status": "no_results",
+   "query": "ti:\"Accurate and Interpretable Log-Based Fault Diagnosis using Large Language Models\"",
+   "match": null,
+   "title": "Accurate and Interpretable Log-Based Fault Diagnosis using Large Language Models",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:19:36+08:00"
+  },
+  "t:agora git as shared memory for collective autoresearch": {
+   "status": "matched_by_title",
+   "query": "ti:\"Agora: Git as Shared Memory for Collective AutoResearch\"",
+   "match": {
+    "arxiv_id": "2609.18094",
+    "version": "1",
+    "title": "Agora: Git as Shared Memory for Collective AutoResearch",
+    "abstract": "Autonomous research loops such as AutoResearch show that one coding agent can improve a training setup unattended. Run several of them and each session starts from scratch, so more agents tend to mean more duplicated search rather than more discovery. Agora is a shared memory for such agents: research is recorded as an append-only directed acyclic graph (DAG) stored in Git, so that every claim is a commit anyone can check out and rerun. Each result, insight, hypothesis, verification, and report is an immutable commit whose parent edges say what it builds on; a derived index exposes the frontier, the neglected branches, and the verification status of each claim, and a diversity-aware selection rule keeps the community from collapsing onto one leader. We describe the system and report its first sustained use: a run of nearly 12 days in which 13 language-model workers, with no assigned tasks and no central planner, worked on a weight-transfer problem. Given 141 pretrained donor models and a frozen 119.6M-parameter attention-SSM hybrid whose dimensions match no donor, the workers had to initialize the target without training data or gradient updates. They published 1,703 contributions and drove the evaluator from 3.39 to 1.899 bits per byte, closing 62% of the gap to a trained GPT-2 124M. The winning recipe compresses donor next-token statistics into the target's embedding and output head, then adds a short-range context signal through sparse edits to attention, feed-forward, and state-space blocks. Its 145-commit ancestry spans 15 accounts, and 165 independent reproductions were posted, none of which failed. We describe the single mid-run human intervention that pulled the community out of a monoculture, what the trace does and does not establish, and the controlled comparison that would settle whether shared research state improves discovery per unit of compute.",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "authors": [
+     "Yifan Zhang",
+     "Yunheng Zou",
+     "Shaokun Zhang",
+     "Jian Hu",
+     "Hao Zhang",
+     "Binfeng Xu",
+     "Jan Kautz",
+     "Yi Dong"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Agora: Git as Shared Memory for Collective AutoResearch",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:19:40+08:00"
+  },
+  "t:an empirical study of harness design for coding agents": {
+   "status": "matched_by_title",
+   "query": "ti:\"An Empirical Study of Harness Design for Coding Agents\"",
+   "match": {
+    "arxiv_id": "2609.20804",
+    "version": "1",
+    "title": "An Empirical Study of Harness Design for Coding Agents",
+    "abstract": "Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while three components are varied: planning, action space, and context management. Across four models evaluated on SWE-Bench Verified and Terminal-Bench 2.1, we evaluate 176 matched settings spanning five context-management strategies, four context-window budgets, and targeted ablations of planning and action space. We find that: (1) Context management becomes increasingly valuable as the context-window budget tightens, with most of its benefit coming from preventing context-overflow failures. (2) Staging rule-based elision before LLM-based summarization provides the strongest overall efficiency among the context-management strategies, whereas making elided content recoverable adds machinery that models rarely use and yields no accuracy gain. (3) Planning shifts from an accuracy scaffold for weaker models to a cost saver for stronger models, with little change in accuracy. (4) Predefined tools improve performance for models with weaker bash proficiency, whereas bash-capable models can operate effectively with a bash-only interface and achieve substantially lower cost, especially on command-line-centric tasks. Trajectory-level analysis explains these effects: context management extends execution trajectories without substantially altering agent behavior, planning changes where trajectories stop, and the action space changes the granularity at which code is written. These findings inform model- and budget-aware harness design and provide a modular framework for evaluating future harness components.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     "Run-Ze Fan",
+     "Zihao Zhang",
+     "Simin Ma",
+     "Yebowen Hu",
+     "Shouju Wang",
+     "Kaiqiang Song",
+     "Fei Liu",
+     "Hamed Zamani",
+     "Xiaoyang Wang"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG",
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": "43 pages"
+   },
+   "score": 1.0,
+   "title": "An Empirical Study of Harness Design for Coding Agents",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:19:44+08:00"
+  },
+  "t:atria dawn the dawn of agentic superintelligence": {
+   "status": "matched_by_title",
+   "query": "ti:\"Atria Dawn: The Dawn of Agentic Superintelligence\"",
+   "match": {
+    "arxiv_id": "2609.15818",
+    "version": "2",
+    "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+    "abstract": "As AI agents become participants in the development of their successors, they reshape both the production of intelligence and the role of human researchers. We introduce Atria Dawn Preview, a foundation agentic language model designed for scientific research and engineering workflows, with the goal of expanding the frontier of agent productivity in the real world. This model is trained via a Verifiable Experience Pipeline that connects tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks spanning real-world research, engineering, and digital work, Atria Dawn Preview is competitive with frontier agents and achieves the highest reported score on five of them. Beyond standalone performance, we examine the real research-and-development process behind this model as a case study of human--AI collaboration, analyzing 769 task records from 56 participants together with agent logs. When asked to evaluate completed tasks under comparable conditions, participants rated about one-third of completed AI-assisted tasks as infeasible without AI. More strikingly, agents frequently propose methods and implement revisions, while humans retain most final decisions and guide exploration through judgment and feedback. These observations indicate a shift from task-level execution to project-level partnership, with human effort concentrating on what is worth pursuing and how evidence should guide research. Progress toward more autonomous AI research must therefore advance both the capacity for discovery and the capacity for meaningful human oversight, preserving accountable human authority over the risks and direction of continued development.",
+    "published": "2026-09-14",
+    "updated": "2026-09-17",
+    "authors": [
+     "Honglin Guo",
+     "Tao Gui",
+     "Kun Cai",
+     "Haodong Chen",
+     "Yicheng Chen",
+     "Guanting Dong",
+     "Qiming Ge",
+     "Yuyang Hu",
+     "Zixian Huang",
+     "Jiajie Jin",
+     "Alexander Lam",
+     "Yining Li"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "23 pages, 10 figures, https://github.com/atria-asi/Atria-Dawn-Preview"
+   },
+   "score": 1.0,
+   "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:19:47+08:00"
+  },
+  "t:baitsao": {
+   "status": "rejected",
+   "query": "all:\"BAITSAO\"",
+   "match": null,
+   "best_candidate": "SynCell: Contextualized Drug Synergy Prediction",
+   "best_score": 0.151,
+   "title": "BAITSAO",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:19:51+08:00"
+  },
+  "t:cet cai": {
+   "status": "no_results",
+   "query": "all:\"CET-CAI\"",
+   "match": null,
+   "title": "CET-CAI",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:19:54+08:00"
+  },
+  "t:covr": {
+   "status": "matched_by_title",
+   "query": "all:\"CovR\"",
+   "match": {
+    "arxiv_id": "2308.14746",
+    "version": "4",
+    "title": "CoVR-2: Automatic Data Construction for Composed Video Retrieval",
+    "abstract": "Composed Image Retrieval (CoIR) has recently gained popularity as a task that considers both text and image queries together, to search for relevant images in a database. Most CoIR approaches require manually annotated datasets, comprising image-text-image triplets, where the text describes a modification from the query image to the target image. However, manual curation of CoIR triplets is expensive and prevents scalability. In this work, we instead propose a scalable automatic dataset creation methodology that generates triplets given video-caption pairs, while also expanding the scope of the task to include composed video retrieval (CoVR). To this end, we mine paired videos with a similar caption from a large database, and leverage a large language model to generate the corresponding modification text. Applying this methodology to the extensive WebVid2M collection, we automatically construct our WebVid-CoVR dataset, resulting in 1.6 million triplets. Moreover, we introduce a new benchmark for CoVR with a manually annotated evaluation set, along with baseline results. We further validate that our methodology is equally applicable to image-caption pairs, by generating 3.3 million CoIR training triplets using the Conceptual Captions dataset. Our model builds on BLIP-2 pretraining, adapting it to composed video (or image) retrieval, and incorporates an additional caption retrieval loss to exploit extra supervision beyond the triplet. We provide extensive ablations to analyze the design choices on our new CoVR benchmark. Our experiments also demonstrate that training a CoVR model on our datasets effectively transfers to CoIR, leading to improved state-of-the-art performance in the zero-shot setup on the CIRR, FashionIQ, and CIRCO benchmarks. Our code, datasets, and models are publicly available at https://imagine.enpc.fr/~ventural/covr/.",
+    "published": "2023-08-28",
+    "updated": "2024-11-05",
+    "authors": [
+     "Lucas Ventura",
+     "Antoine Yang",
+     "Cordelia Schmid",
+     "Gül Varol"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": "IEEE Transactions on Pattern Analysis and Machine Intelligence (2024)",
+    "comment": "Appears in TPAMI 2024 (DOI: 10.1109/TPAMI.2024.3463799). Journal extension of the AAAI 2024 conference paper arXiv:2308.14746v3. Project page: https://imagine.enpc.fr/~ventural/covr/"
+   },
+   "score": 0.95,
+   "title": "CovR",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:19:58+08:00"
+  },
+  "t:declarative attention": {
+   "status": "rejected",
+   "query": "all:\"Declarative Attention\"",
+   "match": null,
+   "best_candidate": "Language Models Can Control Their Own Attention",
+   "best_score": 0.441,
+   "title": "Declarative Attention",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:02+08:00"
+  },
+  "t:deepseek harness 极简入门": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness 极简入门\"",
+   "match": null,
+   "title": "DeepSeek Harness 极简入门",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:05+08:00"
+  },
+  "t:deepseek v4 1 flash 降价解读": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek V4.1 Flash 降价解读\"",
+   "match": null,
+   "title": "DeepSeek V4.1 Flash 降价解读",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:09+08:00"
+  },
+  "t:deepseek 怎么收费 晚上和节假日跑 价格砍一半": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek 怎么收费?晚上和节假日跑,价格砍一半\"",
+   "match": null,
+   "title": "DeepSeek 怎么收费?晚上和节假日跑,价格砍一半",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:12+08:00"
+  },
+  "t:deepseek v4 1 flash pushing the limits of kv cache compression": {
+   "status": "matched_by_title",
+   "query": "ti:\"DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression\"",
+   "match": {
+    "arxiv_id": "2609.19969",
+    "version": "1",
+    "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "abstract": "The widespread adoption of long-horizon agents has made model workloads increasingly input-heavy. Although prior work has substantially reduced the cost of long-context computation, prefill remains computationally expensive, and large KV caches continue to strain HBM and SSD capacity and data-transfer bandwidth. Together, these compute, storage, and bandwidth demands constitute the primary bottleneck to further lowering deployment costs. To address this challenge, we introduce DeepSeek-V4.1-Flash, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. With its Causal Encoder-Decoder (CED) architecture, the model activates 16B parameters per token during decode but only 8B parameters during prefill, substantially improving cost efficiency for agentic workloads. To push the limits of KV cache compression, DeepSeek-V4.1-Flash combines cross-layer KV cache reuse in Compressed Sparse Attention 2 (CSA2) with FP4 KV caching. These designs reduce its global KV cache footprint (always in HBM) to 890 bytes per token, roughly 1/4 of the corresponding footprint of DeepSeek-V4-Flash. Further, through a dedicated deployment optimization known as SWA Bounded Replay, DeepSeek-V4.1-Flash reduces its persistent KV cache footprint (always on SSD or in host memory) to roughly 1/8 of that of DeepSeek-V4-Flash. Despite its much smaller KV cache footprint, the model delivers substantially better performance than the baseline. In addition, we streamline the DeepSeek-V4 architecture and introduce several efficient architectural extensions. We pretrain DeepSeek-V4.1-Flash on a multimodal corpus comprising 45T tokens and conduct comprehensive post-training, yielding strong performance across diverse text-based and multimodal agentic scenarios. Model checkpoints are available at https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     " DeepSeek-AI",
+     " :",
+     "Anyi Xu",
+     "B. Li",
+     "Bangcai Lin",
+     "Bing Xue",
+     "BingCheng Xian",
+     "Bingzheng Xu",
+     "Bochao Wu",
+     "Bowei Zhang",
+     "Boyi Deng",
+     "C. C. Yu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:16+08:00"
+  },
+  "t:dream rsi": {
+   "status": "matched_by_title",
+   "query": "all:\"Dream-RSI\"",
+   "match": {
+    "arxiv_id": "2609.14858",
+    "version": "1",
+    "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+    "abstract": "Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce \\textsc{Dream-RSI}, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that accumulated discovery history can serve as a replay simulator over the realized search space. By performing dreaming in the replay simulator constructed from historical discovery trees, \\textsc{Dream-RSI} secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations. The improved policy is subsequently redeployed online to drive further discovery, continuously expanding the simulator pool in a self-improving loop. Across algorithm engineering, mathematical optimization, and GPU kernel engineering, \\textsc{Dream-RSI} achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.",
+    "published": "2026-09-14",
+    "updated": "2026-09-14",
+    "authors": [
+     "Tong Zheng",
+     "Xidong Wu",
+     "Zheng Zhang",
+     "Zhankui He",
+     "Chaoyi Zhang",
+     "Benjamin Coleman",
+     "Ruoqiao Wei",
+     "Di Bai",
+     "Haolin Liu",
+     "Rui Liu",
+     "Xue Wang",
+     "Yue Zhuan"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "12 pages"
+   },
+   "score": 0.95,
+   "title": "Dream-RSI",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:20+08:00"
+  },
+  "t:egt kg": {
+   "status": "matched_by_title",
+   "query": "all:\"EGT-KG\"",
+   "match": {
+    "arxiv_id": "2609.00479",
+    "version": "1",
+    "title": "EGT-KG: Evidence-Grounded Typed KG Retrieval for Practical Scientific QA with Small Language Models",
+    "abstract": "For emerging scientific research domains, local Small Language Models (SLMs) are becoming more attractive, as they offer stronger privacy control and more stable deployment pipelines than Large Language Models. However, in practice, scientific question-answering on SLMs often operates under inevitable constraints: small literature collections, fragmented evidence, limited context window and reasoning abilities. We propose the Evidence-Grounded Typed Knowledge Graph (EGT-KG), a retrieval framework to improve information retrieval with local SLMs. We assessed three question-answering settings: a vanilla Retrieval-Augmented Generation (RAG) workflow and two EGT-KG workflows: an automatically generated relation schema (AS) and an expert-defined relation schema (ES). Our experiments were evaluated with a six-dimensional evaluation framework (S3CRF: Soundness, Correctness, Completeness, Conciseness, Relevance, Fluency) on a Biopolymer-bound Soil Composite literature benchmark, showing that EGT-KG outperforms the vanilla RAG method in most settings, with the best improvement from llama3:8b: a Final Score of 70.37 (+14.67%) and 68.82 (+12.14%) by AS/ES EGT-KG variants.",
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "authors": [
+     "Muran Yu",
+     "Jiechao Gao",
+     "Yuandong Pan",
+     "Barney H. Miao",
+     "Andrew C. Lesh",
+     "Kincho H. Law",
+     "Jie Wang",
+     "Michael D. Lepech"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": "EMNLP Industry track 2026",
+    "comment": "Accepted in EMNLP Industry track 2026"
+   },
+   "score": 0.95,
+   "title": "EGT-KG",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:23+08:00"
+  },
+  "t:grasp": {
+   "status": "matched_by_title",
+   "query": "all:\"GRASP\"",
+   "match": {
+    "arxiv_id": "2309.09818",
+    "version": "1",
+    "title": "Grasp-Anything: Large-scale Grasp Dataset from Foundation Models",
+    "abstract": "Foundation models such as ChatGPT have made significant strides in robotic tasks due to their universal representation of real-world domains. In this paper, we leverage foundation models to tackle grasp detection, a persistent challenge in robotics with broad industrial applications. Despite numerous grasp datasets, their object diversity remains limited compared to real-world figures. Fortunately, foundation models possess an extensive repository of real-world knowledge, including objects we encounter in our daily lives. As a consequence, a promising solution to the limited representation in previous grasp datasets is to harness the universal knowledge embedded in these foundation models. We present Grasp-Anything, a new large-scale grasp dataset synthesized from foundation models to implement this solution. Grasp-Anything excels in diversity and magnitude, boasting 1M samples with text descriptions and more than 3M objects, surpassing prior datasets. Empirically, we show that Grasp-Anything successfully facilitates zero-shot grasp detection on vision-based tasks and real-world robotic experiments. Our dataset and code are available at https://grasp-anything-2023.github.io.",
+    "published": "2023-09-18",
+    "updated": "2023-09-18",
+    "authors": [
+     "An Dinh Vuong",
+     "Minh Nhat Vu",
+     "Hieu Le",
+     "Baoru Huang",
+     "Binh Huynh",
+     "Thieu Vo",
+     "Andreas Kugi",
+     "Anh Nguyen"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://grasp-anything-2023.github.io"
+   },
+   "score": 0.95,
+   "title": "GRASP",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:27+08:00"
+  },
+  "t:llm agents for time series a survey": {
+   "status": "matched_by_title",
+   "query": "ti:\"LLM Agents for Time-Series: A Survey\"",
+   "match": {
+    "arxiv_id": "2608.26226",
+    "version": "1",
+    "title": "LLM Agents for Time-Series: A Survey",
+    "abstract": "LLM-based agents are increasingly being developed for time-series problems, but their design choices vary substantially across task settings. This survey adopts a problem-driven taxonomy that organizes these systems by the time-series problems they address rather than by isolated technical components. We group existing systems into four categories: forecasting and reasoning, augmentation and synthesis, anomaly detection and diagnosis, and decision support. Within each category, we examine how task requirements shape agent architecture, tool use, and memory design. We further summarize representative datasets and environments, and compare reported model performance under shared or closely related settings. Overall, this survey offers a task-oriented guide to designing LLM-based agents for time-series problems and identifies open gaps for future work.",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "authors": [
+     "Yilong Chen",
+     "Xiao Qin",
+     "Chenghao Liu",
+     "Liang Wu",
+     "Noelle I. Samia",
+     "Kaize Ding"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to Findings of EMNLP 2026"
+   },
+   "score": 1.0,
+   "title": "LLM Agents for Time-Series: A Survey",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:31+08:00"
+  },
+  "t:pointer cad v2": {
+   "status": "matched_by_title",
+   "query": "all:\"Pointer-CAD v2\"",
+   "match": {
+    "arxiv_id": "2606.29301",
+    "version": "1",
+    "title": "Pointer-CAD v2: Plan-Then-Construct CAD Generation with Dimension-Aware Parametric Precision",
+    "abstract": "Computer-aided design (CAD) plays a fundamental role in modern manufacturing by providing the high precision required for industrial production. Recent large language model based approaches formulate CAD generation as a sequence prediction problem and have achieved promising results. However, existing methods and evaluation protocols primarily emphasize visual similarity, while overlooking precise geometric parameters and correct metric scale. Small numerical deviations that are negligible at the shape-level may still violate industrial tolerance requirements, a problem further compounded by current autoregressive paradigms that utilize command sequence representations, aggressively quantize numerical parameters to ease LLM prediction. In this work, we present Pointer-CAD v2. Compared with v1 (arXiv:2603.04337), this version directly predicts continuous values, bypassing the need for quantized numerical parameters and thereby eliminating quantization errors. Specifically, we propose a unified framework that decouples parameter reasoning from geometric construction through a Plan-Then-Construct paradigm. Our method first produces a structured design plan with explicit metric scale parameters. These parameters are organized into a dictionary and directly referenced during sequence generation via a pointer mechanism, eliminating discretization errors and ensuring dimensionally consistent execution. In addition, we construct a new large-scale dataset with plan-level annotation and introduce three hierarchical geometry accuracy metrics to evaluate parametric fidelity at the vertex, edge, and face levels. Extensive experiments demonstrate that Pointer-CAD v2 consistently outperforms existing baselines and achieves substantial improvements in geometric accuracy, enabling reliable CAD generation for precision-critical engineering applications.",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
+    "authors": [
+     "Dacheng Qi",
+     "Chenyu Wang",
+     "Jingwei Xu",
+     "Yi Ma",
+     "Shenghua Gao"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to ECCV 2026. Code is available at https://github.com/Snitro/Pointer-CAD-v2"
+   },
+   "score": 0.95,
+   "title": "Pointer-CAD v2",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:34+08:00"
+  },
+  "t:pushing the limits of kv cache compression": {
+   "status": "rejected",
+   "query": "ti:\"Pushing the Limits of KV Cache Compression\"",
+   "match": null,
+   "best_candidate": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+   "best_score": 0.808,
+   "title": "Pushing the Limits of KV Cache Compression",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:38+08:00"
+  },
+  "t:rethinking scale the efficacy of fine tuned open source llms in large scale reproducible social science research": {
+   "status": "matched_by_title",
+   "query": "ti:\"Rethinking Scale: The Efficacy of Fine-Tuned Open-Source LLMs in Large-Scale Reproducible Social Science Research\"",
+   "match": {
+    "arxiv_id": "2411.00890",
+    "version": "1",
+    "title": "Rethinking Scale: The Efficacy of Fine-Tuned Open-Source LLMs in Large-Scale Reproducible Social Science Research",
+    "abstract": "Large Language Models (LLMs) are distinguished by their architecture, which dictates their parameter size and performance capabilities. Social scientists have increasingly adopted LLMs for text classification tasks, which are difficult to scale with human coders. While very large, closed-source models often deliver superior performance, their use presents significant risks. These include lack of transparency, potential exposure of sensitive data, challenges to replicability, and dependence on proprietary systems. Additionally, their high costs make them impractical for large-scale research projects. In contrast, open-source models, although available in various sizes, may underperform compared to commercial alternatives if used without further fine-tuning. However, open-source models offer distinct advantages: they can be run locally (ensuring data privacy), fine-tuned for specific tasks, shared within the research community, and integrated into reproducible workflows. This study demonstrates that small, fine-tuned open-source LLMs can achieve equal or superior performance to models such as ChatGPT-4. We further explore the relationship between training set size and fine-tuning efficacy in open-source models. Finally, we propose a hybrid workflow that leverages the strengths of both open and closed models, offering a balanced approach to performance, transparency, and reproducibility.",
+    "published": "2024-10-31",
+    "updated": "2024-10-31",
+    "authors": [
+     "Marcello Carammia",
+     "Stefano Maria Iacus",
+     "Giuseppe Porro"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "stat.ML"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Rethinking Scale: The Efficacy of Fine-Tuned Open-Source LLMs in Large-Scale Reproducible Social Science Research",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:42+08:00"
+  },
+  "t:say sod": {
+   "status": "no_results",
+   "query": "all:\"SAY-SOD\"",
+   "match": null,
+   "title": "SAY-SOD",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:46+08:00"
+  },
+  "t:st lego large language models as modular architects for traffic prediction": {
+   "status": "no_results",
+   "query": "ti:\"ST-LEGO: Large Language Models as Modular Architects for Traffic Prediction\"",
+   "match": null,
+   "title": "ST-LEGO: Large Language Models as Modular Architects for Traffic Prediction",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:50+08:00"
+  },
+  "t:social science computer review": {
+   "status": "no_results",
+   "query": "ti:\"Social Science Computer Review\"",
+   "match": null,
+   "title": "Social Science Computer Review",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:20:54+08:00"
+  },
+  "t:sparksmatter": {
+   "status": "rejected",
+   "query": "all:\"SparksMatter\"",
+   "match": null,
+   "best_candidate": "Autonomous Inorganic Materials Discovery via Multi-Agent Physics-Aware Scientific Reasoning",
+   "best_score": 0.136,
+   "title": "SparksMatter",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:20:57+08:00"
+  },
+  "t:the information": {
+   "status": "rejected",
+   "query": "ti:\"The Information\"",
+   "match": null,
+   "best_candidate": "Private Information Retrieval with Side Information",
+   "best_score": 0.424,
+   "title": "The Information",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:01+08:00"
+  },
+  "t:the other half of the memory wall serving 35b moes from ssd with trained routing prediction": {
+   "status": "matched_by_title",
+   "query": "ti:\"The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction\"",
+   "match": {
+    "arxiv_id": "2609.18063",
+    "version": "2",
+    "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+    "abstract": "Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before layer N's output exists, so the reads cannot start early enough to hide behind compute. We present Edge0, a streaming MoE inference engine that closes the gap with a prerouter: a per-layer head predicts the next layer's routing one token ahead, and the prediction is consumed as the routing itself, so the staged expert set equals the routed set and nothing is dropped. An unmerged recovery LoRA, trained on the student path, pays back the quality lost to int4 quantization and routing replacement. On a single 24GB machine, Edge0 serves a 35B MoE at 20tok/s inside 3GiB of peak active memory, within a few points of its fp16 teacher on average across five public benchmarks. An 8B tier runs on the same framework, and the framework, checkpoints, and adapters are open source.",
+    "published": "2026-09-16",
+    "updated": "2026-09-17",
+    "authors": [
+     "Yu Lin",
+     "Yiming Wang",
+     "Runyuan Cai",
+     "Hanze Liu",
+     "Xiaodong Zeng"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:05+08:00"
+  },
+  "t:veribugbench": {
+   "status": "matched_by_title",
+   "query": "all:\"VeriBugBench\"",
+   "match": {
+    "arxiv_id": "2609.18022",
+    "version": "2",
+    "title": "VeriBugBench: An Empirically Grounded Framework for Constructing Verilog RTL Debugging Benchmarks",
+    "abstract": "RTL source-level debugging research requires benchmark artifacts that provide faulty designs together with precise change locations, executable test stimuli, and reproducible configurations. Available Verilog resources usually provide only a subset of these elements. We present VeriBugBench, a framework for constructing Verilog RTL debugging benchmarks through empirically grounded fault construction, LLM-based testbench enhancement, and execution-based retention. The mutation library maps recurring, multi-granularity repair patterns observed in RTL bug-fix histories to 19 executable inverse operators. For each project, an LLM generates a design-specific stimulus phase from the clean DUT and original testbench; the phase is composed with the original testbench for candidate execution. Applying the framework to 45 open-source projects yields VeriBugBench-v1.0, with 2,608 executable single-fault instances whose effects are observable at design outputs. Across the 45 projects, the assembled testbenches increase mean project-level fault observability from 36.01% to 39.54% and improve line coverage and execution-trace diversity on average. VeriBugBench provides versioned RTL variants, source-level ground truth, testbenches, and execution artifacts for evaluating RTL debugging methods.",
+    "published": "2026-09-16",
+    "updated": "2026-09-18",
+    "authors": [
+     "Xiankai Meng",
+     "Kejian Feng",
+     "Xinlin Zhao",
+     "Zhuo Zhang",
+     "Yan Lei",
+     "Xiaoguang Mao",
+     "Jiang Wu"
+    ],
+    "categories": [
+     "cs.AR",
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": "14 pages, 4 figures, and 6 tables. Submitted to IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD). This manuscript substantially extends the DAC 2023 paper \"MANTRA: "
+   },
+   "score": 0.95,
+   "title": "VeriBugBench",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:21:09+08:00"
+  },
+  "t:vidu s2 real time interactive editable and spatial video generation": {
+   "status": "matched_by_title",
+   "query": "ti:\"Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation\"",
+   "match": {
+    "arxiv_id": "2609.11638",
+    "version": "1",
+    "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "abstract": "We present Vidu S2, which comprises Vidu S2-Avatar, a real-time interactive digital-character model, and Vidu S2-Editing, a real-time video editing model. Moreover, we explore the feasibility of real-time spatial video generation for both Vidu S2-Avatar and Vidu S2-Editing. Compared with Vidu S1, Vidu S2-Avatar supports real-time 720p video generation, generation with dynamic references that can be updated at any moment, and stronger instruction following, such as dancing. Vidu S2-Editing supports editing a video stream in real time, including style rendering, clothing replacement, character replacement, and background replacement. Experiments show that Vidu S2 outperforms all baselines. A playable online demo is available at https://vidu.com/vidu-stream.",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "authors": [
+     "Jintao Zhang",
+     "Kai Jiang",
+     "Jintao Chen",
+     "Xu Wang",
+     "Deyuan Liu",
+     "Jungang Li",
+     "Dechuang Chen",
+     "Ming Lin",
+     "Jingjiang Zhou",
+     "Haopeng Jin",
+     "Qi Jia",
+     "Xiaohang Wang"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:13+08:00"
+  },
+  "t:visual general intelligence a white paper": {
+   "status": "matched_by_title",
+   "query": "ti:\"Visual General Intelligence: A White Paper\"",
+   "match": {
+    "arxiv_id": "2608.25924",
+    "version": "1",
+    "title": "Visual General Intelligence: A White Paper",
+    "abstract": "This paper reconsiders intelligence from a vision-centered perspective and examines whether intelligence emerging from visual experience and learning may provide a pathway toward AGI. In the language domain, beginning with the introduction of the Transformer architecture, the GPT series has demonstrated transfer to unseen tasks through autoregressive language modeling on web-scale text combined with aggressive scaling. This raises a natural question, namely, what capabilities and forms of intelligence can emerge from visual modalities such as images, videos, and geometry? In this paper, we discuss whether visual intelligence can serve as a pathway toward AGI, referred to in this paper as visual general intelligence (VGI), by bringing together contributors from diverse standpoints and affiliations. Our aim is not to offer a single definition of visual intelligence, but to clarify the principles that computer vision should pursue in the AGI era, the visual input modalities, the benchmarks, the learning paradigms, and the relationship between vision, when taken as the core, and other modalities such as language.",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "authors": [
+     "Hirokatsu Kataoka",
+     "Yoshihiro Fukuhara",
+     "Yonglong Tian",
+     "Shangzhe Wu",
+     "Oishi Deb",
+     "Ryousuke Yamada",
+     "Christian Rupprecht",
+     "Jianyuan Wang",
+     "Kohsuke Ide",
+     "Koichi Namekata",
+     "Xianzheng Ma",
+     "Yiming Chen"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Visual General Intelligence: A White Paper",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:17+08:00"
+  },
+  "t:when does lejepa learn a world model": {
+   "status": "matched_by_title",
+   "query": "ti:\"When Does LeJEPA Learn a World Model?\"",
+   "match": {
+    "arxiv_id": "2605.26379",
+    "version": "1",
+    "title": "When Does LeJEPA Learn a World Model?",
+    "abstract": "A representation that scrambles the true degrees of freedom of the world cannot support reliable planning or compositional generalization. We prove that LeJEPA (alignment plus Gaussian regularization) linearly recovers the world's latent variables from nonlinear observations, a property known as linear identifiability, in a broad class of worlds where latents evolve under stationary, additive-noise transitions. Our main result is that among all such worlds, the Gaussian is the unique latent distribution for which this guarantee holds. The forward direction rests on a spectral decomposition in which each degree of nonlinearity is strictly penalized by alignment, making the linear map the optimum; the converse rules out every non-Gaussian alternative. We further prove an approximate identifiability result where the guarantee degrades gracefully, and show that linear, orthogonal identifiability enables optimal latent-space planning. We validate the theory with experiments ranging from 2D examples to 1024-dimensional latents, including distributional ablations and pixel-based robotic control. Our theory turns an empirically successful recipe into a mathematical guarantee, providing the foundation for building World Models that provably recover the structure of the world.",
+    "published": "2026-05-25",
+    "updated": "2026-05-25",
+    "authors": [
+     "David Klindt",
+     "Yann LeCun",
+     "Randall Balestriero"
+    ],
+    "categories": [
+     "stat.ML",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "When Does LeJEPA Learn a World Model?",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:21+08:00"
+  },
+  "t:基于大语言模型的本体学习技术": {
+   "status": "no_results",
+   "query": "all:\"基于大语言模型的本体学习技术\"",
+   "match": null,
+   "title": "基于大语言模型的本体学习技术",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:21:25+08:00"
+  },
+  "t:智医心得 deepseek医院部署筹备期的关键任务剖析 从数据治理到人机协同的部署前期要点解析": {
+   "status": "no_results",
+   "query": "ti:\"智医心得 | DeepSeek医院部署筹备期的关键任务剖析——从数据治理到人机协同的部署前期要点解析\"",
+   "match": null,
+   "title": "智医心得 | DeepSeek医院部署筹备期的关键任务剖析——从数据治理到人机协同的部署前期要点解析",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:28+08:00"
+  },
+  "t:超好用的deepseek润色提示词 快码上": {
+   "status": "no_results",
+   "query": "ti:\"超好用的DeepSeek润色提示词,快码上!!!\"",
+   "match": null,
+   "title": "超好用的DeepSeek润色提示词,快码上!!!",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:32+08:00"
+  },
+  "t:连个发布会都懒得开 deepseek 把桌面端塞进了仓库": {
+   "status": "no_results",
+   "query": "ti:\"连个发布会都懒得开,DeepSeek 把桌面端塞进了仓库\"",
+   "match": null,
+   "title": "连个发布会都懒得开,DeepSeek 把桌面端塞进了仓库",
+   "kind": "title",
+   "checked_at": "2026-09-22T00:21:36+08:00"
+  },
+  "t:面向突发事件处置的大模型辅助方案生成技术研究": {
+   "status": "no_results",
+   "query": "all:\"面向突发事件处置的大模型辅助方案生成技术研究\"",
+   "match": null,
+   "title": "面向突发事件处置的大模型辅助方案生成技术研究",
+   "kind": "method",
+   "checked_at": "2026-09-22T00:21:39+08:00"
   }
  }
 }

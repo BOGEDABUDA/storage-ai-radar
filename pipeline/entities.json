@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-09-18T00:10:02+08:00",
+ "generated_at": "2026-09-22T00:18:38+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -37770,6 +37770,1242 @@
      "label": "研发投入强度(2030年目标)",
      "value": 3.5,
      "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|new-media|technical|0": {
+   "hash": "0ba99f840874401a",
+   "date": "2026-09-21",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "OCP",
+     "type": "institution"
+    },
+    {
+     "name": "高带宽闪存",
+     "type": "tech"
+    },
+    {
+     "name": "TSV",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    },
+    {
+     "name": "Base Die",
+     "type": "tech"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "高带宽闪存",
+     "label": "单堆栈容量",
+     "value": 256.0,
+     "unit": "GiB"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "单芯片容量（8堆栈）",
+     "value": 4.0,
+     "unit": "TiB"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "单位容量相对同代HBM倍数",
+     "value": 16.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "成本相对HBM比例",
+     "value": 0.1,
+     "unit": "倍"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "页延迟",
+     "value": 1.0,
+     "unit": "us"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "单卡容量",
+     "value": 4.0,
+     "unit": "TiB"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "跨节点All-to-All削减",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "高带宽闪存",
+     "label": "TPOT降幅",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|others|business|0": {
+   "hash": "af6b0789972ccf2e",
+   "date": "2026-09-21",
+   "category": "others",
+   "entities": [
+    {
+     "name": "长鑫科技",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "长鑫科技",
+     "label": "2026H1营收",
+     "value": 1503.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "营收同比增速",
+     "value": 874.0,
+     "unit": "%"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "归母净利",
+     "value": 776.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "毛利率",
+     "value": 84.8,
+     "unit": "%"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "Q2全球DRAM份额",
+     "value": 10.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|others|technical|0": {
+   "hash": "d4d627d6e4025004",
+   "date": "2026-09-21",
+   "category": "others",
+   "entities": [
+    {
+     "name": "玻璃基板",
+     "type": "tech"
+    },
+    {
+     "name": "TGV",
+     "type": "tech"
+    },
+    {
+     "name": "RDL",
+     "type": "tech"
+    },
+    {
+     "name": "mSAP",
+     "type": "tech"
+    },
+    {
+     "name": "aSAP",
+     "type": "tech"
+    },
+    {
+     "name": "Damascene",
+     "type": "tech"
+    },
+    {
+     "name": "ABF",
+     "type": "tech"
+    },
+    {
+     "name": "GPTG联盟",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "TGV",
+     "label": "孔径",
+     "value": 10.0,
+     "unit": "μm"
+    },
+    {
+     "subject": "TGV",
+     "label": "深宽比",
+     "value": 50.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "RDL",
+     "label": "线宽",
+     "value": 2.0,
+     "unit": "μm"
+    },
+    {
+     "subject": "玻璃基板",
+     "label": "两次ABF层压形变",
+     "value": 2.8,
+     "unit": "μm"
+    },
+    {
+     "subject": "FR4",
+     "label": "两次ABF层压形变",
+     "value": 22.4,
+     "unit": "μm"
+    }
+   ]
+  },
+  "2026-09-21|storage-semantics-protocol|business|0": {
+   "hash": "5d6928ece1be16c2",
+   "date": "2026-09-21",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "昇腾960",
+     "type": "product"
+    },
+    {
+     "name": "NPO",
+     "type": "tech"
+    },
+    {
+     "name": "Hi-ONE",
+     "type": "product"
+    },
+    {
+     "name": "灵衢协议",
+     "type": "tech"
+    },
+    {
+     "name": "CANN",
+     "type": "tech"
+    },
+    {
+     "name": "OceanStor M900",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "昇腾960",
+     "label": "集群规模",
+     "value": 100000.0,
+     "unit": "卡"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "MFU相对8卡服务器提升",
+     "value": 2.75,
+     "unit": "倍"
+    },
+    {
+     "subject": "CANN",
+     "label": "外部开发者占比",
+     "value": 61.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|storage-semantics-protocol|technical|0": {
+   "hash": "74606ef553faf999",
+   "date": "2026-09-21",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "4Z-SSD",
+     "type": "paper"
+    },
+    {
+     "name": "SYSTOR '26",
+     "type": "paper"
+    },
+    {
+     "name": "CFDP",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "4Z-SSD",
+     "label": "吞吐相对CFDP倍数",
+     "value": 1.97,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "写放大",
+     "value": 1.1,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "P99延迟相对CFDP降幅",
+     "value": 47.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|ai-inference-acceleration|business|0": {
+   "hash": "45389622413cbf88",
+   "date": "2026-09-21",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "昇腾960",
+     "type": "product"
+    },
+    {
+     "name": "NPO",
+     "type": "tech"
+    },
+    {
+     "name": "Hi-ONE",
+     "type": "product"
+    },
+    {
+     "name": "昇腾950DT",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "MFU",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "昇腾960",
+     "label": "单节点卡数",
+     "value": 4096.0,
+     "unit": "卡"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "FP8算力",
+     "value": 8.0,
+     "unit": "EFLOPS"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "最高HBM容量",
+     "value": 1.0,
+     "unit": "PB"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "Hi-ONE光引擎数量",
+     "value": 5500.0,
+     "unit": "个"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "降耗",
+     "value": 550.0,
+     "unit": "kW"
+    },
+    {
+     "subject": "昇腾960",
+     "label": "10万卡MFU提升",
+     "value": 2.75,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "昇腾950DT订购量",
+     "value": 16.0,
+     "unit": "万颗"
+    }
+   ]
+  },
+  "2026-09-21|ai-inference-acceleration|technical|0": {
+   "hash": "2300161ea988c054",
+   "date": "2026-09-21",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "Edge0",
+     "type": "paper"
+    },
+    {
+     "name": "NVMe SSD",
+     "type": "tech"
+    },
+    {
+     "name": "Prerouter",
+     "type": "tech"
+    },
+    {
+     "name": "Recovery LoRA",
+     "type": "tech"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    },
+    {
+     "name": "INT4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Edge0",
+     "label": "峰值内存",
+     "value": 2.9,
+     "unit": "GiB"
+    },
+    {
+     "subject": "Edge0",
+     "label": "峰值内存降幅",
+     "value": 84.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Edge0",
+     "label": "解码吞吐",
+     "value": 20.4,
+     "unit": "tok/s"
+    },
+    {
+     "subject": "Edge0",
+     "label": "解码提速",
+     "value": 5.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-21|ai-model-agent-rag|business|0": {
+   "hash": "ed18038f6b36af35",
+   "date": "2026-09-21",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "ChatGPT for Financial Services",
+     "type": "product"
+    },
+    {
+     "name": "Anthropic",
+     "type": "company"
+    },
+    {
+     "name": "Claude for Financial Advisors",
+     "type": "product"
+    },
+    {
+     "name": "PitchBook",
+     "type": "company"
+    },
+    {
+     "name": "LSEG",
+     "type": "company"
+    },
+    {
+     "name": "贝莱德",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Claude for Financial Advisors",
+     "label": "预置财富管理技能数",
+     "value": 8.0,
+     "unit": "项"
+    }
+   ]
+  },
+  "2026-09-21|ai-model-agent-rag|technical|0": {
+   "hash": "ff3355537c6849ef",
+   "date": "2026-09-21",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "智谱",
+     "type": "company"
+    },
+    {
+     "name": "GLM-5.3",
+     "type": "product"
+    },
+    {
+     "name": "Infra Agent",
+     "type": "tech"
+    },
+    {
+     "name": "Dream-RSI",
+     "type": "product"
+    },
+    {
+     "name": "SimpleTES",
+     "type": "paper"
+    },
+    {
+     "name": "Anthropic",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "智谱",
+     "label": "推理服务吞吐相对基线",
+     "value": 3.2,
+     "unit": "倍"
+    },
+    {
+     "subject": "Dream-RSI",
+     "label": "达到SimpleTES等效效果的调用次数",
+     "value": 317.0,
+     "unit": "次"
+    },
+    {
+     "subject": "Dream-RSI",
+     "label": "调用次数节省",
+     "value": 162.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Anthropic",
+     "label": "AI主导研发任务占比",
+     "value": 26.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|cost-effective-storage|business|0": {
+   "hash": "87a83d30270b733c",
+   "date": "2026-09-21",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "CoreWeave",
+     "type": "company"
+    },
+    {
+     "name": "NVIDIA",
+     "type": "company"
+    },
+    {
+     "name": "Vera Rubin NVL72",
+     "type": "product"
+    },
+    {
+     "name": "Rubin GPU",
+     "type": "product"
+    },
+    {
+     "name": "Vera CPU",
+     "type": "product"
+    },
+    {
+     "name": "LOTA",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Vera Rubin NVL72",
+     "label": "每机架GPU数量",
+     "value": 72.0,
+     "unit": "块"
+    },
+    {
+     "subject": "Vera Rubin NVL72",
+     "label": "每机架CPU数量",
+     "value": 36.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "Rubin GPU",
+     "label": "单GPU后端带宽",
+     "value": 1.6,
+     "unit": "Tb/s"
+    },
+    {
+     "subject": "Vera Rubin NVL72",
+     "label": "最大可扩展GPU数量",
+     "value": 128000.0,
+     "unit": "块"
+    },
+    {
+     "subject": "LOTA",
+     "label": "读带宽",
+     "value": 7.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "LOTA",
+     "label": "缓存规模",
+     "value": 20.0,
+     "unit": "PB"
+    },
+    {
+     "subject": "LOTA",
+     "label": "命中率",
+     "value": 99.7,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|cost-effective-storage|technical|0": {
+   "hash": "5c66ba18482f5125",
+   "date": "2026-09-21",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Samsung",
+     "type": "company"
+    },
+    {
+     "name": "PM1763",
+     "type": "product"
+    },
+    {
+     "name": "PCIe 6.0",
+     "type": "tech"
+    },
+    {
+     "name": "V-NAND",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "DDR5",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "PM1763",
+     "label": "顺序读带宽",
+     "value": 28.4,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "PM1763",
+     "label": "主控制程",
+     "value": 4.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "PM1763",
+     "label": "V-NAND代际",
+     "value": 9.0,
+     "unit": "代"
+    }
+   ]
+  },
+  "2026-09-21|high-capacity-storage|business|0": {
+   "hash": "4403708762fa847f",
+   "date": "2026-09-21",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "企业级SSD",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "GPU",
+     "type": "tech"
+    },
+    {
+     "name": "对象存储",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "全球前五大企业级SSD厂商季度营收",
+     "value": 375.9,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "营收环比增长",
+     "value": 2.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-21|high-capacity-storage|technical|0": {
+   "hash": "12bbcd68da720564",
+   "date": "2026-09-21",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "Samsung",
+     "type": "company"
+    },
+    {
+     "name": "PM1763",
+     "type": "product"
+    },
+    {
+     "name": "PM1743",
+     "type": "product"
+    },
+    {
+     "name": "PCIe 6.0",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe 5.0",
+     "type": "tech"
+    },
+    {
+     "name": "V-NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "PM1763",
+     "label": "顺序读带宽",
+     "value": 28400.0,
+     "unit": "MB/s"
+    },
+    {
+     "subject": "PM1763",
+     "label": "顺序写带宽",
+     "value": 21000.0,
+     "unit": "MB/s"
+    },
+    {
+     "subject": "PM1743",
+     "label": "顺序读带宽",
+     "value": 14000.0,
+     "unit": "MB/s"
+    }
+   ]
+  },
+  "2026-09-21|high-reliability-storage|business|0": {
+   "hash": "229760cf1f55eb11",
+   "date": "2026-09-21",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "英飞凌",
+     "type": "company"
+    },
+    {
+     "name": "华邦",
+     "type": "company"
+    },
+    {
+     "name": "NOR Flash",
+     "type": "tech"
+    },
+    {
+     "name": "F-RAM",
+     "type": "tech"
+    },
+    {
+     "name": "SEMPER",
+     "type": "product"
+    },
+    {
+     "name": "Spansion",
+     "type": "company"
+    },
+    {
+     "name": "SkyWater",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "英飞凌",
+     "label": "NOR Flash与F-RAM业务出售金额",
+     "value": 11.2,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "SEMPER",
+     "label": "汽车级NOR容量上限",
+     "value": 4.0,
+     "unit": "Gb"
+    }
+   ]
+  },
+  "2026-09-21|high-reliability-storage|technical|0": {
+   "hash": "64a79ad841faf564",
+   "date": "2026-09-21",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "4Z-SSD",
+     "type": "paper"
+    },
+    {
+     "name": "1Z-SSD",
+     "type": "paper"
+    },
+    {
+     "name": "CFDP",
+     "type": "paper"
+    },
+    {
+     "name": "ReCA-FTL",
+     "type": "paper"
+    },
+    {
+     "name": "CATDOG",
+     "type": "paper"
+    },
+    {
+     "name": "wCAT",
+     "type": "tech"
+    },
+    {
+     "name": "SYSTOR '26",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "4Z-SSD",
+     "label": "吞吐相对CFDP",
+     "value": 1.97,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "吞吐相对ReCA-FTL",
+     "value": 1.95,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "fio_bench写放大",
+     "value": 1.05,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "real_bench写放大",
+     "value": 1.1,
+     "unit": "倍"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "写放大较CATDOG降幅",
+     "value": 11.3,
+     "unit": "%"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "P99延迟",
+     "value": 201.8,
+     "unit": "ms"
+    },
+    {
+     "subject": "4Z-SSD",
+     "label": "P99延迟较CFDP降幅",
+     "value": 47.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|model-benchmarking|business|0": {
+   "hash": "5bc45d23a9c30089",
+   "date": "2026-09-21",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Kimi K3",
+     "type": "product"
+    },
+    {
+     "name": "GLM 5.2",
+     "type": "product"
+    },
+    {
+     "name": "复旦大学",
+     "type": "institution"
+    },
+    {
+     "name": "Atria Dawn",
+     "type": "product"
+    },
+    {
+     "name": "NeoHorse-1",
+     "type": "product"
+    },
+    {
+     "name": "OpenRouter",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Kimi K3",
+     "label": "参数量",
+     "value": 2.8,
+     "unit": "万亿"
+    },
+    {
+     "subject": "Kimi K3",
+     "label": "上下文长度",
+     "value": 1.0,
+     "unit": "M tokens"
+    },
+    {
+     "subject": "GLM 5.2",
+     "label": "参数量",
+     "value": 744.0,
+     "unit": "B"
+    },
+    {
+     "subject": "Atria Dawn",
+     "label": "参数量",
+     "value": 744.0,
+     "unit": "B"
+    },
+    {
+     "subject": "Atria Dawn",
+     "label": "基准第一数量",
+     "value": 5.0,
+     "unit": "项"
+    },
+    {
+     "subject": "OpenRouter",
+     "label": "中国模型周Token调用量相对美国",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "OpenRouter",
+     "label": "前十模型国产占比",
+     "value": 70.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|model-benchmarking|technical|0": {
+   "hash": "8a2181734641c540",
+   "date": "2026-09-21",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "斯坦福",
+     "type": "institution"
+    },
+    {
+     "name": "EGT-KG",
+     "type": "paper"
+    },
+    {
+     "name": "llama3:8b",
+     "type": "product"
+    },
+    {
+     "name": "BSC",
+     "type": "paper"
+    },
+    {
+     "name": "GRASP",
+     "type": "paper"
+    },
+    {
+     "name": "GraphRAG",
+     "type": "tech"
+    },
+    {
+     "name": "扁平RAG",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "EGT-KG",
+     "label": "BSC 30篇基准得分",
+     "value": 70.37,
+     "unit": "分"
+    },
+    {
+     "subject": "EGT-KG",
+     "label": "BSC基准得分提升幅度",
+     "value": 14.67,
+     "unit": "%"
+    },
+    {
+     "subject": "EGT-KG",
+     "label": "上下文节省",
+     "value": 22.0,
+     "unit": "%"
+    },
+    {
+     "subject": "GRASP",
+     "label": "金参考全中率",
+     "value": 62.5,
+     "unit": "%"
+    },
+    {
+     "subject": "扁平RAG",
+     "label": "金参考全中率",
+     "value": 25.6,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|near-memory-computing|business|0": {
+   "hash": "40f2f0910b68f607",
+   "date": "2026-09-21",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "存算融合",
+     "type": "tech"
+    },
+    {
+     "name": "液冷",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "浪潮信息",
+     "label": "定增拟募资上限",
+     "value": 90.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "存算融合投资额",
+     "value": 14.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "液冷投资额",
+     "value": 14.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "AI基础设施投资额",
+     "value": 26.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "项目总投资",
+     "value": 110.3,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "2026H1营收",
+     "value": 843.79,
+     "unit": "亿元"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "净利率",
+     "value": 3.5,
+     "unit": "%"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "原材料成本占比",
+     "value": 83.7,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|near-memory-computing|technical|0": {
+   "hash": "333728741cfc57dc",
+   "date": "2026-09-21",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "OCP",
+     "type": "institution"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "TSV",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "Base Die",
+     "type": "tech"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBF",
+     "label": "8-Die堆栈容量",
+     "value": 256.0,
+     "unit": "GiB"
+    },
+    {
+     "subject": "HBF",
+     "label": "单芯片容量上限",
+     "value": 4.0,
+     "unit": "TiB"
+    },
+    {
+     "subject": "HBF",
+     "label": "容量相对同代HBM",
+     "value": 16.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "HBF",
+     "label": "成本相对同代HBM",
+     "value": 0.125,
+     "unit": "倍"
+    },
+    {
+     "subject": "HBF",
+     "label": "页延迟",
+     "value": 4.0,
+     "unit": "µs"
+    },
+    {
+     "subject": "HBF",
+     "label": "跨节点通信削减",
+     "value": 90.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-21|new-media|business|0": {
+   "hash": "97bae7ace99a7065",
+   "date": "2026-09-21",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "新华三",
+     "type": "company"
+    },
+    {
+     "name": "光羽芯辰",
+     "type": "company"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "超节点",
+     "type": "tech"
+    },
+    {
+     "name": "存算一体",
+     "type": "tech"
+    },
+    {
+     "name": "3D堆叠",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "AI芯片峰会",
+     "label": "嘉宾数量",
+     "value": 60.0,
+     "unit": "位"
+    },
+    {
+     "subject": "AI芯片峰会",
+     "label": "论坛数量",
+     "value": 3.0,
+     "unit": "个"
+    },
+    {
+     "subject": "AI芯片峰会",
+     "label": "闭门研讨场次",
+     "value": 5.0,
+     "unit": "场"
+    },
+    {
+     "subject": "超节点",
+     "label": "专题研讨嘉宾数量",
+     "value": 12.0,
+     "unit": "位"
     }
    ]
   }
