@@ -3,7 +3,9 @@
 - **日期**：2026-09-16
 - **状态**：待用户评审
 - **作者**：DSH agent（与 波哥 共同设计）
-- **项目目录**：`/Users/boding/Desktop/DeepSeek Harness WorkSpace/storage-ai-radar`
+- **项目目录**：`/Users/boding/storage-ai-radar`
+  （2026-09-22 从 `~/Desktop/DeepSeek Harness WorkSpace/` 迁出——macOS 的 TCC 保护使
+  后台定时任务无法读取 Desktop 下的文件；原路径保留了一个同名软链接）
 - **数据源（只读）**：`/Users/boding/.openclaw/workspace/Daily Report`
 
 ---
