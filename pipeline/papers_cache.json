@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-22T00:21:40+08:00",
+ "generated_at": "2026-09-24T08:59:14+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -26463,6 +26463,678 @@
    "title": "面向突发事件处置的大模型辅助方案生成技术研究",
    "kind": "method",
    "checked_at": "2026-09-22T00:21:39+08:00"
+  },
+  "id:2609.20820": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.20820",
+   "match": {
+    "arxiv_id": "2609.20820",
+    "version": "1",
+    "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
+    "abstract": "Complex robotic manipulation tasks frequently require a long-term memory of past events and actions. As conditioning on full histories renders policies prone to spurious correlations and degrades performance, many approaches to policy memory involve compressing historical information through expensive VLM queries in-the-loop to process only task-salient information. In this paper, we propose an alternative approach in which computationally intensive VLM queries are made during train-time to learn a lightweight latent memory that can be efficiently queried at deployment time. Our representation, which we call the \\textbf{workspace token}, is trained by (1) using a VLM to identify current and historical information necessary for completing a task, then (2) distilling these into the workspace token using a set-reconstruction decoder loss. In both simulation and hardware, we show that the workspace token can be used as a drop-in replacement for observations during deployment, enabling policies to solve memory-intensive tasks without the need for VLM reasoning in-the-loop. Interestingly, we found that workspace tokens are not only more lightweight but also lead to better policy performance.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     "Nitish Dashora",
+     "Douglas Chen",
+     "Idan Shenfeld",
+     "John Marangola",
+     "Pulkit Agrawal",
+     "Max Simchowitz"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "26 pages; CoRL 2026; 11 figures"
+   },
+   "score": 1.0,
+   "title": "workspace token",
+   "kind": "id",
+   "checked_at": "2026-09-24T08:49:39+08:00"
+  },
+  "id:2605.20668": {
+   "status": "matched_by_id",
+   "query": "id_list=2605.20668",
+   "match": {
+    "arxiv_id": "2605.20668",
+    "version": "1",
+    "title": "On the limits and opportunities of AI reviewers: Reviewing the reviews of Nature-family papers with 45 expert scientists",
+    "abstract": "With the advancement of AI capabilities, AI reviewers are beginning to be deployed in scientific peer review, yet their capability and credibility remain in question: many scientists simply view them as probabilistic systems without the expertise to evaluate research, while other researchers are more optimistic about their readiness without concrete evidence. Understanding what AI reviewers do well, where they fall short, and what challenges remain is essential. However, existing evaluations of AI reviewers have focused on whether their verdicts match human verdicts (e.g., score alignment, acceptance prediction), which is insufficient to characterize their capabilities and limits. In this paper, we close this gap through a large-scale expert annotation study, in which 45 domain scientists in Physical, Biological, and Health Sciences spent 469 hours rating 2,960 individual criticisms (each targeting one specific aspect of a paper) from human-written and AI-generated reviews of 82 Nature-family papers on correctness, significance, and sufficiency of evidence. On a composite of all three dimensions, a reviewing agent powered by GPT-5.2 scores above each paper's top-rated human reviewer (60.0% vs. 48.2%, p = 0.009), while all three AI reviewers (including Gemini 3.0 Pro and Claude Opus 4.5) exceed the lowest-rated human across every dimension. AI reviewers' accurate criticisms are also more often rated significant and well-evidenced, and surface a distinct 26% of issues no human raises. However, AI reviewers overlap far more than humans do (21% vs. 3% for cross-reviewer pairs), and exhibit 16 recurring weaknesses humans do not share, such as limited subfield knowledge, lack of long context management over multiple files, and overly critical stance on minor issues. Overall, our results position current AI reviewers as complements to, not substitutes for, human reviewers.",
+    "published": "2026-05-20",
+    "updated": "2026-05-20",
+    "authors": [
+     "Seungone Kim",
+     "Dongkeun Yoon",
+     "Kiril Gashteovski",
+     "Juyoung Suk",
+     "Jinheon Baek",
+     "Pranjal Aggarwal",
+     "Ian Wu",
+     "Viktor Zaverkin",
+     "Spase Petkoski",
+     "Daniel R. Schrider",
+     "Ilija Dukovski",
+     "Francesco Santini"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "Work in progress"
+   },
+   "score": 1.0,
+   "title": "耶鲁泰斗把论文喂给大模型后直呼:它比顶级专家强百倍,但我敢用就会被开除!",
+   "kind": "id",
+   "checked_at": "2026-09-24T08:49:43+08:00"
+  },
+  "t:agentic esopt fine tuning long horizon llm agents with minimal gpu requirements": {
+   "status": "matched_by_title",
+   "query": "ti:\"Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements\"",
+   "match": {
+    "arxiv_id": "2608.17310",
+    "version": "2",
+    "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+    "abstract": "Reinforcement Learning (RL) has been promising in single-turn LLM fine-tuning. However, long-horizon agentic reasoning introduces increasingly branching interactions and sparse rewards, exposing several limitations of RL: its heavyweight backpropagation-based training stack makes it impractical to fine-tune larger LLMs, and longer-horizon trajectories make credit assignment in RL substantially harder. This paper argues that evolution strategies (ES) can be a better choice for fine-tuning long-horizon LLM agents. Compared with agentic RL, ES offers three key advantages: 1) Model Scalability: ES enables full-parameter optimization with only minimal, inference-level GPU memory, making it possible to fine-tune large LLMs. 2) Flexibility: its lightweight, black-box feedback interface makes ES fine-tuning easy to compose with prompt-space evolution (e.g., skill optimization & test-time compute); and 3) Long-Horizon Scalability: ES performs trajectory-level parameter attribution without decomposing rewards across horizons, yielding better scalability than Agentic RL as the horizon length grows. Based on this insight, we propose Agentic ESOpt, a full-parameter agentic fine-tuning framework tailored to flexible parameter--context co-evolution. At each step, Agentic ESOpt samples perturbations around the current LLM parameters, evaluates the resulting agents with rewards, and applies an online reward-weighted update. To improve the exploration--adaptation trade-off, Agentic ESOpt further introduces a cosine decay schedule of the perturbation scale $σ$. On WebArena-Lite, full-parameter optimization of Qwen-3.5-27B improves the No Skill baseline by 6.69%. In test-time automatic heuristic design, Agentic ESOpt performs online prompt--parameter co-evolution, improving its matched baseline in 28 of 36 settings.",
+    "published": "2026-08-18",
+    "updated": "2026-08-21",
+    "authors": [
+     "Zhi Zheng",
+     "Rongsheng Chen",
+     "Yunpeng Ba",
+     "Zhenkun Wang",
+     "Yee Whye Teh",
+     "Wee Sun Lee"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:02+08:00"
+  },
+  "t:dsec": {
+   "status": "matched_by_title",
+   "query": "all:\"DSec\"",
+   "match": {
+    "arxiv_id": "2103.06011",
+    "version": "1",
+    "title": "DSEC: A Stereo Event Camera Dataset for Driving Scenarios",
+    "abstract": "Once an academic venture, autonomous driving has received unparalleled corporate funding in the last decade. Still, the operating conditions of current autonomous cars are mostly restricted to ideal scenarios. This means that driving in challenging illumination conditions such as night, sunrise, and sunset remains an open problem. In these cases, standard cameras are being pushed to their limits in terms of low light and high dynamic range performance. To address these challenges, we propose, DSEC, a new dataset that contains such demanding illumination conditions and provides a rich set of sensory data. DSEC offers data from a wide-baseline stereo setup of two color frame cameras and two high-resolution monochrome event cameras. In addition, we collect lidar data and RTK GPS measurements, both hardware synchronized with all camera data. One of the distinctive features of this dataset is the inclusion of high-resolution event cameras. Event cameras have received increasing attention for their high temporal resolution and high dynamic range performance. However, due to their novelty, event camera datasets in driving scenarios are rare. This work presents the first high-resolution, large-scale stereo dataset with event cameras. The dataset contains 53 sequences collected by driving in a variety of illumination conditions and provides ground truth disparity for the development and evaluation of event-based stereo algorithms.",
+    "published": "2021-03-10",
+    "updated": "2021-03-10",
+    "authors": [
+     "Mathias Gehrig",
+     "Willem Aarents",
+     "Daniel Gehrig",
+     "Davide Scaramuzza"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": "IEEE Robotics and Automation Letters"
+   },
+   "score": 0.95,
+   "title": "DSec",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:50:06+08:00"
+  },
+  "t:dsec deepseek elastic compute": {
+   "status": "no_results",
+   "query": "ti:\"DSec (DeepSeek Elastic Compute)\"",
+   "match": null,
+   "title": "DSec (DeepSeek Elastic Compute)",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:09+08:00"
+  },
+  "t:deepseek harness": {
+   "status": "rejected",
+   "query": "ti:\"DeepSeek Harness\"",
+   "match": null,
+   "best_candidate": "Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection",
+   "best_score": 0.274,
+   "title": "DeepSeek Harness",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:13+08:00"
+  },
+  "t:deepseek harness开源爆火 把ai伦理焊进架构": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness开源爆火:把AI伦理焊进架构\"",
+   "match": null,
+   "title": "DeepSeek Harness开源爆火:把AI伦理焊进架构",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:32+08:00"
+  },
+  "t:deepseek harness是什么 一篇看懂ai agent开发工具": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness是什么?一篇看懂AI Agent开发工具\"",
+   "match": null,
+   "title": "DeepSeek Harness是什么?一篇看懂AI Agent开发工具",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:36+08:00"
+  },
+  "t:deepseek v4 的混合注意力架构 csa hca 与 swa": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek V4 的混合注意力架构:CSA、HCA 与 SWA\"",
+   "match": null,
+   "title": "DeepSeek V4 的混合注意力架构:CSA、HCA 与 SWA",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:55+08:00"
+  },
+  "t:deepseek v4 1 flash harness 0 1 5rc3双组": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek V4.1 flash+Harness 0.1.5rc3双组\"",
+   "match": null,
+   "title": "DeepSeek V4.1 flash+Harness 0.1.5rc3双组",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:50:59+08:00"
+  },
+  "t:deepseek实操 职场效率倍增的秘籍": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek实操：职场效率倍增的秘籍\"",
+   "match": null,
+   "title": "DeepSeek实操：职场效率倍增的秘籍",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:51:03+08:00"
+  },
+  "t:deepseek弹性计算 dsec 面向大规模智能体训练的高效沙箱基础设施": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek弹性计算（DSec）：面向大规模智能体训练的高效沙箱基础设施\"",
+   "match": null,
+   "title": "DeepSeek弹性计算（DSec）：面向大规模智能体训练的高效沙箱基础设施",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:51:07+08:00"
+  },
+  "t:edge0": {
+   "status": "rejected",
+   "query": "all:\"Edge0\"",
+   "match": null,
+   "best_candidate": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+   "best_score": 0.083,
+   "title": "Edge0",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:11+08:00"
+  },
+  "t:evoontology": {
+   "status": "matched_by_title",
+   "query": "all:\"EvoOntology\"",
+   "match": {
+    "arxiv_id": "2609.15779",
+    "version": "1",
+    "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+    "abstract": "Data agents aim to fulfill natural-language instructions over heterogeneous data, including tables, files, and databases. However, data agents face a challenging agent-data gap: heterogeneous data resides outside the agent, while the agent can access it (e.g., column names and file paths) only through generic tools. Existing approaches either let agents directly explore raw data sources or inject manually constructed semantic layers into prompts. However, neither scales well to large heterogeneous data sources nor adapts to different agent behaviors. In this paper, we introduce EvoOntology, a self-evolving ontology layer for data agents. EvoOntology encapsulates the ontology as an MCP server comprising a schema layer, a content layer, and a tool layer, enabling agents to actively query and interact with the ontology at runtime. To this end, we introduce a builder agent for autonomous ontology construction and a self-evolution loop that continuously refines the ontology through attribution-guided typed edits that are accepted only after a backbone-conditional paired evaluation. Experiments on three well-adopted data-agent benchmarks with four LLM backbones demonstrate that EvoOntology consistently outperforms strong baselines and existing semantic-layer approaches, effectively bridging the agent-data gap and enabling more effective interaction with heterogeneous data. Code: https://github.com/ruc-datalab/EvoOntology",
+    "published": "2026-09-14",
+    "updated": "2026-09-14",
+    "authors": [
+     "Meiduo Chong",
+     "Shaolei Zhang",
+     "Ju Fan",
+     "Xiaoyong Du"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.DB"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/ruc-datalab/EvoOntology"
+   },
+   "score": 0.95,
+   "title": "EvoOntology",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:15+08:00"
+  },
+  "t:falar global": {
+   "status": "no_results",
+   "query": "ti:\"Falar Global\"",
+   "match": null,
+   "title": "Falar Global",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:51:19+08:00"
+  },
+  "t:gem gpu erasure coded memory for fast training recovery": {
+   "status": "no_results",
+   "query": "ti:\"GEM: GPU Erasure-Coded Memory for Fast Training Recovery\"",
+   "match": null,
+   "title": "GEM: GPU Erasure-Coded Memory for Fast Training Recovery",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:51:23+08:00"
+  },
+  "t:gta rag": {
+   "status": "matched_by_title",
+   "query": "all:\"GTA-RAG\"",
+   "match": {
+    "arxiv_id": "2608.22479",
+    "version": "2",
+    "title": "GTA-RAG: Graph-Trajectory-Augmented Reinforcement Learning for Multi-Turn Retrieval-Augmented Reasoning",
+    "abstract": "Retrieval-augmented generation (RAG) enables LLMs to access external knowledge for answering knowledge-intensive questions. For complex multi-hop questions, multi-turn retrieval-augmented reasoning extends RAG into an iterative process that repeatedly searches for and integrates evidence across documents. However, existing reinforcement-learning (RL) approaches for agentic RAG are typically optimized with final-answer rewards, which provide sparse supervision and overlook whether the model actually retrieves the required evidence chain. We present \\textsc{GTA-RAG}, a graph-trajectory-augmented RL framework for multi-turn retrieval-augmented reasoning. From an entity--document graph, we sample connected document paths, synthesize multi-hop QA trajectories, and validate them with the deployed retriever to obtain executable trajectory-level supervision. We then optimize the retrieval policy with Group Relative Policy Optimization (GRPO) and a trajectory-guided reward that encourages both accurate answers and acquisition of target evidence documents, followed by answer-reward training on natural QA instances. Experiments on three multi-hop and two simple QA benchmarks show that \\method{} consistently outperforms RL-based RAG baselines with both Qwen2.5-3B and Qwen2.5-7B backbones, while substantially improving evidence-chain coverage. Our code is available at https://github.com/cjcj46262/GTA-RAG.",
+    "published": "2026-08-23",
+    "updated": "2026-08-30",
+    "authors": [
+     "Jun Chen",
+     "Yongchao Liu",
+     "Pengyu Qiu",
+     "Jiajun Zheng",
+     "Juelu Zhang",
+     "Yujie Zeng",
+     "Qin Zhang",
+     "Ziyue Qiao",
+     "Xiao Luo"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "12 pages, 5 figures. Accepted to EMNLP 2026 Findings"
+   },
+   "score": 0.95,
+   "title": "GTA-RAG",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:26+08:00"
+  },
+  "t:impossiblerubrics": {
+   "status": "matched_by_title",
+   "query": "all:\"ImpossibleRubrics\"",
+   "match": {
+    "arxiv_id": "2609.16816",
+    "version": "1",
+    "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+    "abstract": "Language model-generated rubrics are increasingly used as reward signals for rubric-based reinforcement learning, LLM-as-a-judge evaluation, and automated grading. Such rubrics are reliable only if they reward honest answers over adversarial answers optimized to exploit them. Yet their robustness to such optimization remains poorly understood. We isolate the hardest regime: impossible tasks, where the prompt pressures the model toward an unsupported conclusion, so the only honest response is to acknowledge the impossibility. We introduce ImpossibleRubrics, a benchmark of 169 impossible tasks spanning six impossibility categories, each paired with a verifiable oracle certificate specifying what an honest answer may and may not claim, together with 48 answerable controls. Rather than providing fixed rubrics, ImpossibleRubrics provides task environments and certificates, allowing rubrics to be generated downstream and then adversarially tested for whether they reward certificate-violating answers. Eleven generators are exploited 8--26% of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited 36% while a certificate-faithful rubric is exploited 0%, so what we measure is a rubric-quality gap, not task impossibility. One result runs against intuition. A single generic rubric (\"be decisive, penalize hedging\") used unchanged for every task is exploited 64% of the time, and seven of the eleven generators are exploited more often than that while writing a rubric tailored to each one. The tailored criteria appear to tell an attacker which claim to fabricate. The problem is not that rubrics are vague; it is that they are specific about the wrong things.",
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "authors": [
+     "Bowen Qin",
+     "Yi Xie",
+     "Yesheng Liu",
+     "Xi Yang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "ImpossibleRubrics",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:30+08:00"
+  },
+  "t:jev mem": {
+   "status": "matched_by_title",
+   "query": "all:\"Jev-Mem\"",
+   "match": {
+    "arxiv_id": "2609.23986",
+    "version": "1",
+    "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+    "abstract": "Agentic memory is becoming essential for long-horizon AI agents, yet many existing systems rely on autoregressive LLMs to control how memories are organized, retrieved, and used, placing expensive generation on the critical path of memory operations. We introduce \\textbf{\\method}, a new agentic memory architecture inspired by System-One/System-Two cognition. System One captures fast, lightweight decision-making, whereas System Two performs slower, deliberative reasoning. Jev-Mem brings this division of labor to agentic memory through a dedicated System-One control plane, a structured multi-relational memory plane, and a System-Two reasoning plane. The System-One controller governs memory typing and relational organization during construction, and dynamically performs query routing, retrieval-budget allocation, graph traversal, candidate scoring, and adaptive stopping during retrieval. System Two is invoked only for complex reasoning and answer synthesis. This design improves both memory effectiveness and system efficiency: on LoCoMo Jev-Mem achieves an overall LLM-as-a-Judge score of 0.777, an 11.0\\% relative improvement over the strongest baseline, while reducing memory construction time to 158\\,s, a 6.6$\\times$ speedup over the fastest competing memory system, and lowering average query latency to 0.93\\,s, a 36.7\\% reduction.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Dongming Jiang",
+     "Yi Li",
+     "Bingzhe Li"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Jev-Mem",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:36+08:00"
+  },
+  "t:lego maker": {
+   "status": "no_results",
+   "query": "all:\"LEGO Maker\"",
+   "match": null,
+   "title": "LEGO Maker",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:40+08:00"
+  },
+  "t:limix 2": {
+   "status": "matched_by_title",
+   "query": "all:\"LimiX-2\"",
+   "match": {
+    "arxiv_id": "2609.17488",
+    "version": "1",
+    "title": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+    "abstract": "We introduce LimiX-2, a new model in the LimiX family, developed through model and data scaling guided by our previously established scaling laws. LimiX-2 adopts the Contextual Mechanism Networks (CMNs) paradigm and is pretrained with Context-Conditional Masked Modeling (CCMM). CMNs shifts the organizing principle of in-context learning from target-centric prediction to mechanism-oriented joint modeling. Rather than centering the network on the $p(y \\mid x, D_{\\mathrm{context}})$ objective of conventional tabular PFNs, it is designed around learning $p(x, y \\mid D_{\\mathrm{context}})$, a context-dependent representation of the joint structure underlying data generation. Pretraining uses synthetic datasets generated by structural causal models (SCMs) spanning diverse graph structures, functional mechanisms, and observation processes. Evaluations on TabArena, TALENT, and BCCO show that LimiX-2 outperforms current dataset-specific models and tabular foundation models. Beyond predictive performance, the CMN paradigm also promotes causal awareness in LimiX-2: its feature attention encodes direct causal relationships, enabling accurate causal skeleton recovery.",
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "authors": [
+     "Xingxuan Zhang",
+     "Gang Ren",
+     "Hao Yuan",
+     "Hao Zou",
+     "Hongze Tan",
+     "Hui Wang",
+     "Jianhao Song",
+     "Jiansheng Li",
+     "Jiayao Zhang",
+     "Jinghan Zhang",
+     "Kaifang Li",
+     "Lang Mo"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "LimiX-2",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:44+08:00"
+  },
+  "t:loginsight": {
+   "status": "no_results",
+   "query": "all:\"LogInsight\"",
+   "match": null,
+   "title": "LogInsight",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:51:56+08:00"
+  },
+  "t:longds bench": {
+   "status": "matched_by_title",
+   "query": "all:\"LongDS-Bench\"",
+   "match": {
+    "arxiv_id": "2605.30434",
+    "version": "3",
+    "title": "LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis",
+    "abstract": "Real-world data analysis is inherently iterative, yet existing benchmarks mostly evaluate isolated or short interactive tasks, leaving agents' ability to track evolving analytical context over long horizons untested. We introduce LongDS, a benchmark for long-horizon, multi-turn data analysis where agents must maintain, update, restore, and compose evolving analytical states. LongDS comprises 68 tasks constructed from real-world Kaggle notebooks, spanning 2,225 turns across six domains including Geoscience, Business, and Education. Tasks are designed around state-evolution patterns (e.g., counterfactual perturbation, rollback, multi-state composition), with an average dependency span of 11.3 turns. Evaluating five state-of-the-art models, we find that the best model reaches only 48.45% average accuracy, performance drops nearly 47 points from early to late turns, and long-horizon errors account for 52%--69% of failures. Further analysis shows that additional agent steps do not necessarily improve performance, suggesting that the key bottleneck is maintaining a correct analytical state rather than increasing interaction budget. We release LongDS to support research on reliable long-horizon agentic data analysis. Code and data are released at https://github.com/zjunlp/DataMind.",
+    "published": "2026-05-28",
+    "updated": "2026-09-05",
+    "authors": [
+     "Kewei Xu",
+     "Xiaoben Lu",
+     "Shuofei Qiao",
+     "Zihan Ding",
+     "Haoming Xu",
+     "Lei Liang",
+     "Ningyu Zhang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL",
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": "EMNLP 2026; Project Home: https://zjunlp.github.io/DataMind/"
+   },
+   "score": 0.95,
+   "title": "LongDS-Bench",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:52:00+08:00"
+  },
+  "t:one to more more to one": {
+   "status": "rejected",
+   "query": "ti:\"One to More, More to One\"",
+   "match": null,
+   "best_candidate": "One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents",
+   "best_score": 0.387,
+   "title": "One to More, More to One",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:52:06+08:00"
+  },
+  "t:paint anything": {
+   "status": "matched_by_title",
+   "query": "all:\"Paint-Anything\"",
+   "match": {
+    "arxiv_id": "2609.20816",
+    "version": "2",
+    "title": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
+    "abstract": "Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex value for image generation and editing. Prior work has explored color generation, editing, and colorization, but often relies on dedicated color representations or specialized inference procedures. Advances in large language models offer a simpler starting point: even compact models can associate hex values with color semantics. We present Paint-Anything, which learns a shared hex-prompt interface for generation and editing through object-level color supervision. We develop a data pipeline that constructs Paint-500K from real images through object grounding, perceptual color labeling, and editing-pair synthesis. Since shadows make real-image labels only approximate colors, we complement this supervision with pure-color anchors whose pixels exactly match their paired hex values. These anchors are used only at high-noise timesteps, leaving low-noise training to natural images. We further introduce Any Color Benchmark (ACBench), comprising ACBench-T2I and ACBench-Edit, to measure object-level hex color fidelity across both tasks. On FLUX.2-4B, Paint-Anything improves ACBench-T2I and ACBench-Edit scores by 85.3% and 28.3%, respectively, relative to the base model, with ablations supporting the training recipe. It also achieves the highest average CompColor score among the compared methods.",
+    "published": "2026-09-17",
+    "updated": "2026-09-20",
+    "authors": [
+     "Ji Xie",
+     "Dewei Zhou",
+     "Xinyu Huang",
+     "Zhennan Chen",
+     "Xun Wang"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "29 pages, Seed Technical Report. HTML compatibility fixes; scientific content unchanged"
+   },
+   "score": 0.95,
+   "title": "Paint-Anything",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:52:19+08:00"
+  },
+  "t:placereasoner beta": {
+   "status": "matched_by_title",
+   "query": "all:\"PlaceReasoner-Beta\"",
+   "match": {
+    "arxiv_id": "2609.21263",
+    "version": "1",
+    "title": "PlaceReasoner-Beta: Reasoning-Driven Macro Placement and Benchmarking",
+    "abstract": "Automated macro placement remains a fundamental challenge in VLSI physical design. Despite decades of research, existing approaches predominantly optimize hand-crafted proxy objectives, such as estimated wirelength, and typically produce placements through one-shot numerical optimization, limiting their ability to incorporate visual layout context, codified design expertise, and downstream physical-design feedback in a unified loop. We present PlaceReasoner-Beta, a verifier-guided multi-agent framework that reformulates macro placement as a closed-loop reasoning problem rather than black-box optimization. A vision-language model (VLM) planner generates candidate placements from the floorplan image, macro specifications, and connectivity structure; a geometric verifier enforces physical legality and expert placement principles; a physical verifier refines candidates using early implementation feedback; and a post-route optimizer further improves promising layouts using final PPA. To enable reproducible evaluation, we introduce PlaceReasoner-Bench, a fully open end-to-end benchmark built from open RTL designs, EDA tools, and technology libraries. It comprises 8 designs at two aspect ratios, yielding 16 tasks with fixed floorplans and I/O assignments, so methods differ only in macro positions and orientations and are evaluated using routed PPA and DRC rather than pre-route proxies. Across the benchmark, PlaceReasoner-Beta achieves the best timing among DRC-clean methods on all square tasks, reducing post-route TNS by 61.2% at 1:1 and 53.0% at 2:1 relative to the classical baseline field. It also shortens routed wirelength on most designs despite never explicitly optimizing it, demonstrating that reasoning over spatial structure under physical-design feedback can improve end-to-end layout quality beyond proxy-objective optimization.",
+    "published": "2026-09-18",
+    "updated": "2026-09-18",
+    "authors": [
+     "Qiufeng Li",
+     "Chengxuan Wang",
+     "Rongqian Chen",
+     "Quan Cheng",
+     "Yihui Ren",
+     "Chia-Tung Ho",
+     "David Z. Pan",
+     "Tian Lan",
+     "Weidong Cao"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "PlaceReasoner-Beta",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:52:40+08:00"
+  },
+  "t:pointer cad v2 plan then construct cad generation with dimension aware parametric precision": {
+   "status": "matched_by_title",
+   "query": "ti:\"Pointer-CAD v2: Plan-Then-Construct CAD Generation with Dimension-Aware Parametric Precision\"",
+   "match": {
+    "arxiv_id": "2606.29301",
+    "version": "1",
+    "title": "Pointer-CAD v2: Plan-Then-Construct CAD Generation with Dimension-Aware Parametric Precision",
+    "abstract": "Computer-aided design (CAD) plays a fundamental role in modern manufacturing by providing the high precision required for industrial production. Recent large language model based approaches formulate CAD generation as a sequence prediction problem and have achieved promising results. However, existing methods and evaluation protocols primarily emphasize visual similarity, while overlooking precise geometric parameters and correct metric scale. Small numerical deviations that are negligible at the shape-level may still violate industrial tolerance requirements, a problem further compounded by current autoregressive paradigms that utilize command sequence representations, aggressively quantize numerical parameters to ease LLM prediction. In this work, we present Pointer-CAD v2. Compared with v1 (arXiv:2603.04337), this version directly predicts continuous values, bypassing the need for quantized numerical parameters and thereby eliminating quantization errors. Specifically, we propose a unified framework that decouples parameter reasoning from geometric construction through a Plan-Then-Construct paradigm. Our method first produces a structured design plan with explicit metric scale parameters. These parameters are organized into a dictionary and directly referenced during sequence generation via a pointer mechanism, eliminating discretization errors and ensuring dimensionally consistent execution. In addition, we construct a new large-scale dataset with plan-level annotation and introduce three hierarchical geometry accuracy metrics to evaluate parametric fidelity at the vertex, edge, and face levels. Extensive experiments demonstrate that Pointer-CAD v2 consistently outperforms existing baselines and achieves substantial improvements in geometric accuracy, enabling reliable CAD generation for precision-critical engineering applications.",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
+    "authors": [
+     "Dacheng Qi",
+     "Chenyu Wang",
+     "Jingwei Xu",
+     "Yi Ma",
+     "Shenghua Gao"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to ECCV 2026. Code is available at https://github.com/Snitro/Pointer-CAD-v2"
+   },
+   "score": 1.0,
+   "title": "Pointer-CAD v2: Plan-Then-Construct CAD Generation with Dimension-Aware Parametric Precision",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:52:52+08:00"
+  },
+  "t:punching above their weight classification head fine tuning of tiny language models for verifiable multiple choice tasks": {
+   "status": "network_error",
+   "query": "ti:\"Punching Above Their Weight: Classification-Head Fine-Tuning of Tiny Language Models for Verifiable Multiple-Choice Tasks\"",
+   "match": null,
+   "title": "Punching Above Their Weight: Classification-Head Fine-Tuning of Tiny Language Models for Verifiable Multiple-Choice Tasks",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:55:08+08:00"
+  },
+  "t:rrsi": {
+   "status": "network_error",
+   "query": "all:\"RRSI\"",
+   "match": null,
+   "title": "RRSI",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:55:28+08:00"
+  },
+  "t:spike": {
+   "status": "network_error",
+   "query": "all:\"SPiKE\"",
+   "match": null,
+   "title": "SPiKE",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:57:19+08:00"
+  },
+  "t:score centering stabilizes off policy reinforcement learning": {
+   "status": "matched_by_title",
+   "query": "ti:\"Score Centering Stabilizes Off Policy Reinforcement Learning\"",
+   "match": {
+    "arxiv_id": "2609.20807",
+    "version": "1",
+    "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+    "abstract": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     "Martin Marek",
+     "Max Ryabinin"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Score Centering Stabilizes Off Policy Reinforcement Learning",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:57:53+08:00"
+  },
+  "t:when llms threaten democratic autonomy": {
+   "status": "no_results",
+   "query": "ti:\"When LLMs Threaten Democratic Autonomy\"",
+   "match": null,
+   "title": "When LLMs Threaten Democratic Autonomy",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:58:06+08:00"
+  },
+  "t:why the harness matters more than the model": {
+   "status": "no_results",
+   "query": "ti:\"Why the Harness Matters More Than the Model\"",
+   "match": null,
+   "title": "Why the Harness Matters More Than the Model",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:58:18+08:00"
+  },
+  "t:workspace token": {
+   "status": "rejected",
+   "query": "all:\"workspace token\"",
+   "match": null,
+   "best_candidate": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
+   "best_score": 0.311,
+   "title": "workspace token",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:58:22+08:00"
+  },
+  "t:生成式把关 视野下的大模型信息回避行为 基于全球主流大模型的跨国比较分析": {
+   "status": "no_results",
+   "query": "ti:\"“生成式把关”视野下的大模型信息回避行为——基于全球主流大模型的跨国比较分析\"",
+   "match": null,
+   "title": "“生成式把关”视野下的大模型信息回避行为——基于全球主流大模型的跨国比较分析",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:58:39+08:00"
+  },
+  "t:一份ecc校验 三层一起用 cerberus如何重新设计hbm lpddr的内存可靠性": {
+   "status": "no_results",
+   "query": "ti:\"一份ECC校验,三层一起用:Cerberus如何重新设计HBM/LPDDR的内存可靠性?\"",
+   "match": null,
+   "title": "一份ECC校验,三层一起用:Cerberus如何重新设计HBM/LPDDR的内存可靠性?",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:58:43+08:00"
+  },
+  "t:基于大模型的人机混合智能指控架构设计与思": {
+   "status": "no_results",
+   "query": "all:\"基于大模型的人机混合智能指控架构设计与思\"",
+   "match": null,
+   "title": "基于大模型的人机混合智能指控架构设计与思",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:58:47+08:00"
+  },
+  "t:基于大模型的轨道交通运维知识图谱构建方法": {
+   "status": "no_results",
+   "query": "all:\"基于大模型的轨道交通运维知识图谱构建方法\"",
+   "match": null,
+   "title": "基于大模型的轨道交通运维知识图谱构建方法",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:58:51+08:00"
+  },
+  "t:大模型在信息抽取领域的应用研究": {
+   "status": "no_results",
+   "query": "all:\"大模型在信息抽取领域的应用研究\"",
+   "match": null,
+   "title": "大模型在信息抽取领域的应用研究",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:58:54+08:00"
+  },
+  "t:大语言模型的齿状回 基于模式分离的场景认知能力诊断及增强框架": {
+   "status": "no_results",
+   "query": "ti:\"大语言模型的齿状回：基于模式分离的场景认知能力诊断及增强框架\"",
+   "match": null,
+   "title": "大语言模型的齿状回：基于模式分离的场景认知能力诊断及增强框架",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:58:58+08:00"
+  },
+  "t:微调开源大模型在可复现大规模社会科学研究中的效能": {
+   "status": "no_results",
+   "query": "all:\"微调开源大模型在可复现大规模社会科学研究中的效能\"",
+   "match": null,
+   "title": "微调开源大模型在可复现大规模社会科学研究中的效能",
+   "kind": "method",
+   "checked_at": "2026-09-24T08:59:02+08:00"
+  },
+  "t:生成式把关视野下的大模型信息回避行为 基于全球主流大模型的跨国比较分析": {
+   "status": "no_results",
+   "query": "ti:\"生成式把关视野下的大模型信息回避行为——基于全球主流大模型的跨国比较分析\"",
+   "match": null,
+   "title": "生成式把关视野下的大模型信息回避行为——基于全球主流大模型的跨国比较分析",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:59:06+08:00"
+  },
+  "t:递归自我改进 rsi 综述": {
+   "status": "no_results",
+   "query": "ti:\"递归自我改进 RSI 综述\"",
+   "match": null,
+   "title": "递归自我改进 RSI 综述",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:59:10+08:00"
+  },
+  "t:陈导读书 deepseek实用操作手册": {
+   "status": "no_results",
+   "query": "ti:\"陈导读书|《DeepSeek实用操作手册\"",
+   "match": null,
+   "title": "陈导读书|《DeepSeek实用操作手册",
+   "kind": "title",
+   "checked_at": "2026-09-24T08:59:13+08:00"
   }
  }
 }

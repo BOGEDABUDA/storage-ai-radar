@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-09-22T00:18:38+08:00",
+ "generated_at": "2026-09-24T08:49:18+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -39006,6 +39006,1240 @@
      "label": "专题研讨嘉宾数量",
      "value": 12.0,
      "unit": "位"
+    }
+   ]
+  },
+  "2026-09-24|new-media|technical|0": {
+   "hash": "5c7cd917349aa9d2",
+   "date": "2026-09-24",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "J5060",
+     "type": "product"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "pSLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "J5060",
+     "label": "随机写IOPS相对纯QLC方案倍数",
+     "value": 7.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "J5060",
+     "label": "pSLC模式4KB随机写延迟",
+     "value": 8.0,
+     "unit": "μs"
+    },
+    {
+     "subject": "J5060",
+     "label": "耐久提升倍数",
+     "value": 25.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-24|others|business|0": {
+   "hash": "b197a9cef4fbde36",
+   "date": "2026-09-24",
+   "category": "others",
+   "entities": [
+    {
+     "name": "NOR",
+     "type": "tech"
+    },
+    {
+     "name": "SLC NAND",
+     "type": "tech"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "DDR5",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "SLC NAND",
+     "label": "上半年合约价涨幅",
+     "value": 100.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SLC NAND",
+     "label": "下半年合约价涨幅",
+     "value": 120.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DRAM",
+     "label": "短缺持续时长",
+     "value": 2.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-09-24|others|technical|0": {
+   "hash": "8199bb8d8b083236",
+   "date": "2026-09-24",
+   "category": "others",
+   "entities": [
+    {
+     "name": "XPU",
+     "type": "tech"
+    },
+    {
+     "name": "DSP",
+     "type": "tech"
+    },
+    {
+     "name": "1.6T",
+     "type": "tech"
+    },
+    {
+     "name": "空芯光纤",
+     "type": "tech"
+    },
+    {
+     "name": "OCS",
+     "type": "tech"
+    },
+    {
+     "name": "WAN/DCI",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "XPU",
+     "label": "百万卡带宽需求相对传统WAN/DCI倍数",
+     "value": 14.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "1.6T",
+     "label": "2027年需求量",
+     "value": 6000.0,
+     "unit": "万"
+    },
+    {
+     "subject": "1.6T",
+     "label": "2027年供应量",
+     "value": 4000.0,
+     "unit": "万"
+    },
+    {
+     "subject": "空芯光纤",
+     "label": "时延降低幅度",
+     "value": 31.0,
+     "unit": "%"
+    },
+    {
+     "subject": "OCS",
+     "label": "2029年市场规模",
+     "value": 25.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-24|storage-semantics-protocol|business|0": {
+   "hash": "30257b69cb3912d2",
+   "date": "2026-09-24",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "平头哥",
+     "type": "company"
+    },
+    {
+     "name": "真武V900",
+     "type": "product"
+    },
+    {
+     "name": "ICN Switch",
+     "type": "product"
+    },
+    {
+     "name": "磐脉网卡",
+     "type": "product"
+    },
+    {
+     "name": "镇岳SSD主控",
+     "type": "product"
+    },
+    {
+     "name": "FP8",
+     "type": "tech"
+    },
+    {
+     "name": "FP4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "真武V900",
+     "label": "性能相对前代倍数",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "真武V900",
+     "label": "内置显存容量",
+     "value": 216.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "真武V900",
+     "label": "片间带宽",
+     "value": 1200.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "真武V900",
+     "label": "单集群最大扩展卡数",
+     "value": 50.0,
+     "unit": "万卡"
+    }
+   ]
+  },
+  "2026-09-24|storage-semantics-protocol|technical|0": {
+   "hash": "0b63859d90441b60",
+   "date": "2026-09-24",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "Arm",
+     "type": "company"
+    },
+    {
+     "name": "Phoenix SoC",
+     "type": "product"
+    },
+    {
+     "name": "Neoverse V3",
+     "type": "tech"
+    },
+    {
+     "name": "CXL 3.0",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe Gen6",
+     "type": "tech"
+    },
+    {
+     "name": "DDR5-8800",
+     "type": "tech"
+    },
+    {
+     "name": "CRB",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Phoenix SoC",
+     "label": "核心数",
+     "value": 136.0,
+     "unit": "核"
+    },
+    {
+     "subject": "Phoenix SoC",
+     "label": "PCIe Gen6通道数",
+     "value": 96.0,
+     "unit": "条"
+    },
+    {
+     "subject": "Phoenix SoC",
+     "label": "DDR5通道数",
+     "value": 12.0,
+     "unit": "通道"
+    },
+    {
+     "subject": "Phoenix SoC",
+     "label": "每机架性能提升倍数",
+     "value": 2.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Phoenix SoC",
+     "label": "每瓦性能提升倍数",
+     "value": 1.6,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-24|ai-inference-acceleration|business|0": {
+   "hash": "f1f08d4e3d010ee7",
+   "date": "2026-09-24",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "平头哥",
+     "type": "company"
+    },
+    {
+     "name": "真武V900",
+     "type": "product"
+    },
+    {
+     "name": "M890",
+     "type": "product"
+    },
+    {
+     "name": "SAIL",
+     "type": "tech"
+    },
+    {
+     "name": "FP8",
+     "type": "tech"
+    },
+    {
+     "name": "FP4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "真武V900",
+     "label": "算力相对M890倍数",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "真武V900",
+     "label": "显存容量",
+     "value": 216.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "真武V900",
+     "label": "片间互联带宽",
+     "value": 1200.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "真武V900",
+     "label": "超节点最大扩展卡数",
+     "value": 50.0,
+     "unit": "万卡"
+    },
+    {
+     "subject": "平头哥",
+     "label": "服务企业客户数",
+     "value": 650.0,
+     "unit": "家"
+    }
+   ]
+  },
+  "2026-09-24|ai-inference-acceleration|technical|0": {
+   "hash": "b4fccd3d2244d43f",
+   "date": "2026-09-24",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4.1 Flash",
+     "type": "product"
+    },
+    {
+     "name": "Causal-Encoder-Decoder",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "参数量",
+     "value": 552.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "输入激活量",
+     "value": 8.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "输出激活量",
+     "value": 16.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV缓存单token占用",
+     "value": 890.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "KV缓存压缩倍数(相对上代)",
+     "value": 4.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "SSD占用压缩倍数(相对上代)",
+     "value": 8.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "上下文长度",
+     "value": 1.0,
+     "unit": "M token"
+    },
+    {
+     "subject": "DeepSeek V4.1 Flash",
+     "label": "缓存命中单价",
+     "value": 0.02,
+     "unit": "元/百万token"
+    }
+   ]
+  },
+  "2026-09-24|ai-model-agent-rag|business|0": {
+   "hash": "a53de3e8ec264859",
+   "date": "2026-09-24",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "阿里",
+     "type": "company"
+    },
+    {
+     "name": "Personal Agent",
+     "type": "product"
+    },
+    {
+     "name": "Agent Studio",
+     "type": "product"
+    },
+    {
+     "name": "MaaS",
+     "type": "tech"
+    },
+    {
+     "name": "FlashBoot",
+     "type": "tech"
+    },
+    {
+     "name": "UniScheduler",
+     "type": "tech"
+    },
+    {
+     "name": "Vineyard",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "阿里",
+     "label": "MaaS客户数增速",
+     "value": 6.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "FlashBoot",
+     "label": "模型启动耗时",
+     "value": 70.0,
+     "unit": "秒"
+    },
+    {
+     "subject": "UniScheduler",
+     "label": "调度耗时",
+     "value": 0.4,
+     "unit": "秒"
+    },
+    {
+     "subject": "Vineyard",
+     "label": "Prompt缓存成本节省",
+     "value": 95.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-24|ai-model-agent-rag|technical|0": {
+   "hash": "16c6b24a9a7f33c3",
+   "date": "2026-09-24",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4.1-Flash",
+     "type": "product"
+    },
+    {
+     "name": "Causal-Encoder-Decoder",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "CSA2",
+     "type": "tech"
+    },
+    {
+     "name": "FP4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "总层数",
+     "value": 40.0,
+     "unit": "层"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "计算全局KV的层数",
+     "value": 4.0,
+     "unit": "层"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "prefill激活量",
+     "value": 8.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "decode激活量",
+     "value": 16.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "全局KV缓存单token占用",
+     "value": 890.0,
+     "unit": "B"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "全局KV压缩倍数(相对上代)",
+     "value": 4.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "SSD占用压缩倍数(相对上代)",
+     "value": 8.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash",
+     "label": "1M上下文全局KV占用",
+     "value": 0.89,
+     "unit": "GB"
+    }
+   ]
+  },
+  "2026-09-24|cost-effective-storage|business|0": {
+   "hash": "e452ccd24cc7ddaa",
+   "date": "2026-09-24",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Kioxia",
+     "type": "company"
+    },
+    {
+     "name": "闪迪",
+     "type": "company"
+    },
+    {
+     "name": "Infinidat",
+     "type": "company"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    },
+    {
+     "name": "HDD",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "NAND",
+     "label": "ASP二季度环比涨幅",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NAND",
+     "label": "ASP三季度环比涨幅",
+     "value": 12.5,
+     "unit": "%"
+    },
+    {
+     "subject": "闪迪",
+     "label": "毛利率",
+     "value": 84.6,
+     "unit": "%"
+    },
+    {
+     "subject": "闪迪",
+     "label": "数据中心收入增量中涨价贡献占比",
+     "value": 66.7,
+     "unit": "%"
+    },
+    {
+     "subject": "Infinidat",
+     "label": "每TB成本锁定年限",
+     "value": 6.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-09-24|cost-effective-storage|technical|0": {
+   "hash": "d236a8ac3361e87d",
+   "date": "2026-09-24",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "梁文锋",
+     "type": "person"
+    },
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DSec",
+     "type": "tech"
+    },
+    {
+     "name": "EROFS",
+     "type": "tech"
+    },
+    {
+     "name": "overlayfs",
+     "type": "tech"
+    },
+    {
+     "name": "virtio-pmem",
+     "type": "tech"
+    },
+    {
+     "name": "DAX",
+     "type": "tech"
+    },
+    {
+     "name": "MicroVM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DSec",
+     "label": "沙盒创建速率",
+     "value": 5000.0,
+     "unit": "个/秒"
+    },
+    {
+     "subject": "DSec",
+     "label": "日产能",
+     "value": 300.0,
+     "unit": "万"
+    },
+    {
+     "subject": "DSec",
+     "label": "峰值并发数",
+     "value": 38.0,
+     "unit": "万"
+    },
+    {
+     "subject": "DSec",
+     "label": "节点数",
+     "value": 160.0,
+     "unit": "节点"
+    },
+    {
+     "subject": "DSec",
+     "label": "CPU核数",
+     "value": 3.0,
+     "unit": "万核"
+    },
+    {
+     "subject": "DSec",
+     "label": "内存容量",
+     "value": 250.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "DSec",
+     "label": "8192容器部署耗时",
+     "value": 35.0,
+     "unit": "分钟"
+    },
+    {
+     "subject": "virtio-pmem",
+     "label": "峰值内存降幅",
+     "value": 40.2,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-24|high-capacity-storage|business|0": {
+   "hash": "4b5b8d1599d605b5",
+   "date": "2026-09-24",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "Kioxia",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DRAM",
+     "label": "2027年长协锁定比例",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM",
+     "label": "2027年长协锁定比例",
+     "value": 100.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "数据中心产能长协锁定比例",
+     "value": 95.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "云厂商押金规模",
+     "value": 100.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-24|high-capacity-storage|technical|0": {
+   "hash": "9575ad1452e2c477",
+   "date": "2026-09-24",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "大普",
+     "type": "company"
+    },
+    {
+     "name": "J5060",
+     "type": "product"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "pSLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "J5060",
+     "label": "总容量",
+     "value": 30.72,
+     "unit": "TB"
+    },
+    {
+     "subject": "J5060",
+     "label": "划出pSLC容量",
+     "value": 800.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "J5060",
+     "label": "随机写IOPS相对纯QLC倍数",
+     "value": 7.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "J5060",
+     "label": "4K随机写延迟",
+     "value": 8.0,
+     "unit": "µs"
+    },
+    {
+     "subject": "J5060",
+     "label": "擦写寿命相对QLC倍数",
+     "value": 25.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-24|high-reliability-storage|business|0": {
+   "hash": "8fe172eb3fd666af",
+   "date": "2026-09-24",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "DapuStor",
+     "type": "company"
+    },
+    {
+     "name": "J5060",
+     "type": "product"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "pSLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "J5060",
+     "label": "随机写IOPS",
+     "value": 30000.0,
+     "unit": "IOPS"
+    },
+    {
+     "subject": "J5060",
+     "label": "4K随机写延迟",
+     "value": 8.0,
+     "unit": "µs"
+    },
+    {
+     "subject": "J5060",
+     "label": "pSLC擦写循环相对QLC倍数",
+     "value": 25.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "J5060",
+     "label": "容量范围下限",
+     "value": 15.36,
+     "unit": "TB"
+    },
+    {
+     "subject": "J5060",
+     "label": "容量范围上限",
+     "value": 122.88,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-09-24|high-reliability-storage|technical|0": {
+   "hash": "ee09570d9f9bf6db",
+   "date": "2026-09-24",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "GEM",
+     "type": "tech"
+    },
+    {
+     "name": "GemEC",
+     "type": "tech"
+    },
+    {
+     "name": "GemRetry",
+     "type": "tech"
+    },
+    {
+     "name": "GemGuard",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GEM",
+     "label": "额外显存开销",
+     "value": 0.3,
+     "unit": "%"
+    },
+    {
+     "subject": "GEM",
+     "label": "恢复时间降幅",
+     "value": 99.0,
+     "unit": "%"
+    },
+    {
+     "subject": "GEM",
+     "label": "故障浪费时间平均降幅",
+     "value": 96.6,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-24|model-benchmarking|business|0": {
+   "hash": "ec413a1d9dc7e3f7",
+   "date": "2026-09-24",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "GPT-6 Sol",
+     "type": "product"
+    },
+    {
+     "name": "GPT-6 Luna",
+     "type": "product"
+    },
+    {
+     "name": "阿里",
+     "type": "company"
+    },
+    {
+     "name": "Qwen3.8-Omni-Flash",
+     "type": "product"
+    },
+    {
+     "name": "Step 5 Preview",
+     "type": "product"
+    },
+    {
+     "name": "Opus 5",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GPT-6 Sol",
+     "label": "输入价格",
+     "value": 2.0,
+     "unit": "美元/百万token"
+    },
+    {
+     "subject": "GPT-6 Sol",
+     "label": "输出价格",
+     "value": 10.0,
+     "unit": "美元/百万token"
+    },
+    {
+     "subject": "GPT-6 Luna",
+     "label": "输入价格",
+     "value": 0.1,
+     "unit": "美元/百万token"
+    },
+    {
+     "subject": "GPT-6 Luna",
+     "label": "输出价格",
+     "value": 0.5,
+     "unit": "美元/百万token"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "缓存读取折扣",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "价格降幅(相对5.6促销价)",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Qwen3.8-Omni-Flash",
+     "label": "音视频输入价格降幅",
+     "value": 93.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Qwen3.8-Omni-Flash",
+     "label": "上下文长度",
+     "value": 1.0,
+     "unit": "M token"
+    },
+    {
+     "subject": "Step 5 Preview",
+     "label": "单任务成本相对Opus 5倍数",
+     "value": 0.125,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-24|model-benchmarking|technical|0": {
+   "hash": "b917d80e00d0f9fa",
+   "date": "2026-09-24",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "UMass",
+     "type": "institution"
+    },
+    {
+     "name": "Zoom",
+     "type": "company"
+    },
+    {
+     "name": "Google",
+     "type": "company"
+    },
+    {
+     "name": "RRSI",
+     "type": "tech"
+    },
+    {
+     "name": "bash",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "UMass",
+     "label": "消融实验组数",
+     "value": 176.0,
+     "unit": "组"
+    },
+    {
+     "subject": "UMass",
+     "label": "上下文管理带来的成功率提升(32k预算)",
+     "value": 35.7,
+     "unit": "个百分点"
+    },
+    {
+     "subject": "UMass",
+     "label": "仅给bash时强模型成功率变化",
+     "value": 3.6,
+     "unit": "个百分点"
+    },
+    {
+     "subject": "UMass",
+     "label": "成本降幅",
+     "value": 53.0,
+     "unit": "%"
+    },
+    {
+     "subject": "RRSI",
+     "label": "正则约束条数",
+     "value": 7.0,
+     "unit": "条"
+    },
+    {
+     "subject": "RRSI",
+     "label": "每任务token消耗",
+     "value": 2.42,
+     "unit": "M"
+    }
+   ]
+  },
+  "2026-09-24|near-memory-computing|business|0": {
+   "hash": "205b6a2ebb5034fa",
+   "date": "2026-09-24",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "启元实验室",
+     "type": "institution"
+    },
+    {
+     "name": "清华",
+     "type": "institution"
+    },
+    {
+     "name": "数智融合开放架构",
+     "type": "tech"
+    },
+    {
+     "name": "OceanStor A系列",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "数智融合开放架构",
+     "label": "架构层数",
+     "value": 3.0,
+     "unit": "层"
+    }
+   ]
+  },
+  "2026-09-24|near-memory-computing|technical|0": {
+   "hash": "c173752bea7b9fd7",
+   "date": "2026-09-24",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "IBM",
+     "type": "company"
+    },
+    {
+     "name": "z/Architecture",
+     "type": "tech"
+    },
+    {
+     "name": "Arm AArch64",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "IBM",
+     "label": "制程",
+     "value": 2.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "IBM",
+     "label": "大核数量",
+     "value": 11.0,
+     "unit": "个"
+    },
+    {
+     "subject": "IBM",
+     "label": "大核主频",
+     "value": 5.7,
+     "unit": "GHz"
+    },
+    {
+     "subject": "IBM",
+     "label": "虚拟L3容量",
+     "value": 432.0,
+     "unit": "MB"
+    },
+    {
+     "subject": "IBM",
+     "label": "联合L4容量",
+     "value": 3.5,
+     "unit": "GB"
+    }
+   ]
+  },
+  "2026-09-24|new-media|business|0": {
+   "hash": "8b03c7f8613e2696",
+   "date": "2026-09-24",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBM4",
+     "label": "单价下限",
+     "value": 3.6,
+     "unit": "美元/Gigabit"
+    },
+    {
+     "subject": "HBM4",
+     "label": "单价上限",
+     "value": 4.0,
+     "unit": "美元/Gigabit"
+    },
+    {
+     "subject": "HBM4",
+     "label": "当前单价",
+     "value": 2.0,
+     "unit": "美元/Gigabit"
+    },
+    {
+     "subject": "HBM4",
+     "label": "后端封装良率",
+     "value": 85.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DRAM",
+     "label": "2027年服务器长协锁定比例",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM",
+     "label": "2027年长协锁定比例",
+     "value": 100.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "数据中心产能长协锁定比例",
+     "value": 95.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "云厂商押金规模",
+     "value": 100.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "三星",
+     "label": "合计预付/押金规模",
+     "value": 400.0,
+     "unit": "亿美元"
     }
    ]
   }
