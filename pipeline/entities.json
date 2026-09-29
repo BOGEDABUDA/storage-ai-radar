@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-09-24T08:49:18+08:00",
+ "generated_at": "2026-09-30T01:37:24+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -40239,6 +40239,1167 @@
      "subject": "三星",
      "label": "合计预付/押金规模",
      "value": 400.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-29|new-media|technical|0": {
+   "hash": "c169864f2ce59d99",
+   "date": "2026-09-29",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "CEA-Leti",
+     "type": "institution"
+    },
+    {
+     "name": "ST",
+     "type": "company"
+    },
+    {
+     "name": "Microchip",
+     "type": "company"
+    },
+    {
+     "name": "RRAM",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "In-Package Memory",
+     "type": "tech"
+    },
+    {
+     "name": "Chiplet",
+     "type": "tech"
+    },
+    {
+     "name": "3D IC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "RRAM",
+     "label": "模拟存内计算单次推理能耗",
+     "value": 2.5,
+     "unit": "nJ"
+    },
+    {
+     "subject": "MCU",
+     "label": "单次推理能耗",
+     "value": 170.0,
+     "unit": "μJ"
+    },
+    {
+     "subject": "In-Package Memory",
+     "label": "较纯SRAM功耗降幅",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|others|business|0": {
+   "hash": "62028e9772f02dd9",
+   "date": "2026-09-29",
+   "category": "others",
+   "entities": [
+    {
+     "name": "SemiAnalysis",
+     "type": "institution"
+    },
+    {
+     "name": "阿里巴巴",
+     "type": "company"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    },
+    {
+     "name": "百度",
+     "type": "company"
+    },
+    {
+     "name": "字节跳动",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "中国数据中心已建成容量",
+     "value": 24.0,
+     "unit": "GW"
+    },
+    {
+     "subject": "行业",
+     "label": "中国数据中心已宣布容量",
+     "value": 30.0,
+     "unit": "GW"
+    },
+    {
+     "subject": "行业",
+     "label": "阿里腾讯百度季度资本开支合计",
+     "value": 200.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "字节跳动",
+     "label": "占已交付容量比例",
+     "value": 20.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "运营商十五五资本开支增幅",
+     "value": 40.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|others|technical|0": {
+   "hash": "6ffe01bb21332fd9",
+   "date": "2026-09-29",
+   "category": "others",
+   "entities": [
+    {
+     "name": "GAA",
+     "type": "tech"
+    },
+    {
+     "name": "BSPDN",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "混合键合",
+     "type": "tech"
+    },
+    {
+     "name": "3D IC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GAA",
+     "label": "低压降功耗降幅",
+     "value": 25.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM",
+     "label": "TSV位宽",
+     "value": 1024.0,
+     "unit": "bit"
+    },
+    {
+     "subject": "混合键合",
+     "label": "键合节距",
+     "value": 6.0,
+     "unit": "μm"
+    },
+    {
+     "subject": "混合键合",
+     "label": "界面功耗延迟降幅",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "封装内供电全链路效率",
+     "value": 90.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|storage-semantics-protocol|business|0": {
+   "hash": "811f7806aaa4a164",
+   "date": "2026-09-29",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "元脑SD200 Ultra",
+     "type": "product"
+    },
+    {
+     "name": "Kimi K3",
+     "type": "product"
+    },
+    {
+     "name": "通算智算一体化云基础设施总体技术要求",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "元脑SD200 Ultra",
+     "label": "紧耦合AI芯片数量",
+     "value": 128.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "元脑SD200 Ultra",
+     "label": "统一编址显存容量",
+     "value": 8.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "元脑SD200 Ultra",
+     "label": "通信时延",
+     "value": 0.69,
+     "unit": "微秒"
+    },
+    {
+     "subject": "元脑SD200 Ultra",
+     "label": "可承载模型参数量",
+     "value": 2.8,
+     "unit": "万亿参数"
+    },
+    {
+     "subject": "元脑SD200 Ultra",
+     "label": "Token时延",
+     "value": 5.85,
+     "unit": "毫秒"
+    }
+   ]
+  },
+  "2026-09-29|storage-semantics-protocol|technical|0": {
+   "hash": "5d41e23cd04f532e",
+   "date": "2026-09-29",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "Sandisk",
+     "type": "company"
+    },
+    {
+     "name": "CMM-D",
+     "type": "product"
+    },
+    {
+     "name": "CXL-PNM",
+     "type": "tech"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "UCIe",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBF",
+     "label": "最大容量",
+     "value": 512.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "HBF",
+     "label": "带宽",
+     "value": 3.0,
+     "unit": "TB/s"
+    }
+   ]
+  },
+  "2026-09-29|ai-inference-acceleration|business|0": {
+   "hash": "56224165a1218b6d",
+   "date": "2026-09-29",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "趋境科技",
+     "type": "company"
+    },
+    {
+     "name": "汕头市政府",
+     "type": "institution"
+    },
+    {
+     "name": "PEC 2026",
+     "type": "paper"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-09-29|ai-inference-acceleration|technical|0": {
+   "hash": "98253b4ee480d429",
+   "date": "2026-09-29",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "Jev",
+     "type": "product"
+    },
+    {
+     "name": "Laya",
+     "type": "product"
+    },
+    {
+     "name": "Browser Use",
+     "type": "company"
+    },
+    {
+     "name": "jev-ultrafast",
+     "type": "product"
+    },
+    {
+     "name": "德州大学",
+     "type": "institution"
+    },
+    {
+     "name": "Jev-Mem",
+     "type": "product"
+    },
+    {
+     "name": "System One",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Jev",
+     "label": "端到端延迟",
+     "value": 70.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "Laya",
+     "label": "参数量",
+     "value": 4.21,
+     "unit": "亿"
+    },
+    {
+     "subject": "Laya",
+     "label": "GPU推理延迟",
+     "value": 33.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "Laya",
+     "label": "GitHub Star数",
+     "value": 20000.0,
+     "unit": "个"
+    },
+    {
+     "subject": "jev-ultrafast",
+     "label": "单次决策中位延迟",
+     "value": 178.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "Jev-Mem",
+     "label": "查询延迟降幅",
+     "value": 36.7,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|ai-model-agent-rag|business|0": {
+   "hash": "16573199aca2d8df",
+   "date": "2026-09-29",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "FDE",
+     "type": "tech"
+    },
+    {
+     "name": "国家能源集团",
+     "type": "company"
+    },
+    {
+     "name": "汉得",
+     "type": "company"
+    },
+    {
+     "name": "迅策",
+     "type": "company"
+    },
+    {
+     "name": "Palantir",
+     "type": "company"
+    },
+    {
+     "name": "富士通",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "国家能源集团",
+     "label": "招采智能体运行项目数",
+     "value": 210000.0,
+     "unit": "个"
+    },
+    {
+     "subject": "国家能源集团",
+     "label": "招采智能体准确率",
+     "value": 97.0,
+     "unit": "%"
+    },
+    {
+     "subject": "汉得",
+     "label": "AI收入",
+     "value": 2.2,
+     "unit": "亿元"
+    },
+    {
+     "subject": "汉得",
+     "label": "AI收入同比增速",
+     "value": 100.0,
+     "unit": "%"
+    },
+    {
+     "subject": "迅策",
+     "label": "收入增速",
+     "value": 389.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Palantir",
+     "label": "制造客户年节省",
+     "value": 1000.0,
+     "unit": "万美元"
+    }
+   ]
+  },
+  "2026-09-29|ai-model-agent-rag|technical|0": {
+   "hash": "a2f7995c0a62d27f",
+   "date": "2026-09-29",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "Jev",
+     "type": "product"
+    },
+    {
+     "name": "TypeSafe System One",
+     "type": "tech"
+    },
+    {
+     "name": "中山大学",
+     "type": "institution"
+    },
+    {
+     "name": "Laya",
+     "type": "product"
+    },
+    {
+     "name": "DiffusionGemma",
+     "type": "product"
+    },
+    {
+     "name": "谷歌",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Jev",
+     "label": "决策延迟",
+     "value": 70.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "中山大学",
+     "label": "相关GitHub项目数",
+     "value": 2170.0,
+     "unit": "个"
+    },
+    {
+     "subject": "中山大学",
+     "label": "首周新增项目数",
+     "value": 1865.0,
+     "unit": "个"
+    },
+    {
+     "subject": "中山大学",
+     "label": "路由类项目星标占比",
+     "value": 41.4,
+     "unit": "%"
+    },
+    {
+     "subject": "Laya",
+     "label": "GitHub Star数",
+     "value": 20000.0,
+     "unit": "个"
+    },
+    {
+     "subject": "Laya",
+     "label": "GPU推理延迟",
+     "value": 33.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "DiffusionGemma",
+     "label": "单卡每秒决断数",
+     "value": 162.0,
+     "unit": "次/秒"
+    }
+   ]
+  },
+  "2026-09-29|cost-effective-storage|business|0": {
+   "hash": "bc9e471bd84a2188",
+   "date": "2026-09-29",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "DDR5 RDIMM",
+     "type": "product"
+    },
+    {
+     "name": "澜起科技",
+     "type": "company"
+    },
+    {
+     "name": "Bernstein",
+     "type": "company"
+    },
+    {
+     "name": "MRDIMM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DDR5 RDIMM",
+     "label": "容量",
+     "value": 512.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "DDR5 RDIMM",
+     "label": "传输速率",
+     "value": 9200.0,
+     "unit": "MT/s"
+    },
+    {
+     "subject": "DDR5 RDIMM",
+     "label": "双路24槽最大容量",
+     "value": 12.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "美光",
+     "label": "同容量功耗降幅",
+     "value": 60.0,
+     "unit": "%"
+    },
+    {
+     "subject": "澜起科技",
+     "label": "MRDIMM接口价值量倍数",
+     "value": 10.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "行业",
+     "label": "接口芯片市场CAGR",
+     "value": 65.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|cost-effective-storage|technical|0": {
+   "hash": "3abf345e87d77b25",
+   "date": "2026-09-29",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "LazyDM",
+     "type": "tech"
+    },
+    {
+     "name": "IEEE TC",
+     "type": "paper"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "MQSim",
+     "type": "product"
+    },
+    {
+     "name": "CART决策树",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LazyDM",
+     "label": "模型大小",
+     "value": 5.73,
+     "unit": "KB"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "推理延迟",
+     "value": 4.31,
+     "unit": "µs"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "热持续期预测准确率",
+     "value": 94.4,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "热数据迁移率降幅",
+     "value": 55.1,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "读响应降幅",
+     "value": 15.8,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "写响应降幅",
+     "value": 23.2,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "GC次数降幅",
+     "value": 22.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|high-capacity-storage|business|0": {
+   "hash": "457673343cfd9679",
+   "date": "2026-09-29",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "Omdia",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "全球半导体季度营收",
+     "value": 4254.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球半导体营收环比增速",
+     "value": 31.4,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "存储板块营收占比",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "Q3全球半导体营收预测",
+     "value": 5000.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-29|high-capacity-storage|technical|0": {
+   "hash": "d05722108e3f96ce",
+   "date": "2026-09-29",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "TechInsights",
+     "type": "company"
+    },
+    {
+     "name": "3D DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "AI推理存储需求2025",
+     "value": 90.0,
+     "unit": "EB"
+    },
+    {
+     "subject": "行业",
+     "label": "AI推理存储需求预测",
+     "value": 1.5,
+     "unit": "ZB"
+    },
+    {
+     "subject": "行业",
+     "label": "AI推理存储需求增长倍数",
+     "value": 16.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-29|high-reliability-storage|business|0": {
+   "hash": "d3e7ce816c49b8d2",
+   "date": "2026-09-29",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "东芯股份",
+     "type": "company"
+    },
+    {
+     "name": "普冉半导体",
+     "type": "company"
+    },
+    {
+     "name": "SLC NAND",
+     "type": "tech"
+    },
+    {
+     "name": "NOR Flash",
+     "type": "tech"
+    },
+    {
+     "name": "EEPROM",
+     "type": "tech"
+    },
+    {
+     "name": "2D NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "东芯股份",
+     "label": "2026上半年营收",
+     "value": 14.97,
+     "unit": "亿元"
+    },
+    {
+     "subject": "东芯股份",
+     "label": "营收同比增速",
+     "value": 336.0,
+     "unit": "%"
+    },
+    {
+     "subject": "东芯股份",
+     "label": "净利润",
+     "value": 6.59,
+     "unit": "亿元"
+    },
+    {
+     "subject": "东芯股份",
+     "label": "毛利率",
+     "value": 67.66,
+     "unit": "%"
+    },
+    {
+     "subject": "普冉半导体",
+     "label": "NOR Flash最大容量",
+     "value": 1.0,
+     "unit": "Gb"
+    }
+   ]
+  },
+  "2026-09-29|high-reliability-storage|technical|0": {
+   "hash": "a5eb8b00af4095e4",
+   "date": "2026-09-29",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "LazyDM",
+     "type": "tech"
+    },
+    {
+     "name": "CART决策树",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LazyDM",
+     "label": "模型大小",
+     "value": 5.73,
+     "unit": "KB"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "推理延迟",
+     "value": 4.31,
+     "unit": "µs"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "热持续期预测准确率",
+     "value": 94.4,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "热数据迁移率降幅",
+     "value": 55.14,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "读响应降幅",
+     "value": 15.8,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "写响应降幅",
+     "value": 23.2,
+     "unit": "%"
+    },
+    {
+     "subject": "LazyDM",
+     "label": "GC次数降幅",
+     "value": 22.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|model-benchmarking|business|0": {
+   "hash": "63343ed10f7fd944",
+   "date": "2026-09-29",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "Anthropic",
+     "type": "company"
+    },
+    {
+     "name": "Opus 5.5",
+     "type": "product"
+    },
+    {
+     "name": "联合国",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "OpenAI",
+     "label": "Agent泄漏用户图片数",
+     "value": 53.0,
+     "unit": "张"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "对联合国等机构访问次数",
+     "value": 16000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "Opus 5.5",
+     "label": "沙盒逃逸率",
+     "value": 1.5,
+     "unit": "%"
+    },
+    {
+     "subject": "Anthropic",
+     "label": "2025年净亏损",
+     "value": 420.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-09-29|model-benchmarking|technical|0": {
+   "hash": "893c6e1b1d324c97",
+   "date": "2026-09-29",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "微软",
+     "type": "company"
+    },
+    {
+     "name": "Agensh",
+     "type": "product"
+    },
+    {
+     "name": "pandoc",
+     "type": "product"
+    },
+    {
+     "name": "阿里",
+     "type": "company"
+    },
+    {
+     "name": "HappyWorld-Bench",
+     "type": "paper"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    },
+    {
+     "name": "GameHorizon",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Agensh",
+     "label": "Agent数量",
+     "value": 1024.0,
+     "unit": "个"
+    },
+    {
+     "subject": "微软",
+     "label": "pandoc通过率",
+     "value": 55.06,
+     "unit": "%"
+    },
+    {
+     "subject": "GameHorizon",
+     "label": "专职游戏Agent动作题通过率",
+     "value": 22.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-09-29|near-memory-computing|business|0": {
+   "hash": "8806c672fc756ff4",
+   "date": "2026-09-29",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "元脑HC2000",
+     "type": "product"
+    },
+    {
+     "name": "SD200 Ultra",
+     "type": "product"
+    },
+    {
+     "name": "AIPU",
+     "type": "tech"
+    },
+    {
+     "name": "Kimi K3",
+     "type": "product"
+    },
+    {
+     "name": "MCIS",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "元脑HC2000",
+     "label": "单柜AIPU数量",
+     "value": 256.0,
+     "unit": "张"
+    },
+    {
+     "subject": "元脑HC2000",
+     "label": "聚合带宽",
+     "value": 200.0,
+     "unit": "Tbps"
+    },
+    {
+     "subject": "SD200 Ultra",
+     "label": "单机运行参数规模",
+     "value": 2.8,
+     "unit": "万亿"
+    },
+    {
+     "subject": "SD200 Ultra",
+     "label": "KV Cache命中率",
+     "value": 95.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SD200 Ultra",
+     "label": "同等投资Token产能提升倍数",
+     "value": 10.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-09-29|near-memory-computing|technical|0": {
+   "hash": "a92448d4a1e17417",
+   "date": "2026-09-29",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "GH200",
+     "type": "product"
+    },
+    {
+     "name": "MoE",
+     "type": "tech"
+    },
+    {
+     "name": "BOOST",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "C2C",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GH200",
+     "label": "C2C带宽",
+     "value": 400.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "GH200",
+     "label": "GPU加载带宽降幅",
+     "value": 200.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "MoE",
+     "label": "每Token耗时恶化幅度",
+     "value": 9.3,
+     "unit": "%"
+    },
+    {
+     "subject": "GH200",
+     "label": "大页边界",
+     "value": 2.0,
+     "unit": "MB"
+    }
+   ]
+  },
+  "2026-09-29|new-media|business|0": {
+   "hash": "8c2c5e47500a4271",
+   "date": "2026-09-29",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "台积电",
+     "type": "company"
+    },
+    {
+     "name": "CoWoS",
+     "type": "tech"
+    },
+    {
+     "name": "SoIC",
+     "type": "tech"
+    },
+    {
+     "name": "Intel",
+     "type": "company"
+    },
+    {
+     "name": "EMIB-T",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "台积电",
+     "label": "CoWoS产能2024",
+     "value": 36.0,
+     "unit": "万片"
+    },
+    {
+     "subject": "台积电",
+     "label": "CoWoS产能2027",
+     "value": 81.0,
+     "unit": "万片"
+    },
+    {
+     "subject": "台积电",
+     "label": "CoWoS产能CAGR",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "台积电",
+     "label": "SoIC产能CAGR",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Intel",
+     "label": "EMIB-T载板良率",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Intel",
+     "label": "2030年外部封装收入预估",
+     "value": 158.0,
      "unit": "亿美元"
     }
    ]

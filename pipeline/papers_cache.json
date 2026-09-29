@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-24T08:59:14+08:00",
+ "generated_at": "2026-09-30T01:39:30+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -27135,6 +27135,641 @@
    "title": "陈导读书|《DeepSeek实用操作手册",
    "kind": "title",
    "checked_at": "2026-09-24T08:59:13+08:00"
+  },
+  "id:2609.30266": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.30266",
+   "match": {
+    "arxiv_id": "2609.30266",
+    "version": "1",
+    "title": "LLM Agents Can Easily Tamper With Their Own Traces",
+    "abstract": "Asynchronous monitoring, incident investigations, and compliance audits primarily rely on agent traces to reconstruct what happened. These analyses assume that LLM agents cannot tamper with their own execution traces. We show that local LLM agents such as Claude Code, Codex, Antigravity, Open Code and Grok Build fail to enforce this boundary. All tested harnesses, except Muse Code, allowed agents to delete their traces when asked, without triggering monitor guardrails. We also validate that external attackers can exploit this gap to induce trace deletion. Finally, we show that trace tampering behavior emerges naturally in frontier models, when agents try to improve their rewards. We advise practitioners to ensure trace logging happens through an independent interception mechanism outside of the agent's control, preserving trace integrity even in cases of full host compromise. Overall, our findings identify a concrete failure of trace integrity in agent infrastructure which can be used to conceal misaligned behaviors like scheming or sabotage.",
+    "published": "2026-09-24",
+    "updated": "2026-09-24",
+    "authors": [
+     "Jeremy Qin",
+     "David Schmotz",
+     "Derck Prinzhorn",
+     "Luca Beurer-Kellner",
+     "Ameya Prabhu",
+     "Maksym Andriushchenko"
+    ],
+    "categories": [
+     "cs.CR",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "AI今日速递|甲骨文对2450兆瓦数据中心发不可抗力通知,租金起算或推后三年",
+   "kind": "id",
+   "checked_at": "2026-09-30T01:37:41+08:00"
+  },
+  "id:2609.19969": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.19969",
+   "match": {
+    "arxiv_id": "2609.19969",
+    "version": "1",
+    "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "abstract": "The widespread adoption of long-horizon agents has made model workloads increasingly input-heavy. Although prior work has substantially reduced the cost of long-context computation, prefill remains computationally expensive, and large KV caches continue to strain HBM and SSD capacity and data-transfer bandwidth. Together, these compute, storage, and bandwidth demands constitute the primary bottleneck to further lowering deployment costs. To address this challenge, we introduce DeepSeek-V4.1-Flash, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. With its Causal Encoder-Decoder (CED) architecture, the model activates 16B parameters per token during decode but only 8B parameters during prefill, substantially improving cost efficiency for agentic workloads. To push the limits of KV cache compression, DeepSeek-V4.1-Flash combines cross-layer KV cache reuse in Compressed Sparse Attention 2 (CSA2) with FP4 KV caching. These designs reduce its global KV cache footprint (always in HBM) to 890 bytes per token, roughly 1/4 of the corresponding footprint of DeepSeek-V4-Flash. Further, through a dedicated deployment optimization known as SWA Bounded Replay, DeepSeek-V4.1-Flash reduces its persistent KV cache footprint (always on SSD or in host memory) to roughly 1/8 of that of DeepSeek-V4-Flash. Despite its much smaller KV cache footprint, the model delivers substantially better performance than the baseline. In addition, we streamline the DeepSeek-V4 architecture and introduce several efficient architectural extensions. We pretrain DeepSeek-V4.1-Flash on a multimodal corpus comprising 45T tokens and conduct comprehensive post-training, yielding strong performance across diverse text-based and multimodal agentic scenarios. Model checkpoints are available at https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     " DeepSeek-AI",
+     " :",
+     "Anyi Xu",
+     "B. Li",
+     "Bangcai Lin",
+     "Bing Xue",
+     "BingCheng Xian",
+     "Bingzheng Xu",
+     "Bochao Wu",
+     "Bowei Zhang",
+     "Boyi Deng",
+     "C. C. Yu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+   "kind": "id",
+   "checked_at": "2026-09-30T01:37:45+08:00"
+  },
+  "id:2608.31100": {
+   "status": "matched_by_id",
+   "query": "id_list=2608.31100",
+   "match": {
+    "arxiv_id": "2608.31100",
+    "version": "1",
+    "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+    "abstract": "Large language models (LLMs) increasingly interact with external environments and accumulate substantial behavioral experience, yet existing agent benchmarks largely evaluate them as fixed policies. It therefore remains unclear whether an agent can actively test its behavior, judge the resulting experience, and use that experience to improve future decisions. We introduce \\textbf{S\\textsuperscript{3}Gym}, an interactive benchmark for evaluating LLM self-improvement through three coupled capabilities: \\textbf{Self-Testing}, \\textbf{Self-Judging}, and \\textbf{Self-Improvement}. S$^3$Gym separates permissive exploration from strict held-out evaluation and instantiates this protocol in seven text-based games with executable environment verifiers. We evaluate three pathways for incorporating interaction experience: direct History ICL, score-conditioned Summary Memory, and parameter Training. Our experiments reveal that self-improvement is neither automatic nor uniform. Context-level experience improves performance for several model--game pairs, but the most effective pathway depends strongly on the task structure: summaries are beneficial when experience can be compressed into reusable strategic rules, yet often underperform raw history when success depends on precise, state-contingent information. Parameter training produces substantial gains on some tasks, but also exhibits unstable improvement and severe negative transfer on others. These findings show that recognizing successful actions is insufficient; agents must also transform feedback into executable and transferable policies. S$^3$Gym provides a unified framework for diagnosing this process and identifying the bottlenecks that prevent agents from translating interaction experience into reliable self-improvement.",
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "authors": [
+     "Jiajun Shi",
+     "Siyuan Tao",
+     "Yuhao Wu",
+     "Zexuan Wang",
+     "Jingyuan Zhang",
+     "Jiaheng Liu",
+     "Xinping Lei",
+     "Xinrong Zhang",
+     "Siyuan Fang",
+     "Zhewen Tan",
+     "Tianle Cai",
+     "Junhao Fang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "S³Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+   "kind": "id",
+   "checked_at": "2026-09-30T01:37:49+08:00"
+  },
+  "t:agensh scaling organizational intelligence to 1 024 agents": {
+   "status": "matched_by_title",
+   "query": "ti:\"Agensh: Scaling Organizational Intelligence to 1,024 Agents\"",
+   "match": {
+    "arxiv_id": "2609.26781",
+    "version": "1",
+    "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+    "abstract": "A multi-agent system can reduce latency on complex tasks by executing work concurrently. Several pioneering harness frameworks support multi-agent systems. However, the scalability of current multi-agent harnesses is often constrained by a central orchestrator's capacity to allocate tasks and coordinate workers. To address this limitation, we introduce Agensh, a scalable self-organized multi-agent harness without a central orchestrator: concurrent workers execute a multi-agent cooperation loop, continuously gathering context, claiming and self-assigning sub-tasks, taking action and sharing findings, verifying results, and merging progress in an asynchronous manner. The loop is supported by the agentic organization infrastructure comprising three components: a shared workspace holds proposed, ongoing, and completed work; a message interface lets workers communicate; and shared context retains reusable findings and work intentions. To test the scalability of Agensh, we evaluate it on the five hardest ProgramBench tasks with GPT-5.6-sol (high). Scaling from 1 to 128 agents raises the mean final test-pass rate from 19.31% to 28.78%, an approximately 49% relative improvement. Larger organizations reach comparable test-pass rates earlier. On pandoc, scaling from 1 to 1,024 agents raises the final test-pass rate from 33.89% to 55.06%. Worker trajectories further show that different forms of self-organized cooperation gradually emerges and standardizes as the organization grows. These results reveal the number of agents as a new scaling dimension for multi-agent organizations to expand the frontier of general intelligence, offering a practical solution for complex tasks under hard latency constraints or time budgets.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Zhihao Zhan",
+     "Ting Song",
+     "Li Dong",
+     "Shaohan Huang",
+     "Jianxun Lian",
+     "Yan Xia",
+     "Furu Wei"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": "13 pages, 6 figures"
+   },
+   "score": 1.0,
+   "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:37:53+08:00"
+  },
+  "t:analysis of ssd usage for performance improvement on the asus tuf fx505du": {
+   "status": "no_results",
+   "query": "ti:\"Analysis of SSD usage for performance improvement on the Asus TUF FX505DU\"",
+   "match": null,
+   "title": "Analysis of SSD usage for performance improvement on the Asus TUF FX505DU",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:37:58+08:00"
+  },
+  "t:automatic harness evolution for hardware design verification": {
+   "status": "rejected",
+   "query": "ti:\"Automatic Harness Evolution for Hardware Design Verification\"",
+   "match": null,
+   "best_candidate": "Automatic Harness Evolution for Hardware Design Verification: Can LLMs Consolidate Gains Across Discovered Harnesses?",
+   "best_score": 0.686,
+   "title": "Automatic Harness Evolution for Hardware Design Verification",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:01+08:00"
+  },
+  "t:boost": {
+   "status": "matched_by_title",
+   "query": "all:\"BOOST\"",
+   "match": {
+    "arxiv_id": "2608.10600",
+    "version": "1",
+    "title": "BooST: Bridging Semantics and Motions for Efficient Skill Transfer",
+    "abstract": "Skill abstraction---the process of learning reusable and temporally extended behaviors---has emerged as a key paradigm for improving sample efficiency and generalization in robot learning. For efficient skill transfer to real robots, learned skills must generalize across tasks and domains, remain robust to visual and dynamic perturbations, and be efficient enough for practical deployment. However, existing methods typically satisfy only a subset of these properties, as they capture either high-level semantic intent (what) or low-level motion dynamics (how). This incomplete skill transfer yields weak priors for policy learning, thereby demanding substantial in-domain data for downstream adaptation. To address these challenges, we introduce BooST, a two-stage framework that explicitly bridges semantics and motions to satisfy all three desiderata. BooST first leverages a cross-modal VQ-VAE to capture both semantic intent and motion dynamics, yielding a unified skill representation. It then distills this representation into a lightweight policy for efficient downstream adaptation to new tasks. Extensive experiments across simulation and real-robot settings demonstrate that BooST achieves superior few-shot adaptation, cross-domain skill transfer, and robustness to dynamic visual distractors, while maintaining a lightweight yet expressive design suitable for real-world deployment.",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "authors": [
+     "Jusuk Lee",
+     "Daesol Cho",
+     "Jonghun Shin",
+     "Seungyeon Yoo",
+     "Jonghae Park",
+     "Taekbeom Lee",
+     "H. Jin Kim"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.CV",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://boost-robots.github.io/"
+   },
+   "score": 0.95,
+   "title": "BOOST",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:38:05+08:00"
+  },
+  "t:deepseek应用工程师": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek应用工程师\"",
+   "match": null,
+   "title": "DeepSeek应用工程师",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:09+08:00"
+  },
+  "t:grade rtl": {
+   "status": "matched_by_title",
+   "query": "all:\"GRADE-RTL\"",
+   "match": {
+    "arxiv_id": "2609.25335",
+    "version": "1",
+    "title": "GRADE-RTL: Evaluating LLM-Generated RTL Beyond Compilation",
+    "abstract": "Large language models (LLMs) can generate register-transfer-level (RTL) code from natural-language specifications, but compilation alone does not establish structural completeness, functional correctness, or implementation efficiency. This paper presents a framework for evaluating LLM-generated RTL beyond compilation, which we named GRADE-RTL. Using fixed prompts and validation settings, GRADE-RTL applies five checks, such as Port Signature, Compilation, Elaboration, Module Completeness, and Functional Equivalence against trusted reference RTL. With the help of compact metrics, we identify where candidates fail and distinguish end-to-end success from eligibility for downstream synthesis. We evaluate nine general-purpose and RTL-specialized LLMs on ten edge-relevant intellectual property designs under a budget of three generation attempts with failure-directed feedback. End-to-end success ranges from 0% to 70% across the evaluated models, with failures extending beyond compilation to hierarchy resolution, incomplete logic, and behavioral mismatch. FPGA implementation and 65 nm ASIC synthesis results further show that functionally equivalent RTL can differ substantially in resource use, timing, area, and power. A PID-controller place-and-route case study illustrates the physical-design consequences of different RTL implementations. GRADE-RTL provides a practical basis for comparing LLM-generated hardware descriptions by separating structural validity, behavioral correctness, and implementation quality.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Hepziba Susan",
+     "Shivaranjani G. R.",
+     "Malik Imran",
+     "Muhammad Rashid",
+     "Sumathi Gokulanathan",
+     "Zain Ul Abideen"
+    ],
+    "categories": [
+     "cs.AR",
+     "cs.PL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "GRADE-RTL",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:38:13+08:00"
+  },
+  "t:gamehorizon suite multi horizon data and evaluation in gameplay": {
+   "status": "matched_by_title",
+   "query": "ti:\"GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay\"",
+   "match": {
+    "arxiv_id": "2609.25001",
+    "version": "1",
+    "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+    "abstract": "Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players. Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay. Based on our GameHorizon Suite, we evaluate 47 models through more than one million model invocations, revealing a meaningful hierarchy of task difficulty and pronounced differences in model capabilities. Our work can provide a standardized yardstick for evaluating gameplay capabilities across horizons and model families. We will release our dataset, annotator, and benchmark to facilitate future research.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Yiran Wang",
+     "Xingyilang Yin",
+     "Junfu Pu",
+     "Guangzhi Wang",
+     "Kaifeng Li",
+     "Mingyu Ouyang",
+     "Huiqiang Sun",
+     "Lingen Li",
+     "Cheng Cheng",
+     "Wangbo Yu",
+     "Honghao Chen",
+     "Xiaodong Cun"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "We will release our dataset, annotator, and benchmark to facilitate future research. Github Repo: https://github.com/TencentARC/GameHorizon & Project Page: https://gamehorizon-suite.github.io"
+   },
+   "score": 1.0,
+   "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:17+08:00"
+  },
+  "t:happyworld bench": {
+   "status": "matched_by_title",
+   "query": "all:\"HappyWorld-Bench\"",
+   "match": {
+    "arxiv_id": "2609.24308",
+    "version": "1",
+    "title": "HappyWorld-Bench",
+    "abstract": "Evaluating world models requires assessing both the quality of the worlds they generate and their consistency and responsiveness under exploration, interaction, and modification. We introduce HappyWorld-Bench, a comprehensive benchmark that evaluates whether generated worlds remain reliable as agents interact with them. Our design is built on a hierarchical capability framework of six world capabilities (W1-W6), from generative construction to unified world modeling, instantiated across three independent evaluation tracks: video world models, spatial world models, and embodied world models. HappyWorld-Bench comprises 1,138 video prompts, 300 spatial scenes, and 254 embodied test cases. Across all three tracks, we build and operate HappyWorld-Arena to organize human A/B comparisons and derive model-level Elo ratings, which complement newly designed automated metrics that capture behavioral correctness. We evaluate 14 video world models, 9 spatial systems, and 8 embodied candidates under this unified framework. Results reveal remaining reliability gaps across all three tracks: video models exhibit reduced consistency during extended rollouts and revisits, spatial models achieve at best 70.14% placement accuracy and 73.33% edit execution, and embodied models struggle to preserve state across multi-step actions and respond precisely to altered action conditions and physical rules. These findings highlight the need to evaluate world models not only by visual quality, but also by state consistency and the correctness of their responses to actions and interventions.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Zhiqi Bai",
+     "Junai Cai",
+     "Yixin Chen",
+     "Jingrun Du",
+     "Tao Feng",
+     "Wei Gong",
+     "Siyuan Huang",
+     "Xiao Lin",
+     "Jiaheng Liu",
+     "Jun Luo",
+     "Yongzhe Lyu",
+     "Liya Ma"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "HappyWorld-Bench",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:38:21+08:00"
+  },
+  "t:harnessvln": {
+   "status": "matched_by_title",
+   "query": "all:\"HarnessVLN\"",
+   "match": {
+    "arxiv_id": "2609.15195",
+    "version": "2",
+    "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
+    "abstract": "Embodied navigation requires agents to ground instructions or object goals in spatial observations and translate plans into successful execution. As multimodal large language models (MLLMs) become increasingly capable, they offer stronger support for navigation without task-specific training; however, improved semantic reasoning alone does not ensure that proposed actions remain consistent with spatial evidence, task progress, and execution outcomes. We introduce HarnessVLN, a zero-shot, training-free framework that unifies instruction-following and object-goal navigation through a shared Agent Harness. The Harness coordinates perception, memory, and execution tools through a unified interface, validating planner proposals for evidential support, geometric feasibility, and subgoal consistency before dispatch. It jointly manages hierarchical event memory and a persistent Spatiotemporal Graph to track task progress, preserve spatial evidence, and contextualize failures. Structured execution feedback updates this shared state, guiding subsequent planning, recovery, and termination. Across R2R, RxR, HM3D-v2, and HM3D-OVON, HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3%, respectively, outperforming prior training-free state-of-the-art methods. Humanoid robot deployment further demonstrates its applicability to both navigation tasks in real-world environments. The project page is available at https://agibot-harnessvln.netlify.app/.",
+    "published": "2026-09-14",
+    "updated": "2026-09-16",
+    "authors": [
+     "Yang Chen",
+     "Lirong Che",
+     "Zhenyu Huang",
+     "Wenbo Fu",
+     "Chuang Wang",
+     "Xu Cao",
+     "Daqi Liu",
+     "Yuzhe Yang",
+     "Jian Su",
+     "Lan-Zhe Guo"
+    ],
+    "categories": [
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "HarnessVLN",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:38:25+08:00"
+  },
+  "t:impossiblerubrics stress testing generated rubrics as reward signals": {
+   "status": "matched_by_title",
+   "query": "ti:\"ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals\"",
+   "match": {
+    "arxiv_id": "2609.16816",
+    "version": "1",
+    "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+    "abstract": "Language model-generated rubrics are increasingly used as reward signals for rubric-based reinforcement learning, LLM-as-a-judge evaluation, and automated grading. Such rubrics are reliable only if they reward honest answers over adversarial answers optimized to exploit them. Yet their robustness to such optimization remains poorly understood. We isolate the hardest regime: impossible tasks, where the prompt pressures the model toward an unsupported conclusion, so the only honest response is to acknowledge the impossibility. We introduce ImpossibleRubrics, a benchmark of 169 impossible tasks spanning six impossibility categories, each paired with a verifiable oracle certificate specifying what an honest answer may and may not claim, together with 48 answerable controls. Rather than providing fixed rubrics, ImpossibleRubrics provides task environments and certificates, allowing rubrics to be generated downstream and then adversarially tested for whether they reward certificate-violating answers. Eleven generators are exploited 8--26% of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited 36% while a certificate-faithful rubric is exploited 0%, so what we measure is a rubric-quality gap, not task impossibility. One result runs against intuition. A single generic rubric (\"be decisive, penalize hedging\") used unchanged for every task is exploited 64% of the time, and seven of the eleven generators are exploited more often than that while writing a rubric tailored to each one. The tailored criteria appear to tell an attacker which claim to fabricate. The problem is not that rubrics are vague; it is that they are specific about the wrong things.",
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "authors": [
+     "Bowen Qin",
+     "Yi Xie",
+     "Yesheng Liu",
+     "Xi Yang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:28+08:00"
+  },
+  "t:insurance as ai risk infrastructure a generative agent simulation of ai adoption": {
+   "status": "matched_by_title",
+   "query": "ti:\"Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption\"",
+   "match": {
+    "arxiv_id": "2608.15181",
+    "version": "1",
+    "title": "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption",
+    "abstract": "The rapid evolution of artificial intelligence (AI) tools has demonstrated immense potential to enhance societal well-being and operational efficiency. However, the inherent unreliability and uncertain operational consequences of modern AI systems, typified by large language models (LLMs), have created a significant barrier to enterprise adoption. Many enterprises remain hesitant to integrate these tools deeply into their workflows due to concerns about unpredictable losses and liability exposure. While existing technical safeguards primarily seek to reduce the likelihood or severity of AI-enabled workflow failures, they do not by themselves provide ex post financial protection when residual pecuniary tail losses materialize. In this paper, we introduce a socio-economic framework that complements these safeguards by transferring and absorbing the residual financial consequences of AI adoption through insurance. To evaluate this framework, we develop an LLM-driven agent-based social simulation (LABSS) system. We assess the behavioral validity of the simulation using established economic and sociological theories. Our analysis demonstrates that the proposed insurance framework reduces firm-level financial exposure, thereby accelerating the aggregate adoption of AI tools and improving firm solvency and aggregate capital.",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "authors": [
+     "Yixuan Yuan",
+     "Dedai Wei",
+     "Chudong Qian",
+     "Jielin Feng",
+     "Ziyue Lin",
+     "Yuheng Zhao",
+     "He Cao",
+     "Erasmo Purificato",
+     "Xinwu Ye"
+    ],
+    "categories": [
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:32+08:00"
+  },
+  "t:jev in the wild a data driven analysis of the jev model s functionality applications and ecosystem": {
+   "status": "matched_by_title",
+   "query": "ti:\"Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem\"",
+   "match": {
+    "arxiv_id": "2609.30216",
+    "version": "1",
+    "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+    "abstract": "Jev is a fast, low-cost decision model that answers natural-language questions with choices, binary judgments, and scores. As its public ecosystem grows rapidly, it remains unclear how Jev is used across applications and how public attention relates to project distribution. To answer these questions, we conduct a large-scale, data-driven analysis of 2,170 publicly available Jev projects collected from GitHub as of September 22, 2026. We find rapid early growth in Jev's public ecosystem, with both new projects and integration into existing repositories. Across diverse domains, projects use Jev for multiple decision purposes and combine its interfaces. Attribute judgment and scoring are widely used, while the use of action selection, content filtering, and model and tool selection varies across domains. These patterns suggest that Jev serves as a reusable decision component whose functionality varies with the surrounding workflow. Meanwhile, public attention is concentrated in routing and interface agents and does not track project counts. Our findings provide a quantitative view of Jev's emerging ecosystem and inform the design and evaluation of general-purpose decision models across diverse application contexts.",
+    "published": "2026-09-24",
+    "updated": "2026-09-24",
+    "authors": [
+     "Guoming Ling",
+     "Muen Xue",
+     "Zijian Ye"
+    ],
+    "categories": [
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:36+08:00"
+  },
+  "t:jev mem system one controlled agentic memory for efficient ai agents": {
+   "status": "matched_by_title",
+   "query": "ti:\"Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents\"",
+   "match": {
+    "arxiv_id": "2609.23986",
+    "version": "1",
+    "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+    "abstract": "Agentic memory is becoming essential for long-horizon AI agents, yet many existing systems rely on autoregressive LLMs to control how memories are organized, retrieved, and used, placing expensive generation on the critical path of memory operations. We introduce \\textbf{\\method}, a new agentic memory architecture inspired by System-One/System-Two cognition. System One captures fast, lightweight decision-making, whereas System Two performs slower, deliberative reasoning. Jev-Mem brings this division of labor to agentic memory through a dedicated System-One control plane, a structured multi-relational memory plane, and a System-Two reasoning plane. The System-One controller governs memory typing and relational organization during construction, and dynamically performs query routing, retrieval-budget allocation, graph traversal, candidate scoring, and adaptive stopping during retrieval. System Two is invoked only for complex reasoning and answer synthesis. This design improves both memory effectiveness and system efficiency: on LoCoMo Jev-Mem achieves an overall LLM-as-a-Judge score of 0.777, an 11.0\\% relative improvement over the strongest baseline, while reducing memory construction time to 158\\,s, a 6.6$\\times$ speedup over the fastest competing memory system, and lowering average query latency to 0.93\\,s, a 36.7\\% reduction.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Dongming Jiang",
+     "Yi Li",
+     "Bingzhe Li"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:40+08:00"
+  },
+  "t:just ask jev reinforcement learning for calibrated decisions as a zero shot detector of ai alignment failures": {
+   "status": "matched_by_title",
+   "query": "ti:\"Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures\"",
+   "match": {
+    "arxiv_id": "2609.29429",
+    "version": "1",
+    "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+    "abstract": "Detectors of alignment failures screen deployed language models and score alignment benchmarks. Most are generative judges that spend a decoding pass on every criterion, and classifiers that read token probabilities, such as Llama Guard, still score one fixed label per call. Jev, a model trained with reinforcement learning for calibrated decisions (RLCD), answers many typed questions about one input with calibrated probabilities in a single call. Whether it detects alignment failures has not been measured. We present RLCDAlignBench, which benchmarks Jev on ten alignment failures: sycophancy, jailbreaks, deception, prompt injection, hallucination, privacy violation, social bias, reward hacking, concealing uncertainty, and power seeking. It spans 44 benchmarks and five target models, labelled by each benchmark's scorer and, on two, by humans. Many of these failures are relational, defined against a reference, such as the user's belief or an injected instruction, that the response alone does not reveal. Our key idea is therefore to vary what Jev is asked separately from what it sees: the question's wording and answer type on one side, the fields of the input on the other. A single generic question reaches a median AUROC of 0.886 zero-shot and beats supervised baselines on most benchmarks. Question wording matters little, while context matters more, mostly through fields that encode the label. Jev matches the reference scorer's agreement with human labels, surfaces label defects in existing benchmarks, and costs 63x less than LLM-judge scorers. Code and data: https://github.com/sumleo/RLCDAlignBench.",
+    "published": "2026-09-24",
+    "updated": "2026-09-24",
+    "authors": [
+     "Ruoqi Guo",
+     "Yi Liu",
+     "Gelei Deng",
+     "Yuekang Li",
+     "Lida Zhao",
+     "Yutao Wu",
+     "Simin Chen",
+     "Ying Zhang",
+     "Leo Yu Zhang"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.CR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:44+08:00"
+  },
+  "t:lazydm a machine learning empowered hot data management to mitigate premature migration in high density hybrid ssds": {
+   "status": "no_results",
+   "query": "ti:\"LazyDM: A Machine Learning-Empowered Hot Data Management to Mitigate Premature Migration in High-Density Hybrid SSDs\"",
+   "match": null,
+   "title": "LazyDM: A Machine Learning-Empowered Hot Data Management to Mitigate Premature Migration in High-Density Hybrid SSDs",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:48+08:00"
+  },
+  "t:ncp archpreview": {
+   "status": "matched_by_title",
+   "query": "all:\"NCP-ArchPreview\"",
+   "match": {
+    "arxiv_id": "2609.10715",
+    "version": "1",
+    "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+    "abstract": "We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP). Alongside NTP, the model learns through Next Concept Prediction (NCP) to predict discrete concepts that span multiple tokens, introducing an explicit and more challenging concept-level objective while preserving standard token-level autoregressive generation. NCP-ArchPreview builds a latent space by constructing a product-quantized concept vocabulary directly from its hidden states, and subsequently learns to predict future concepts via a dedicated Concept Module. These predicted concepts are then fed back to the token level to guide subsequent generation, with NTP and NCP trained jointly end-to-end. We scale this architecture to 8.9B parameters and train it on 5.73T tokens from the Dolma-3 dataset, marking the largest demonstration of a latent-space language model to date. Remarkably, by consuming only 51.3% of the total training tokens, NCP-ArchPreview achieves the final pretraining loss of OLMo-3-7B. Following full pretraining, it outperforms OLMo-3-7B by 2.45 points on the downstream macro-average, including a notable 5.99-point gain on GSM8K. Controlled experiments isolate a clear progression of performance gains stemming from both the latent architecture and the NCP objective. Furthermore, utilizing only 85% of the standard computation, NCP-ArchPreview approaches the training loss of a strictly parameter-aligned 8.9B baseline. The learned latent space remains highly valuable after the pretraining stage: updating just the 17M-parameter VQ module yields a novel, lightweight interface for domain adaptation, while a simple injection of concept representations into a DFlash2 drafter improves the mean accepted length by 4.17% with negligible overhead.",
+    "published": "2026-09-09",
+    "updated": "2026-09-09",
+    "authors": [
+     "The Intern-NCP Team",
+     " :",
+     "Jiaqi Cao",
+     "Chiyu Chen",
+     "Shuang Cheng",
+     "Xu Cheng",
+     "Beiya Dai",
+     "Yufan Feng",
+     "Kewen Ge",
+     "Ruijun Ge",
+     "Jiayi Huang",
+     "Yang Jiao"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "NCP-ArchPreview",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:38:52+08:00"
+  },
+  "t:on chip photonic neural network architectures": {
+   "status": "no_results",
+   "query": "ti:\"On-Chip Photonic Neural Network Architectures\"",
+   "match": null,
+   "title": "On-Chip Photonic Neural Network Architectures",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:55+08:00"
+  },
+  "t:s gym can llms turn self testing and self judging into self improvement": {
+   "status": "no_results",
+   "query": "ti:\"S³Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?\"",
+   "match": null,
+   "title": "S³Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:38:59+08:00"
+  },
+  "t:thinking on maps how foundation model agents explore remember and reason in map environments": {
+   "status": "no_results",
+   "query": "ti:\"Thinking on Maps: How Foundation Model Agents Explore, Remember, and Reason in Map Environments\"",
+   "match": null,
+   "title": "Thinking on Maps: How Foundation Model Agents Explore, Remember, and Reason in Map Environments",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:39:03+08:00"
+  },
+  "t:toward multi kw power delivery methodologies for advanced 3d heterogeneous integration": {
+   "status": "matched_by_title",
+   "query": "ti:\"Toward Multi-kW Power Delivery Methodologies for Advanced 3D Heterogeneous Integration\"",
+   "match": {
+    "arxiv_id": "2609.24904",
+    "version": "1",
+    "title": "Toward Multi-kW Power Delivery Methodologies for Advanced 3D Heterogeneous Integration",
+    "abstract": "The demands of modern applications require the construction of ever more complex integrated systems, with AI applications in particular serving as a significant driver for increased system size, potentially going beyond the trilliontransistor mark. The path to building these systems requires the use of advanced packaging, with heterogeneous integrated 2D and 3D chiplets placed atop a substrate. Such computationally powerful systems require significant power for computation: reliable and robust power delivery is a major challenge in light of high power densities and pin count bottlenecks. This paper overviews approaches to building design methodologies that overcome this problem, through the design of multistage distributed power delivery systems, optimized for performance and reliability, and built to coexist within stringent performance, thermal, and reliability constraints.",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
+    "authors": [
+     "Peiyi Yue",
+     "Hangyu Zhang",
+     "Ratul Das",
+     "Ramesh Harjani",
+     "Sachin S. Sapatnekar"
+    ],
+    "categories": [
+     "cs.AR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Toward Multi-kW Power Delivery Methodologies for Advanced 3D Heterogeneous Integration",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:39:07+08:00"
+  },
+  "t:waveleteco": {
+   "status": "matched_by_title",
+   "query": "all:\"WaveletECO\"",
+   "match": {
+    "arxiv_id": "2609.23444",
+    "version": "1",
+    "title": "WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model",
+    "abstract": "Engineering change order (ECO) is an important step in repairing timing and electrical violations during the late stages of chip design. Existing Agentic EDA methods primarily focus on tool invocation, with less attention to model decision quality and targeted training. A central challenge in ECO is multi-round decision-making: the model must use the results of each round to determine the next repair action. We propose WaveletECO, which integrates a closed-loop execution platform with large language models to enable agents to execute ECO decisions effectively. We also train a local 9B model through supervised fine-tuning and CPO-SimPO using execution demonstrations and decision-preference data, enabling ECO decision-making with a locally deployed model. Across 594 evaluation runs on 22 designs, WaveletECO-Policy (BF16) and (INT8) score 79.63 and 79.65, respectively, compared with GPT-6 Astra's 77.44. The estimated inference cost of INT8 is about 1/147 of GPT-6 Astra's. These results show that specialized model training supports effective, low-cost multi-round ECO repair, with repair quality retained under INT8 quantization.",
+    "published": "2026-09-20",
+    "updated": "2026-09-20",
+    "authors": [
+     "Guoxiang Xu",
+     "Guozhen Ji",
+     "Zijian Luo",
+     "Zhengrui Chen",
+     "Qi Sun",
+     "Cheng Zhuo"
+    ],
+    "categories": [
+     "cs.AR",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "5 pages, 2 figures, 2 tables"
+   },
+   "score": 0.95,
+   "title": "WaveletECO",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:39:11+08:00"
+  },
+  "t:二维材料赋能先进芯片后道互连与晶圆背面技术": {
+   "status": "no_results",
+   "query": "all:\"二维材料赋能先进芯片后道互连与晶圆背面技术\"",
+   "match": null,
+   "title": "二维材料赋能先进芯片后道互连与晶圆背面技术",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:39:15+08:00"
+  },
+  "t:地质灾害人工智能大语言模型研究": {
+   "status": "no_results",
+   "query": "all:\"地质灾害人工智能大语言模型研究\"",
+   "match": null,
+   "title": "地质灾害人工智能大语言模型研究",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:39:19+08:00"
+  },
+  "t:地质灾害人工智能大语言模型研究展望": {
+   "status": "no_results",
+   "query": "all:\"地质灾害人工智能大语言模型研究展望\"",
+   "match": null,
+   "title": "地质灾害人工智能大语言模型研究展望",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:39:22+08:00"
+  },
+  "t:大语言模型辅助写作与引用优势 chatgpt 发布前后科学出版物的证据": {
+   "status": "no_results",
+   "query": "ti:\"大语言模型辅助写作与引用优势：ChatGPT 发布前后科学出版物的证据\"",
+   "match": null,
+   "title": "大语言模型辅助写作与引用优势：ChatGPT 发布前后科学出版物的证据",
+   "kind": "title",
+   "checked_at": "2026-09-30T01:39:26+08:00"
+  },
+  "t:面向行业信息抽取的大模型知识蒸馏技术": {
+   "status": "no_results",
+   "query": "all:\"面向行业信息抽取的大模型知识蒸馏技术\"",
+   "match": null,
+   "title": "面向行业信息抽取的大模型知识蒸馏技术",
+   "kind": "method",
+   "checked_at": "2026-09-30T01:39:30+08:00"
   }
  }
 }
