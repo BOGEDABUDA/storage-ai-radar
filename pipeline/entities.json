@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-09-30T01:37:24+08:00",
+ "generated_at": "2026-10-04T07:16:57+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -41401,6 +41401,1206 @@
      "label": "2030年外部封装收入预估",
      "value": 158.0,
      "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-10-04|new-media|technical|0": {
+   "hash": "3ed992c09eeb446f",
+   "date": "2026-10-04",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "清华大学",
+     "type": "institution"
+    },
+    {
+     "name": "吴华强",
+     "type": "person"
+    },
+    {
+     "name": "忆阻器存算一体",
+     "type": "tech"
+    },
+    {
+     "name": "中芯国际",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "忆阻器存算一体",
+     "label": "制程节点",
+     "value": 12.0,
+     "unit": "纳米"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "单元面积",
+     "value": 0.019,
+     "unit": "平方微米"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "单芯片峰值算力",
+     "value": 600.0,
+     "unit": "TOPS"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "向量检索能效",
+     "value": 1574.0,
+     "unit": "K QPS/W"
+    }
+   ]
+  },
+  "2026-10-04|others|business|0": {
+   "hash": "f2277a09adb7f205",
+   "date": "2026-10-04",
+   "category": "others",
+   "entities": [
+    {
+     "name": "AMD",
+     "type": "company"
+    },
+    {
+     "name": "World Labs",
+     "type": "company"
+    },
+    {
+     "name": "李飞飞",
+     "type": "person"
+    },
+    {
+     "name": "世界模型",
+     "type": "tech"
+    },
+    {
+     "name": "Atlas全视角模型",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "AMD",
+     "label": "收购金额",
+     "value": 82.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-10-04|others|technical|0": {
+   "hash": "c1a5e35b39bfcdc9",
+   "date": "2026-10-04",
+   "category": "others",
+   "entities": [
+    {
+     "name": "CPO",
+     "type": "tech"
+    },
+    {
+     "name": "NPO",
+     "type": "tech"
+    },
+    {
+     "name": "ACC",
+     "type": "tech"
+    },
+    {
+     "name": "CPC",
+     "type": "tech"
+    },
+    {
+     "name": "铜缆",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "铜缆",
+     "label": "可靠传输距离",
+     "value": 1.0,
+     "unit": "米"
+    },
+    {
+     "subject": "CPO",
+     "label": "单位互连成本",
+     "value": 310.0,
+     "unit": "美元/Tbps"
+    },
+    {
+     "subject": "铜缆",
+     "label": "单位互连成本",
+     "value": 50.0,
+     "unit": "美元/Tbps"
+    }
+   ]
+  },
+  "2026-10-04|storage-semantics-protocol|business|0": {
+   "hash": "8e8bb4b3e2bb54dd",
+   "date": "2026-10-04",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "企业级SSD",
+     "type": "product"
+    },
+    {
+     "name": "take-or-pay",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "美光",
+     "label": "单季营收",
+     "value": 542.3,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "营收同比增速",
+     "value": 379.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "毛利率",
+     "value": 87.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "长约数量",
+     "value": 26.0,
+     "unit": "份"
+    },
+    {
+     "subject": "美光",
+     "label": "客户财务承诺",
+     "value": 320.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "RPO",
+     "value": 1500.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "FY2027产出锁定比例",
+     "value": 75.0,
+     "unit": "%"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "单季全球营收",
+     "value": 375.9,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-10-04|storage-semantics-protocol|technical|0": {
+   "hash": "e8398b9aa116f946",
+   "date": "2026-10-04",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "MQSim 2.0",
+     "type": "product"
+    },
+    {
+     "name": "HotStorage '26",
+     "type": "paper"
+    },
+    {
+     "name": "ZNS",
+     "type": "tech"
+    },
+    {
+     "name": "FDP",
+     "type": "tech"
+    },
+    {
+     "name": "SplitFTL",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe-oF",
+     "type": "tech"
+    },
+    {
+     "name": "KV缓存",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "KV缓存",
+     "label": "短留存映射比例",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "MQSim 2.0",
+     "label": "写放大降低",
+     "value": 48.0,
+     "unit": "%"
+    },
+    {
+     "subject": "MQSim 2.0",
+     "label": "P99延迟降低",
+     "value": 31.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-04|ai-inference-acceleration|business|0": {
+   "hash": "c1f19a640fd30fb9",
+   "date": "2026-10-04",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "type": "product"
+    },
+    {
+     "name": "Dots",
+     "type": "product"
+    },
+    {
+     "name": "Codex",
+     "type": "product"
+    },
+    {
+     "name": "ChatGPT",
+     "type": "product"
+    },
+    {
+     "name": "Astra",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GPT-6.1 Sol",
+     "label": "输入价格",
+     "value": 2.0,
+     "unit": "美元"
+    },
+    {
+     "subject": "GPT-6.1 Sol",
+     "label": "输出价格",
+     "value": 10.0,
+     "unit": "美元"
+    },
+    {
+     "subject": "GPT-6.1 Sol",
+     "label": "输入价格相对Astra比例",
+     "value": 0.2,
+     "unit": "倍"
+    },
+    {
+     "subject": "Codex",
+     "label": "生成速度",
+     "value": 300.0,
+     "unit": "tok/s"
+    },
+    {
+     "subject": "Codex",
+     "label": "最高加速比",
+     "value": 8.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Dots",
+     "label": "可连接应用数",
+     "value": 4000.0,
+     "unit": "个"
+    },
+    {
+     "subject": "ChatGPT",
+     "label": "周活跃用户数",
+     "value": 12.0,
+     "unit": "亿"
+    }
+   ]
+  },
+  "2026-10-04|ai-inference-acceleration|technical|0": {
+   "hash": "60dc041e5e7b7a3b",
+   "date": "2026-10-04",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek V4",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V3.2",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V4-Pro",
+     "type": "product"
+    },
+    {
+     "name": "TensorRT-LLM",
+     "type": "tech"
+    },
+    {
+     "name": "昇腾",
+     "type": "product"
+    },
+    {
+     "name": "FP4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4",
+     "label": "100万Token推理计算量相对V3.2占比",
+     "value": 27.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepSeek V4",
+     "label": "KV Cache占用相对V3.2占比",
+     "value": 10.0,
+     "unit": "%"
+    },
+    {
+     "subject": "TensorRT-LLM",
+     "label": "隐藏维",
+     "value": 4096.0,
+     "unit": "维"
+    },
+    {
+     "subject": "DeepSeek V4-Pro",
+     "label": "隐藏维",
+     "value": 7168.0,
+     "unit": "维"
+    }
+   ]
+  },
+  "2026-10-04|ai-model-agent-rag|business|0": {
+   "hash": "d4f18857b144e071",
+   "date": "2026-10-04",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek Harness",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V4-Pro",
+     "type": "product"
+    },
+    {
+     "name": "Terminal Bench",
+     "type": "paper"
+    },
+    {
+     "name": "Fable 5",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek Harness",
+     "label": "GitHub星标数(发布12小时)",
+     "value": 50000.0,
+     "unit": "星"
+    },
+    {
+     "subject": "DeepSeek V4-Pro",
+     "label": "Terminal Bench得分",
+     "value": 87.9,
+     "unit": "分"
+    },
+    {
+     "subject": "Fable 5",
+     "label": "Terminal Bench得分",
+     "value": 88.0,
+     "unit": "分"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "API价格",
+     "value": 27.0,
+     "unit": "元/百万tokens"
+    }
+   ]
+  },
+  "2026-10-04|ai-model-agent-rag|technical|0": {
+   "hash": "aa9cf7c00808c5ae",
+   "date": "2026-10-04",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "清华LeapLab",
+     "type": "institution"
+    },
+    {
+     "name": "上海交通大学",
+     "type": "institution"
+    },
+    {
+     "name": "NeurIPS 2025",
+     "type": "paper"
+    },
+    {
+     "name": "RLVR",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "RLVR",
+     "label": "Pass@1(基线)下限",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "RLVR",
+     "label": "Pass@1(基线)上限",
+     "value": 20.0,
+     "unit": "%"
+    },
+    {
+     "subject": "RLVR",
+     "label": "Pass@1(优化后)下限",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "RLVR",
+     "label": "Pass@1(优化后)上限",
+     "value": 60.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-04|cost-effective-storage|business|0": {
+   "hash": "6cd9867d13088d95",
+   "date": "2026-10-04",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "Pixel 11 Pro",
+     "type": "product"
+    },
+    {
+     "name": "Vivo",
+     "type": "company"
+    },
+    {
+     "name": "LPDDR4X",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "美光",
+     "label": "DRAM位元价涨幅(下限)",
+     "value": 16.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "DRAM位元价涨幅(上限)",
+     "value": 19.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "NAND均价涨幅",
+     "value": 30.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "手机与PC客户营业利润率",
+     "value": 86.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "手机与PC客户营业利润率(去年同期)",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "已锁定SCA数量",
+     "value": 16.0,
+     "unit": "份"
+    },
+    {
+     "subject": "行业",
+     "label": "Q3通用DRAM合约涨幅(下限)",
+     "value": 13.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "Q3通用DRAM合约涨幅(上限)",
+     "value": 18.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "Q3 NAND合约涨幅(下限)",
+     "value": 10.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "Q3 NAND合约涨幅(上限)",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Pixel 11 Pro",
+     "label": "内存容量",
+     "value": 12.0,
+     "unit": "GB"
+    }
+   ]
+  },
+  "2026-10-04|cost-effective-storage|technical|0": {
+   "hash": "a6bbf32e34c10198",
+   "date": "2026-10-04",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "DeepSeek DSec",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V4",
+     "type": "product"
+    },
+    {
+     "name": "3FS",
+     "type": "product"
+    },
+    {
+     "name": "EROFS",
+     "type": "tech"
+    },
+    {
+     "name": "virtio-pmem",
+     "type": "tech"
+    },
+    {
+     "name": "DAX",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek DSec",
+     "label": "单分片服务器数",
+     "value": 160.0,
+     "unit": "台"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "单分片CPU核心数",
+     "value": 30000.0,
+     "unit": "核"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "单分片内存容量",
+     "value": 250.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "日服务沙盒数",
+     "value": 300.0,
+     "unit": "万"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "峰值在线沙盒数",
+     "value": 38.0,
+     "unit": "万"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "沙盒创建速率",
+     "value": 5000.0,
+     "unit": "个/秒"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "8192容器创建耗时(优化前)",
+     "value": 60.0,
+     "unit": "分钟"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "8192容器创建耗时(优化后)",
+     "value": 35.0,
+     "unit": "分钟"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "8192容器创建加速比",
+     "value": 1.71,
+     "unit": "倍"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "磁盘写入量降幅",
+     "value": 57.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "workspace加载耗时(优化前,EROFS)",
+     "value": 79.0,
+     "unit": "分钟"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "workspace加载耗时(优化后,EROFS)",
+     "value": 45.0,
+     "unit": "分钟"
+    },
+    {
+     "subject": "DeepSeek DSec",
+     "label": "峰值内存降幅",
+     "value": 40.2,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-04|high-capacity-storage|business|0": {
+   "hash": "6a69e103ccc1f5f0",
+   "date": "2026-10-04",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "TrendForce",
+     "type": "company"
+    },
+    {
+     "name": "Google Pixel",
+     "type": "product"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "铠侠",
+     "label": "NAND ASP环比涨幅",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "FY2026营收",
+     "value": 1332.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "营收同比增幅",
+     "value": 256.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "take-or-pay协议数量",
+     "value": 26.0,
+     "unit": "份"
+    },
+    {
+     "subject": "美光",
+     "label": "协议覆盖2030年收入比例",
+     "value": 35.0,
+     "unit": "%"
+    },
+    {
+     "subject": "TrendForce",
+     "label": "Q3 DRAM合约涨幅预测(下限)",
+     "value": 13.0,
+     "unit": "%"
+    },
+    {
+     "subject": "TrendForce",
+     "label": "Q3 DRAM合约涨幅预测(上限)",
+     "value": 18.0,
+     "unit": "%"
+    },
+    {
+     "subject": "TrendForce",
+     "label": "Q3 NAND合约涨幅预测(下限)",
+     "value": 10.0,
+     "unit": "%"
+    },
+    {
+     "subject": "TrendForce",
+     "label": "Q3 NAND合约涨幅预测(上限)",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Google Pixel",
+     "label": "内存容量",
+     "value": 12.0,
+     "unit": "GB"
+    }
+   ]
+  },
+  "2026-10-04|high-capacity-storage|technical|0": {
+   "hash": "bb32fa84040aeb7f",
+   "date": "2026-10-04",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "SiN电荷陷阱",
+     "type": "tech"
+    },
+    {
+     "name": "CuA",
+     "type": "tech"
+    },
+    {
+     "name": "WoW",
+     "type": "tech"
+    },
+    {
+     "name": "Block-by-Deck",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "PLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-10-04|high-reliability-storage|business|0": {
+   "hash": "a7bfd6e3dd0c61ea",
+   "date": "2026-10-04",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "山东大学",
+     "type": "institution"
+    },
+    {
+     "name": "ICEPT 2026",
+     "type": "paper"
+    },
+    {
+     "name": "FDP",
+     "type": "tech"
+    },
+    {
+     "name": "FlashFQ",
+     "type": "tech"
+    },
+    {
+     "name": "ZNS",
+     "type": "tech"
+    },
+    {
+     "name": "CXL QoS ID",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "FDP",
+     "label": "写放大系数WAF",
+     "value": 1.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "FlashFQ",
+     "label": "请求延迟上限",
+     "value": 50.0,
+     "unit": "ms"
+    }
+   ]
+  },
+  "2026-10-04|high-reliability-storage|technical|0": {
+   "hash": "fbe92b6b60335a6d",
+   "date": "2026-10-04",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "PABLOR",
+     "type": "paper"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "块内差异感知刷新",
+     "type": "tech"
+    },
+    {
+     "name": "读干扰",
+     "type": "tech"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-10-04|model-benchmarking|business|0": {
+   "hash": "e927faa93f499401",
+   "date": "2026-10-04",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Simate",
+     "type": "company"
+    },
+    {
+     "name": "RoboDojo",
+     "type": "paper"
+    },
+    {
+     "name": "无问智科",
+     "type": "company"
+    },
+    {
+     "name": "Real2Sim2Real",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "无问智科",
+     "label": "数据工厂月产能",
+     "value": 20000.0,
+     "unit": "小时/月"
+    },
+    {
+     "subject": "无问智科",
+     "label": "订单同比增幅",
+     "value": 3000.0,
+     "unit": "%"
+    },
+    {
+     "subject": "无问智科",
+     "label": "仿真强化学习后真机成功率提升幅度",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-04|model-benchmarking|technical|0": {
+   "hash": "10c16ff50f7ca3d4",
+   "date": "2026-10-04",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "清华LeapLab",
+     "type": "institution"
+    },
+    {
+     "name": "NeurIPS 2025",
+     "type": "paper"
+    },
+    {
+     "name": "RLVR",
+     "type": "tech"
+    },
+    {
+     "name": "S³Gym",
+     "type": "paper"
+    },
+    {
+     "name": "字节跳动",
+     "type": "company"
+    },
+    {
+     "name": "知识蒸馏",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "S³Gym",
+     "label": "自我判断准确性与性能提升相关系数",
+     "value": -0.23,
+     "unit": "无"
+    }
+   ]
+  },
+  "2026-10-04|near-memory-computing|business|0": {
+   "hash": "d0fba9757bfb670d",
+   "date": "2026-10-04",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "台积电",
+     "type": "company"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "HBM3E",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4E",
+     "type": "tech"
+    },
+    {
+     "name": "AMD MI455X",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "HBM4报价(下限)",
+     "value": 4.0,
+     "unit": "美元/Gb"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4报价(上限)",
+     "value": 4.9,
+     "unit": "美元/Gb"
+    },
+    {
+     "subject": "HBM4",
+     "label": "相对HBM3E溢价",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4占HBM营收比例(2025年)",
+     "value": 40.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4占HBM营收比例(2026年)",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "HBM4E PHY面积缩减幅度",
+     "value": 67.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "HBM4E带宽提升幅度",
+     "value": 30.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "2026Q2 DRAM市场份额",
+     "value": 24.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "2026Q2 DRAM市场份额",
+     "value": 25.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-04|near-memory-computing|technical|0": {
+   "hash": "dcb2d3bce978ce24",
+   "date": "2026-10-04",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "清华大学",
+     "type": "institution"
+    },
+    {
+     "name": "吴华强",
+     "type": "person"
+    },
+    {
+     "name": "忆阻器存算一体",
+     "type": "tech"
+    },
+    {
+     "name": "忆元科技",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "忆阻器存算一体",
+     "label": "工艺节点",
+     "value": 12.0,
+     "unit": "纳米"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "单元尺寸",
+     "value": 0.019,
+     "unit": "μm²"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "阵列密度",
+     "value": 50.0,
+     "unit": "Mb/mm²"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "单芯片峰值算力",
+     "value": 600.0,
+     "unit": "TOPS"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "向量检索芯片忆阻器集成量",
+     "value": 36.0,
+     "unit": "M"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "向量检索芯片吞吐",
+     "value": 390000.0,
+     "unit": "QPS"
+    },
+    {
+     "subject": "忆阻器存算一体",
+     "label": "向量检索能效比",
+     "value": 1574000.0,
+     "unit": "QPS/W"
+    }
+   ]
+  },
+  "2026-10-04|new-media|business|0": {
+   "hash": "6475677e54270cbd",
+   "date": "2026-10-04",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "长鑫存储",
+     "type": "company"
+    },
+    {
+     "name": "G5",
+     "type": "product"
+    },
+    {
+     "name": "LPDDR5X",
+     "type": "tech"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "长鑫存储",
+     "label": "有源区半间距",
+     "value": 11.95,
+     "unit": "纳米"
+    },
+    {
+     "subject": "长鑫存储",
+     "label": "每片晶圆裸片产出提升幅度",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "长鑫存储",
+     "label": "二季度全球DRAM营收",
+     "value": 146.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "长鑫存储",
+     "label": "全球DRAM市场份额",
+     "value": 10.0,
+     "unit": "%"
+    },
+    {
+     "subject": "长鑫存储",
+     "label": "上半年净利润",
+     "value": 776.0,
+     "unit": "亿元"
     }
    ]
   }

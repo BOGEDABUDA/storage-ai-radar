@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T01:39:30+08:00",
+ "generated_at": "2026-10-04T07:18:45+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -27770,6 +27770,406 @@
    "title": "面向行业信息抽取的大模型知识蒸馏技术",
    "kind": "method",
    "checked_at": "2026-09-30T01:39:30+08:00"
+  },
+  "id:2609.25560": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.25560",
+   "match": {
+    "arxiv_id": "2609.25560",
+    "version": "1",
+    "title": "Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection",
+    "abstract": "Large-model parameters have grown beyond the capacity of a single xPU, dispersing across multiple xPUs spanning distinct host domains, where xPU-to-xPU communication dominates overall system efficiency. Existing scale-up interconnect remains inadequate: network-based solutions built on Ethernet--such as RoCE (RDMA over Converged Ethernet)--introduce specific message-semantics and protocol-stack characteristics, and rely on fragmented per-host addressing, while conventional host-based fabrics are confined to a single host domain and lack cross-host unified addressing. This paper presents Co-Fabric, a bus-based interconnect that, unlike conventional bus designs, breaks host-domain boundaries to deliver unified xPU interconnection for scale-up superpods. Co-Fabric makes three contributions: a streamlined four-layer protocol stack achieving nanosecond-scale processing latency with native reliability; a cross-domain scaling and P2P mechanism that routes using port identifiers embedded in the packet header; and a unified address space built on shadow-device auto-enumeration. On a 64-xPU 3D-Mesh system, Co-Fabric cuts inter-node communication latency by over 50% and improves bandwidth by 2-5x over RoCE, accelerating DeepSeek R1 inference by 30%-80%. Moreover, since its streamlined four-layer protocol stack and higher data-communication efficiency reduce protocol and processing overhead relative to the Ethernet-based RoCE stack, Co-Fabric cuts the cost and power of the interconnect itself by up to 80% and 5%, respectively. These results demonstrate Co-Fabric's advantage for AI computing centers.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Zhen Peng",
+     "Jiaming Huang",
+     "Chaofan Chen",
+     "Zhao Zhang",
+     "An Wu",
+     "Baoyang Liu",
+     "Xinglong Wang",
+     "Tanlong Ci",
+     "Jinfeng Li",
+     "Xueke Duan",
+     "Hao Wang",
+     "Xi Chen"
+    ],
+    "categories": [
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection",
+   "kind": "id",
+   "checked_at": "2026-10-04T07:17:16+08:00"
+  },
+  "t:an energy efficient reconfigurable and dual mode ai processor based on a two stage hybrid neural network for wearable lung sound monitoring": {
+   "status": "no_results",
+   "query": "ti:\"An Energy-efficient, Reconfigurable and Dual-mode AI Processor Based on a Two-Stage Hybrid Neural Network for Wearable Lung Sound Monitoring\"",
+   "match": null,
+   "title": "An Energy-efficient, Reconfigurable and Dual-mode AI Processor Based on a Two-Stage Hybrid Neural Network for Wearable Lung Sound Monitoring",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:20+08:00"
+  },
+  "t:bt bevs cs": {
+   "status": "no_results",
+   "query": "all:\"BT-BEVs-CS\"",
+   "match": null,
+   "title": "BT-BEVs-CS",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:17:24+08:00"
+  },
+  "t:building physical agents via structured representations": {
+   "status": "no_results",
+   "query": "ti:\"Building Physical Agents via Structured Representations\"",
+   "match": null,
+   "title": "Building Physical Agents via Structured Representations",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:27+08:00"
+  },
+  "t:child human in the loop ood detection for safe clinical deployment": {
+   "status": "matched_by_title",
+   "query": "ti:\"CHILD: Human-in-the-Loop OOD Detection for Safe Clinical Deployment\"",
+   "match": {
+    "arxiv_id": "2609.07188",
+    "version": "1",
+    "title": "CHILD: Human-in-the-Loop OOD Detection for Safe Clinical Deployment",
+    "abstract": "Out-of-distribution (OOD) detection is critical for safe deployment of medical AI systems. Recently, test-time adaptation (TTA) has emerged as a new paradigm for OOD detection, automatically adjusting detector behavior during deployment. However, such automatic adaptation mechanisms may raise safety concerns in safety-critical clinical environments. While physician oversight can mitigate these risks, it is resource-intensive and must be judiciously allocated. To reconcile safety with efficiency, we propose CHILD, a training-free framework designed to enhance streaming OOD detection via sparse human feedback. Operating under strict budget constraints, CHILD employs an adaptive risk-aware sample selection mechanism to pinpoint only the most decision-uncertain samples for review. Crucially, it maximizes the utility of this sparse feedback through a retrieval-based score calibration module, which refines model predictions using a compact feature cache without any parameter updates. Extensive experiments on four medical benchmarks demonstrate that CHILD turns limited supervision into significant reliability gains: with a sparse feedback budget of only 5%, it reduces the average FPR95 from 72.63% to 60.26% and improves AUROC from 75.53% to 81.85%, consistently outperforming state-of-the-art baselines. Our code is publicly available at https://github.com/figec/CHILD.",
+    "published": "2026-09-07",
+    "updated": "2026-09-07",
+    "authors": [
+     "Jinlun Ye",
+     "Kaiyue Lu",
+     "Runhe Lai",
+     "Xinhua Lu",
+     "Jia-Xin Zhuang",
+     "Ruixuan Wang"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "11 pages. Accepted at MICCAI 2026"
+   },
+   "score": 1.0,
+   "title": "CHILD: Human-in-the-Loop OOD Detection for Safe Clinical Deployment",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:31+08:00"
+  },
+  "t:chipmem": {
+   "status": "matched_by_title",
+   "query": "all:\"ChipMEM\"",
+   "match": {
+    "arxiv_id": "2609.27067",
+    "version": "1",
+    "title": "ChipMEM: Verification-Grounded Memory for EDA Agents",
+    "abstract": "Large language model (LLM)-based agents use Electronic Design Automation (EDA) tools to generate and revise register-transfer-level (RTL) designs under synthesis and verification feedback. Recent methods learn from this feedback by distilling reusable skills from execution traces or by training on rewards derived from EDA-tools. Both methods are typically evaluated on the tasks that produced the experience. Repeated access to benchmark feedback on the same task can reward task-specific revision rather than creating reusable knowledge that transfers. We introduce ChipMEM, a verification-grounded memory layer for EDA agents. It combines cross-task procedural memory with within-trajectory statistical guidance. Its procedural component distills and stores a skill only after it passes synthesis, simulation, or formal checks, rather than relying on model self-assessments. A Bayesian component maintains hierarchical Beta estimates over tool-call outcomes and ranks recovery strategies that succeeded under comparable errors. A common adapter applies the same memory interface to RTL optimization and testbench-generation agents while preserving each domain's tools and acceptance criteria. We measure performance on training tasks and evaluate whether learned skills transfer to unseen tasks. On RTLRewriter-Bench, under matched model and tool settings, ChipMEM produces equivalence-passing outputs on 39/54 scored designs versus 35/54 without memory; on the 49-design short suite, mean area improvement is 8.69% versus 5.66%. On held-out CVDP tasks, ChipMEM with a frozen procedural library achieves 20/20 accepted outcomes versus 18/20 without memory in a single evaluation per setting.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Abdulrahman AlRabah",
+     "Joshua Mabry",
+     "Dilek Hakkani-Tür",
+     "Abdussalam Alawini",
+     "Hamid Shojaei",
+     "Kartik Hegde",
+     "Sandesh Adhikary"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "ChipMEM",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:17:36+08:00"
+  },
+  "t:co fabric breaking host domain boundaries for unified xpu interconnection": {
+   "status": "matched_by_title",
+   "query": "ti:\"Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection\"",
+   "match": {
+    "arxiv_id": "2609.25560",
+    "version": "1",
+    "title": "Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection",
+    "abstract": "Large-model parameters have grown beyond the capacity of a single xPU, dispersing across multiple xPUs spanning distinct host domains, where xPU-to-xPU communication dominates overall system efficiency. Existing scale-up interconnect remains inadequate: network-based solutions built on Ethernet--such as RoCE (RDMA over Converged Ethernet)--introduce specific message-semantics and protocol-stack characteristics, and rely on fragmented per-host addressing, while conventional host-based fabrics are confined to a single host domain and lack cross-host unified addressing. This paper presents Co-Fabric, a bus-based interconnect that, unlike conventional bus designs, breaks host-domain boundaries to deliver unified xPU interconnection for scale-up superpods. Co-Fabric makes three contributions: a streamlined four-layer protocol stack achieving nanosecond-scale processing latency with native reliability; a cross-domain scaling and P2P mechanism that routes using port identifiers embedded in the packet header; and a unified address space built on shadow-device auto-enumeration. On a 64-xPU 3D-Mesh system, Co-Fabric cuts inter-node communication latency by over 50% and improves bandwidth by 2-5x over RoCE, accelerating DeepSeek R1 inference by 30%-80%. Moreover, since its streamlined four-layer protocol stack and higher data-communication efficiency reduce protocol and processing overhead relative to the Ethernet-based RoCE stack, Co-Fabric cuts the cost and power of the interconnect itself by up to 80% and 5%, respectively. These results demonstrate Co-Fabric's advantage for AI computing centers.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Zhen Peng",
+     "Jiaming Huang",
+     "Chaofan Chen",
+     "Zhao Zhang",
+     "An Wu",
+     "Baoyang Liu",
+     "Xinglong Wang",
+     "Tanlong Ci",
+     "Jinfeng Li",
+     "Xueke Duan",
+     "Hao Wang",
+     "Xi Chen"
+    ],
+    "categories": [
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:39+08:00"
+  },
+  "t:drivemotion": {
+   "status": "matched_by_title",
+   "query": "all:\"DriveMotion\"",
+   "match": {
+    "arxiv_id": "2609.08117",
+    "version": "1",
+    "title": "DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting",
+    "abstract": "Driver motion can provide cues to ongoing behavior, attention, and near-term driving intent. However, most existing driver-centric datasets focus on recognizing predefined driver behaviors from short video clips, while human motion forecasting benchmarks largely target motion outside the vehicle. We introduce DriveMotion, a multi-source benchmark for continuous driver motion forecasting. DriveMotion contains 393 hours of 133-keypoint motion sequences at 10 Hz from 360 drivers, integrating naturalistic driving data, curated public in-cabin videos, and the AIDE dataset into a unified representation with per-joint validity masks and synchronized driving context. Naturalistic driving contains long periods of limited body movement, making uniformly sampled evaluation dominated by persistence and less sensitive to brief but behaviorally meaningful motion. To address this, we use dynamics-anchored evaluation, placing forecasting windows around vehicle maneuvers identified offline from CAN signals without providing CAN to the model at inference. Arm motion in pre-maneuver windows is 3.4x greater than in route-matched stable-driving controls. On these anchored windows, learned models reduce forecasting error over persistence by up to 15%, while maneuver-enriched training improves forecast-derived Part-State F1 by 44% over the zero-motion reference. Training on the full multi-source corpus further reduces forecasting error on held-out web drivers by 38% compared with BATON-only training. DriveMotion provides identity-disjoint splits, fixed evaluation subsets, and reference implementations for reproducible evaluation of continuous driver motion forecasting. The dataset and benchmark are available at https://huggingface.co/datasets/HenryYHW/DriveMotion",
+    "published": "2026-09-08",
+    "updated": "2026-09-08",
+    "authors": [
+     "Yuhang Wang",
+     "Chuheng Wei",
+     "Jingxin Yang",
+     "Xishun Liao",
+     "Hao Zhou"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.HC"
+    ],
+    "journal_ref": null,
+    "comment": "21 pages, 7 figures, 18 tables. Dataset and benchmark: https://huggingface.co/datasets/HenryYHW/DriveMotion; project page: https://wangyuhang-cmd.github.io/drivemotion/"
+   },
+   "score": 0.95,
+   "title": "DriveMotion",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:17:43+08:00"
+  },
+  "t:from rules to roles a generative ai driven agent based model for land use decisions": {
+   "status": "no_results",
+   "query": "ti:\"From rules to roles: A generative AI-driven agent-based model for land-use decisions\"",
+   "match": null,
+   "title": "From rules to roles: A generative AI-driven agent-based model for land-use decisions",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:47+08:00"
+  },
+  "t:labss": {
+   "status": "rejected",
+   "query": "all:\"LABSS\"",
+   "match": null,
+   "best_candidate": "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption",
+   "best_score": 0.047,
+   "title": "LABSS",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:17:51+08:00"
+  },
+  "t:mqsim 2 0 a framework for realistic studies of ai era ssds and disaggregated storage": {
+   "status": "no_results",
+   "query": "ti:\"MQSim 2.0: A Framework for Realistic Studies of AI-Era SSDs and Disaggregated Storage\"",
+   "match": null,
+   "title": "MQSim 2.0: A Framework for Realistic Studies of AI-Era SSDs and Disaggregated Storage",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:17:55+08:00"
+  },
+  "t:pablor": {
+   "status": "no_results",
+   "query": "all:\"PABLOR\"",
+   "match": null,
+   "title": "PABLOR",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:17:59+08:00"
+  },
+  "t:prpf": {
+   "status": "rejected",
+   "query": "all:\"PRPF\"",
+   "match": null,
+   "best_candidate": "Perceive Before Reasoning: A Pre-Reasoning Perception Framework for Efficient and Reliable Proactive Mobile Agents",
+   "best_score": 0.068,
+   "title": "PRPF",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:02+08:00"
+  },
+  "t:physassistbench": {
+   "status": "matched_by_title",
+   "query": "all:\"PhysAssistBench\"",
+   "match": {
+    "arxiv_id": "2606.18613",
+    "version": "4",
+    "title": "Are LLMs Ready to Assist Physicians? PhysAssistBench for Interactive Doctor-Patient-EHR Assistance",
+    "abstract": "The most plausible near-term role of medical LLMs is to assist rather than replace physicians, yet current evaluations often test isolated capabilities: clinical knowledge, EHR system interaction, or patient communication. Physician assistance instead requires coordinating these capabilities within the same interaction, where physicians issue underspecified requests, patients describe symptoms ambiguously, and EHR systems demand precise tool use. We introduce PhysAssistBench, a benchmark for interactive doctor-patient-EHR assistance. Built from real MIMIC-IV cases, PhysAssistBench uses a scalable pipeline to construct agentic patients: interactive, record-grounded agents that turn static EHR records into multi-turn clinical scenarios while preserving clinical factuality. PhysAssistBench provides a curated bilingual evaluation set of 1,296 manually reviewed and physician-validated turns. Experiments with leading LLMs show that current models remain unreliable in this setting, which exposes a key bottleneck for clinical LLMs: reliable assistance requires coordination across knowledge, communication, and systems, not isolated gains in any of them.",
+    "published": "2026-06-17",
+    "updated": "2026-08-31",
+    "authors": [
+     "Tianming Du",
+     "Peijie Yu",
+     "Sihan Shang",
+     "Danli Shi",
+     "My Linh Nguyen",
+     "Shengbo Gao",
+     "Guangyuan Li",
+     "Yinghong Yu",
+     "Yan Jiang",
+     "Qianlong Zhao",
+     "Behzad Bozorgtabar",
+     "Shaoxiong Ji"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "35 pages with 8 figures"
+   },
+   "score": 0.95,
+   "title": "PhysAssistBench",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:06+08:00"
+  },
+  "t:qos guarantees and performance isolation for multi tenant ssds in cloud environments": {
+   "status": "no_results",
+   "query": "ti:\"QoS Guarantees and Performance Isolation for Multi-tenant SSDs in Cloud Environments\"",
+   "match": null,
+   "title": "QoS Guarantees and Performance Isolation for Multi-tenant SSDs in Cloud Environments",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:10+08:00"
+  },
+  "t:rlvr": {
+   "status": "matched_by_title",
+   "query": "all:\"RLVR\"",
+   "match": {
+    "arxiv_id": "2505.13934",
+    "version": "2",
+    "title": "RLVR-World: Training World Models with Reinforcement Learning",
+    "abstract": "World models predict state transitions in response to actions and are increasingly developed across diverse modalities. However, standard training objectives such as maximum likelihood estimation (MLE) often misalign with task-specific goals of world models, i.e., transition prediction metrics like accuracy or perceptual quality. In this paper, we present RLVR-World, a unified framework that leverages reinforcement learning with verifiable rewards (RLVR) to directly optimize world models for such metrics. Despite formulating world modeling as autoregressive prediction of tokenized sequences, RLVR-World evaluates metrics of decoded predictions as verifiable rewards. We demonstrate substantial performance gains on both language- and video-based world models across domains, including text games, web navigation, and robot manipulation. Our work indicates that, beyond recent advances in reasoning language models, RLVR offers a promising post-training paradigm for enhancing the utility of generative models more broadly. Code, datasets, models, and video samples are available at the project website: https://thuml.github.io/RLVR-World.",
+    "published": "2025-05-20",
+    "updated": "2025-10-25",
+    "authors": [
+     "Jialong Wu",
+     "Shaofeng Yin",
+     "Ningya Feng",
+     "Mingsheng Long"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2025. Code is available at project website: https://thuml.github.io/RLVR-World/"
+   },
+   "score": 0.95,
+   "title": "RLVR",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:14+08:00"
+  },
+  "t:raven": {
+   "status": "matched_by_title",
+   "query": "all:\"Raven\"",
+   "match": {
+    "arxiv_id": "2605.15190",
+    "version": "1",
+    "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO",
+    "abstract": "Causal autoregressive video diffusion models support real-time streaming generation by extrapolating future chunks from previously generated content. Distilling such generators from high-fidelity bidirectional teachers yields competitive few-step models, yet a persistent gap between the history distributions encountered during training and those arising at inference constrains generation quality over long horizons. We introduce the Real-time Autoregressive Video Extrapolation Network (RAVEN), a training-time test framework that repacks each self rollout into an interleaved sequence of clean historical endpoints and noisy denoising states. This formulation aligns training attention with inference-time extrapolation and allows downstream chunk losses to supervise the history representations on which future predictions depend. We further propose Consistency-model Group Relative Policy Optimization (CM-GRPO), which reformulates a consistency sampling step as a conditional Gaussian transition and applies online Reinforcement Learning (RL) directly to this kernel, avoiding the Euler-Maruyama auxiliary process adopted in prior flow-model RL formulations. Experiments demonstrate that RAVEN surpasses recent causal video distillation baselines across quality, semantic, and dynamic degree evaluations, and that CM-GRPO provides further gains when combined with RAVEN.",
+    "published": "2026-05-14",
+    "updated": "2026-05-14",
+    "authors": [
+     "Yanzuo Lu",
+     "Ronglai Zuo",
+     "Jiankang Deng"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Project Page: https://yanzuo.lu/raven"
+   },
+   "score": 0.95,
+   "title": "Raven",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:18+08:00"
+  },
+  "t:score centering": {
+   "status": "matched_by_title",
+   "query": "all:\"Score Centering\"",
+   "match": {
+    "arxiv_id": "2609.20807",
+    "version": "1",
+    "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+    "abstract": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "authors": [
+     "Martin Marek",
+     "Max Ryabinin"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Score Centering",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:22+08:00"
+  },
+  "t:skills in the ai age": {
+   "status": "no_results",
+   "query": "ti:\"Skills in the AI age\"",
+   "match": null,
+   "title": "Skills in the AI age",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:26+08:00"
+  },
+  "t:technology in society": {
+   "status": "rejected",
+   "query": "ti:\"Technology in Society\"",
+   "match": null,
+   "best_candidate": "Socially Cognizant Robotics for a Technology Enhanced Society",
+   "best_score": 0.488,
+   "title": "Technology in Society",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:29+08:00"
+  },
+  "t:中国研究人员对大语言模型参与同行评审的陈述性偏好 来自离散选择实验的证据": {
+   "status": "no_results",
+   "query": "ti:\"中国研究人员对大语言模型参与同行评审的陈述性偏好:来自离散选择实验的证据\"",
+   "match": null,
+   "title": "中国研究人员对大语言模型参与同行评审的陈述性偏好:来自离散选择实验的证据",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:33+08:00"
+  },
+  "t:从河图洛书到transformer 东方生成论与现代注意力架构的结构同构启发及其对未来大模型设计的启示": {
+   "status": "no_results",
+   "query": "ti:\"从河图洛书到Transformer:东方生成论与现代注意力架构的结构同构启发及其对未来大模型设计的启示\"",
+   "match": null,
+   "title": "从河图洛书到Transformer:东方生成论与现代注意力架构的结构同构启发及其对未来大模型设计的启示",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:37+08:00"
+  },
+  "t:基于大模型的学术论文评价智能体构建研究": {
+   "status": "no_results",
+   "query": "all:\"基于大模型的学术论文评价智能体构建研究\"",
+   "match": null,
+   "title": "基于大模型的学术论文评价智能体构建研究",
+   "kind": "method",
+   "checked_at": "2026-10-04T07:18:41+08:00"
+  },
+  "t:大语言模型如何改变家庭洪水适应决策 叙事记忆驱动的智能体模型揭示行为与不确定性": {
+   "status": "no_results",
+   "query": "ti:\"大语言模型如何改变家庭洪水适应决策?叙事记忆驱动的智能体模型揭示行为与不确定性\"",
+   "match": null,
+   "title": "大语言模型如何改变家庭洪水适应决策?叙事记忆驱动的智能体模型揭示行为与不确定性",
+   "kind": "title",
+   "checked_at": "2026-10-04T07:18:45+08:00"
   }
  }
 }
