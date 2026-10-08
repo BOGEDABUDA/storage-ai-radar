@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-10-04T07:16:57+08:00",
+ "generated_at": "2026-10-08T16:09:13+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -42601,6 +42601,1136 @@
      "label": "上半年净利润",
      "value": 776.0,
      "unit": "亿元"
+    }
+   ]
+  },
+  "2026-10-08|new-media|technical|0": {
+   "hash": "04b9c45fd9c6c64b",
+   "date": "2026-10-08",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "天津大学",
+     "type": "institution"
+    },
+    {
+     "name": "Advanced Science",
+     "type": "paper"
+    },
+    {
+     "name": "界面控制电荷编程",
+     "type": "tech"
+    },
+    {
+     "name": "二维范德华界面",
+     "type": "tech"
+    },
+    {
+     "name": "PbI₂",
+     "type": "tech"
+    },
+    {
+     "name": "CMOS异构集成",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "界面控制电荷编程",
+     "label": "最快编程时间",
+     "value": 400.0,
+     "unit": "ps"
+    },
+    {
+     "subject": "界面控制电荷编程",
+     "label": "写入电压",
+     "value": 30.0,
+     "unit": "mV"
+    },
+    {
+     "subject": "界面控制电荷编程",
+     "label": "写入能量",
+     "value": 10.0,
+     "unit": "fJ"
+    },
+    {
+     "subject": "PbI₂",
+     "label": "数据保持时间",
+     "value": 12000.0,
+     "unit": "s"
+    },
+    {
+     "subject": "PbI₂",
+     "label": "耐久次数",
+     "value": 1000000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "界面控制电荷编程",
+     "label": "单器件存储位数",
+     "value": 11.0,
+     "unit": "bit"
+    },
+    {
+     "subject": "界面控制电荷编程",
+     "label": "演示阵列规模",
+     "value": 1024.0,
+     "unit": "单元"
+    },
+    {
+     "subject": "CMOS异构集成",
+     "label": "良率",
+     "value": 98.4,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-08|others|business|0": {
+   "hash": "9c228606304faae8",
+   "date": "2026-10-08",
+   "category": "others",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    },
+    {
+     "name": "宁德时代",
+     "type": "company"
+    },
+    {
+     "name": "昇腾",
+     "type": "product"
+    },
+    {
+     "name": "科创板",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek",
+     "label": "单轮融资金额",
+     "value": 1000.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "投后估值",
+     "value": 5000.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "计划IPO年份",
+     "value": 2027.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-10-08|others|technical|0": {
+   "hash": "4e85bc3e74322258",
+   "date": "2026-10-08",
+   "category": "others",
+   "entities": [
+    {
+     "name": "Google",
+     "type": "company"
+    },
+    {
+     "name": "VPWR垂直供电",
+     "type": "tech"
+    },
+    {
+     "name": "TDC",
+     "type": "tech"
+    },
+    {
+     "name": "EDC",
+     "type": "tech"
+    },
+    {
+     "name": "±400/800VDC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "VPWR垂直供电",
+     "label": "单芯片供电电流",
+     "value": 1000.0,
+     "unit": "A"
+    },
+    {
+     "subject": "VPWR垂直供电",
+     "label": "配电损耗降低",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "VPWR垂直供电",
+     "label": "目标TDC电流",
+     "value": 2000.0,
+     "unit": "A"
+    },
+    {
+     "subject": "VPWR垂直供电",
+     "label": "目标EDC电流",
+     "value": 5000.0,
+     "unit": "A"
+    },
+    {
+     "subject": "±400/800VDC",
+     "label": "机架供电电压",
+     "value": 800.0,
+     "unit": "V"
+    }
+   ]
+  },
+  "2026-10-08|storage-semantics-protocol|business|0": {
+   "hash": "aa49afc7794aeeac",
+   "date": "2026-10-08",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "type": "company"
+    },
+    {
+     "name": "NVHBM",
+     "type": "tech"
+    },
+    {
+     "name": "NV-HBI",
+     "type": "tech"
+    },
+    {
+     "name": "HBM Base Die",
+     "type": "tech"
+    },
+    {
+     "name": "AWS Annapurna",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "台积电",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "NVHBM",
+     "label": "单栈带宽提升",
+     "value": 30.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "功耗降低",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "PHY面积缩减",
+     "value": 67.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "可用计算die面积增加",
+     "value": 25.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "定制HBM样品供应年份",
+     "value": 2027.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-10-08|storage-semantics-protocol|technical|0": {
+   "hash": "d7cc2530491b5c28",
+   "date": "2026-10-08",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "Glenn Lockwood",
+     "type": "person"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "HBM3",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe",
+     "type": "tech"
+    },
+    {
+     "name": "CXL内存池",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "KV Cache",
+     "label": "盈亏点前缀长度",
+     "value": 4000.0,
+     "unit": "词元"
+    },
+    {
+     "subject": "HBM3",
+     "label": "读取43GB耗时",
+     "value": 13.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "PCIe",
+     "label": "读取43GB耗时",
+     "value": 0.7,
+     "unit": "秒"
+    },
+    {
+     "subject": "NVMe",
+     "label": "读取43GB耗时",
+     "value": 3.0,
+     "unit": "秒"
+    },
+    {
+     "subject": "HBM3",
+     "label": "带宽优势倍数",
+     "value": 50.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-08|ai-inference-acceleration|business|0": {
+   "hash": "f95fac4fb214785d",
+   "date": "2026-10-08",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    },
+    {
+     "name": "宁德时代",
+     "type": "company"
+    },
+    {
+     "name": "中信证券",
+     "type": "company"
+    },
+    {
+     "name": "华为",
+     "type": "company"
+    },
+    {
+     "name": "科创板",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek",
+     "label": "本轮融资规模",
+     "value": 800.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "目标估值",
+     "value": 5000.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "腾讯",
+     "label": "上一轮投资额",
+     "value": 100.0,
+     "unit": "亿元"
+    }
+   ]
+  },
+  "2026-10-08|ai-inference-acceleration|technical|0": {
+   "hash": "d25a7904a21712b2",
+   "date": "2026-10-08",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "智谱",
+     "type": "company"
+    },
+    {
+     "name": "清华大学",
+     "type": "institution"
+    },
+    {
+     "name": "唐杰",
+     "type": "person"
+    },
+    {
+     "name": "Trace as State",
+     "type": "tech"
+    },
+    {
+     "name": "DeepSeek V4 Pro",
+     "type": "product"
+    },
+    {
+     "name": "GLM-5.2",
+     "type": "product"
+    },
+    {
+     "name": "GraphWalks Parents",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4 Pro",
+     "label": "复杂任务准确率",
+     "value": 81.8,
+     "unit": "%"
+    },
+    {
+     "subject": "GLM-5.2",
+     "label": "GraphWalks Parents EM得分",
+     "value": 100.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-08|ai-model-agent-rag|business|0": {
+   "hash": "165310b0a5852ae4",
+   "date": "2026-10-08",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "领英",
+     "type": "company"
+    },
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "Anthropic",
+     "type": "company"
+    },
+    {
+     "name": "Tomoro",
+     "type": "company"
+    },
+    {
+     "name": "蚂蚁数科",
+     "type": "company"
+    },
+    {
+     "name": "智谱",
+     "type": "company"
+    },
+    {
+     "name": "FDE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "领英",
+     "label": "FDE岗位增长倍数",
+     "value": 42.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "领英",
+     "label": "AI工程师岗位增长倍数",
+     "value": 13.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "部署公司投资额",
+     "value": 40.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Tomoro",
+     "label": "并入FDE人数",
+     "value": 150.0,
+     "unit": "人"
+    }
+   ]
+  },
+  "2026-10-08|ai-model-agent-rag|technical|0": {
+   "hash": "daabc4754cc6e916",
+   "date": "2026-10-08",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "Google DeepMind",
+     "type": "company"
+    },
+    {
+     "name": "弗吉尼亚大学",
+     "type": "institution"
+    },
+    {
+     "name": "马里兰大学",
+     "type": "institution"
+    },
+    {
+     "name": "Dream-RSI",
+     "type": "tech"
+    },
+    {
+     "name": "Lasso",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Lasso",
+     "label": "求解算力降低倍数",
+     "value": 100.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Dream-RSI",
+     "label": "Autocorrelation追平SOTA所需代数",
+     "value": 1000.0,
+     "unit": "代"
+    }
+   ]
+  },
+  "2026-10-08|cost-effective-storage|business|0": {
+   "hash": "ff8a5c06b5515306",
+   "date": "2026-10-08",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Bernstein",
+     "type": "company"
+    },
+    {
+     "name": "GB200",
+     "type": "product"
+    },
+    {
+     "name": "Vera Rubin",
+     "type": "product"
+    },
+    {
+     "name": "TPU v7",
+     "type": "product"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "1GW AI数据中心投资额",
+     "value": 395.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "GB200",
+     "label": "单机柜成本",
+     "value": 413.0,
+     "unit": "万美元"
+    },
+    {
+     "subject": "Vera Rubin",
+     "label": "单机柜成本",
+     "value": 752.0,
+     "unit": "万美元"
+    },
+    {
+     "subject": "TPU v7",
+     "label": "单机柜成本",
+     "value": 269.0,
+     "unit": "万美元"
+    },
+    {
+     "subject": "Vera Rubin",
+     "label": "机柜内NAND容量",
+     "value": 576.0,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-10-08|cost-effective-storage|technical|0": {
+   "hash": "f0e2f95521a3e6f0",
+   "date": "2026-10-08",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Ink降级颗粒",
+     "type": "product"
+    },
+    {
+     "name": "Good原厂颗粒",
+     "type": "product"
+    },
+    {
+     "name": "SLC缓存",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Good原厂颗粒",
+     "label": "P99.9尾延迟",
+     "value": 500.0,
+     "unit": "μs"
+    },
+    {
+     "subject": "Ink降级颗粒",
+     "label": "P99.9尾延迟",
+     "value": 2.0,
+     "unit": "ms"
+    },
+    {
+     "subject": "Good原厂颗粒",
+     "label": "原生P/E",
+     "value": 3000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "Ink降级颗粒",
+     "label": "原生P/E",
+     "value": 1500.0,
+     "unit": "次"
+    }
+   ]
+  },
+  "2026-10-08|high-capacity-storage|business|0": {
+   "hash": "94847cced44b411f",
+   "date": "2026-10-08",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "希捷",
+     "type": "company"
+    },
+    {
+     "name": "东芝",
+     "type": "company"
+    },
+    {
+     "name": "TDK",
+     "type": "company"
+    },
+    {
+     "name": "西部数据",
+     "type": "company"
+    },
+    {
+     "name": "HAMR",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "东芝",
+     "label": "扩产投资额",
+     "value": 600.0,
+     "unit": "亿日元"
+    },
+    {
+     "subject": "东芝",
+     "label": "AI数据中心HDD产能增长倍数",
+     "value": 2.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "东芝",
+     "label": "HDD市场份额目标",
+     "value": 30.0,
+     "unit": "%"
+    },
+    {
+     "subject": "希捷",
+     "label": "HAMR硬盘容量",
+     "value": 44.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "西部数据",
+     "label": "规划硬盘容量",
+     "value": 100.0,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-10-08|high-capacity-storage|technical|0": {
+   "hash": "268f74cb9eabadcb",
+   "date": "2026-10-08",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "SanDisk",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "NVIDIA",
+     "type": "company"
+    },
+    {
+     "name": "NVHBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBF",
+     "label": "单栈容量",
+     "value": 512.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "HBF",
+     "label": "单栈读取带宽",
+     "value": 1.6,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "单栈带宽提升",
+     "value": 30.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "功耗降低",
+     "value": 15.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NVHBM",
+     "label": "PHY面积缩减",
+     "value": 67.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-08|high-reliability-storage|business|0": {
+   "hash": "b033c3ced6a58551",
+   "date": "2026-10-08",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "希捷",
+     "type": "company"
+    },
+    {
+     "name": "西部数据",
+     "type": "company"
+    },
+    {
+     "name": "HAMR",
+     "type": "tech"
+    },
+    {
+     "name": "nearline",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "希捷",
+     "label": "季度营收",
+     "value": 36.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "希捷",
+     "label": "季度营收同比增长",
+     "value": 48.0,
+     "unit": "%"
+    },
+    {
+     "subject": "希捷",
+     "label": "数据中心营收占比",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "西部数据",
+     "label": "季度营收",
+     "value": 37.5,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "西部数据",
+     "label": "季度营收同比增长",
+     "value": 44.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "HDD每TB价格涨幅",
+     "value": 20.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "HDD每TB成本降幅",
+     "value": 8.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-08|high-reliability-storage|technical|0": {
+   "hash": "934654ca6bcea976",
+   "date": "2026-10-08",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "Ink降级颗粒",
+     "type": "product"
+    },
+    {
+     "name": "Good原厂颗粒",
+     "type": "product"
+    },
+    {
+     "name": "SLC Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Good原厂颗粒",
+     "label": "平均读延迟",
+     "value": 80.0,
+     "unit": "μs"
+    },
+    {
+     "subject": "Good原厂颗粒",
+     "label": "P99.9尾延迟",
+     "value": 500.0,
+     "unit": "μs"
+    },
+    {
+     "subject": "Ink降级颗粒",
+     "label": "P95延迟",
+     "value": 130.0,
+     "unit": "μs"
+    },
+    {
+     "subject": "Ink降级颗粒",
+     "label": "P99.9尾延迟",
+     "value": 2.0,
+     "unit": "ms"
+    },
+    {
+     "subject": "Good原厂颗粒",
+     "label": "原生P/E",
+     "value": 3000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "Ink降级颗粒",
+     "label": "原生P/E",
+     "value": 1500.0,
+     "unit": "次"
+    }
+   ]
+  },
+  "2026-10-08|model-benchmarking|business|0": {
+   "hash": "e4242f2e4875e936",
+   "date": "2026-10-08",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Mistral",
+     "type": "company"
+    },
+    {
+     "name": "Mistral Large 4",
+     "type": "product"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "type": "product"
+    },
+    {
+     "name": "Kimi K3",
+     "type": "product"
+    },
+    {
+     "name": "AutomationBench",
+     "type": "paper"
+    },
+    {
+     "name": "DeepSWE",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Mistral Large 4",
+     "label": "总参数量",
+     "value": 1.05,
+     "unit": "万亿"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "激活参数量",
+     "value": 49.0,
+     "unit": "B"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "综合智能指数",
+     "value": 38.0,
+     "unit": "分"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "AutomationBench准确率",
+     "value": 59.9,
+     "unit": "%"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "法律基准准确率",
+     "value": 15.8,
+     "unit": "%"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "DeepSWE准确率",
+     "value": 61.7,
+     "unit": "%"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "输入价格",
+     "value": 1.36,
+     "unit": "美元/1M tokens"
+    },
+    {
+     "subject": "Mistral Large 4",
+     "label": "输出价格",
+     "value": 4.18,
+     "unit": "美元/1M tokens"
+    }
+   ]
+  },
+  "2026-10-08|model-benchmarking|technical|0": {
+   "hash": "f768eb3053593eca",
+   "date": "2026-10-08",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "字节Seed",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek V4.1",
+     "type": "product"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4",
+     "label": "CSA步长",
+     "value": 4.0,
+     "unit": "Token"
+    },
+    {
+     "subject": "DeepSeek V4.1",
+     "label": "CSA步长",
+     "value": 2.0,
+     "unit": "Token"
+    },
+    {
+     "subject": "DeepSeek V4.1",
+     "label": "128K大海捞针准确率波动",
+     "value": 40.0,
+     "unit": "个百分点"
+    }
+   ]
+  },
+  "2026-10-08|near-memory-computing|business|0": {
+   "hash": "6c453c07a0f33977",
+   "date": "2026-10-08",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "XL-FLASH Gen3",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe 7.0",
+     "type": "tech"
+    },
+    {
+     "name": "铠侠 GP二代 High-IOPS SSD",
+     "type": "product"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "铠侠 GP二代 High-IOPS SSD",
+     "label": "512B随机读IOPS",
+     "value": 100.0,
+     "unit": "M IOPS"
+    }
+   ]
+  },
+  "2026-10-08|near-memory-computing|technical|0": {
+   "hash": "1a5bc0856640adad",
+   "date": "2026-10-08",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "Glenn Lockwood",
+     "type": "person"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "GQA",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "KV Cache",
+     "label": "prefill盈亏点",
+     "value": 4.0,
+     "unit": "K词元"
+    },
+    {
+     "subject": "KV Cache",
+     "label": "70B GQA FP16单token占用",
+     "value": 320.0,
+     "unit": "KB"
+    },
+    {
+     "subject": "KV Cache",
+     "label": "70B GQA FP16 128K上下文占用",
+     "value": 43.0,
+     "unit": "GB"
+    }
+   ]
+  },
+  "2026-10-08|new-media|business|0": {
+   "hash": "a12bcd2be0abfeb0",
+   "date": "2026-10-08",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "XL-FLASH Gen3",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe 7.0",
+     "type": "tech"
+    },
+    {
+     "name": "铠侠 High-IOPS PCIe 7.0 SSD",
+     "type": "product"
+    },
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "铠侠 High-IOPS PCIe 7.0 SSD",
+     "label": "512B随机读IOPS",
+     "value": 100.0,
+     "unit": "M IOPS"
+    },
+    {
+     "subject": "美光",
+     "label": "企业级eSSD季度营收",
+     "value": 100.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "企业级eSSD营收季增",
+     "value": 40.0,
+     "unit": "%"
     }
    ]
   }

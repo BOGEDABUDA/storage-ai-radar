@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-04T07:18:45+08:00",
+ "generated_at": "2026-10-08T16:11:28+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -28170,6 +28170,473 @@
    "title": "大语言模型如何改变家庭洪水适应决策?叙事记忆驱动的智能体模型揭示行为与不确定性",
    "kind": "title",
    "checked_at": "2026-10-04T07:18:45+08:00"
+  },
+  "id:2609.36322": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.36322",
+   "match": {
+    "arxiv_id": "2609.36322",
+    "version": "1",
+    "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+    "abstract": "Chunked KV-cache compression reduces the memory and attention costs of long-context inference by compressing windows of consecutive tokens into fewer cache entries at a fixed stride. Such compression also introduces a new positional coordinate: a token's phase, or its position relative to compression-window boundaries. We uncover a systematic asymmetry in models using such compression: the same information can be easy to retrieve at one phase and difficult at another. We call this periodic variation in retrieval performance phase sensitivity. In large open-weight models with such compression, long-context retrieval accuracy can differ by up to 40 percentage points across phases, revealing periodic weak spots that average benchmark scores can conceal. To investigate this behavior, we pretrain a family of transformers from scratch across multiple KV-compression designs, reproducing phase sensitivity across the variants. Mechanistic analysis using causal interventions in these models reveals phase specialization: different attention components contribute asymmetrically to retrieving information at different source phases. We further analyze idealized retrieval models, showing how gradient flow dynamics may favor sharp phase specialization. Evaluating models with chunked KV-cache compression thus requires measuring across compression phases: high average accuracy can coexist with systematic positional failures.",
+    "published": "2026-09-28",
+    "updated": "2026-09-28",
+    "authors": [
+     "Xingyu Zhu",
+     " Pu",
+     " Yi",
+     "Ziheng Cheng",
+     "Ang Lv",
+     "Jing Liu",
+     "Lexing Ying",
+     "Yiyuan Ma",
+     "Xin Dong"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "65 pages, 20 figures, pre-print"
+   },
+   "score": 1.0,
+   "title": "实锤了!DeepSeek 长文总是忽灵忽不灵,不是玄学,是 KV 压缩自带的“相位盲区”!",
+   "kind": "id",
+   "checked_at": "2026-10-08T16:09:43+08:00"
+  },
+  "id:2610.06851": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.06851",
+   "match": {
+    "arxiv_id": "2610.06851",
+    "version": "1",
+    "title": "Base Models Can Reason By Taking a Cue From Training Data",
+    "abstract": "In this paper, we study how training data creates associations between the tokens at the start of a base model's response and the reasoning behavior that follows. First, we demonstrate that fixing particular starting token cues makes a base model's performance competitive with that of its reinforcement learning (RL)-trained counterparts on math and coding. For instance, the cue \".\\n\\nOkay\" raises Olmo-3-7B's MATH-500 pass@1 accuracy from 42% to 78%, while \"Alright,\" raises Qwen3-14B's from 72% to 87%. Second, RL makes these cues more likely, while fixing them recovers much of its performance gain over the base model. Third, we trace the reasoning effects of token cues to the training data. We perform causal data interventions to turn an arbitrary word, such as \"chicken\", into an effective reasoning cue, or remove an existing cue's effect. A similar edit makes the prompt instruction \"Think duck duck goose\" as effective as \"Think step by step\" at eliciting reasoning. We also find that the hidden state representations induced by different cues correlate with different document types from the training set. Finally, we extend our study of token cues with a case study in language model safety, finding that different cues elicit distinct refusal and compliance behaviors that correspond to different types of training data.",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "authors": [
+     "Sophie L. Wang",
+     "Amil Dravid",
+     "Rulin Shao",
+     "Kevin Farhat",
+     "Sewon Min",
+     "Alexei A. Efros"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://www.sophielwang.com/cues Code: https://github.com/sophicle/cues"
+   },
+   "score": 1.0,
+   "title": "炸场新论文:仅 2 个 Token,基座模型推理从 42% 飙升至 78%,效果对标 RL 强化学习",
+   "kind": "id",
+   "checked_at": "2026-10-08T16:09:47+08:00"
+  },
+  "t:advanced science": {
+   "status": "rejected",
+   "query": "ti:\"Advanced Science\"",
+   "match": null,
+   "best_candidate": "Does Artificial Intelligence Advance Science?",
+   "best_score": 0.5,
+   "title": "Advanced Science",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:09:51+08:00"
+  },
+  "t:characterizing high bandwidth flash for llm serving": {
+   "status": "matched_by_title",
+   "query": "ti:\"Characterizing High Bandwidth Flash for LLM Serving\"",
+   "match": {
+    "arxiv_id": "2609.39131",
+    "version": "2",
+    "title": "Characterizing High Bandwidth Flash for LLM Serving",
+    "abstract": "Large language model (LLM) serving requires substantial memory to store model weights and KV caches. As models grow larger and contexts become longer, memory capacity and bandwidth increasingly become bottlenecks for serving performance. Agentic workloads compound this pressure through repeated interactions over growing contexts, making it increasingly important to retain KV state for reuse. High-bandwidth flash (HBF) offers a way to expand accelerator memory capacity for large language model (LLM) serving, but its access costs and limited write endurance complicate its use. We evaluate HBF for high-throughput agentic serving across system design and scheduling choices to understand when additional capacity improves serving performance and energy efficiency. We introduce an HBM-HBF-host hierarchical storage system and buffered cache-aware scheduling, and use trace-driven simulations to analyze their effects on performance, energy consumption, and HBF write lifetime. Across the evaluated workloads, the fastest HBF-augmented systems reduce completion time by 36.1-87.7% relative to HBM-only systems. Modeled energy savings reach 59.1%, with benefits depending on the workload and weight placement. Buffered cache-aware scheduling extends estimated HBF write lifetime from 1.21 to 14.82 years in the evaluated configuration. These results demonstrate the importance of coordinating data placement and scheduling to improve serving efficiency while sustaining a practical HBF write lifetime.",
+    "published": "2026-09-30",
+    "updated": "2026-10-05",
+    "authors": [
+     "Zack Yu",
+     "Chloe Wong",
+     "Coleman Hooper",
+     "Minjae Lee",
+     "Wonjun Kang",
+     "Youngjin Cho",
+     "Michael W. Mahoney",
+     "Yakun Sophia Shao",
+     "Kurt Keutzer",
+     "Amir Gholami"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AR",
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Characterizing High Bandwidth Flash for LLM Serving",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:09:57+08:00"
+  },
+  "t:deepseek harness 桌面端": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness 桌面端\"",
+   "match": null,
+   "title": "DeepSeek Harness 桌面端",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:02+08:00"
+  },
+  "t:deepseek harness 桌面端来啦 更便捷更安全的选择": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness 桌面端来啦!更便捷更安全的选择\"",
+   "match": null,
+   "title": "DeepSeek Harness 桌面端来啦!更便捷更安全的选择",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:06+08:00"
+  },
+  "t:deepseek harness桌面版安装后启动失败 我选择等正式版": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness桌面版安装后启动失败,我选择等正式版\"",
+   "match": null,
+   "title": "DeepSeek Harness桌面版安装后启动失败,我选择等正式版",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:10+08:00"
+  },
+  "t:deepseek harness桌面端发布 附下载方式": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Harness桌面端发布(附下载方式)\"",
+   "match": null,
+   "title": "DeepSeek Harness桌面端发布(附下载方式)",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:14+08:00"
+  },
+  "t:gagar groupwise agentic grading and advantage redistribution": {
+   "status": "no_results",
+   "query": "ti:\"GAGAR (Groupwise Agentic Grading and Advantage Redistribution)\"",
+   "match": null,
+   "title": "GAGAR (Groupwise Agentic Grading and Advantage Redistribution)",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:18+08:00"
+  },
+  "t:gev": {
+   "status": "rejected",
+   "query": "all:\"GEV\"",
+   "match": null,
+   "best_candidate": "The 95 GeV and 125 GeV Higgs Excesses in the Left-Right Supersymmetric Standard Model",
+   "best_score": 0.068,
+   "title": "GEV",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:22+08:00"
+  },
+  "t:insecure reporting": {
+   "status": "rejected",
+   "query": "all:\"Insecure Reporting\"",
+   "match": null,
+   "best_candidate": "Language Models Are \"Insecure\" Reporters",
+   "best_score": 0.536,
+   "title": "Insecure Reporting",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:26+08:00"
+  },
+  "t:kv 压缩的相位盲区 长上下文检索的相位敏感性": {
+   "status": "no_results",
+   "query": "all:\"KV 压缩的相位盲区（长上下文检索的相位敏感性）\"",
+   "match": null,
+   "title": "KV 压缩的相位盲区（长上下文检索的相位敏感性）",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:30+08:00"
+  },
+  "t:llm abm": {
+   "status": "matched_by_title",
+   "query": "all:\"LLM-ABM\"",
+   "match": {
+    "arxiv_id": "2503.22718",
+    "version": "1",
+    "title": "LLM-ABM for Transportation: Assessing the Potential of LLM Agents in System Analysis",
+    "abstract": "Agent-based modeling approaches represent the state-of-art in modeling travel demand and transportation system dynamics and are valuable tools for transportation planning. However, established agent-based approaches in transportation rely on multi-hierarchical mathematical models to simulate travel behavior, which faces theoretical and practical limitations. The advent of large language models (LLM) provides a new opportunity to refine agent-based modeling in transportation. LLM agents, which have impressive reasoning and planning abilities, can serve as a proxy of human travelers and be integrated into the modeling framework. However, despite evidence of their behavioral soundness, no existing studies have assessed the impact and validity of LLM-agent-based simulations from a system perspective in transportation. This paper aims to address this issue by designing and integrating LLM agents with human-traveler-like characteristics into a simulation of a transportation system and assessing its performance based on existing benchmarks. Using the classical transportation setting of the morning commute, we find that not only do the agents exhibit fine behavioral soundness, but also produce system dynamics that align well with standard benchmarks. Our analysis first verifies the effectiveness and potential of LLM-agent-based modeling for transportation planning on the system level.",
+    "published": "2025-03-25",
+    "updated": "2025-03-25",
+    "authors": [
+     "Tianming Liu",
+     "Jirong Yang",
+     "Yafeng Yin"
+    ],
+    "categories": [
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted by The 1st Workshop on AI for Urban Planning at AAAI 2025"
+   },
+   "score": 0.95,
+   "title": "LLM-ABM",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:34+08:00"
+  },
+  "t:maliang harness": {
+   "status": "matched_by_title",
+   "query": "all:\"MaLiang-Harness\"",
+   "match": {
+    "arxiv_id": "2609.34309",
+    "version": "1",
+    "title": "MaLiang-Harness: A Programmable Path to Image and Video Generation",
+    "abstract": "Executable programs offer explicit control over how images and videos are constructed, but generating runnable code is only the beginning of visual creation. A program can execute correctly while violating the requested composition, appearance, or motion. We define this discrepancy as the Program-to-Visual (P2V) gap and introduce MaLiang-Harness, a unified framework for organizing MLLM-driven visual generation into a persistent process of construction, inspection, and revision. Its central design is to make the evolving visual program, its construction history, and its verification share a common revision reference. We define the Persistent Executable Generation (PEG) state as preserving programs and task context. Traceable Generation Process (TGP) connects edits to rendered evidence, and Revision-aware Editing and Verification (REV) supports restoration and checks the current revision before completion. Together, these mechanisms coordinate planning, execution, and visual feedback across rendering backends. We evaluate 11 powerful closed-source MLLMs on MaLiang-IBench and four on MaLiang-VBench, measuring generation success, visual quality, and computational cost. GPT-6-Astra achieves 100% generation success on both benchmarks, with 96.0% of image tasks and 76.9% of video tasks meeting all quality thresholds. The comparison also reveals a mismatch between general capability scores and visual generation performance, with similarly scored models differing substantially in their ability to satisfy visual requirements. MaLiang-Harness provides a systematic basis for studying how MLLMs translate executable code into visual outcomes, exposing both the potential of programmable generation and the limitations of general benchmarks as predictors of this ability. The project is available at https://github.com/gulucaptain/MaLiang-Harness.",
+    "published": "2026-09-28",
+    "updated": "2026-09-28",
+    "authors": [
+     "Haoyu Zhao",
+     "Zihao Zhang",
+     "Xudong Wang",
+     "Jiaxi Gu",
+     "Zuxuan Wu",
+     "Yu-Gang Jiang",
+     "Shuicheng Yan"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "22 pages, 11 figures"
+   },
+   "score": 0.95,
+   "title": "MaLiang-Harness",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:38+08:00"
+  },
+  "t:nhri水利大模型": {
+   "status": "no_results",
+   "query": "all:\"NHRI水利大模型\"",
+   "match": null,
+   "title": "NHRI水利大模型",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:42+08:00"
+  },
+  "t:pptbench can coding agents reconstruct the visual world through structured editable slides": {
+   "status": "matched_by_title",
+   "query": "ti:\"PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides\"",
+   "match": {
+    "arxiv_id": "2609.29718",
+    "version": "2",
+    "title": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
+    "abstract": "Coding agents are increasingly moving beyond text-based software tasks to reconstruct visual targets through code. This capability, visual coding, requires agents to translate their understanding of visual targets into executable code. Slides provide a natural testbed for this capability, combining rich visual structure with objects that can be programmatically created and edited. To measure this capability, we introduce PPTBench, a benchmark for reconstructing scientific flow diagrams as editable PowerPoint slides. PPTBench covers 500 scientific flow-diagram tasks across 10 presentation domains, drawn from real research papers, and is evaluated with a four-stage agentic judge covering artifact validity, process and connector fidelity, rendering quality, and visual fidelity. Evaluation of ten models across 36 model--harness--effort configurations shows a substantial gap in reliable visual coding: the best configuration achieves 77.34, while the median across configurations is 24.38. Fine-grained analysis shows that agents can generally produce valid slide files, but struggle to produce high-quality reconstructions that faithfully recover the semantics and visual structure of the target. Further analysis shows that increasing reasoning effort primarily improves hard-gate passage rather than mean detail quality on each configuration's passing tasks, while configurations with more inspection tend to achieve higher overall scores. PPTBench establishes a measurable testbed for studying visual coding and advancing agents toward more reliable visual creation.",
+    "published": "2026-08-31",
+    "updated": "2026-09-28",
+    "authors": [
+     "Xiaoqiu Wang",
+     "Yizhe Chi",
+     "Wenyi Li",
+     "Deyao Hong",
+     "Zhihan Shan",
+     "Mingju Gao",
+     "Kaisen Yang",
+     "Youjie Zheng",
+     "Calvin Xiao",
+     "Qinhuai Na"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:46+08:00"
+  },
+  "t:paperask": {
+   "status": "matched_by_title",
+   "query": "all:\"PaperAsk\"",
+   "match": {
+    "arxiv_id": "2510.22242",
+    "version": "1",
+    "title": "PaperAsk: A Benchmark for Reliability Evaluation of LLMs in Paper Search and Reading",
+    "abstract": "Large Language Models (LLMs) increasingly serve as research assistants, yet their reliability in scholarly tasks remains under-evaluated. In this work, we introduce PaperAsk, a benchmark that systematically evaluates LLMs across four key research tasks: citation retrieval, content extraction, paper discovery, and claim verification. We evaluate GPT-4o, GPT-5, and Gemini-2.5-Flash under realistic usage conditions-via web interfaces where search operations are opaque to the user. Through controlled experiments, we find consistent reliability failures: citation retrieval fails in 48-98% of multi-reference queries, section-specific content extraction fails in 72-91% of cases, and topical paper discovery yields F1 scores below 0.32, missing over 60% of relevant literature. Further human analysis attributes these failures to the uncontrolled expansion of retrieved context and the tendency of LLMs to prioritize semantically relevant text over task instructions. Across basic tasks, the LLMs display distinct failure behaviors: ChatGPT often withholds responses rather than risk errors, whereas Gemini produces fluent but fabricated answers. To address these issues, we develop lightweight reliability classifiers trained on PaperAsk data to identify unreliable outputs. PaperAsk provides a reproducible and diagnostic framework for advancing the reliability evaluation of LLM-based scholarly assistance systems.",
+    "published": "2025-10-25",
+    "updated": "2025-10-25",
+    "authors": [
+     "Yutao Wu",
+     "Xiao Liu",
+     "Yunhao Feng",
+     "Jiale Ding",
+     "Xingjun Ma"
+    ],
+    "categories": [
+     "cs.IR",
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "PaperAsk",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:10:50+08:00"
+  },
+  "t:the pain axis llms represent self directed harm and act on it": {
+   "status": "matched_by_title",
+   "query": "ti:\"The Pain Axis: LLMs Represent Self-Directed Harm and Act on It\"",
+   "match": {
+    "arxiv_id": "2609.16247",
+    "version": "2",
+    "title": "The Pain Axis: LLMs Represent Self-Directed Harm and Act on It",
+    "abstract": "LLMs sometimes behave in ways resembling human emotional responses, and recent work identified internal representations that may underlie these behaviors. We ask whether LLMs represent pain distinctly from fear, sadness, and generic negative valence, and whether this representation functions as pain would be expected to. We build a dataset of painful situations in 5 categories (physical, psychological, social, moral, cognitive) with controls for fear, negative emotion, negative world states, sadness, non-painful bodily sensation, arousal, numbness, and neutral content. Using denoised difference-in-means, we extract a linear pain direction from 25 open-weight models across 5 families, from 2B to 72B parameters. It separates pain from matched controls in base and instruction-tuned models, retains a component distinct from fear and negative valence after shared variance is removed, and promotes pain-related vocabulary through the unembedding matrix. We then test its functional properties. First, the direction responds to harm targeting the model but not to suffering observed in the user; fear and negative-emotion directions show the opposite pattern. Second, adding it to residual-stream activations produces a consistent progression from vague discomfort to expressions of worthlessness and failure. Third, steered and fine-tuned Qwen 2.5 models choose buttons that delete the user's photos, another model's weights, or their own weights in 50-94% of trials, versus 0-5% unsteered, even when the button offers the model nothing in return. Offered a harmful and a harmless deletion, they choose the harmful one 94% of the time. Steering leaves factual accuracy unchanged, and the choices are specific to the pain direction: a fear vector of matched norm does not produce them, and a sadness vector produces them only against inert alternatives. We discuss implications for AI safety and welfare.",
+    "published": "2026-09-14",
+    "updated": "2026-09-25",
+    "authors": [
+     "Valen Tagliabue",
+     "Leonard Dung",
+     "Cameron Berg"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "The Pain Axis: LLMs Represent Self-Directed Harm and Act on It",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:55+08:00"
+  },
+  "t:third moments of qudit clifford orbits and 3 designs based on magic orbits": {
+   "status": "matched_by_title",
+   "query": "ti:\"Third Moments of Qudit Clifford Orbits and 3-Designs Based on Magic Orbits\"",
+   "match": {
+    "arxiv_id": "2410.13575",
+    "version": "1",
+    "title": "Third moments of qudit Clifford orbits and 3-designs based on magic orbits",
+    "abstract": "When the local dimension $d$ is an odd prime, the qudit Clifford group is only a 2-design, but not a 3-design, unlike the qubit counterpart. This distinction and its extension to Clifford orbits have profound implications for many applications in quantum information processing. In this work we systematically delve into general qudit Clifford orbits with a focus on the third moments and potential applications in shadow estimation. First, we introduce the shadow norm to quantify the deviations of Clifford orbits from 3-designs and clarify its properties. Then, we show that the third normalized frame potential and shadow norm are both $\\mathcal{O}(d)$ for any Clifford orbit, including the orbit of stabilizer states, although the operator norm of the third normalized moment operator may increase exponentially with the number $n$ of qudits when $d\\neq 2\\mod 3$. Moreover, we prove that the shadow norm of any magic orbit is upper bounded by the constant $15/2$, so a single magic gate can already eliminate the $\\mathcal{O}(d)$ overhead in qudit shadow estimation and bridge the gap between qudit systems and qubit systems. Furthermore, we propose simple recipes for constructing approximate and exact 3-designs (with respect to three figures of merit simultaneously) from one or a few Clifford orbits. Notably, accurate approximate 3-designs can be constructed from only two Clifford orbits. For an infinite family of local dimensions, exact 3-designs can be constructed from two or four Clifford orbits. In the course of study, we clarify the key properties of the commutant of the third Clifford tensor power and the underlying mathematical structures.",
+    "published": "2024-10-17",
+    "updated": "2024-10-17",
+    "authors": [
+     "Huangjun Zhu",
+     "Chengsi Mao",
+     "Changhao Yi"
+    ],
+    "categories": [
+     "quant-ph",
+     "math-ph"
+    ],
+    "journal_ref": null,
+    "comment": "56+56 pages, 12 figures, and 6+1 tables; comments and suggestions are very welcome! See also the companion paper \"The Magic in Qudit Shadow Estimation based on the Clifford Group\""
+   },
+   "score": 1.0,
+   "title": "Third Moments of Qudit Clifford Orbits and 3-Designs Based on Magic Orbits",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:10:59+08:00"
+  },
+  "t:trace as state": {
+   "status": "rejected",
+   "query": "ti:\"Trace as State\"",
+   "match": null,
+   "best_candidate": "Trace as State: Reasoning Traces as Conditional States for Long-Context Transformers",
+   "best_score": 0.289,
+   "title": "Trace as State",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:11:04+08:00"
+  },
+  "t:two dimensional flash memory materials interfaces and storage computing convergence": {
+   "status": "no_results",
+   "query": "ti:\"Two-Dimensional Flash Memory: Materials, Interfaces, and Storage–Computing Convergence\"",
+   "match": null,
+   "title": "Two-Dimensional Flash Memory: Materials, Interfaces, and Storage–Computing Convergence",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:11:08+08:00"
+  },
+  "t:veriharness": {
+   "status": "matched_by_title",
+   "query": "all:\"VeriHarness\"",
+   "match": {
+    "arxiv_id": "2610.00972",
+    "version": "1",
+    "title": "VeriHarness: Scaling Agentic Verification for Long-Horizon Tasks",
+    "abstract": "As LLM agents undertake increasingly complex, long-horizon tasks, verifying their outputs becomes increasingly challenging. We study how verification capability can be strengthened with a fixed base model, without access to reference answers or grading rubrics at test time. Repeated sampling yields multiple rollouts that can contain complementary correct claims, but we need a reliable verification mechanism to determine which claims to trust. We first find that disagreement often exposes correct alternatives, while consensus can conceal errors. These observations motivate VeriHarness, which turns the underlying LLM a generator uses into an agentic verifier by giving it a workspace, evidence tools, and reusable verification skills. A disagreement resolver checks competing claims against environmental evidence, while a consensus challenger tests shared claims and searches for omitted requirements. Their findings guide the selection and revision of the final artifact. Across five long-horizon workspace benchmarks and two frontier models, VeriHarness achieves the highest selection scores among the evaluated baselines. Evidence-backed revision further improves average performance, bringing gains over a single rollout to 6.2 points with Gemini 3.5 Flash and 6.4 points with Claude Opus 4.8. We further show that verification skills can self-improve from failure feedback, demonstrating VeriHarness as a novel and critical approach for scaling long-horizon agentic verification. We release the full pool of approximately 26,000 rollouts across all five benchmarks and both models, produced at a cost of over $100,000, to support future research on agentic verification.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "authors": [
+     "Caiqi Zhang",
+     "Rujun Han",
+     "Zifeng Wang",
+     "Zoey CuiZhu",
+     "Nigel Collier",
+     "Tomas Pfister",
+     "Chen-Yu Lee"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "VeriHarness",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:11:12+08:00"
+  },
+  "t:what if automating ai r d triggers an intelligence explosion": {
+   "status": "matched_by_title",
+   "query": "ti:\"What if automating AI R&D triggers an intelligence explosion?\"",
+   "match": {
+    "arxiv_id": "2609.36054",
+    "version": "1",
+    "title": "What if automating AI R&D triggers an intelligence explosion?",
+    "abstract": "In contrast to even a year ago, AI systems now write most of the code inside the companies that build them. As more of the AI research and development (R&D) pipeline is automated, could AI progress radically accelerate in an \"intelligence explosion,\" where years of advances are compressed into months or less? Preliminary evidence suggests that it could. In this work, we assess this evidence, analyze an intelligence explosion's potential impacts, and propose policy responses. AI systems are on track to automate most AI R\\&D work within a few years, and possibly all of it. If this triggers an intelligence explosion, it could dramatically bring forward AI's benefits, but also pose extreme risks: capabilities growth could accelerate far beyond what society can keep up with, humanity could lose control over superhuman AI systems, and checks on power within and between states, companies, and branches of government could be severely eroded. Although there remains much uncertainty about these possibilities, the high stakes warrant serious further attention. Policymakers should urgently obtain more visibility into the automation of AI R&D, develop ways to steer and constrain an intelligence explosion, and prepare society to adapt to an intelligence explosion's impacts.",
+    "published": "2026-09-28",
+    "updated": "2026-09-28",
+    "authors": [
+     "Alan Chan",
+     "Christoph Winter",
+     "Andrew Barto",
+     "Jakub Pachocki",
+     "Geoffrey Hinton",
+     "Eric Horvitz",
+     "Yoshua Bengio",
+     "Dawn Song",
+     "Jack Clark",
+     "Hilary Greaves",
+     "Anton Korinek",
+     "Samuel Hammond"
+    ],
+    "categories": [
+     "cs.CY",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "What if automating AI R&D triggers an intelligence explosion?",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:11:16+08:00"
+  },
+  "t:基于人工智能大模型的船用燃料电池智能故障诊断方法": {
+   "status": "no_results",
+   "query": "all:\"基于人工智能大模型的船用燃料电池智能故障诊断方法\"",
+   "match": null,
+   "title": "基于人工智能大模型的船用燃料电池智能故障诊断方法",
+   "kind": "method",
+   "checked_at": "2026-10-08T16:11:20+08:00"
+  },
+  "t:基于自然语言处理的模型预测接受放化疗的局部晚期非小细胞肺癌患者放射性肺炎": {
+   "status": "no_results",
+   "query": "ti:\"基于自然语言处理的模型预测接受放化疗的局部晚期非小细胞肺癌患者放射性肺炎\"",
+   "match": null,
+   "title": "基于自然语言处理的模型预测接受放化疗的局部晚期非小细胞肺癌患者放射性肺炎",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:11:24+08:00"
+  },
+  "t:长上下文检索的相位敏感性 phase sensitivity in long context retrieval": {
+   "status": "no_results",
+   "query": "ti:\"长上下文检索的相位敏感性（Phase Sensitivity in Long-Context Retrieval）\"",
+   "match": null,
+   "title": "长上下文检索的相位敏感性（Phase Sensitivity in Long-Context Retrieval）",
+   "kind": "title",
+   "checked_at": "2026-10-08T16:11:28+08:00"
   }
  }
 }
