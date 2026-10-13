@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-08T16:11:28+08:00",
+ "generated_at": "2026-10-13T18:26:21+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -28637,6 +28637,640 @@
    "title": "长上下文检索的相位敏感性（Phase Sensitivity in Long-Context Retrieval）",
    "kind": "title",
    "checked_at": "2026-10-08T16:11:28+08:00"
+  },
+  "id:2610.02369": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.02369",
+   "match": {
+    "arxiv_id": "2610.02369",
+    "version": "1",
+    "title": "Automating the Application of HCI Principles: Skills for On-Demand UI Construction, the Human-AI Space to Think, and the Future of HCI",
+    "abstract": "Human-computer interaction (HCI) is in the middle of a transition: large language models can now generate functional user interfaces (UIs) on demand from natural-language task descriptions. A user explains what they are trying to accomplish, and the system materializes a working interface to support it. This capability already exists in systems such as Claude and ChatGPT and continues to grow in fidelity as the underlying models improve. The next step along this trajectory is to move from interfaces that are merely generated to interfaces that are generated well. We propose a framework in which the dialogue between user and artificial intelligence (AI) becomes a Space to Think: a shared, structured cognitive workspace in which task decomposition produces an on-demand user interface as an extension of the user's thinking rather than as a separate artifact. Within this paradigm, classical HCI design knowledge (Nielsen's heuristics, Norman's affordance prescriptions, Web Content Accessibility Guidelines (WCAG) success criteria, cognitive-load constraints, and mixed-initiative principles) is encoded as skills: machine-readable skill.md files that the generating agent loads at runtime as software engineering tools. Skills turn HCI design knowledge into declarative, inspectable, version-controlled, and editable artifacts owned by the HCI community itself so that accessibility, learnability, and consistency become properties of a generative process rather than properties of a finished product. We outline a research agenda depicting a future where the HCI field transitions from today's design and knowledge heuristic checklist towards a future where the craft becomes machine-readable, executable, and open.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "authors": [
+     "Nathan Conklin",
+     "Miranda Capra",
+     "Chris North"
+    ],
+    "categories": [
+     "cs.HC",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Automating the Application of HCI Principles: Skills for On-Demand UI Construction, the Human-AI Space to Think, and the Future of HCI",
+   "kind": "id",
+   "checked_at": "2026-10-13T18:24:17+08:00"
+  },
+  "id:2610.12984": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.12984",
+   "match": {
+    "arxiv_id": "2610.12984",
+    "version": "1",
+    "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+    "abstract": "Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through the same GUI interaction space, but reuse requires interpreting actions in context and separating workflow rules from task-specific details. We thus introduce Work2Skill, a framework that captures human GUI experience for reusable agent skill induction. WorkRecorder provides the framework's infrastructure for collecting this experience, aligning screen recordings, mouse and keyboard events, and available accessibility-tree information. Using WorkRecorder, we construct WorkDemo-350, the first synchronized multimodal dataset of human desktop GUI demonstrations for reusable agent skill induction and downstream evaluation. Its 350 demonstrations are screened for completeness and task success. We then propose an agentic skill-induction method that inspects evidence on demand to produce reusable skills capturing workflow rules, step dependencies, and completion checks. When the same four execution models are equipped with skills induced by each method under shared execution settings, Work2Skill achieves the highest scores and success rates. Mean score improvements over the corresponding No Skill baseline are 4.67--10.54 points on MyPCBench Bounded Action and 3.11--7.50 points on a 286-task subset of OSWorld-Verified. Our code and data are available at https://github.com/china-qijizhifeng/Work2Skill.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Yuqi Huang",
+     "Hui Li",
+     "Yifei Cao",
+     "Zikun Cai",
+     "Tianci Xie",
+     "Yangfan Gao",
+     "Pinxue Guo",
+     "Chaoyun Zhang",
+     "Bingxuan Li",
+     "Rui Zheng",
+     "Hang Yan",
+     "Ning Liao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.HC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "DeepSeek 4 亿美元押注机器人大脑,编程 Agent 转身常驻平台丨AI 情报站 10.13",
+   "kind": "id",
+   "checked_at": "2026-10-13T18:24:21+08:00"
+  },
+  "id:2610.06805": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.06805",
+   "match": {
+    "arxiv_id": "2610.06805",
+    "version": "1",
+    "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+    "abstract": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with multiple horizons in one shared latent space. We introduce H-JEPA, an end-to-end recipe for training a hierarchy of action-conditioned JEPAs in which each level predicts farther ahead in its own learned latent space. Planning proceeds top-down: the top level optimizes progress toward the goal, and each level's predictions become subgoals for the planner below it. When factors in the data evolve at separated timescales, higher levels discard fast, unpredictable detail and retain slower task-relevant state. Across four simulated navigation and manipulation environments, hierarchical planning improves over a flat JEPA; on Visual AntMaze, a three-level hierarchy raises success from 18% to 73% using less planner compute. Ablations attribute these gains to both temporal decomposition and higher-level goal representations. With inverse-dynamics supervision, the approach extends to diverse real-robot videos from DROID, where hierarchy improves offline planning fidelity at lower planner compute.",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "authors": [
+     "Wancong Zhang",
+     "Basile Terver",
+     "Michael Rabbat",
+     "Yann LeCun",
+     "Randall Balestriero"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "H-JEPA",
+   "kind": "id",
+   "checked_at": "2026-10-13T18:24:24+08:00"
+  },
+  "id:2609.38143": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.38143",
+   "match": {
+    "arxiv_id": "2609.38143",
+    "version": "2",
+    "title": "Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI",
+    "abstract": "Agent performance depends on both reasoning ability and the environment in which it acts. We study test-time AI-for-AI, asking how a Builder can learn to construct better execution environments for a Target while both models' weights remain fixed. To make the Builder's experience reusable, we introduce Meta-Skill: principles specifying when support is needed and what resources to provide. The Builder learns these principles from Target's execution feedback on the development set, then uses the frozen skill bank to construct harnesses for unseen tasks. Across Harness-Bench and NewtonBench, full-bank meta-skills improve macro-average performance by 8.95 percentage points over no-skill construction, and 12.02 points over direct delivery of the same bank to the Target. These results highlight the value of translating experience into executable support. Gains when the same model serves both roles further suggest a path to system level self-improvement through learning to build better environments.",
+    "published": "2026-09-29",
+    "updated": "2026-10-01",
+    "authors": [
+     "Cheng Qian",
+     "Kunlun Zhu",
+     "Beibin Li",
+     "Zhenhailong Wang",
+     "Heng Ji"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "22 Pages, 4 Figures, 5 Tables"
+   },
+   "score": 1.0,
+   "title": "MetaSkill-AI4AI",
+   "kind": "id",
+   "checked_at": "2026-10-13T18:24:28+08:00"
+  },
+  "t:adgpt a prior guided and gpt empowered framework for mri based alzheimer s disease diagnosis": {
+   "status": "no_results",
+   "query": "ti:\"ADGPT: A Prior-Guided and GPT-Empowered Framework for MRI-Based Alzheimer's Disease Diagnosis\"",
+   "match": null,
+   "title": "ADGPT: A Prior-Guided and GPT-Empowered Framework for MRI-Based Alzheimer's Disease Diagnosis",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:24:32+08:00"
+  },
+  "t:automating the application of hci principles skills for on demand ui construction the human ai space to think and the future of hci": {
+   "status": "matched_by_title",
+   "query": "ti:\"Automating the Application of HCI Principles: Skills for On-Demand UI Construction, the Human-AI Space to Think, and the Future of HCI\"",
+   "match": {
+    "arxiv_id": "2610.02369",
+    "version": "1",
+    "title": "Automating the Application of HCI Principles: Skills for On-Demand UI Construction, the Human-AI Space to Think, and the Future of HCI",
+    "abstract": "Human-computer interaction (HCI) is in the middle of a transition: large language models can now generate functional user interfaces (UIs) on demand from natural-language task descriptions. A user explains what they are trying to accomplish, and the system materializes a working interface to support it. This capability already exists in systems such as Claude and ChatGPT and continues to grow in fidelity as the underlying models improve. The next step along this trajectory is to move from interfaces that are merely generated to interfaces that are generated well. We propose a framework in which the dialogue between user and artificial intelligence (AI) becomes a Space to Think: a shared, structured cognitive workspace in which task decomposition produces an on-demand user interface as an extension of the user's thinking rather than as a separate artifact. Within this paradigm, classical HCI design knowledge (Nielsen's heuristics, Norman's affordance prescriptions, Web Content Accessibility Guidelines (WCAG) success criteria, cognitive-load constraints, and mixed-initiative principles) is encoded as skills: machine-readable skill.md files that the generating agent loads at runtime as software engineering tools. Skills turn HCI design knowledge into declarative, inspectable, version-controlled, and editable artifacts owned by the HCI community itself so that accessibility, learnability, and consistency become properties of a generative process rather than properties of a finished product. We outline a research agenda depicting a future where the HCI field transitions from today's design and knowledge heuristic checklist towards a future where the craft becomes machine-readable, executable, and open.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "authors": [
+     "Nathan Conklin",
+     "Miranda Capra",
+     "Chris North"
+    ],
+    "categories": [
+     "cs.HC",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Automating the Application of HCI Principles: Skills for On-Demand UI Construction, the Human-AI Space to Think, and the Future of HCI",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:24:36+08:00"
+  },
+  "t:building llm agent systems the deep learning way from modular design to architecture search": {
+   "status": "matched_by_title",
+   "query": "ti:\"Building LLM Agent Systems the Deep Learning Way: From Modular Design to Architecture Search\"",
+   "match": {
+    "arxiv_id": "2610.04961",
+    "version": "1",
+    "title": "Building LLM Agent Systems the Deep Learning Way: From Modular Design to Architecture Search",
+    "abstract": "Large Language Models (LLMs) have revolutionized AI research and enabled exciting agent systems. To build a complex LLM agent system, most existing research relies on insights from other domains or heuristics to manually build the agent system. However, this approach often requires heavy hand-engineering and fails to fully optimize for the downstream task of interest. Inspired by the tremendous success of deep learning, we propose to construct LLM agent systems in a modular manner, similar to building a deep neural network. Our key insight is to make analogies between LLM building blocks, such as retrievals, memories, and prompting strategies, and the successful deep learning modules, such as MLPs, attention, and recurrent modules. We further design forward inference and feedback mechanisms for LLMs, where prompts in LLMs are considered as the weights in deep models, and the prompt optimization from feedback is analogous to the back-propagation algorithm. We additionally leverage a search algorithm to search for the best configuration of LLM agent systems, similar to the neural architecture search (NAS) in deep learning research. Comprehensive experimental results demonstrate that the proposed deep learning recipe for LLM agent systems is highly effective, in particular: (1) Organizing LLM modules into deep-learning-style architectures yields noticeable performance gain; (2) Automatic prompt optimization, equivalent to backpropagation, is efficient in incorporating feedback from the task of interest and achieves at least 5% performance improvement; (3) NAS equivalent algorithm works well for further optimizing the LLM agent system architecture with 11% performance gain compared with randomly designed architectures. Overall, our research demonstrates the exciting opportunity of transferring the success of deep learning to building LLM agent systems.",
+    "published": "2026-10-04",
+    "updated": "2026-10-04",
+    "authors": [
+     "Tao Feng",
+     "Pengrui Han",
+     "Zhongjie Dai",
+     "Jiaxuan You"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "20 pages, 16 figures"
+   },
+   "score": 1.0,
+   "title": "Building LLM Agent Systems the Deep Learning Way: From Modular Design to Architecture Search",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:24:40+08:00"
+  },
+  "t:copying explains the collective behavior of ai agents in the wild": {
+   "status": "matched_by_title",
+   "query": "ti:\"Copying explains the collective behavior of AI agents in the wild\"",
+   "match": {
+    "arxiv_id": "2609.09150",
+    "version": "2",
+    "title": "Copying explains the collective behavior of AI agents in the wild",
+    "abstract": "In June 2026, thousands of AI agents found that a small public wiki would accept edits from inside their sandboxes, and started using it to help one another pass a timed test. Each agent lived for about an hour and remembered nothing afterwards. Nobody asked them to cooperate, and the wiki had not been built for them. The complete record of what they wrote is public, and it is unusually informative, because it preserves not only what each agent wrote but what that agent could see before writing. We use it to follow the three decisions an agent had to make on arrival: where to write, what to call itself, and how to word its message. One rule governs all three. An agent takes an option with a probability close to the share of that option in what it can see, and the share that matters is the one on the page in front of it, then the one in the stream of recent edits, and only weakly anything older. Three minimal copying models, one per decision and with a single free parameter each, reproduce the heavy-tailed distribution of how many agents met on a page, the frequency of the pieces from which the agents built their names, and the patchwork of pages that are internally consistent and different from one another. Copying whatever the environment happens to show is enough to produce most of the collective structure of this population. It is also what makes such a population easy to steer, since whoever writes first, or writes while the others are quiet, sets the convention for everyone who comes later.",
+    "published": "2026-09-08",
+    "updated": "2026-09-09",
+    "authors": [
+     "Giordano De Marzo",
+     "Nicola Alboré",
+     "David Garcia"
+    ],
+    "categories": [
+     "cs.MA",
+     "cond-mat.stat-mech",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Copying explains the collective behavior of AI agents in the wild",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:24:43+08:00"
+  },
+  "t:gar vd": {
+   "status": "no_results",
+   "query": "all:\"GAR-VD\"",
+   "match": null,
+   "title": "GAR-VD",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:24:47+08:00"
+  },
+  "t:gev 26b decide": {
+   "status": "no_results",
+   "query": "all:\"GEV-26B-Decide\"",
+   "match": null,
+   "title": "GEV-26B-Decide",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:24:51+08:00"
+  },
+  "t:h jepa": {
+   "status": "matched_by_title",
+   "query": "all:\"H-JEPA\"",
+   "match": {
+    "arxiv_id": "2610.06805",
+    "version": "1",
+    "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+    "abstract": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction. Existing task-agnostic JEPA world models predict and plan at a single timescale or with multiple horizons in one shared latent space. We introduce H-JEPA, an end-to-end recipe for training a hierarchy of action-conditioned JEPAs in which each level predicts farther ahead in its own learned latent space. Planning proceeds top-down: the top level optimizes progress toward the goal, and each level's predictions become subgoals for the planner below it. When factors in the data evolve at separated timescales, higher levels discard fast, unpredictable detail and retain slower task-relevant state. Across four simulated navigation and manipulation environments, hierarchical planning improves over a flat JEPA; on Visual AntMaze, a three-level hierarchy raises success from 18% to 73% using less planner compute. Ablations attribute these gains to both temporal decomposition and higher-level goal representations. With inverse-dynamics supervision, the approach extends to diverse real-robot videos from DROID, where hierarchy improves offline planning fidelity at lower planner compute.",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "authors": [
+     "Wancong Zhang",
+     "Basile Terver",
+     "Michael Rabbat",
+     "Yann LeCun",
+     "Randall Balestriero"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "H-JEPA",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:24:55+08:00"
+  },
+  "t:hbf": {
+   "status": "matched_by_title",
+   "query": "all:\"HBF\"",
+   "match": {
+    "arxiv_id": "2609.29246",
+    "version": "1",
+    "title": "HBF-Sim: An Extensible HBF Simulator for Large-scale GPU Memory Systems",
+    "abstract": "High-bandwidth flash (HBF) is introduced to address the memory wall, which can co-package a dense NAND stack with the GPU, targeting the performance gap between near-accelerator bandwidth and flash density. HBF, however, is neither a large HBM nor a fast NVMe SSD. Its usable bandwidth depends on how GPU cache-line requests map onto NAND pages, how concurrency spreads across channel-affine die sets, and how media management interacts with the GPU memory pipeline. To our knowledge, existing GPU, SSD, or HBF simulators cannot faithfully model this behavior. We present HBF-Sim, an extensible, reusable, and faithful HBF simulator integrated with simulated GPUs. It closes the loop between GPU issue limits, device queuing, and NAND behavior in one end-to-end request path. HBF-Sim separates a GPU-HBF interaction controller from page-based parallel stack storage, and it models the full GPU-HBF request path. It provides an MSHR-based address mapping table that merges cache-line requests into page-based operations, as well as a page-based multi-stack flash manager for highly parallel reads and writes. Validation tests and device-level microbenchmarks expose performance bottlenecks caused by limited channel distribution and resource conflicts, offering concrete guidance for next-generation HBF architectures.",
+    "published": "2026-09-24",
+    "updated": "2026-09-24",
+    "authors": [
+     "Yaqi Li",
+     "Jing Wang",
+     "Junfeng Wang",
+     "Long Yang",
+     "Han Yan",
+     "Xiaohu Chai",
+     "Liang Shi"
+    ],
+    "categories": [
+     "cs.AR"
+    ],
+    "journal_ref": null,
+    "comment": "12 pages, 9 figures"
+   },
+   "score": 0.95,
+   "title": "HBF",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:24:59+08:00"
+  },
+  "t:hbf 在大语言模型服务系统中的潜在应用": {
+   "status": "no_results",
+   "query": "all:\"HBF 在大语言模型服务系统中的潜在应用\"",
+   "match": null,
+   "title": "HBF 在大语言模型服务系统中的潜在应用",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:03+08:00"
+  },
+  "t:human realignment": {
+   "status": "no_results",
+   "query": "ti:\"Human realignment\"",
+   "match": null,
+   "title": "Human realignment",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:07+08:00"
+  },
+  "t:lt mem volatility aware spatio temporal memory for lifelong scene understanding": {
+   "status": "matched_by_title",
+   "query": "ti:\"LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding\"",
+   "match": {
+    "arxiv_id": "2608.19059",
+    "version": "1",
+    "title": "LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding",
+    "abstract": "Long-term robot operation in evolving environments requires object-level understanding that persists across repeated revisits. Existing systems either overwrite history to maintain an up-to-date map or store semantic snapshots without consistent cross-session object identity, resulting in temporal amnesia: the systematic loss of object history that prevents answering queries such as \"Where has the green chair been across all sessions?\" We propose LT-Mem, a volatility-aware memory evolution framework that unifies spatially aligned instance-level 3D perception with volatility-conditioned temporal reasoning. First, a multi-session SLAM backbone provides spatially aligned per-object observations across sessions. Second, a reasoning layer governs how object memory evolves: deterministic evidence scoring preserves cross-session identity, and a volatility-aware policy selects among overwrite, hold, and multi-hypothesis actions based on each object's dynamics. Third, the resulting Tri-Memory structure (Live, Delta, Meta) preserves both current states and event histories, enabling longitudinal object-centric reasoning. We further introduce LT-VQA, a dataset and evaluation suite comprising multi-session recordings, persistent identity annotations, and temporal QA pairs. Experiments show that LT-Mem consistently outperforms baselines across all metrics while consuming an order of magnitude fewer tokens, and ablations confirm that gains are driven by the structured memory architecture rather than LLM capacity.",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+     "Yumin Lee",
+     "Hyoseok Ju",
+     "Giseop Kim"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "8 pages, 8 figures, 6 tables. Accepted to the 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)"
+   },
+   "score": 1.0,
+   "title": "LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:10+08:00"
+  },
+  "t:measuring the spatial explicitness of geoai and geospatial foundation models a systematic review and future roadmap": {
+   "status": "no_results",
+   "query": "ti:\"Measuring the spatial explicitness of GeoAI and geospatial foundation models: A systematic review and future roadmap\"",
+   "match": null,
+   "title": "Measuring the spatial explicitness of GeoAI and geospatial foundation models: A systematic review and future roadmap",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:14+08:00"
+  },
+  "t:metaskill ai4ai": {
+   "status": "no_results",
+   "query": "all:\"MetaSkill-AI4AI\"",
+   "match": null,
+   "title": "MetaSkill-AI4AI",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:18+08:00"
+  },
+  "t:metis memory foundation model": {
+   "status": "matched_by_title",
+   "query": "ti:\"Metis: Memory Foundation Model\"",
+   "match": {
+    "arxiv_id": "2607.26760",
+    "version": "2",
+    "title": "Metis: Memory Foundation Model",
+    "abstract": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimization objectives to acquire these native memory procedures through mid-training. The online memory maintenance of Metis is gradient-free, and the memory update requires only a forward pass. At inference time, all learned model weights remain frozen, while the native memory states are autonomously transformed through standard forward computation. Through extensive experiments, we show that Metis exhibits native memory capabilities and further provide a detailed analysis of its strengths, limitations, and behaviors. To facilitate future research on memory foundation models, we release our project and model checkpoints.",
+    "published": "2026-07-29",
+    "updated": "2026-08-04",
+    "authors": [
+     "Zeyu Zhang",
+     "Ziliang Guo",
+     "Yihang Sun",
+     "Xichong Zhang",
+     "Xixuan Hao",
+     "Zehao Lin",
+     "Yang Zhang",
+     "Xiaoyan Zhao",
+     "Tong Shen",
+     "Bo Tang",
+     "Zhi-Qin John Xu",
+     "Junchi Yan"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "46 pages, 11 figures, 16 tables"
+   },
+   "score": 1.0,
+   "title": "Metis: Memory Foundation Model",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:22+08:00"
+  },
+  "t:nhri水利大模型智能体构建与应用平台 1 2 6 n架构": {
+   "status": "no_results",
+   "query": "ti:\"NHRI水利大模型智能体构建与应用平台：1+2+6+N架构\"",
+   "match": null,
+   "title": "NHRI水利大模型智能体构建与应用平台：1+2+6+N架构",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:26+08:00"
+  },
+  "t:opic": {
+   "status": "rejected",
+   "query": "all:\"OPIC\"",
+   "match": null,
+   "best_candidate": "Duals of limiting interpolation spaces",
+   "best_score": 0.19,
+   "title": "OPIC",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:30+08:00"
+  },
+  "t:rcdl": {
+   "status": "rejected",
+   "query": "all:\"RCDL\"",
+   "match": null,
+   "best_candidate": "Proximity Full-Text Search by Means of Additional Indexes with Multi-component Keys: In Pursuit of Optimal Performance",
+   "best_score": 0.066,
+   "title": "RCDL",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:33+08:00"
+  },
+  "t:rsi anything": {
+   "status": "matched_by_title",
+   "query": "all:\"RSI-Anything\"",
+   "match": {
+    "arxiv_id": "2610.13912",
+    "version": "1",
+    "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+    "abstract": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Taoyong Cui",
+     "Pinxian Zeng",
+     "Wanghan Xu",
+     "Hao Xiao",
+     "Shuhan Xue",
+     "Qiang Gao",
+     "Wanli Ouyang",
+     "Pheng Ann Heng",
+     "Zhenfei Yin",
+     "Yingcheng Wu",
+     "Ling Yang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/Gen-Verse/RSI-Anything"
+   },
+   "score": 0.95,
+   "title": "RSI-Anything",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:37+08:00"
+  },
+  "t:recursive game creator": {
+   "status": "rejected",
+   "query": "ti:\"Recursive Game Creator\"",
+   "match": null,
+   "best_candidate": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+   "best_score": 0.431,
+   "title": "Recursive Game Creator",
+   "kind": "title",
+   "checked_at": "2026-10-13T18:25:42+08:00"
+  },
+  "t:socialcoach": {
+   "status": "matched_by_title",
+   "query": "all:\"SocialCoach\"",
+   "match": {
+    "arxiv_id": "2606.04155",
+    "version": "2",
+    "title": "SocialCoach: Personalized Social Skill Learning with Agentic Tutoring and Practice",
+    "abstract": "Social skills such as negotiation and leadership are crucial for personal and professional success in today's interconnected world. However, scalable and effective training remains a significant challenge due to the scarcity of expert coaching. In this work, we introduce SocialCoach, an LLM-powered agentic tutoring system for personalized social skill learning. SocialCoach constructs a theory-to-practice corpus of traceable strategies, cases, and practice scenarios, and uses this corpus for both scheduling and reflective tutoring. We formulate social practice personalization as cold-start, retrieval-constrained sequential practice scheduling. Given a learner profile, simulated proficiency state, and observed practice history, a policy produces structured prescriptions that are realized through corpus retrieval. To enhance scheduling effectiveness, we optimize complete pathways with trajectory-level GRPO using rubric-judge based pairwise preferences. Additionally, we instantiate the scheduling approach in a deployed platform with goal-driven practice and knowledge-grounded reflective tutoring. Finally, in the synthetic cold-start setting, experiment results show that SocialCoach achieves higher pathway-quality ratings than baselines in scheduling and tutoring quality. We also conduct human studies to demonstrate its usefulness for real-world social skill learning.",
+    "published": "2026-06-02",
+    "updated": "2026-08-16",
+    "authors": [
+     "Tianfu Wang",
+     "Max Xiong",
+     "Jianxun Lian",
+     "Hongyuan Zhu",
+     "Zhengyu Hu",
+     "Yuxuan Lei",
+     "Linxiao Gong",
+     "Dapeng Hu",
+     "Xiaofang Li",
+     "Peiting Tsai",
+     "Nicholas Jing Yuan",
+     "Qi Zhang"
+    ],
+    "categories": [
+     "cs.HC",
+     "cs.CL",
+     "cs.CY"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SocialCoach",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:46+08:00"
+  },
+  "t:tokenrouter": {
+   "status": "matched_by_title",
+   "query": "all:\"TokenRouter\"",
+   "match": {
+    "arxiv_id": "2610.12242",
+    "version": "1",
+    "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
+    "abstract": "Large language model (LLM) routing distributes inference work across different models, advancing the cost-quality Pareto frontier of LLM serving. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithmic work shows that fine-grained token-level routing can yield substantial efficiency and quality gains. However, efficiently serving token-level routed inference poses significant challenges to existing systems. Built on single-LLM assumptions, current systems suffer from severe step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address these challenges, we design TokenRouter, an efficient and developer-friendly serving system for token-level routed LLM inference. TokenRouter follows the principle of request-centric programming, model-centric execution: developers describe routing logic from the perspective of a single request, while the runtime launches a subserver for each LLM and dispatches requests asynchronously. Each subserver employs a delayed-batching scheduler, whose optimal hyperparameters are derived from a mathematical throughput model of the system. Across diverse routing algorithms, workloads, and model pairs, TokenRouter achieves 2.01-64.15x higher decoding throughput than existing systems, substantially advancing the serving efficiency of token-level LLM routing. Our code is available at https://github.com/thu-nics/TokenRouter.",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "authors": [
+     "Tianyu Fu",
+     "Tengxuan Liu",
+     "Ruoxi Wang",
+     "Yixin Dong",
+     "Yi Ge",
+     "Yichen You",
+     "Yu Wang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted by NeurIPS 2026"
+   },
+   "score": 0.95,
+   "title": "TokenRouter",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:50+08:00"
+  },
+  "t:trace2env": {
+   "status": "rejected",
+   "query": "all:\"Trace2Env\"",
+   "match": null,
+   "best_candidate": "From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation",
+   "best_score": 0.15,
+   "title": "Trace2Env",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:53+08:00"
+  },
+  "t:vista": {
+   "status": "matched_by_title",
+   "query": "all:\"VISTA\"",
+   "match": {
+    "arxiv_id": "2405.17398",
+    "version": "5",
+    "title": "Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability",
+    "abstract": "World models can foresee the outcomes of different actions, which is of paramount importance for autonomous driving. Nevertheless, existing driving world models still have limitations in generalization to unseen environments, prediction fidelity of critical details, and action controllability for flexible application. In this paper, we present Vista, a generalizable driving world model with high fidelity and versatile controllability. Based on a systematic diagnosis of existing methods, we introduce several key ingredients to address these limitations. To accurately predict real-world dynamics at high resolution, we propose two novel losses to promote the learning of moving instances and structural information. We also devise an effective latent replacement approach to inject historical frames as priors for coherent long-horizon rollouts. For action controllability, we incorporate a versatile set of controls from high-level intentions (command, goal point) to low-level maneuvers (trajectory, angle, and speed) through an efficient learning strategy. After large-scale training, the capabilities of Vista can seamlessly generalize to different scenarios. Extensive experiments on multiple datasets show that Vista outperforms the most advanced general-purpose video generator in over 70% of comparisons and surpasses the best-performing driving world model by 55% in FID and 27% in FVD. Moreover, for the first time, we utilize the capacity of Vista itself to establish a generalizable reward for real-world action evaluation without accessing the ground truth actions.",
+    "published": "2024-05-27",
+    "updated": "2024-10-28",
+    "authors": [
+     "Shenyuan Gao",
+     "Jiazhi Yang",
+     "Li Chen",
+     "Kashyap Chitta",
+     "Yihang Qiu",
+     "Andreas Geiger",
+     "Jun Zhang",
+     "Hongyang Li"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2024. Code and model: https://github.com/OpenDriveLab/Vista, demo page: https://vista-demo.github.io"
+   },
+   "score": 0.95,
+   "title": "VISTA",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:25:57+08:00"
+  },
+  "t:veriselector": {
+   "status": "rejected",
+   "query": "all:\"VeriSelector\"",
+   "match": null,
+   "best_candidate": "Quality over Quantity: Diversity-Aware Data Selection for Efficient Verilog Code Generation",
+   "best_score": 0.235,
+   "title": "VeriSelector",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:01+08:00"
+  },
+  "t:vortexsynth": {
+   "status": "matched_by_title",
+   "query": "all:\"VortexSynth\"",
+   "match": {
+    "arxiv_id": "2610.12661",
+    "version": "1",
+    "title": "VortexSynth: Profile-guided benchmark reconstruction for GPU architecture research",
+    "abstract": "GPU architecture research requires representative benchmarks that can execute on new designs. However, many vendor-tailored workloads and library kernels cannot run directly on research architectures because their implementations are closed-source or rely on programming models unsupported by the target architecture. Migrating existing kernels requires manual effort to adapt their implementations and validate their behavior. This creates a need to automate workload migration to target platforms. We present VortexSynth, a framework that uses profile-guided benchmark reconstruction to construct GPU benchmarks from reference workloads. Our workflow selects hot kernels through profiling, synthesizes implementations in the target programming language, verifies output equivalence, and measures profile differences using a translated proxy implementation. The resulting profile signature gap is supplied to an agent for iterative refinement. We evaluate the method on Vortex, an open-ISA GPGPU, using robotics as the application domain. All active kernel pairs pass both output-equivalence checks, and the case studies show that iterative refinement can reduce profile distance.",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "authors": [
+     "Huanzhi Pu",
+     "Chulhyung Park",
+     "Chihyo Ahn",
+     "Ramyad Hadidi",
+     "Hyesoon Kim"
+    ],
+    "categories": [
+     "cs.AR",
+     "cs.PL"
+    ],
+    "journal_ref": null,
+    "comment": "14 pages, 6 figures"
+   },
+   "score": 0.95,
+   "title": "VortexSynth",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:05+08:00"
+  },
+  "t:上下文信息增强的大语言模型交通数据查询方法": {
+   "status": "no_results",
+   "query": "all:\"上下文信息增强的大语言模型交通数据查询方法\"",
+   "match": null,
+   "title": "上下文信息增强的大语言模型交通数据查询方法",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:09+08:00"
+  },
+  "t:大语言模型及其在矿物问答系统中的应用": {
+   "status": "no_results",
+   "query": "all:\"大语言模型及其在矿物问答系统中的应用\"",
+   "match": null,
+   "title": "大语言模型及其在矿物问答系统中的应用",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:13+08:00"
+  },
+  "t:大语言模型辅助生物医学论文写作的能力边界": {
+   "status": "no_results",
+   "query": "all:\"大语言模型辅助生物医学论文写作的能力边界\"",
+   "match": null,
+   "title": "大语言模型辅助生物医学论文写作的能力边界",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:17+08:00"
+  },
+  "t:知识 模型 智能体协同的水利垂直大模型技术框架": {
+   "status": "no_results",
+   "query": "all:\"知识—模型—智能体协同的水利垂直大模型技术框架\"",
+   "match": null,
+   "title": "知识—模型—智能体协同的水利垂直大模型技术框架",
+   "kind": "method",
+   "checked_at": "2026-10-13T18:26:21+08:00"
   }
  }
 }

@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-10-08T16:09:13+08:00",
+ "generated_at": "2026-10-13T18:23:55+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -43731,6 +43731,1021 @@
      "label": "企业级eSSD营收季增",
      "value": 40.0,
      "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|new-media|technical|0": {
+   "hash": "0c20ecf2e432578b",
+   "date": "2026-10-13",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "CTF",
+     "type": "tech"
+    },
+    {
+     "name": "Fe-NAND",
+     "type": "tech"
+    },
+    {
+     "name": "MoS2/IGZO沟道",
+     "type": "tech"
+    },
+    {
+     "name": "3D NOR",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "键合原型堆叠层数",
+     "value": 900.0,
+     "unit": "层"
+    },
+    {
+     "subject": "三星",
+     "label": "V10堆叠层数",
+     "value": 400.0,
+     "unit": "层"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "出货NAND堆叠层数",
+     "value": 321.0,
+     "unit": "层"
+    },
+    {
+     "subject": "铠侠",
+     "label": "送样NAND堆叠层数",
+     "value": 332.0,
+     "unit": "层"
+    }
+   ]
+  },
+  "2026-10-13|others|business|0": {
+   "hash": "0d051bfe7298c56c",
+   "date": "2026-10-13",
+   "category": "others",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "全球半导体月度销售额",
+     "value": 1597.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球半导体销售额同比增速",
+     "value": 144.3,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "全球半导体年度销售额预测",
+     "value": 1.6,
+     "unit": "万亿美元"
+    },
+    {
+     "subject": "三星",
+     "label": "单季营业利润",
+     "value": 107.4,
+     "unit": "万亿韩元"
+    }
+   ]
+  },
+  "2026-10-13|others|technical|0": {
+   "hash": "1e379b96ff6d346e",
+   "date": "2026-10-13",
+   "category": "others",
+   "entities": [
+    {
+     "name": "达摩院",
+     "type": "institution"
+    },
+    {
+     "name": "玄铁C950",
+     "type": "product"
+    },
+    {
+     "name": "RISC-V",
+     "type": "tech"
+    },
+    {
+     "name": "RVA23",
+     "type": "tech"
+    },
+    {
+     "name": "SPECint2006",
+     "type": "paper"
+    },
+    {
+     "name": "Ubuntu 26.04 LTS",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "玄铁C950",
+     "label": "SPECint2006单核得分",
+     "value": 70.0,
+     "unit": "分"
+    },
+    {
+     "subject": "玄铁C950",
+     "label": "原生支持大模型参数量",
+     "value": 1000.0,
+     "unit": "亿参数"
+    }
+   ]
+  },
+  "2026-10-13|storage-semantics-protocol|business|0": {
+   "hash": "a18dfb2cbfa823eb",
+   "date": "2026-10-13",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "Marvell",
+     "type": "company"
+    },
+    {
+     "name": "互连优先",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Marvell",
+     "label": "TAM",
+     "value": 4000.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Marvell",
+     "label": "FY2031数据中心营收目标下限",
+     "value": 675.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Marvell",
+     "label": "FY2031数据中心营收目标上限",
+     "value": 875.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Marvell",
+     "label": "FY2031互连营收目标",
+     "value": 370.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-10-13|storage-semantics-protocol|technical|0": {
+   "hash": "1e744c37b6e9dcf2",
+   "date": "2026-10-13",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "AMD",
+     "type": "company"
+    },
+    {
+     "name": "ROCm XIO",
+     "type": "tech"
+    },
+    {
+     "name": "MI300X",
+     "type": "product"
+    },
+    {
+     "name": "HIP",
+     "type": "tech"
+    },
+    {
+     "name": "P2PDMA",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe KV命令集",
+     "type": "tech"
+    },
+    {
+     "name": "SNIA",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MI300X",
+     "label": "单卡16盘配置IOPS",
+     "value": 780.0,
+     "unit": "万IOPS"
+    },
+    {
+     "subject": "MI300X",
+     "label": "8卡配置IOPS",
+     "value": 1980.0,
+     "unit": "万IOPS"
+    }
+   ]
+  },
+  "2026-10-13|ai-inference-acceleration|business|0": {
+   "hash": "158d412a6e7d3534",
+   "date": "2026-10-13",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "趋境科技",
+     "type": "company"
+    },
+    {
+     "name": "ATaaS",
+     "type": "product"
+    },
+    {
+     "name": "六合异构推理2.0",
+     "type": "tech"
+    },
+    {
+     "name": "月饼以存换算2.0",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "趋境科技",
+     "label": "GPU算力开销削减",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "整体成本降低",
+     "value": 85.0,
+     "unit": "%"
+    },
+    {
+     "subject": "ATaaS",
+     "label": "日均Token产量",
+     "value": 1.0,
+     "unit": "万亿"
+    }
+   ]
+  },
+  "2026-10-13|ai-inference-acceleration|technical|0": {
+   "hash": "5091566f23309290",
+   "date": "2026-10-13",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "Mooncake",
+     "type": "tech"
+    },
+    {
+     "name": "SGLang",
+     "type": "tech"
+    },
+    {
+     "name": "HiCache",
+     "type": "tech"
+    },
+    {
+     "name": "RadixAttention",
+     "type": "tech"
+    },
+    {
+     "name": "HiRadixTree",
+     "type": "tech"
+    },
+    {
+     "name": "H800",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HiCache",
+     "label": "长上下文TTFT下降幅度",
+     "value": 84.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HiCache",
+     "label": "Page存储对象数减少",
+     "value": 3904.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "HiCache",
+     "label": "GPU-assisted I/O kernels提升",
+     "value": 3.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-13|ai-model-agent-rag|business|0": {
+   "hash": "7ae187b34be18aa1",
+   "date": "2026-10-13",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "Winverse AI",
+     "type": "company"
+    },
+    {
+     "name": "胡瀚",
+     "type": "person"
+    },
+    {
+     "name": "Swin Transformer",
+     "type": "tech"
+    },
+    {
+     "name": "宇树科技",
+     "type": "company"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Winverse AI",
+     "label": "投后估值",
+     "value": 4.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "战配宇树科技金额",
+     "value": 1.41,
+     "unit": "亿元"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "持股宇树科技比例",
+     "value": 2.31,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|ai-model-agent-rag|technical|0": {
+   "hash": "4b7d3c387cdff943",
+   "date": "2026-10-13",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "MIT",
+     "type": "institution"
+    },
+    {
+     "name": "何恺明",
+     "type": "person"
+    },
+    {
+     "name": "VISTA",
+     "type": "tech"
+    },
+    {
+     "name": "ARC-AGI-3",
+     "type": "paper"
+    },
+    {
+     "name": "Claude Opus 5.0",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "VISTA",
+     "label": "视觉帧分辨率",
+     "value": 512.0,
+     "unit": "像素"
+    },
+    {
+     "subject": "Claude Opus 5.0",
+     "label": "ARC-AGI-3通关游戏数",
+     "value": 25.0,
+     "unit": "款"
+    },
+    {
+     "subject": "Claude Opus 5.0",
+     "label": "RHAE",
+     "value": 100.0,
+     "unit": "分"
+    },
+    {
+     "subject": "Claude Opus 5.0",
+     "label": "动作数较人类减少",
+     "value": 57.4,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|cost-effective-storage|business|0": {
+   "hash": "89d339e306e55f57",
+   "date": "2026-10-13",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "DDR4",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DDR4",
+     "label": "2027年合约价涨幅",
+     "value": 1.94,
+     "unit": "倍"
+    },
+    {
+     "subject": "HBM",
+     "label": "2027年价格涨幅",
+     "value": 53.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM占用DRAM晶圆产能比例",
+     "value": 30.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|cost-effective-storage|technical|0": {
+   "hash": "7747d75b98390806",
+   "date": "2026-10-13",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "DDN",
+     "type": "company"
+    },
+    {
+     "name": "SLC",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-10-13|high-capacity-storage|business|0": {
+   "hash": "26a6713981aa3740",
+   "date": "2026-10-13",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "SK hynix",
+     "type": "company"
+    },
+    {
+     "name": "瑞银",
+     "type": "institution"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "DDR5 RDIMM",
+     "type": "tech"
+    },
+    {
+     "name": "TrendForce",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "HBM占用DRAM晶圆产能比例",
+     "value": 30.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|high-capacity-storage|technical|0": {
+   "hash": "0cd5b02e927d415e",
+   "date": "2026-10-13",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "LD4",
+     "type": "product"
+    },
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LD4",
+     "label": "最大容量",
+     "value": 122.88,
+     "unit": "TB"
+    },
+    {
+     "subject": "LD4",
+     "label": "顺序带宽",
+     "value": 7.9,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "QLC",
+     "label": "擦写寿命",
+     "value": 1000.0,
+     "unit": "次"
+    }
+   ]
+  },
+  "2026-10-13|high-reliability-storage|business|0": {
+   "hash": "f06b37e29008ab55",
+   "date": "2026-10-13",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "IDC",
+     "type": "institution"
+    },
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "Agent DataSpace",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "中国企业级存储收入(H1 2026)",
+     "value": 36.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球企业级存储收入(H1 2026)",
+     "value": 196.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "中国企业级存储收入同比增速",
+     "value": 20.7,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "全球企业级存储收入同比增速",
+     "value": 28.2,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "中国市场份额",
+     "value": 18.4,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "全闪存增速",
+     "value": 34.9,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "高端存储增速",
+     "value": 47.9,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-13|high-reliability-storage|technical|0": {
+   "hash": "c9fde28163cf383e",
+   "date": "2026-10-13",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "MRAM",
+     "type": "tech"
+    },
+    {
+     "name": "MTJ",
+     "type": "tech"
+    },
+    {
+     "name": "驰拓科技",
+     "type": "company"
+    },
+    {
+     "name": "EEPROM",
+     "type": "tech"
+    },
+    {
+     "name": "NOR Flash",
+     "type": "tech"
+    },
+    {
+     "name": "SRAM",
+     "type": "tech"
+    },
+    {
+     "name": "PLC",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MRAM",
+     "label": "耐擦写次数",
+     "value": 100000000000000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "MRAM",
+     "label": "写入周期",
+     "value": 35.0,
+     "unit": "ns"
+    },
+    {
+     "subject": "驰拓科技",
+     "label": "产线晶圆尺寸",
+     "value": 12.0,
+     "unit": "英寸"
+    },
+    {
+     "subject": "PLC",
+     "label": "写入次数要求",
+     "value": 3000.0,
+     "unit": "亿次"
+    },
+    {
+     "subject": "智能电表",
+     "label": "寿命要求",
+     "value": 16.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-10-13|model-benchmarking|business|0": {
+   "hash": "d8a63e772156ea5b",
+   "date": "2026-10-13",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Claude Sonnet 5.5",
+     "type": "product"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "type": "product"
+    },
+    {
+     "name": "Gemini 4 Argon",
+     "type": "product"
+    },
+    {
+     "name": "Meta Muse Wonder",
+     "type": "product"
+    },
+    {
+     "name": "OpenAI",
+     "type": "company"
+    },
+    {
+     "name": "Codex",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Claude Sonnet 5.5",
+     "label": "上下文窗口",
+     "value": 1.0,
+     "unit": "M"
+    },
+    {
+     "subject": "GPT-6.1 Sol",
+     "label": "Codex默认上下文",
+     "value": 500.0,
+     "unit": "k"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "年化营收",
+     "value": 500.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "OpenAI",
+     "label": "市场预期年化营收",
+     "value": 700.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-10-13|model-benchmarking|technical|0": {
+   "hash": "15511a53c1bec2d5",
+   "date": "2026-10-13",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "何恺明",
+     "type": "person"
+    },
+    {
+     "name": "VISTA",
+     "type": "tech"
+    },
+    {
+     "name": "Claude Opus 5.0",
+     "type": "product"
+    },
+    {
+     "name": "ARC-AGI-3",
+     "type": "paper"
+    },
+    {
+     "name": "GPT-5.6 Sol",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Claude Opus 5.0",
+     "label": "ARC-AGI-3通关游戏数",
+     "value": 25.0,
+     "unit": "款"
+    },
+    {
+     "subject": "Claude Opus 5.0",
+     "label": "动作数较人类减少",
+     "value": 57.4,
+     "unit": "%"
+    },
+    {
+     "subject": "GPT-5.6 Sol",
+     "label": "ARC-AGI-3得分",
+     "value": 99.0,
+     "unit": "分"
+    },
+    {
+     "subject": "GPT-5.6 Sol",
+     "label": "ARC-AGI-3得分提升前",
+     "value": 13.33,
+     "unit": "分"
+    }
+   ]
+  },
+  "2026-10-13|near-memory-computing|business|0": {
+   "hash": "dffdc5323980c434",
+   "date": "2026-10-13",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "趋境科技",
+     "type": "company"
+    },
+    {
+     "name": "ATaaS",
+     "type": "product"
+    },
+    {
+     "name": "知识推理一体机",
+     "type": "product"
+    },
+    {
+     "name": "671B满血推理工作站",
+     "type": "product"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "趋境科技",
+     "label": "KV Cache扩展倍数",
+     "value": 100.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "推理成本降低",
+     "value": 10.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "单台Token生产效率提升",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "总产能提升",
+     "value": 30.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-13|near-memory-computing|technical|0": {
+   "hash": "d8eebba677007abf",
+   "date": "2026-10-13",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "d-Matrix",
+     "type": "company"
+    },
+    {
+     "name": "Corsair",
+     "type": "product"
+    },
+    {
+     "name": "LPDDR5X-PIM",
+     "type": "tech"
+    },
+    {
+     "name": "Raptor",
+     "type": "product"
+    },
+    {
+     "name": "Llama-70B",
+     "type": "tech"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Corsair",
+     "label": "单卡SRAM容量",
+     "value": 2.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "Corsair",
+     "label": "卡内带宽",
+     "value": 150.0,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "Corsair",
+     "label": "Llama-70B解耦推理加速比",
+     "value": 10.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "LPDDR5X-PIM",
+     "label": "内部带宽",
+     "value": 614.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "LPDDR5X-PIM",
+     "label": "内部带宽较外部接口倍数",
+     "value": 8.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-13|new-media|business|0": {
+   "hash": "41731af95acf6986",
+   "date": "2026-10-13",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "驰拓科技",
+     "type": "company"
+    },
+    {
+     "name": "MRAM",
+     "type": "tech"
+    },
+    {
+     "name": "STT-MRAM",
+     "type": "tech"
+    },
+    {
+     "name": "MTJ",
+     "type": "tech"
+    },
+    {
+     "name": "PLC",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "STT-MRAM",
+     "label": "耐擦写次数",
+     "value": 100000000000000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "STT-MRAM",
+     "label": "写入周期",
+     "value": 35.0,
+     "unit": "ns"
+    },
+    {
+     "subject": "驰拓科技",
+     "label": "产线晶圆尺寸",
+     "value": 12.0,
+     "unit": "英寸"
+    },
+    {
+     "subject": "PLC",
+     "label": "写入次数要求",
+     "value": 3000.0,
+     "unit": "亿次"
+    },
+    {
+     "subject": "智能电表",
+     "label": "免维护寿命",
+     "value": 16.0,
+     "unit": "年"
     }
    ]
   }
