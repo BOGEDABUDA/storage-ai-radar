@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-13T18:26:21+08:00",
+ "generated_at": "2026-10-16T08:36:38+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -29271,6 +29271,700 @@
    "title": "知识—模型—智能体协同的水利垂直大模型技术框架",
    "kind": "method",
    "checked_at": "2026-10-13T18:26:21+08:00"
+  },
+  "id:2610.12461": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.12461",
+   "match": {
+    "arxiv_id": "2610.12461",
+    "version": "1",
+    "title": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+    "abstract": "Recent 3D world models generate photorealistic, explorable scenes that remain frozen in time. OuroWorld is a mask-free framework that turns any static 3D Gaussian Splatting scene into a 3D cinemagraph: a dynamic scene with vivid, diverse motion looping seamlessly from any viewpoint. A vision-language model infers plausible dynamics and guides a video model to synthesize a reference video, which we lift and complete into multi-view videos. To learn from this imperfect supervision, we propose Inconsistency-Robust Periodic 4DGS: a Fourier-series deformation field guarantees looping by construction, while a Grounded Drift Field anchored at the reference view absorbs cross-view inconsistency. Unlike prior Eulerian methods limited to fluid-like motion, we capture general deformation, object motion, and illumination change. We introduce a ground-truth-free evaluation covering vividness, naturalness, loop seam coherence, and scene quality. On 39 reconstructed and generated scenes, OuroWorld outperforms all baselines and wins 70.8%-99.0% of user-study comparisons. Project page: https://ouroworld.userwei.com",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "authors": [
+     "You-Zhe Xie",
+     "Ting-Wei Chou",
+     "Yu-Hsuan Li",
+     "Kaipeng Zhang",
+     "Zhixiang Wang",
+     "Yu-Lun Liu"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.GR"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://ouroworld.userwei.com"
+   },
+   "score": 1.0,
+   "title": "AI 论文速览 · 缺口不一定要用大模型来补",
+   "kind": "id",
+   "checked_at": "2026-10-16T08:34:10+08:00"
+  },
+  "id:2609.28771": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.28771",
+   "match": {
+    "arxiv_id": "2609.28771",
+    "version": "1",
+    "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+    "abstract": "Large language models (LLMs) have demonstrated strong capabilities in financial analysis and reasoning, inspiring recent advances in agent-based trading frameworks. While these systems show promise, prior approaches either emphasize long-horizon forecasting or operate as stateless analyzers, limiting their applicability to the demands of trading in complicated settings. To address these gaps, we introduce META (Memory Enhanced Trading Agent), the first RAG-like episodic-memory-augmented multi-agent framework for financial decision making. META integrates a family of specialized indicator agents (e.g., Trend, MACD, Stochastic, RSI, SMA, AVWAP, Heikin-Ashi) with a Decision Agent that fuses their reports, and a Memory module that retrieves and updates past trading episodes encoded as market state embeddings with outcomes and reflections. By recalling relevant experiences and adaptively reweighting signals under similar market regimes, META achieves improved directional accuracy and robustness under short-horizon evaluation. Our results demonstrate that episodic memory provides a powerful mechanism for regime-aware, interpretable, and low-latency decision-making in trading and decision making. The code of this project is released on GitHub.",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "authors": [
+     "Nuoyue Xu",
+     "Jiang Liu",
+     "Wenxuan Huang",
+     "Xiang Zhang",
+     "Juntai Cao",
+     "Jiaqi Wei"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "The paper has been accepted for AACL-IJCNLP 2026 findings"
+   },
+   "score": 1.0,
+   "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+   "kind": "id",
+   "checked_at": "2026-10-16T08:34:28+08:00"
+  },
+  "id:2610.02676": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.02676",
+   "match": {
+    "arxiv_id": "2610.02676",
+    "version": "2",
+    "title": "FDP: The Data Placement Promise of Modern NVMe SSDs",
+    "abstract": "NVMe SSDs are now widely deployed as the storage tier in data centers. As SSDs have evolved over the past decade, the commu- nity has continued to debate the interfaces they expose and how operating systems and storage systems should exploit them. The NVMe Flexible Data Placement (FDP) proposal is the latest point in this design space. FDP introduces an interface based on Reclaim Units that enables explicit data placement to reduce device write amplification without the software engineering costs of sequential- write constraints and host garbage collection. FDP-enabled SSDs are emerging in commercial products and early data center de- ployments. Their compatibility with conventional block I/O allows existing applications to run unchanged, allowing a frictionless adop- tion in industry. This paper presents an experimental evaluation of FDP SSDs to characterize their data placement guarantees over the raw device interface. We then revisit two widely deployed and distinct open- source storage systems, MySQL and RocksDB, and examine whether lifetime-based data separation and distinct write patterns built into their architectures can be mapped onto FDP SSDs without inva- sive changes. Our evaluation shows end-to-end WAF reductions at higher device utilization, along with QoS and throughput improve- ments under synthetic and real-world workloads. These results demonstrate that FDP provides a practical and deployable cross- layer mechanism for data placement with open-source ecosystem support on Linux. They also highlight why FDP SSDs are gaining traction in industry.",
+    "published": "2026-10-02",
+    "updated": "2026-10-05",
+    "authors": [
+     "Sijie Lan",
+     "Hui Qi",
+     "Xing He",
+     "Mahmut Kandemir",
+     "Javier González",
+     "Vivek Shah"
+    ],
+    "categories": [
+     "cs.OS",
+     "cs.DB"
+    ],
+    "journal_ref": null,
+    "comment": "Includes appendices"
+   },
+   "score": 1.0,
+   "title": "FDP: Modern NVMe SSD's Data Placement Promise",
+   "kind": "id",
+   "checked_at": "2026-10-16T08:34:32+08:00"
+  },
+  "id:2610.13912": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.13912",
+   "match": {
+    "arxiv_id": "2610.13912",
+    "version": "1",
+    "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+    "abstract": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Taoyong Cui",
+     "Pinxian Zeng",
+     "Wanghan Xu",
+     "Hao Xiao",
+     "Shuhan Xue",
+     "Qiang Gao",
+     "Wanli Ouyang",
+     "Pheng Ann Heng",
+     "Zhenfei Yin",
+     "Yingcheng Wu",
+     "Ling Yang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/Gen-Verse/RSI-Anything"
+   },
+   "score": 1.0,
+   "title": "RSI-Anything",
+   "kind": "id",
+   "checked_at": "2026-10-16T08:34:40+08:00"
+  },
+  "id:2205.14135": {
+   "status": "matched_by_id",
+   "query": "id_list=2205.14135",
+   "match": {
+    "arxiv_id": "2205.14135",
+    "version": "2",
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "abstract": "Transformers are slow and memory-hungry on long sequences, since the time and memory complexity of self-attention are quadratic in sequence length. Approximate attention methods have attempted to address this problem by trading off model quality to reduce the compute complexity, but often do not achieve wall-clock speedup. We argue that a missing principle is making attention algorithms IO-aware -- accounting for reads and writes between levels of GPU memory. We propose FlashAttention, an IO-aware exact attention algorithm that uses tiling to reduce the number of memory reads/writes between GPU high bandwidth memory (HBM) and GPU on-chip SRAM. We analyze the IO complexity of FlashAttention, showing that it requires fewer HBM accesses than standard attention, and is optimal for a range of SRAM sizes. We also extend FlashAttention to block-sparse attention, yielding an approximate attention algorithm that is faster than any existing approximate attention method. FlashAttention trains Transformers faster than existing baselines: 15% end-to-end wall-clock speedup on BERT-large (seq. length 512) compared to the MLPerf 1.1 training speed record, 3$\\times$ speedup on GPT-2 (seq. length 1K), and 2.4$\\times$ speedup on long-range arena (seq. length 1K-4K). FlashAttention and block-sparse FlashAttention enable longer context in Transformers, yielding higher quality models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document classification) and entirely new capabilities: the first Transformers to achieve better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4% accuracy) and Path-256 (seq. length 64K, 63.1% accuracy).",
+    "published": "2022-05-27",
+    "updated": "2022-06-23",
+    "authors": [
+     "Tri Dao",
+     "Daniel Y. Fu",
+     "Stefano Ermon",
+     "Atri Rudra",
+     "Christopher Ré"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "大模型为什么一个字一个字地“蹦”?四篇论文讲清推理加速",
+   "kind": "id",
+   "checked_at": "2026-10-16T08:34:44+08:00"
+  },
+  "t:in congruence effect of chronological age and subjective age on older adults cognitive functioning the moderating role of social participation and cross cultural comparisons": {
+   "status": "no_results",
+   "query": "ti:\"(In)congruence effect of chronological age and subjective age on older adults’ cognitive functioning: the moderating role of social participation and cross-cultural comparisons\"",
+   "match": null,
+   "title": "(In)congruence effect of chronological age and subjective age on older adults’ cognitive functioning: the moderating role of social participation and cross-cultural comparisons",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:34:48+08:00"
+  },
+  "t:a multi fidelity tabular prior data fitted network model for accurate prediction and uncertainty quantification": {
+   "status": "no_results",
+   "query": "ti:\"A multi-fidelity tabular prior-data fitted network model for accurate prediction and uncertainty quantification\"",
+   "match": null,
+   "title": "A multi-fidelity tabular prior-data fitted network model for accurate prediction and uncertainty quantification",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:34:52+08:00"
+  },
+  "t:adgpt 大模型引导的ad推理诊断及报告生成": {
+   "status": "no_results",
+   "query": "all:\"ADGPT: 大模型引导的AD推理诊断及报告生成\"",
+   "match": null,
+   "title": "ADGPT: 大模型引导的AD推理诊断及报告生成",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:34:55+08:00"
+  },
+  "t:agent memory with episodic retrieval for financial decision making": {
+   "status": "matched_by_title",
+   "query": "ti:\"Agent Memory with Episodic Retrieval for Financial Decision-Making\"",
+   "match": {
+    "arxiv_id": "2609.28771",
+    "version": "1",
+    "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+    "abstract": "Large language models (LLMs) have demonstrated strong capabilities in financial analysis and reasoning, inspiring recent advances in agent-based trading frameworks. While these systems show promise, prior approaches either emphasize long-horizon forecasting or operate as stateless analyzers, limiting their applicability to the demands of trading in complicated settings. To address these gaps, we introduce META (Memory Enhanced Trading Agent), the first RAG-like episodic-memory-augmented multi-agent framework for financial decision making. META integrates a family of specialized indicator agents (e.g., Trend, MACD, Stochastic, RSI, SMA, AVWAP, Heikin-Ashi) with a Decision Agent that fuses their reports, and a Memory module that retrieves and updates past trading episodes encoded as market state embeddings with outcomes and reflections. By recalling relevant experiences and adaptively reweighting signals under similar market regimes, META achieves improved directional accuracy and robustness under short-horizon evaluation. Our results demonstrate that episodic memory provides a powerful mechanism for regime-aware, interpretable, and low-latency decision-making in trading and decision making. The code of this project is released on GitHub.",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "authors": [
+     "Nuoyue Xu",
+     "Jiang Liu",
+     "Wenxuan Huang",
+     "Xiang Zhang",
+     "Juntai Cao",
+     "Jiaqi Wei"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "The paper has been accepted for AACL-IJCNLP 2026 findings"
+   },
+   "score": 1.0,
+   "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:00+08:00"
+  },
+  "t:contextual information enhanced large language model for traffic data query": {
+   "status": "no_results",
+   "query": "ti:\"Contextual information-enhanced large language model for traffic data query\"",
+   "match": null,
+   "title": "Contextual information-enhanced large language model for traffic data query",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:04+08:00"
+  },
+  "t:engiworld": {
+   "status": "matched_by_title",
+   "query": "all:\"EngiWorld\"",
+   "match": {
+    "arxiv_id": "2609.37686",
+    "version": "2",
+    "title": "EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?",
+    "abstract": "Autonomous agents have made rapid progress in general-purpose computer use, yet reliable automation of professional industrial engineering remains out of reach. Engineering workflows require reasoning over geometric and physical constraints and keeping dependencies consistent across software and design stages. We present EngiWorld, a benchmark designed around the capabilities that real engineering projects require, from operating a single application to solving engineering problems end to end. It contains 1,301 expert-curated tasks spanning six engineering domains (CAD, CAE, CAM, BIM, EDA, and DCC) and 26 professional software applications, with both GUI and CLI interfaces. The tasks are organized into six types, corresponding to capabilities that real engineering projects require. We further introduce an artifact-centric evaluation methodology built on a unified suite of domain verifiers. The verifiers programmatically check whether final and intermediate artifacts are geometrically valid, physically feasible, and compliant with design rules. Beyond binary success, they also score how well optimized designs meet their specifications. Evaluation of seven frontier models reveals a substantial capability gap: the strongest model scores only 44.7/100, and just 3.6% of runs on tasks that require cross-software coordination succeed. EngiWorld provides a rigorous foundation for measuring progress toward agents that operate professional engineering software end to end.",
+    "published": "2026-09-29",
+    "updated": "2026-10-09",
+    "authors": [
+     "Hongcheng Gao",
+     "Hailong Qu",
+     "Yu Lei",
+     "Henghui Sun",
+     "Haoyang Li",
+     "Yipeng Wei",
+     "Naihao Xue",
+     "Xiaohan Yu",
+     "Zhuo Tao",
+     "Yihe Zang",
+     "Yajiao Wang",
+     "Jingyi Tang"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://engiworld.github.io"
+   },
+   "score": 0.95,
+   "title": "EngiWorld",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:35:08+08:00"
+  },
+  "t:fdp modern nvme ssd s data placement promise": {
+   "status": "no_results",
+   "query": "ti:\"FDP: Modern NVMe SSD's Data Placement Promise\"",
+   "match": null,
+   "title": "FDP: Modern NVMe SSD's Data Placement Promise",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:12+08:00"
+  },
+  "t:fdp 现代 nvme ssd 的数据放置承诺": {
+   "status": "no_results",
+   "query": "ti:\"FDP: 现代 NVMe SSD 的数据放置承诺\"",
+   "match": null,
+   "title": "FDP: 现代 NVMe SSD 的数据放置承诺",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:16+08:00"
+  },
+  "t:from traces to agentic worlds agentic language world models for interactive environment simulation": {
+   "status": "matched_by_title",
+   "query": "ti:\"From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation\"",
+   "match": {
+    "arxiv_id": "2610.06100",
+    "version": "1",
+    "title": "From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation",
+    "abstract": "Realistic environment replicas are increasingly valuable for training and evaluating LLM agents, yet the original systems may be inaccessible or impractical to reproduce. We explore agentic language world modeling: rather than rebuilding an executable environment, a world model agent serves as the environment for a task agent and supports faithful and stateful simulation. We instantiate this paradigm with Trace2Env, a learning-free framework for settings where the original system is unavailable but historical interaction traces remain accessible. Trace2Env reconstructs these traces into a reusable environment worldbook containing environment schemas, grounded evidence, and induced behavioral knowledge. At runtime, the world model agent actively consults the worldbook together with persistent episodic state to infer each action's observation and lasting state effects. Across nine environments, Trace2Env improves both next-observation fidelity and long-horizon interaction consistency over conventional prompt-based LWMs. In multi-turn interaction, task agent actions generated against Trace2Env remain valid more often when replayed in the real environment, indicating that its simulated dynamics better preserve the consequences of earlier actions across successive turns. These results establish agentic language world modeling as an alternative direction for building realistic environment replicas without reconstructing the original executable system.",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "authors": [
+     "Quanyu Long",
+     "Xiao Chen",
+     "Jianda Chen",
+     "Haozhen Zhang",
+     "Qisheng Hu",
+     "Jianzhu Bao",
+     "Wenya Wang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:20+08:00"
+  },
+  "t:jeva": {
+   "status": "matched_by_title",
+   "query": "all:\"Jeva\"",
+   "match": {
+    "arxiv_id": "2610.18773",
+    "version": "1",
+    "title": "Jeva: System One Models from First Principles",
+    "abstract": "System one models enable direct, low-latency decision-making. Yet recent practice of predicting an answer from serialized text does not, by itself, respect the structure of a decision problem. We argue that current designs underemphasize four important structural requirements. (i) null-aware: Models should distinguish answer absence from uncertainty among candidates; (ii) permutation-invariant: Reordering alternatives should not change the decision; (iii) option-scalable: Growing candidate sets should not require redefining the output space; (iv) cacheable: Request-independent computation over recurring alternatives should be reusable across requests. We introduce Jeva, a decision-native architecture that addresses these requirements jointly. A shared encoder independently represents the request and each option, while a compact decision stack refines only the request state against immutable option memory. Symmetric aggregation yields permutation-equivariant probabilities; shared scoring accommodates variable-size candidate sets. A separate coverage estimate distinguishes answer absence from candidate competition, enabling explicit null outcomes. Request-independent option representations and layer projections support reuse across newly assembled sets. These mechanisms unify Choice, Noul, and Score outputs. Across evaluations, Jeva combines strong typed-decision performance with near-perfect null detection and no decision flips under any tested permutations. It scales to thousands of candidates and substantially reduces latency through cross-request reuse without changing decisions.",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "authors": [
+     "Qi Li",
+     "Xinchao Wang"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Jeva",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:35:24+08:00"
+  },
+  "t:journal of biomechanics": {
+   "status": "no_results",
+   "query": "ti:\"Journal of Biomechanics\"",
+   "match": null,
+   "title": "Journal of Biomechanics",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:27+08:00"
+  },
+  "t:llm aspect prediction reviewing academic papers from different aspects with large language model": {
+   "status": "no_results",
+   "query": "ti:\"LLM aspect prediction: reviewing academic papers from different aspects with Large Language Model\"",
+   "match": null,
+   "title": "LLM aspect prediction: reviewing academic papers from different aspects with Large Language Model",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:31+08:00"
+  },
+  "t:maga make automl great again": {
+   "status": "no_results",
+   "query": "ti:\"MAGA: Make AutoML Great Again\"",
+   "match": null,
+   "title": "MAGA: Make AutoML Great Again",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:35+08:00"
+  },
+  "t:mmsearch r1": {
+   "status": "matched_by_title",
+   "query": "all:\"MMSearch-R1\"",
+   "match": {
+    "arxiv_id": "2506.20670",
+    "version": "1",
+    "title": "MMSearch-R1: Incentivizing LMMs to Search",
+    "abstract": "Robust deployment of large multimodal models (LMMs) in real-world scenarios requires access to external knowledge sources, given the complexity and dynamic nature of real-world information. Existing approaches such as retrieval-augmented generation (RAG) and prompt engineered search agents rely on rigid pipelines, often leading to inefficient or excessive search behaviors. We present MMSearch-R1, the first end-to-end reinforcement learning framework that enables LMMs to perform on-demand, multi-turn search in real-world Internet environments. Our framework integrates both image and text search tools, allowing the model to reason about when and how to invoke them guided by an outcome-based reward with a search penalty. To support training, We collect a multimodal search VQA dataset through a semi-automated pipeline that covers diverse visual and textual knowledge needs and curate a search-balanced subset with both search-required and search-free samples, which proves essential for shaping efficient and on-demand search behavior. Extensive experiments on knowledge-intensive and info-seeking VQA tasks show that our model not only outperforms RAG-based baselines of the same model size, but also matches the performance of a larger RAG-based model while reducing search calls by over 30%. We further analyze key empirical findings to offer actionable insights for advancing research in multimodal search.",
+    "published": "2025-06-25",
+    "updated": "2025-06-25",
+    "authors": [
+     "Jinming Wu",
+     "Zihao Deng",
+     "Wei Li",
+     "Yiding Liu",
+     "Bo You",
+     "Bo Li",
+     "Zejun Ma",
+     "Ziwei Liu"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/EvolvingLMMs-Lab/multimodal-search-r1"
+   },
+   "score": 0.95,
+   "title": "MMSearch-R1",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:35:39+08:00"
+  },
+  "t:rsi anything unlocking recursive self improvement with world models": {
+   "status": "matched_by_title",
+   "query": "ti:\"RSI-Anything: Unlocking Recursive Self-Improvement with World Models\"",
+   "match": {
+    "arxiv_id": "2610.13912",
+    "version": "1",
+    "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+    "abstract": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Taoyong Cui",
+     "Pinxian Zeng",
+     "Wanghan Xu",
+     "Hao Xiao",
+     "Shuhan Xue",
+     "Qiang Gao",
+     "Wanli Ouyang",
+     "Pheng Ann Heng",
+     "Zhenfei Yin",
+     "Yingcheng Wu",
+     "Ling Yang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/Gen-Verse/RSI-Anything"
+   },
+   "score": 1.0,
+   "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:43+08:00"
+  },
+  "t:retrieval centric deep learning in growing nonparametric neural networks": {
+   "status": "matched_by_title",
+   "query": "ti:\"Retrieval-Centric Deep Learning in Growing Nonparametric Neural Networks\"",
+   "match": {
+    "arxiv_id": "2610.03858",
+    "version": "1",
+    "title": "Retrieval-Centric Deep Learning in Growing Nonparametric Neural Networks",
+    "abstract": "We investigate a general-purpose layer for deep learning that, instead of compressing arbitrary-size training data into fixed-size weight matrices, stores a new pair of key-value representations for every data point during training, and retrieves and recombines these representations through an attention mechanism at inference time - resulting in a growing neural net (NN). While Irie et al. (arXiv:2202.05798) have put forward this perspective from the classic duality expressing any linear layer in a deep NN trained by gradient descent as linear attention (LA) over the training data points, replacing LA by more powerful attention functions, as they suggest, turns out to be non-trivial: we show that naively applying learning rules from the LA case to advanced kernels does not lead to principled optimization. Here we fill this gap and develop functional gradient-based learning rules for kernelized attention layers, based on radial basis function (RBF) and softmax-like kernels - establishing the principled \"retrieval-centric deep learning\" (RCDL) paradigm. Empirically, we demonstrate the promising performance and learning-efficiency of RCDL on image classification and synthetic teacher-student learning tasks. Moreover, we show that replacing LA in the dual form of NNs by advanced LA variants, namely MesaNet/DeltaNet, yields a formal connection to recently proposed optimizers for conventional fixed-size NNs, offering a novel perspective on deep learning optimization.",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "authors": [
+     "Maximilian Schlegel",
+     "Rajai Nasser",
+     "Seijin Kobayashi",
+     "Yanick Schimpf",
+     "Oliver Sieberling",
+     "Robert Obryk",
+     "Kazuki Irie",
+     "João Sacramento",
+     "Johannes von Oswald"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Retrieval-Centric Deep Learning in Growing Nonparametric Neural Networks",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:47+08:00"
+  },
+  "t:s space": {
+   "status": "matched_by_title",
+   "query": "all:\"S-Space\"",
+   "match": {
+    "arxiv_id": "2610.13527",
+    "version": "1",
+    "title": "S-Space: Exploring Spatial Workspace in Multimodal Language Models",
+    "abstract": "Multimodal language models (MLLMs) exhibit promising spatial reasoning capabilities, yet the internal mechanisms supporting them remain poorly understood. We uncover S-Space, a linear representation subspace in which object-token representations encode continuous coordinates along horizontal, vertical, and distance axes. Although we identify these axes by differentiating spatial-answer scores with respect to object-token activations, S-Space is intrinsic rather than induced by specific data or prompts, remaining readable under non-spatial questions. We show that S-Space functions as an internal spatial workspace of MLLMs. Perception encodes object locations into it, forming spatial representations that can be directly read out to support accurate spatial judgments. Internal reasoning transforms it for changing viewpoints. Verbal responses selectively access it, evidenced by causal interventions that alter spatial judgments while largely preserving non-spatial responses. Case studies further show that S-Space assigns locations to unseen entities and the observer, and connects physical directions with abstract linguistic meanings, suggesting both the capabilities and limitations of large-scale language training. Finally, we use S-Space as a diagnostic tool for spatial reasoning failures. Direction-word readouts reveal systematic coupling between cardinal and image-relative reference frames. More importantly, a perception-computation decomposition exposes a key bottleneck: MLLMs can form capable spatial representations, yet fall short in the spatial transformations required to reason reliably across viewpoint changes.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Zhiyuan Shi",
+     "Xiang Li",
+     "Xingzhuo Guo",
+     "Shangchen Miao",
+     "Weiliang Chen",
+     "Qiyu Dai",
+     "Jinshan Ren",
+     "Jiangran Lyu",
+     "Fangfu Liu",
+     "Mingsheng Long",
+     "Jialong Wu"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "Project Page: https://mirros.ai/blog/s-space"
+   },
+   "score": 0.95,
+   "title": "S-Space",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:35:51+08:00"
+  },
+  "t:source code vulnerability detection methods based on large language models": {
+   "status": "no_results",
+   "query": "ti:\"Source Code Vulnerability Detection Methods Based on Large Language Models\"",
+   "match": null,
+   "title": "Source Code Vulnerability Detection Methods Based on Large Language Models",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:55+08:00"
+  },
+  "t:the agi chronicles": {
+   "status": "no_results",
+   "query": "ti:\"The AGI Chronicles\"",
+   "match": null,
+   "title": "The AGI Chronicles",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:35:59+08:00"
+  },
+  "t:towards dynamic protein design with physics structured covariance modeling": {
+   "status": "matched_by_title",
+   "query": "ti:\"Towards Dynamic Protein Design with Physics-Structured Covariance Modeling\"",
+   "match": {
+    "arxiv_id": "2609.32309",
+    "version": "1",
+    "title": "PhiFold: Towards Dynamic Protein Design with Physics-Structured Covariance Modeling",
+    "abstract": "Protein design is moving beyond structural correctness toward function-aware design, yet existing generative models typically treat dynamics as a downstream property estimated through simulation or prediction after structure generation. Using MD trajectories as a generative target is also undesirable because stochastic, path-dependent trajectories over-specify the underlying equilibrium ensemble. We introduce PhiFold, a framework for jointly generating protein backbones and their second-order dynamics, represented by residue-displacement covariance. Rather than predicting the quadratically sized full covariance, PhiFold decomposes dynamics into three interpretable components: local flexibility, a low-rank collective-motion representation, and residue-wise collective participation. These components are assembled into a positive-definite covariance matrix with exact marginal consistency, yielding a compact and physically constrained representation of equilibrium dynamics. Across generated proteins, PhiFold improves recovery of local fluctuations and long-range residue coupling while remaining competitive on dominant collective-motion subspaces. It further enables bidirectional control of residue flexibility while preserving backbone designability. By unifying structure generation with an explicit representation of equilibrium dynamics, PhiFold lays a foundation for designing proteins not only by how they look, but also by how they move.",
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "authors": [
+     "Yutian Liu",
+     "Mujie Lin",
+     " LanqianZhang",
+     "Meng Fan",
+     "Chang Liu",
+     " ZhiweiNie",
+     "Siwei Ma"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.949,
+   "title": "Towards Dynamic Protein Design with Physics-Structured Covariance Modeling",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:03+08:00"
+  },
+  "t:training llms for multi agent collaboration with verifiable information rewards": {
+   "status": "matched_by_title",
+   "query": "ti:\"Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards\"",
+   "match": {
+    "arxiv_id": "2610.17893",
+    "version": "1",
+    "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+    "abstract": "Effective collaboration among large language model (LLM) agents in multi-agent systems requires sharing relevant evidence, requesting missing information, and incorporating teammates' contributions into decisions. Training these behaviors is challenging because final task outcomes provide limited feedback on the value of individual messages. We introduce CoSIR (Collaboration via Surprisal-based Information Rewards), a post-training approach that uses a simple, verifiable environment to teach collaboration behaviors that generalize to more complex, unseen tasks. We propose a Bayesian evaluator that scores shared information by its reduction in team surprisal, defined as the sum of the negative log probabilities assigned to the correct option given each agent's available evidence. Requests are scored by the potential reduction in the same quantity if the requested information were truthfully provided. Separate rewards encourage agents to use the received information in their private choices and calculations. We post-train Qwen3-4B, Qwen3-8B, and Gemma-3-4B-it through self-play and evaluate transfer to seven unseen natural-language collaboration tasks. CoSIR achieves the highest aggregate score, while its performance in general tasks remains competitive. Behavioral analyses show increased disclosure of private evidence and fewer judged failures to use teammates' input.",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "authors": [
+     "Keru Chen",
+     "Sen Lin",
+     "Yingbin Liang",
+     "Nathaniel D. Bastian",
+     "Shaofeng Zou"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "23 pages"
+   },
+   "score": 1.0,
+   "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:07+08:00"
+  },
+  "t:vista a visual harness for reasoning in an interactive world": {
+   "status": "matched_by_title",
+   "query": "ti:\"VISTA: A Visual Harness for Reasoning in an Interactive World\"",
+   "match": {
+    "arxiv_id": "2610.02200",
+    "version": "1",
+    "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+    "abstract": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form. The model can actively retrieve these observations and reorganize its visual input as it reasons. On ARC-AGI-3, VISTA improves Claude Opus 5.0's Relative Human Action Efficiency score from 40.68 to a perfect 100.00, with the model completing all 25 public games using 57.4% fewer actions than first-time human participants. VISTA's simple design also allows it to extend naturally to diverse visual environments with minimal adaptation. Across three additional benchmarks covering a diverse range of visual games and puzzles, it substantially outperforms baselines using the same underlying model with minimal harnesses. Our results highlight VISTA's potential as a general-purpose visual harness for advancing multimodal agents in complex visual environments.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "authors": [
+     "Qiushi Han",
+     "Keya Hu",
+     "Linlu Qiu",
+     "Cathy Wu",
+     "Kaiming He"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Tech report. An early version of this manuscript was in a blogpost published in Aug 5, 2026: https://vista-research.github.io/"
+   },
+   "score": 1.0,
+   "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:11+08:00"
+  },
+  "t:videojev system one model for video understanding and interaction": {
+   "status": "matched_by_title",
+   "query": "ti:\"VideoJev: System One Model for Video Understanding and Interaction\"",
+   "match": {
+    "arxiv_id": "2610.18615",
+    "version": "1",
+    "title": "VideoJev: System One Model for Video Understanding and Interaction",
+    "abstract": "Visual agents must turn video observations into timely decisions to track progress and choose what to do next. Building on the emerging System One paradigm, we introduce VideoJev, a family of models that cast video understanding and interaction as structured decision tasks. We adapt pretrained multimodal large language models (MLLMs) by replacing autoregressive answer decoding with a shared head that scores temporal intervals and textual options against video evidence. These scores yield event spans or answer choices, unifying temporal grounding and multiple-choice video question answering. This combines the semantic flexibility of MLLMs with efficient decisions that agents can use directly. As an interaction unfolds, new goals and intermediate results prompt further queries about the same visual history. VideoJev therefore reuses visual computation through Cached inference for queries as they arrive and Joint inference for multiple queries in a single forward pass. Across three temporal grounding benchmarks, VideoJev-4B and VideoJev-35B-A3B improve mean mIoU over their backbones by 6.7 and 10.8 points, respectively, with measured inference speedups of $2.8$-$3.1\\times$. On four video QA benchmarks, both achieve performance comparable to their backbones in Thinking mode, with measured inference speedups exceeding $100\\times$. These results offer a unified, reusable decision interface for composing structured visual judgments into complex, open-ended workflows.",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "authors": [
+     "Yuhan Zhu",
+     "Xiangyu Zeng",
+     "Qingyi Si",
+     "Chenxu Yang",
+     "Yifei Li",
+     "Luozheng Qin",
+     "Junhao Zhou",
+     "Dingyu Yao",
+     "Jun Zhang",
+     "Chuanyu Qin",
+     "Zhiqiu Zhang",
+     "Yuandong Yang"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "23 pages. Project page: https://mcg-nju.github.io/VideoJev"
+   },
+   "score": 1.0,
+   "title": "VideoJev: System One Model for Video Understanding and Interaction",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:15+08:00"
+  },
+  "t:work2skill capturing human gui experience for reusable agent skill induction": {
+   "status": "matched_by_title",
+   "query": "ti:\"Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction\"",
+   "match": {
+    "arxiv_id": "2610.12984",
+    "version": "1",
+    "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+    "abstract": "Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through the same GUI interaction space, but reuse requires interpreting actions in context and separating workflow rules from task-specific details. We thus introduce Work2Skill, a framework that captures human GUI experience for reusable agent skill induction. WorkRecorder provides the framework's infrastructure for collecting this experience, aligning screen recordings, mouse and keyboard events, and available accessibility-tree information. Using WorkRecorder, we construct WorkDemo-350, the first synchronized multimodal dataset of human desktop GUI demonstrations for reusable agent skill induction and downstream evaluation. Its 350 demonstrations are screened for completeness and task success. We then propose an agentic skill-induction method that inspects evidence on demand to produce reusable skills capturing workflow rules, step dependencies, and completion checks. When the same four execution models are equipped with skills induced by each method under shared execution settings, Work2Skill achieves the highest scores and success rates. Mean score improvements over the corresponding No Skill baseline are 4.67--10.54 points on MyPCBench Bounded Action and 3.11--7.50 points on a 286-task subset of OSWorld-Verified. Our code and data are available at https://github.com/china-qijizhifeng/Work2Skill.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Yuqi Huang",
+     "Hui Li",
+     "Yifei Cao",
+     "Zikun Cai",
+     "Tianci Xie",
+     "Yangfan Gao",
+     "Pinxue Guo",
+     "Chaoyun Zhang",
+     "Bingxuan Li",
+     "Rui Zheng",
+     "Hang Yan",
+     "Ning Liao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.HC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:19+08:00"
+  },
+  "t:chatmineral": {
+   "status": "no_results",
+   "query": "all:\"chatMineral\"",
+   "match": null,
+   "title": "chatMineral",
+   "kind": "method",
+   "checked_at": "2026-10-16T08:36:23+08:00"
+  },
+  "t:人工智能 公共政策研究 基于通用人工智能驱动的多智能体仿真方法 agi mas": {
+   "status": "no_results",
+   "query": "ti:\"人工智能+公共政策研究:基于通用人工智能驱动的多智能体仿真方法(AGI+MAS)\"",
+   "match": null,
+   "title": "人工智能+公共政策研究:基于通用人工智能驱动的多智能体仿真方法(AGI+MAS)",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:27+08:00"
+  },
+  "t:国产大模型集体 抠成本 deepseek 千问 kimi走了三条不同的路": {
+   "status": "no_results",
+   "query": "ti:\"国产大模型集体“抠成本”：DeepSeek、千问、Kimi走了三条不同的路\"",
+   "match": null,
+   "title": "国产大模型集体“抠成本”：DeepSeek、千问、Kimi走了三条不同的路",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:30+08:00"
+  },
+  "t:基于大语言模型的源代码漏洞检测方法 source code vulnerability detection methods based on large language models": {
+   "status": "no_results",
+   "query": "ti:\"基于大语言模型的源代码漏洞检测方法/ Source Code Vulnerability Detection Methods Based on Large Language Models\"",
+   "match": null,
+   "title": "基于大语言模型的源代码漏洞检测方法/ Source Code Vulnerability Detection Methods Based on Large Language Models",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:34+08:00"
+  },
+  "t:审视geoai与地理大模型 建模空间物理规律真的被很好建模了么": {
+   "status": "no_results",
+   "query": "ti:\"审视GeoAI与地理大模型:建模空间物理规律真的被很好建模了么\"",
+   "match": null,
+   "title": "审视GeoAI与地理大模型:建模空间物理规律真的被很好建模了么",
+   "kind": "title",
+   "checked_at": "2026-10-16T08:36:38+08:00"
   }
  }
 }
