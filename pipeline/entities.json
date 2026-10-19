@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-10-16T08:32:29+08:00",
+ "generated_at": "2026-10-19T15:43:16+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -45791,6 +45791,1252 @@
      "label": "4F² DRAM相关专利数量",
      "value": 300.0,
      "unit": "件"
+    }
+   ]
+  },
+  "2026-10-19|new-media|technical|0": {
+   "hash": "31352fea28b84ee2",
+   "date": "2026-10-19",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "CTF",
+     "type": "tech"
+    },
+    {
+     "name": "HZO铁电NAND",
+     "type": "tech"
+    },
+    {
+     "name": "MoS2沟道",
+     "type": "tech"
+    },
+    {
+     "name": "IGZO沟道",
+     "type": "tech"
+    },
+    {
+     "name": "3D NOR",
+     "type": "tech"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "arXiv:2610.06363",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "3D NAND",
+     "label": "千层堆叠厚度",
+     "value": 20.0,
+     "unit": "μm"
+    },
+    {
+     "subject": "3D NAND",
+     "label": "堆叠深宽比",
+     "value": 60.0,
+     "unit": ":1"
+    }
+   ]
+  },
+  "2026-10-19|others|business|0": {
+   "hash": "a5b359bc34d33f23",
+   "date": "2026-10-19",
+   "category": "others",
+   "entities": [
+    {
+     "name": "算电协同",
+     "type": "tech"
+    },
+    {
+     "name": "绿电直连",
+     "type": "tech"
+    },
+    {
+     "name": "SST",
+     "type": "tech"
+    },
+    {
+     "name": "跨省任务迁移",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "算电协同",
+     "label": "绿电直连项目审批数",
+     "value": 101.0,
+     "unit": "个"
+    },
+    {
+     "subject": "算电协同",
+     "label": "绿电直连装机容量",
+     "value": 2285.7,
+     "unit": "万千瓦"
+    },
+    {
+     "subject": "SST",
+     "label": "10kV转800V直流变换效率",
+     "value": 98.6,
+     "unit": "%"
+    },
+    {
+     "subject": "SST",
+     "label": "输入电压等级",
+     "value": 10.0,
+     "unit": "kV"
+    },
+    {
+     "subject": "SST",
+     "label": "输出直流电压",
+     "value": 800.0,
+     "unit": "V"
+    },
+    {
+     "subject": "算电协同",
+     "label": "跨省任务迁移电费节省",
+     "value": 66.0,
+     "unit": "%"
+    },
+    {
+     "subject": "算电协同",
+     "label": "超算利用率",
+     "value": 87.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|others|technical|0": {
+   "hash": "5d8ab12f794720ce",
+   "date": "2026-10-19",
+   "category": "others",
+   "entities": [
+    {
+     "name": "ASM",
+     "type": "company"
+    },
+    {
+     "name": "PECVD流动碳",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "3D DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "CMP",
+     "type": "tech"
+    },
+    {
+     "name": "SEMI",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "PECVD流动碳",
+     "label": "填充深宽比",
+     "value": 200.0,
+     "unit": ":1"
+    },
+    {
+     "subject": "PECVD流动碳",
+     "label": "工艺温度上限",
+     "value": 900.0,
+     "unit": "°C"
+    },
+    {
+     "subject": "SEMI",
+     "label": "DRAM设备支出同比增速",
+     "value": 39.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SEMI",
+     "label": "NAND设备支出同比增速",
+     "value": 30.7,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|storage-semantics-protocol|business|0": {
+   "hash": "48fd81e97922bc75",
+   "date": "2026-10-19",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "FADU",
+     "type": "company"
+    },
+    {
+     "name": "文件语义SSD",
+     "type": "product"
+    },
+    {
+     "name": "GB200 NVL72",
+     "type": "product"
+    },
+    {
+     "name": "文件系统栈下沉",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "GB200 NVL72",
+     "label": "GPU与CPU配比",
+     "value": 2.0,
+     "unit": ":1"
+    }
+   ]
+  },
+  "2026-10-19|storage-semantics-protocol|technical|0": {
+   "hash": "38f9c6af92c65512",
+   "date": "2026-10-19",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "CXL 3.0",
+     "type": "tech"
+    },
+    {
+     "name": "SPID/DPID",
+     "type": "tech"
+    },
+    {
+     "name": "G-FAM",
+     "type": "tech"
+    },
+    {
+     "name": "DMP",
+     "type": "tech"
+    },
+    {
+     "name": "GFD",
+     "type": "tech"
+    },
+    {
+     "name": "Back Invalidate",
+     "type": "tech"
+    },
+    {
+     "name": "Leaf-Spine",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "CXL 3.0",
+     "label": "最大拼接CXL实体数",
+     "value": 4096.0,
+     "unit": "个"
+    },
+    {
+     "subject": "CXL 3.0",
+     "label": "SPID/DPID位宽",
+     "value": 12.0,
+     "unit": "bit"
+    },
+    {
+     "subject": "G-FAM",
+     "label": "每GFD解码器数",
+     "value": 8.0,
+     "unit": "个"
+    }
+   ]
+  },
+  "2026-10-19|ai-inference-acceleration|business|0": {
+   "hash": "b4a599bcf139e26e",
+   "date": "2026-10-19",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "无问芯穹",
+     "type": "company"
+    },
+    {
+     "name": "硅基流动",
+     "type": "company"
+    },
+    {
+     "name": "趋境科技",
+     "type": "company"
+    },
+    {
+     "name": "IDC",
+     "type": "institution"
+    },
+    {
+     "name": "MaaS",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "无问芯穹",
+     "label": "C轮融资额",
+     "value": 23.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "无问芯穹",
+     "label": "累计融资额",
+     "value": 43.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "硅基流动",
+     "label": "累计融资额",
+     "value": 29.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "半年融资额",
+     "value": 10.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "MaaS",
+     "label": "2026年国内Token消耗同比增幅",
+     "value": 20.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-19|ai-inference-acceleration|technical|0": {
+   "hash": "d312ff850912aa7f",
+   "date": "2026-10-19",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "面壁",
+     "type": "company"
+    },
+    {
+     "name": "MiniCPM-V 4.7",
+     "type": "product"
+    },
+    {
+     "name": "MoE卸载",
+     "type": "tech"
+    },
+    {
+     "name": "LES",
+     "type": "tech"
+    },
+    {
+     "name": "逐层混合精度量化",
+     "type": "tech"
+    },
+    {
+     "name": "DSpark",
+     "type": "tech"
+    },
+    {
+     "name": "iPad Pro M4",
+     "type": "product"
+    },
+    {
+     "name": "iPhone 17 Pro Max",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MiniCPM-V 4.7",
+     "label": "常驻内存",
+     "value": 3.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "iPad Pro M4",
+     "label": "解码速度（优化前）",
+     "value": 2.97,
+     "unit": "token/s"
+    },
+    {
+     "subject": "iPad Pro M4",
+     "label": "解码速度",
+     "value": 17.39,
+     "unit": "token/s"
+    },
+    {
+     "subject": "iPad Pro M4",
+     "label": "解码速度提升",
+     "value": 5.86,
+     "unit": "倍"
+    },
+    {
+     "subject": "iPhone 17 Pro Max",
+     "label": "解码速度",
+     "value": 13.0,
+     "unit": "token/s"
+    }
+   ]
+  },
+  "2026-10-19|ai-model-agent-rag|business|0": {
+   "hash": "8c6391cfbf5252b0",
+   "date": "2026-10-19",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4.1-Flash-1017",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek搜索API",
+     "type": "product"
+    },
+    {
+     "name": "Google",
+     "type": "company"
+    },
+    {
+     "name": "Tavily",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "单任务成本（优化前）",
+     "value": 3.3,
+     "unit": "元"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "单任务成本",
+     "value": 1.3,
+     "unit": "元"
+    },
+    {
+     "subject": "DeepSeek搜索API",
+     "label": "每千次成功请求价格",
+     "value": 5.0,
+     "unit": "元"
+    },
+    {
+     "subject": "DeepSeek搜索API",
+     "label": "每千次成功请求价格",
+     "value": 0.75,
+     "unit": "美元"
+    }
+   ]
+  },
+  "2026-10-19|ai-model-agent-rag|technical|0": {
+   "hash": "56251a79e774f5ba",
+   "date": "2026-10-19",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "谷歌",
+     "type": "company"
+    },
+    {
+     "name": "Gemini 4 Argon",
+     "type": "product"
+    },
+    {
+     "name": "ARC-AGI-3",
+     "type": "paper"
+    },
+    {
+     "name": "Chrome",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Gemini 4 Argon",
+     "label": "ARC-AGI-3得分",
+     "value": 97.5,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "七个月前前沿模型ARC-AGI-3得分上限",
+     "value": 1.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Gemini 4 Argon",
+     "label": "单次输出上限",
+     "value": 1000000.0,
+     "unit": "token"
+    },
+    {
+     "subject": "Gemini 4 Argon",
+     "label": "输入价格",
+     "value": 2.0,
+     "unit": "美元/百万token"
+    },
+    {
+     "subject": "Gemini 4 Argon",
+     "label": "输出价格",
+     "value": 10.0,
+     "unit": "美元/百万token"
+    }
+   ]
+  },
+  "2026-10-19|cost-effective-storage|business|0": {
+   "hash": "c8861665e4884574",
+   "date": "2026-10-19",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "IDC",
+     "type": "institution"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "IDC",
+     "label": "Q3全球PC出货量",
+     "value": 6270.0,
+     "unit": "万台"
+    },
+    {
+     "subject": "IDC",
+     "label": "Q3全球PC出货同比",
+     "value": -20.1,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "Q3营业利润同比增幅",
+     "value": 782.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "股价跌幅",
+     "value": 2.4,
+     "unit": "%"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "股价跌幅",
+     "value": 10.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DRAM",
+     "label": "环比涨幅（峰值）",
+     "value": 60.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|cost-effective-storage|technical|0": {
+   "hash": "314551ee6bea2456",
+   "date": "2026-10-19",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "TDMR",
+     "type": "paper"
+    },
+    {
+     "name": "VT漂移感知FSP",
+     "type": "tech"
+    },
+    {
+     "name": "LDPC软解码",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "定制TLC盘",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "3D NAND",
+     "label": "久放失败页CSB比例",
+     "value": 25.24,
+     "unit": "%"
+    },
+    {
+     "subject": "定制TLC盘",
+     "label": "擦写寿命提升（FSP）",
+     "value": 1.7,
+     "unit": "倍"
+    },
+    {
+     "subject": "定制TLC盘",
+     "label": "擦写寿命提升（加先进ECC）",
+     "value": 1.8,
+     "unit": "倍"
+    },
+    {
+     "subject": "定制TLC盘",
+     "label": "WAF降低",
+     "value": 0.1,
+     "unit": "绝对值"
+    },
+    {
+     "subject": "定制TLC盘",
+     "label": "TBW提升",
+     "value": 1.9,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-19|high-capacity-storage|business|0": {
+   "hash": "6f4d7bc7ff791a39",
+   "date": "2026-10-19",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "512TB QLC SSD",
+     "type": "product"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    },
+    {
+     "name": "OCP",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "512TB QLC SSD",
+     "label": "容量",
+     "value": 512.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "512TB QLC SSD",
+     "label": "双盘容量",
+     "value": 1.0,
+     "unit": "PB"
+    },
+    {
+     "subject": "512TB QLC SSD",
+     "label": "128K顺序读带宽",
+     "value": 10.3,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "512TB QLC SSD",
+     "label": "4K随机读IOPS",
+     "value": 1.756,
+     "unit": "M IOPS"
+    },
+    {
+     "subject": "行业",
+     "label": "企业级SSD一季度合约价环比涨幅",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "企业级SSD二季度出货占全球NAND比例",
+     "value": 48.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|high-capacity-storage|technical|0": {
+   "hash": "0354798135db9f63",
+   "date": "2026-10-19",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "ONON",
+     "type": "tech"
+    },
+    {
+     "name": "Memory Hole",
+     "type": "tech"
+    },
+    {
+     "name": "阶梯刻蚀",
+     "type": "tech"
+    },
+    {
+     "name": "替换栅极",
+     "type": "tech"
+    },
+    {
+     "name": "TiN/W",
+     "type": "tech"
+    },
+    {
+     "name": "LCDU",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "ONON",
+     "label": "堆叠层数",
+     "value": 108.0,
+     "unit": "层"
+    },
+    {
+     "subject": "Memory Hole",
+     "label": "穿透深度",
+     "value": 6.1,
+     "unit": "μm"
+    },
+    {
+     "subject": "阶梯刻蚀",
+     "label": "阶梯级数",
+     "value": 108.0,
+     "unit": "级"
+    },
+    {
+     "subject": "行业",
+     "label": "目标层数",
+     "value": 400.0,
+     "unit": "层"
+    }
+   ]
+  },
+  "2026-10-19|high-reliability-storage|business|0": {
+   "hash": "267754f62d6b35e9",
+   "date": "2026-10-19",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "Gartner",
+     "type": "institution"
+    },
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "Agent DataSpace",
+     "type": "product"
+    },
+    {
+     "name": "STaaS",
+     "type": "tech"
+    },
+    {
+     "name": "RAG",
+     "type": "tech"
+    },
+    {
+     "name": "数据库沙箱",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Gartner",
+     "label": "魔力象限纳入厂商数",
+     "value": 8.0,
+     "unit": "家"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "连续入围年数",
+     "value": 10.0,
+     "unit": "年"
+    },
+    {
+     "subject": "行业",
+     "label": "2029年AI推理与RAG专用存储层级覆盖率",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "STaaS",
+     "label": "2029年取代本地存储资本支出比例",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|high-reliability-storage|technical|0": {
+   "hash": "7a919b8cf74d7f06",
+   "date": "2026-10-19",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "IEEE TDMR",
+     "type": "paper"
+    },
+    {
+     "name": "FSP",
+     "type": "tech"
+    },
+    {
+     "name": "LDPC软解码",
+     "type": "tech"
+    },
+    {
+     "name": "3D NAND SSD",
+     "type": "product"
+    },
+    {
+     "name": "TLC盘",
+     "type": "product"
+    },
+    {
+     "name": "ECC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "3D NAND SSD",
+     "label": "久放CSB页失败率",
+     "value": 25.24,
+     "unit": "%"
+    },
+    {
+     "subject": "3D NAND SSD",
+     "label": "久放MSB页失败率",
+     "value": 20.54,
+     "unit": "%"
+    },
+    {
+     "subject": "TLC盘",
+     "label": "测试盘数",
+     "value": 36.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "TLC盘",
+     "label": "擦写寿命提升（FSP）",
+     "value": 1.7,
+     "unit": "倍"
+    },
+    {
+     "subject": "TLC盘",
+     "label": "擦写寿命提升（加先进ECC）",
+     "value": 1.8,
+     "unit": "倍"
+    },
+    {
+     "subject": "TLC盘",
+     "label": "TBW提升",
+     "value": 1.9,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-19|model-benchmarking|business|0": {
+   "hash": "d0c920ec748d300e",
+   "date": "2026-10-19",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepSeek V4.1-Flash-1017",
+     "type": "product"
+    },
+    {
+     "name": "Terminal-Bench 4.0",
+     "type": "paper"
+    },
+    {
+     "name": "DeepSWE",
+     "type": "paper"
+    },
+    {
+     "name": "Claude Opus 5",
+     "type": "product"
+    },
+    {
+     "name": "自反馈强化学习",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "Terminal-Bench 4.0得分（优化前）",
+     "value": 31.2,
+     "unit": "分"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "Terminal-Bench 4.0得分",
+     "value": 42.3,
+     "unit": "分"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "DeepSWE得分",
+     "value": 77.0,
+     "unit": "分"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "单任务成本（优化前）",
+     "value": 3.3,
+     "unit": "元"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "单任务成本",
+     "value": 1.3,
+     "unit": "元"
+    },
+    {
+     "subject": "DeepSeek V4.1-Flash-1017",
+     "label": "Token用量降幅",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|model-benchmarking|technical|0": {
+   "hash": "09890b4cc4fdfbd5",
+   "date": "2026-10-19",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "SWE-bench",
+     "type": "paper"
+    },
+    {
+     "name": "SWE-bench Verified",
+     "type": "paper"
+    },
+    {
+     "name": "SWE-rebench",
+     "type": "paper"
+    },
+    {
+     "name": "SWE-bench Pro",
+     "type": "paper"
+    },
+    {
+     "name": "Atlas",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "SWE-bench",
+     "label": "审计长期未解题数",
+     "value": 138.0,
+     "unit": "道"
+    },
+    {
+     "subject": "SWE-bench",
+     "label": "审计题目缺陷比例",
+     "value": 59.4,
+     "unit": "%"
+    },
+    {
+     "subject": "SWE-bench Verified",
+     "label": "官方榜得分",
+     "value": 79.2,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "厂商自报SWE-bench得分下限",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "厂商自报SWE-bench得分上限",
+     "value": 95.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SWE-rebench",
+     "label": "去污染后得分",
+     "value": 64.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SWE-bench Pro",
+     "label": "公开集得分",
+     "value": 23.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Atlas",
+     "label": "真实PR pass@10",
+     "value": 16.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "同模型换脚手架得分波动",
+     "value": 29.8,
+     "unit": "分"
+    }
+   ]
+  },
+  "2026-10-19|near-memory-computing|business|0": {
+   "hash": "46b43a81e80d2571",
+   "date": "2026-10-19",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "MARS",
+     "type": "product"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "Infplane",
+     "type": "company"
+    },
+    {
+     "name": "芯展速",
+     "type": "company"
+    },
+    {
+     "name": "AI SSD",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MARS",
+     "label": "TTFT提升（下限）",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "MARS",
+     "label": "TTFT提升（上限）",
+     "value": 5.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "AI SSD",
+     "label": "吞吐提升",
+     "value": 10.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "AI SSD",
+     "label": "成本相对云端比例",
+     "value": 1.49,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-19|near-memory-computing|technical|0": {
+   "hash": "2b228eda9d803318",
+   "date": "2026-10-19",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "arXiv展望论文",
+     "type": "paper"
+    },
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "CTF",
+     "type": "tech"
+    },
+    {
+     "name": "铁电NAND",
+     "type": "tech"
+    },
+    {
+     "name": "2D沟道",
+     "type": "tech"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "3D NAND",
+     "label": "历史起始层数",
+     "value": 24.0,
+     "unit": "层"
+    },
+    {
+     "subject": "3D NAND",
+     "label": "当前层数（下限）",
+     "value": 300.0,
+     "unit": "层"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "3D NAND层数",
+     "value": 321.0,
+     "unit": "层"
+    },
+    {
+     "subject": "三星",
+     "label": "3D NAND层数",
+     "value": 430.0,
+     "unit": "层"
+    },
+    {
+     "subject": "3D NAND",
+     "label": "面密度",
+     "value": 28.0,
+     "unit": "Gb/mm²"
+    },
+    {
+     "subject": "行业",
+     "label": "五年内目标层数",
+     "value": 1000.0,
+     "unit": "层"
+    },
+    {
+     "subject": "3D NAND",
+     "label": "刻蚀深宽比",
+     "value": 60.0,
+     "unit": "比例"
+    },
+    {
+     "subject": "铁电NAND",
+     "label": "耐久下限",
+     "value": 10000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "铁电NAND",
+     "label": "耐久上限",
+     "value": 1000000.0,
+     "unit": "次"
+    }
+   ]
+  },
+  "2026-10-19|new-media|business|0": {
+   "hash": "006eb6e0964a576e",
+   "date": "2026-10-19",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "SanDisk",
+     "type": "company"
+    },
+    {
+     "name": "BiCS10 QLC",
+     "type": "product"
+    },
+    {
+     "name": "NBM",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "SanDisk",
+     "label": "FY2030非GAAP毛利率",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SanDisk",
+     "label": "FY2030营业利润率",
+     "value": 75.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SanDisk",
+     "label": "2030年企业级闪存TAM",
+     "value": 1.2,
+     "unit": "ZB"
+    },
+    {
+     "subject": "BiCS10 QLC",
+     "label": "层数",
+     "value": 332.0,
+     "unit": "层"
+    },
+    {
+     "subject": "BiCS10 QLC",
+     "label": "面密度",
+     "value": 37.0,
+     "unit": "Gb/mm²"
+    },
+    {
+     "subject": "BiCS10 QLC",
+     "label": "每片晶圆die产出提升",
+     "value": 65.0,
+     "unit": "%"
+    },
+    {
+     "subject": "NBM",
+     "label": "已签约客户数",
+     "value": 8.0,
+     "unit": "家"
+    },
+    {
+     "subject": "NBM",
+     "label": "锁定FY2027比特出货比例",
+     "value": 50.0,
+     "unit": "%"
     }
    ]
   }

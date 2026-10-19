@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-16T08:36:38+08:00",
+ "generated_at": "2026-10-19T15:45:25+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -29965,6 +29965,529 @@
    "title": "审视GeoAI与地理大模型:建模空间物理规律真的被很好建模了么",
    "kind": "title",
    "checked_at": "2026-10-16T08:36:38+08:00"
+  },
+  "id:2610.06363": {
+   "status": "id_conflict_unresolved",
+   "query": "id_list=2610.06363",
+   "match": null,
+   "conflict": {
+    "hint_id": "2610.06363",
+    "hint_title": "Direct Observation of Nanoscale Polarization Switching in HZO Ferroelectrics Using STEM-EBIC",
+    "llm_title": "The future of 3D NAND flash technology",
+    "similarity": 0.262
+   },
+   "title": "The future of 3D NAND flash technology",
+   "kind": "id",
+   "checked_at": "2026-10-19T15:43:38+08:00"
+  },
+  "t:atas": {
+   "status": "matched_by_title",
+   "query": "all:\"ATAS\"",
+   "match": {
+    "arxiv_id": "2506.08678",
+    "version": "2",
+    "title": "ATAS: Any-to-Any Self-Distillation for Enhanced Open-Vocabulary Dense Prediction",
+    "abstract": "Vision-language models such as CLIP have recently propelled open-vocabulary dense prediction tasks by enabling recognition of a broad range of visual concepts. However, CLIP still struggles with fine-grained, region-level understanding, hindering its effectiveness on these dense prediction tasks. We identify two pivotal factors required to address this limitation: semantic coherence and fine-grained vision-language alignment. Current adaptation methods often improve fine-grained alignment at the expense of semantic coherence, and often rely on extra modules or supervised fine-tuning. To overcome these issues, we propose Any-to-Any Self-Distillation (ATAS), a novel approach that simultaneously enhances semantic coherence and fine-grained alignment by leveraging own knowledge of a model across all representation levels. Unlike prior methods, ATAS uses only unlabeled images and an internal self-distillation process to refine representations of CLIP vision encoders, preserving local semantic consistency while sharpening local detail recognition. On open-vocabulary object detection and semantic segmentation benchmarks, ATAS achieves substantial performance gains, outperforming baseline CLIP models. These results validate the effectiveness of our approach and underscore the importance of jointly maintaining semantic coherence and fine-grained alignment for advanced open-vocabulary dense prediction.",
+    "published": "2025-06-10",
+    "updated": "2025-10-01",
+    "authors": [
+     "Juan Yeo",
+     "Soonwoo Cha",
+     "Jiwoo Song",
+     "Hyunbin Jin",
+     "Taesup Kim"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted at ICCV25"
+   },
+   "score": 0.95,
+   "title": "ATAS",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:43:42+08:00"
+  },
+  "t:agensh scaling organizati": {
+   "status": "no_results",
+   "query": "ti:\"Agensh: Scaling Organizati\"",
+   "match": null,
+   "title": "Agensh: Scaling Organizati",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:43:46+08:00"
+  },
+  "t:artificial hivemind the open ended homogeneity of language models and beyond": {
+   "status": "matched_by_title",
+   "query": "ti:\"Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)\"",
+   "match": {
+    "arxiv_id": "2510.22954",
+    "version": "2",
+    "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+    "abstract": "Language models (LMs) often struggle to generate diverse, human-like creative content, raising concerns about the long-term homogenization of human thought through repeated exposure to similar outputs. Yet scalable methods for evaluating LM output diversity remain limited, especially beyond narrow tasks such as random number or name generation, or beyond repeated sampling from a single model. We introduce Infinity-Chat, a large-scale dataset of 26K diverse, real-world, open-ended user queries that admit a wide range of plausible answers with no single ground truth. We introduce the first comprehensive taxonomy for characterizing the full spectrum of open-ended prompts posed to LMs, comprising 6 top-level categories (e.g., brainstorm & ideation) that further breaks down to 17 subcategories. Using Infinity-Chat, we present a large-scale study of mode collapse in LMs, revealing a pronounced Artificial Hivemind effect in open-ended generation of LMs, characterized by (1) intra-model repetition, where a single model consistently generates similar responses, and more so (2) inter-model homogeneity, where different models produce strikingly similar outputs. Infinity-Chat also includes 31,250 human annotations, across absolute ratings and pairwise preferences, with 25 independent human annotations per example. This enables studying collective and individual-specific human preferences in response to open-ended queries. Our findings show that LMs, reward models, and LM judges are less well calibrated to human ratings on model generations that elicit differing idiosyncratic annotator preferences, despite maintaining comparable overall quality. Overall, INFINITY-CHAT presents the first large-scale resource for systematically studying real-world open-ended queries to LMs, revealing critical insights to guide future research for mitigating long-term AI safety risks posed by the Artificial Hivemind.",
+    "published": "2025-10-27",
+    "updated": "2026-10-06",
+    "authors": [
+     "Liwei Jiang",
+     "Yuanjun Chai",
+     "Margaret Li",
+     "Mickel Liu",
+     "Raymond Fok",
+     "Nouha Dziri",
+     "Yulia Tsvetkov",
+     "Maarten Sap",
+     "Alon Albalak",
+     "Yejin Choi"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2025 D&B Paper (Oral); Camera-Ready Version"
+   },
+   "score": 1.0,
+   "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:43:50+08:00"
+  },
+  "t:attention factors for statistical arbitrage": {
+   "status": "matched_by_title",
+   "query": "ti:\"Attention Factors for Statistical Arbitrage\"",
+   "match": {
+    "arxiv_id": "2510.11616",
+    "version": "1",
+    "title": "Attention Factors for Statistical Arbitrage",
+    "abstract": "Statistical arbitrage exploits temporal price differences between similar assets. We develop a framework to jointly identify similar assets through factors, identify mispricing and form a trading policy that maximizes risk-adjusted performance after trading costs. Our Attention Factors are conditional latent factors that are the most useful for arbitrage trading. They are learned from firm characteristic embeddings that allow for complex interactions. We identify time-series signals from the residual portfolios of our factors with a general sequence model. Estimating factors and the arbitrage trading strategy jointly is crucial to maximize profitability after trading costs. In a comprehensive empirical study we show that our Attention Factor model achieves an out-of-sample Sharpe ratio above 4 on the largest U.S. equities over a 24-year period. Our one-step solution yields an unprecedented Sharpe ratio of 2.3 net of transaction costs. We show that weak factors are important for arbitrage trading.",
+    "published": "2025-10-13",
+    "updated": "2025-10-13",
+    "authors": [
+     "Elliot L. Epstein",
+     "Rose Wang",
+     "Jaewon Choi",
+     "Markus Pelger"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "q-fin.CP"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to the 6th ACM International Conference on AI in Finance"
+   },
+   "score": 1.0,
+   "title": "Attention Factors for Statistical Arbitrage",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:43:55+08:00"
+  },
+  "t:can we automate scientific reviewing": {
+   "status": "matched_by_title",
+   "query": "ti:\"Can We Automate Scientific Reviewing?\"",
+   "match": {
+    "arxiv_id": "2102.00176",
+    "version": "1",
+    "title": "Can We Automate Scientific Reviewing?",
+    "abstract": "The rapid development of science and technology has been accompanied by an exponential growth in peer-reviewed scientific publications. At the same time, the review of each paper is a laborious process that must be carried out by subject matter experts. Thus, providing high-quality reviews of this growing number of papers is a significant challenge. In this work, we ask the question \"can we automate scientific reviewing?\", discussing the possibility of using state-of-the-art natural language processing (NLP) models to generate first-pass peer reviews for scientific papers. Arguably the most difficult part of this is defining what a \"good\" review is in the first place, so we first discuss possible evaluation measures for such reviews. We then collect a dataset of papers in the machine learning domain, annotate them with different aspects of content covered in each review, and train targeted summarization models that take in papers to generate reviews. Comprehensive experimental results show that system-generated reviews tend to touch upon more aspects of the paper than human-written reviews, but the generated text can suffer from lower constructiveness for all aspects except the explanation of the core ideas of the papers, which are largely factually correct. We finally summarize eight challenges in the pursuit of a good review generation system together with potential solutions, which, hopefully, will inspire more future research on this subject. We make all code, and the dataset publicly available: https://github.com/neulab/ReviewAdvisor, as well as a ReviewAdvisor system: http://review.nlpedia.ai/.",
+    "published": "2021-01-30",
+    "updated": "2021-01-30",
+    "authors": [
+     "Weizhe Yuan",
+     "Pengfei Liu",
+     "Graham Neubig"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "TLDR: This paper proposes to use NLP models to generate first-pass peer reviews for scientific papers . (Generated by our system.)"
+   },
+   "score": 1.0,
+   "title": "Can We Automate Scientific Reviewing?",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:43:59+08:00"
+  },
+  "t:gogotb": {
+   "status": "matched_by_title",
+   "query": "all:\"GoGoTB\"",
+   "match": {
+    "arxiv_id": "2607.26181",
+    "version": "1",
+    "title": "GoGoTB: Agentic RTL Verification with Specification-Grounded Coverage Closure",
+    "abstract": "Functional verification dominates integrated circuit (IC) front-end engineering effort, and a single missed bug that escapes to silicon can trigger a costly respin. Recent large language models (LLMs) offer new opportunities to automate this process, yet existing LLM-based approaches generate each component through independent single-turn calls with no shared context, leaving interface mismatches undetected and reported coverage disconnected from specification requirements. To address these challenges, we present GoGoTB, an agentic framework that achieves end-to-end verification closure through three subsystems: an agentic execution control layer, an evolvable knowledge system, and specification-grounded coverage closure. The execution control layer separates deterministic enforcement from LLM reasoning at every tool and stage boundary. The knowledge system dispatches methodology and design-specific expertise on demand. The coverage framework anchors every bin to a named specification behavior so that each residual gap has a diagnosable root cause and a targeted remedy. Tested on 8 register transfer level (RTL) designs without any human intervention, GoGoTB achieves 100\\% environment generation success and averages 98.4\\% line, 97.2\\% branch, 97.0\\% toggle, and 83.2\\% functional coverage. No prior work successfully generates a complete verification environment or achieves meaningful coverage on the same benchmarks.",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "authors": [
+     "Xin Xin",
+     "Jincheng Lou",
+     "Junhui Li",
+     "Jinglin Yan",
+     "Panda Xiao",
+     "Di Wu",
+     "Haixiao Li",
+     "Weicong Lu",
+     "Weijian Fan",
+     "Xinyu Qu",
+     "Yuxiang Zhao",
+     "Min Yu"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "9 pages, 7 figures, 3 tables. Xin Xin and Jincheng Lou contributed equally to this work and share first authorship"
+   },
+   "score": 0.95,
+   "title": "GoGoTB",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:03+08:00"
+  },
+  "t:harness": {
+   "status": "matched_by_title",
+   "query": "all:\"Harness²\"",
+   "match": {
+    "arxiv_id": "2606.09498",
+    "version": "3",
+    "title": "Self-Harness: Harnesses That Improve Themselves",
+    "abstract": "The performance of LLM-based agents is jointly shaped by their base models and the harnesses that mediate their interaction with the environment. Because different models exhibit distinct behaviors, effective harness design is inherently model-specific. Yet agent harnesses are still largely engineered by human experts, a paradigm that scales poorly as modern LLMs become increasingly diverse and rapidly evolving. In this paper, we introduce Self-Harness, a new paradigm in which an LLM-based agent improves its own operating harness, without relying on human engineers or stronger external agents. We operationalize Self-Harness as an iterative loop with three stages: Weakness Mining, which identifies model-specific failure patterns from execution traces; Harness Proposal, which generates diverse yet minimal harness modifications tied to these failures; and Proposal Validation, which accepts candidate edits only after regression testing. We instantiate Self-Harness across Terminal-Bench-2.0, SWE-bench Verified, and AppWorld using a minimal initial harness and three base models from diverse families: MiniMax M2.5, Qwen3.5-35B-A3B, and GLM-5. Across all nine model--benchmark combinations, every final harness improves both held-in and held-out pass rates, with overall relative gains of up to 132%. Qualitative analyses further show that the retained mechanisms address benchmark-specific bottlenecks in artifact handling and runtime control, software-patch verification, and application-state retrieval. These results suggest a path toward LLM-based agents that are not merely shaped by their harnesses, but can also participate in reshaping them.",
+    "published": "2026-06-08",
+    "updated": "2026-08-20",
+    "authors": [
+     "Hangfan Zhang",
+     "Shao Zhang",
+     "Kangcong Li",
+     "Chen Zhang",
+     "Yang Chen",
+     "Yiqun Zhang",
+     "Lei Bai",
+     "Shuyue Hu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "https://github.com/qzzqzzb/Self-Harness"
+   },
+   "score": 0.95,
+   "title": "Harness²",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:07+08:00"
+  },
+  "t:ideai": {
+   "status": "matched_by_title",
+   "query": "all:\"IDEAI\"",
+   "match": {
+    "arxiv_id": "1910.04696",
+    "version": "1",
+    "title": "IDEAIS: Smart Voice Assistants to Improve Interaction with SDIs",
+    "abstract": "A critical goal, is that organizations and citizens can easily access the geographic information required for good governance. However, despite the costly efforts of governments to create and implement Spatial Data Infrastructures (SDIs), this goal is far from being achieved. This is partly due to the lack of usability of the geoportals through which the geographic information is accessed. In this position paper, we present IDEAIS, a research network composed of multiple Ibero-American partners to address this usability issue through the use of Intelligent Systems, in particular Smart Voice Assistants, to efficiently recover and access geographic information.",
+    "published": "2019-10-01",
+    "updated": "2019-10-01",
+    "authors": [
+     "Miguel Ángel Bernabé",
+     "Jacinto Estima",
+     "María Ester González",
+     "Carlos Granell",
+     "Carlos López-Vázquez",
+     "Miguel R. Luaces",
+     "Bruno Martins",
+     "Daniela Moctezuma",
+     "Diego Seco"
+    ],
+    "categories": [
+     "cs.HC",
+     "cs.CY"
+    ],
+    "journal_ref": null,
+    "comment": "This research has received funding from CYTED, Ibero-American Program of Science and Technology for Development, GA No. 519RT0579"
+   },
+   "score": 0.95,
+   "title": "IDEAI",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:11+08:00"
+  },
+  "t:improving language understanding by generative pre training": {
+   "status": "no_results",
+   "query": "ti:\"Improving Language Understanding by Generative Pre-Training\"",
+   "match": null,
+   "title": "Improving Language Understanding by Generative Pre-Training",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:44:15+08:00"
+  },
+  "t:llmaspectprediction": {
+   "status": "no_results",
+   "query": "all:\"LLMAspectPrediction\"",
+   "match": null,
+   "title": "LLMAspectPrediction",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:24+08:00"
+  },
+  "t:meta": {
+   "status": "matched_by_title",
+   "query": "all:\"META\"",
+   "match": {
+    "arxiv_id": "2009.01672",
+    "version": "1",
+    "title": "Yet Meta Learning Can Adapt Fast, It Can Also Break Easily",
+    "abstract": "Meta learning algorithms have been widely applied in many tasks for efficient learning, such as few-shot image classification and fast reinforcement learning. During meta training, the meta learner develops a common learning strategy, or experience, from a variety of learning tasks. Therefore, during meta test, the meta learner can use the learned strategy to quickly adapt to new tasks even with a few training samples. However, there is still a dark side about meta learning in terms of reliability and robustness. In particular, is meta learning vulnerable to adversarial attacks? In other words, would a well-trained meta learner utilize its learned experience to build wrong or likely useless knowledge, if an adversary unnoticeably manipulates the given training set? Without the understanding of this problem, it is extremely risky to apply meta learning in safety-critical applications. Thus, in this paper, we perform the initial study about adversarial attacks on meta learning under the few-shot classification problem. In particular, we formally define key elements of adversarial attacks unique to meta learning and propose the first attacking algorithm against meta learning under various settings. We evaluate the effectiveness of the proposed attacking strategy as well as the robustness of several representative meta learning algorithms. Experimental results demonstrate that the proposed attacking strategy can easily break the meta learner and meta learning is vulnerable to adversarial attacks. The implementation of the proposed framework will be released upon the acceptance of this paper.",
+    "published": "2020-09-02",
+    "updated": "2020-09-02",
+    "authors": [
+     "Han Xu",
+     "Yaxin Li",
+     "Xiaorui Liu",
+     "Hui Liu",
+     "Jiliang Tang"
+    ],
+    "categories": [
+     "cs.LG",
+     "stat.ML"
+    ],
+    "journal_ref": null,
+    "comment": "Meta Learning Robustnss"
+   },
+   "score": 0.95,
+   "title": "META",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:31+08:00"
+  },
+  "t:phyprobe": {
+   "status": "matched_by_title",
+   "query": "all:\"PhyProbe\"",
+   "match": {
+    "arxiv_id": "2609.38377",
+    "version": "1",
+    "title": "PhyProbe: Rethinking Physical Consistency Evaluation in Generated Videos",
+    "abstract": "Evaluating the physical consistency of generated videos remains a fundamental challenge. Existing approaches rely on off-the-shelf vision-language models, which can often be myopic to physical dynamics, or fine-tuned evaluators trained on human annotations, which overfit to dataset-specific cues and fail to generalize. A key challenge is that existing supervision sources provide either relative ordering or absolute scores, but not both reliably and consistently across varied settings. To this end, we introduce PhyProbe, an evaluator that extracts features from a frozen pretrained spatio-temporal encoder and maps them to a scalar physical consistency violation score via a lightweight scoring head. PhyProbe is trained through a unified objective combining pairwise ranking, regression on noisy scalar annotations, and anchor-based calibration over a curated set of heterogeneous supervision sources. Experiments show that PhyProbe outperforms prior methods on most pairwise benchmarks spanning real-generated and generated-generated pairs under varying correspondence, with the largest gains in no-correspondence and generated-generated settings where existing fine-tuned evaluators degrade sharply. PhyProbe achieves strong correlation with human judgments, with close agreement between rank-based and linear metrics, indicating that scores are both well ordered and anchored to a stable [0, 1] scale. Further, despite being trained on supervision indicative of physical consistency, without explicit general-preference labels, PhyProbe also performs competitively on human preference benchmarks: consistent with the observation that physics violations are entangled with broader quality degradations.",
+    "published": "2026-09-29",
+    "updated": "2026-09-29",
+    "authors": [
+     "Max Ku",
+     "Jiaojiao Fan",
+     "Zekun Hao",
+     "Francesco Ferroni",
+     "Heng Wang",
+     "Wenhu Chen",
+     "Ming-Yu Liu",
+     "Prithvijit Chattopadhyay"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2026 poster"
+   },
+   "score": 0.95,
+   "title": "PhyProbe",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:35+08:00"
+  },
+  "t:repr": {
+   "status": "matched_by_title",
+   "query": "all:\"RePR\"",
+   "match": {
+    "arxiv_id": "2409.07950",
+    "version": "1",
+    "title": "Repr Types: One Abstraction to Rule Them All",
+    "abstract": "The choice of how to represent an abstract type can have a major impact on the performance of a program, yet mainstream compilers cannot perform optimizations at such a high level. When dealing with optimizations of data type representations, an important feature is having extensible representation-flexible data types; the ability for a programmer to add new abstract types and operations, as well as concrete implementations of these, without modifying the compiler or a previously defined library. Many research projects support high-level optimizations through static analysis, instrumentation, or benchmarking, but they are all restricted in at least one aspect of extensibility. This paper presents a new approach to representation-flexible data types without such restrictions and which still finds efficient optimizations. Our approach centers around a single built-in type $\\texttt{repr}$ and function overloading with cost annotations for operation implementations. We evaluate our approach (i) by defining a universal collection type as a library, a single type for all conventional collections, and (ii) by designing and implementing a representation-flexible graph library. Programs using $\\texttt{repr}$ types are typically faster than programs with idiomatic representation choices -- sometimes dramatically so -- as long as the compiler finds good implementations for all operations. Our compiler performs the analysis efficiently by finding optimized solutions quickly and by reusing previous results to avoid recomputations.",
+    "published": "2024-09-12",
+    "updated": "2024-09-12",
+    "authors": [
+     "Viktor Palmkvist",
+     "Anders Ågren Thuné",
+     "Elias Castegren",
+     "David Broman"
+    ],
+    "categories": [
+     "cs.PL",
+     "cs.PF"
+    ],
+    "journal_ref": null,
+    "comment": "25 pages, 11 figures"
+   },
+   "score": 0.95,
+   "title": "RePR",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:39+08:00"
+  },
+  "t:swe at scale": {
+   "status": "matched_by_title",
+   "query": "all:\"SWE-at-Scale\"",
+   "match": {
+    "arxiv_id": "2610.21359",
+    "version": "1",
+    "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
+    "abstract": "As coding agents become increasingly capable, robust evaluation requires a broader and more diverse supply of verifiable software engineering (SWE) tasks. However, real-world tasks are constrained by the natural frequency of issue reporting and the substantial cost of manual curation. Furthermore, existing synthetic approaches rely primarily on the pretrained knowledge of large models coupled with heuristic prompting, often failing to capture the authentic, complex mechanics of software failures. To exponentially scale SWE task production, we introduce SWE-at-Scale, a framework that automatically synthesizes realistic issues by reverse-engineering real-world software fixes. Our key insight is that historical fixes encapsulate deep mechanistic knowledge of bug formation: inverting a fix transforms repair supervision into bug-induction supervision grounded in actual development scenarios. SWE-at-Scale transfers these learned bug patterns to novel code contexts, repeatedly sampling diverse bug typologies to construct executable SWE tasks. Extensive experiments show that SWE-at-Scale generates more diverse and realistic SWE tasks than current synthesis baselines while posing greater challenges to state-of-the-art coding agents. Notably, SWE-at-Scale can generate distinct bug types from a single code context, with bug diversity scaling robustly even up to 200 generations per file. Overall, SWE-at-Scale turns finite real-world fixes into reusable supervision for scalable synthesis of realistic, diverse, and challenging SWE tasks.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Silin Chen",
+     "Zihan Zhang",
+     "Xiaodong Gu",
+     "Jiale Huang",
+     "Yuling Shi",
+     "Han Li",
+     "Zhao Shan",
+     "Chengcheng Wan",
+     "Zhensu Sun",
+     "Haibing Guan"
+    ],
+    "categories": [
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": "Our code and models are available at https://github.com/cslsolow/SWE-at-scale and https://huggingface.co/SWE-at-Scale"
+   },
+   "score": 0.95,
+   "title": "SWE-at-Scale",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:43+08:00"
+  },
+  "t:swarmrsi": {
+   "status": "matched_by_title",
+   "query": "all:\"SwarmRSI\"",
+   "match": {
+    "arxiv_id": "2610.20431",
+    "version": "1",
+    "title": "SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm",
+    "abstract": "Recursive self-improvement (RSI) in scientific research aims to improve agents' research capabilities through their own experimental experience. Scientific agent swarms can combine evidence and implementations from different research directions to guide their agents' subsequent experiments. However, poor experimental results can leave unclear whether to revise a hypothesis or its implementation, while overall program scores can hide components useful to other agents. To address these challenges, we introduce SwarmRSI, a framework that evolves scientific agent swarms for recursive self-improvement. We devise Feedback-Guided Swarm Mutation to refine hypotheses and their implementations using experimental feedback from other agents. We also propose Complementary Swarm Recombination to reuse retained hypotheses and complementary program components across agents, allowing partial results to support new research. Recursive Swarm Evolution integrates both mechanisms into a feedback loop, using new experimental evidence to guide subsequent research. Experiments on OpenProblems, NatureBench and MLE-Bench Lite demonstrate SwarmRSI's state-of-the-art (SOTA) performance. Further evaluations show that accumulated research experience improves performance on held-out tasks. Biologists also reproduce its programs for follow-up biological analyses.",
+    "published": "2026-10-14",
+    "updated": "2026-10-14",
+    "authors": [
+     "Qianru Meng",
+     "Xi Zhang",
+     "Konstantinos Papakostas",
+     "Congfeng Cao",
+     "Wenxiang Hu",
+     "Tianyi Lu",
+     "Xiao Zhang",
+     "Lun Zhou",
+     "Zaiqiao Meng",
+     "Zhaochun Ren",
+     "Xiaohui Yan",
+     "Yougang Lyu"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SwarmRSI",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:44:47+08:00"
+  },
+  "t:system level lifetime extension in 3 d nand ssds via vt shift aware flash signal processing and advanced ecc": {
+   "status": "no_results",
+   "query": "ti:\"System-Level Lifetime Extension in 3-D NAND SSDs via VT-Shift-Aware Flash Signal Processing and Advanced ECC\"",
+   "match": null,
+   "title": "System-Level Lifetime Extension in 3-D NAND SSDs via VT-Shift-Aware Flash Signal Processing and Advanced ECC",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:44:51+08:00"
+  },
+  "t:the future of 3d nand flash technology": {
+   "status": "no_results",
+   "query": "ti:\"The future of 3D NAND flash technology\"",
+   "match": null,
+   "title": "The future of 3D NAND flash technology",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:44:55+08:00"
+  },
+  "t:theophyseval": {
+   "status": "rejected",
+   "query": "all:\"TheoPhysEval\"",
+   "match": null,
+   "best_candidate": "TheoPhysEval: Assessing AI agents at autonomous theoretical physics problem solving",
+   "best_score": 0.255,
+   "title": "TheoPhysEval",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:45:00+08:00"
+  },
+  "t:tokenization a survey for modern nlp": {
+   "status": "no_results",
+   "query": "ti:\"Tokenization: A Survey for Modern NLP\"",
+   "match": null,
+   "title": "Tokenization: A Survey for Modern NLP",
+   "kind": "title",
+   "checked_at": "2026-10-19T15:45:04+08:00"
+  },
+  "t:vpr evolve": {
+   "status": "matched_by_title",
+   "query": "all:\"VPR-Evolve\"",
+   "match": {
+    "arxiv_id": "2607.24998",
+    "version": "1",
+    "title": "VPR-Evolve: Multi-Agent-Driven Algorithm Evolution for FPGA Place and Route",
+    "abstract": "CAD tools typically apply the same fixed, hand-designed algorithms across circuits with widely different structural and timing characteristics. A common way to specialize these one-size-fits-all flows to a target design is to tune the CAD tool's hyperparameters. However, hyperparameter tuning can only select among behaviors already implemented by the fixed algorithm, limiting the achievable quality of results while requiring many expensive place-and-route evaluations. We present VPR-Evolve, a multi-agent framework that specializes Versatile Place and Route (VPR), the open-source FPGA pack-place-and-route engine in the Verilog-to-Routing (VTR) flow, by evolving its source code for each design. VPR-Evolve uses LLM agents to propose, implement, and evaluate code-level modifications, while a shared memory records prior outcomes and guides subsequent evolution. Every candidate is evaluated through a complete VPR build and run, directly optimizing a composite score measured as a weighted function of critical-path delay (CPD), routed wirelength (WL), and tool runtime (RT). Across five VTR-9 benchmark circuits, VPR-Evolve improves the composite score by up to 2.7% over stock VPR in VTR-9. Relative to stock VPR, it reduces CPD by up to 9.8%, routed WL by up to 18.1%, and tool RT by up to 79.3%. VPR-Evolve reduces CPD by up to 6.0%, routed WL by up to 2.2%, and tool RT by up to 7.8% compared with a hyperparameter-tuning baseline.",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "authors": [
+     "Qihang Wu",
+     "Taizun Jafri",
+     "Aman Arora",
+     "Vidya A. Chhabria"
+    ],
+    "categories": [
+     "cs.AR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "VPR-Evolve",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:45:09+08:00"
+  },
+  "t:work2skill": {
+   "status": "matched_by_title",
+   "query": "all:\"Work2Skill\"",
+   "match": {
+    "arxiv_id": "2610.12984",
+    "version": "1",
+    "title": "Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction",
+    "abstract": "Computer-use agents can perform increasingly complex GUI tasks, yet unfamiliar software and workflows requiring human domain knowledge remain challenging. Human demonstrations convey procedural knowledge through the same GUI interaction space, but reuse requires interpreting actions in context and separating workflow rules from task-specific details. We thus introduce Work2Skill, a framework that captures human GUI experience for reusable agent skill induction. WorkRecorder provides the framework's infrastructure for collecting this experience, aligning screen recordings, mouse and keyboard events, and available accessibility-tree information. Using WorkRecorder, we construct WorkDemo-350, the first synchronized multimodal dataset of human desktop GUI demonstrations for reusable agent skill induction and downstream evaluation. Its 350 demonstrations are screened for completeness and task success. We then propose an agentic skill-induction method that inspects evidence on demand to produce reusable skills capturing workflow rules, step dependencies, and completion checks. When the same four execution models are equipped with skills induced by each method under shared execution settings, Work2Skill achieves the highest scores and success rates. Mean score improvements over the corresponding No Skill baseline are 4.67--10.54 points on MyPCBench Bounded Action and 3.11--7.50 points on a 286-task subset of OSWorld-Verified. Our code and data are available at https://github.com/china-qijizhifeng/Work2Skill.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Yuqi Huang",
+     "Hui Li",
+     "Yifei Cao",
+     "Zikun Cai",
+     "Tianci Xie",
+     "Yangfan Gao",
+     "Pinxue Guo",
+     "Chaoyun Zhang",
+     "Bingxuan Li",
+     "Rui Zheng",
+     "Hang Yan",
+     "Ning Liao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.HC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Work2Skill",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:45:13+08:00"
+  },
+  "t:基于大语言模型的医学研究的设计 测量与评价": {
+   "status": "no_results",
+   "query": "all:\"基于大语言模型的医学研究的设计、测量与评价\"",
+   "match": null,
+   "title": "基于大语言模型的医学研究的设计、测量与评价",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:45:21+08:00"
+  },
+  "t:基准压缩综述": {
+   "status": "no_results",
+   "query": "all:\"基准压缩综述\"",
+   "match": null,
+   "title": "基准压缩综述",
+   "kind": "method",
+   "checked_at": "2026-10-19T15:45:25+08:00"
   }
  }
 }
