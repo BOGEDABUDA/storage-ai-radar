@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-10-19T15:43:16+08:00",
+ "generated_at": "2026-10-22T09:21:59+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -47037,6 +47037,1280 @@
      "label": "锁定FY2027比特出货比例",
      "value": 50.0,
      "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|new-media|technical|0": {
+   "hash": "3865f191ce98ac59",
+   "date": "2026-10-22",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "IEEE",
+     "type": "institution"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    },
+    {
+     "name": "HAMR",
+     "type": "tech"
+    },
+    {
+     "name": "HDD",
+     "type": "tech"
+    },
+    {
+     "name": "LTO磁带",
+     "type": "tech"
+    },
+    {
+     "name": "DNA存储",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "NAND",
+     "label": "堆叠层数",
+     "value": 1000.0,
+     "unit": "层"
+    },
+    {
+     "subject": "HDD",
+     "label": "单盘容量",
+     "value": 100.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO磁带",
+     "label": "单盒容量",
+     "value": 1.0,
+     "unit": "PB"
+    },
+    {
+     "subject": "DNA存储",
+     "label": "理论存储密度",
+     "value": 1000000.0,
+     "unit": "TB/mm³"
+    }
+   ]
+  },
+  "2026-10-22|others|business|0": {
+   "hash": "2087f12927742e3c",
+   "date": "2026-10-22",
+   "category": "others",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "SanDisk",
+     "type": "company"
+    },
+    {
+     "name": "照付不议长约",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "美光",
+     "label": "2027年产能已售出比例",
+     "value": 75.0,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "FQ4毛利率",
+     "value": 86.8,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "FQ4净利",
+     "value": 377.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "SanDisk",
+     "label": "保底长约金额",
+     "value": 939.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "SanDisk",
+     "label": "覆盖FY2027比特比例",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|others|technical|0": {
+   "hash": "b13f83de1d36cc39",
+   "date": "2026-10-22",
+   "category": "others",
+   "entities": [
+    {
+     "name": "东京电子",
+     "type": "company"
+    },
+    {
+     "name": "混合键合",
+     "type": "tech"
+    },
+    {
+     "name": "C-SAM",
+     "type": "tech"
+    },
+    {
+     "name": "TEM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "东京电子",
+     "label": "混合键合间距",
+     "value": 140.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "东京电子",
+     "label": "键合温度",
+     "value": 350.0,
+     "unit": "℃"
+    },
+    {
+     "subject": "东京电子",
+     "label": "Cu焊盘直径",
+     "value": 72.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "东京电子",
+     "label": "Cu焊盘直径上限",
+     "value": 84.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "东京电子",
+     "label": "残余对准误差上限",
+     "value": 50.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "东京电子",
+     "label": "仿真对准误差",
+     "value": 14.6,
+     "unit": "nm"
+    },
+    {
+     "subject": "东京电子",
+     "label": "4片晶圆测点对准误差低于30nm比例",
+     "value": 75.0,
+     "unit": "%"
+    },
+    {
+     "subject": "东京电子",
+     "label": "介质键合对照测点低于40nm比例",
+     "value": 99.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|storage-semantics-protocol|business|0": {
+   "hash": "fa80983d5a9b0492",
+   "date": "2026-10-22",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "OCP",
+     "type": "institution"
+    },
+    {
+     "name": "CPU",
+     "type": "tech"
+    },
+    {
+     "name": "LPDDR",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe SSD",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "CPU",
+     "label": "市场规模TAM（2030年）",
+     "value": 2000.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "推理占AI算力比例",
+     "value": 60.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "Agent流量年增长",
+     "value": 14.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "CPU",
+     "label": "与加速卡配比（CPU侧）",
+     "value": 1.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-10-22|storage-semantics-protocol|technical|0": {
+   "hash": "c67fcc1d63259b7a",
+   "date": "2026-10-22",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "BlueField-4 STX",
+     "type": "product"
+    },
+    {
+     "name": "Vera",
+     "type": "product"
+    },
+    {
+     "name": "CMX",
+     "type": "product"
+    },
+    {
+     "name": "SOCAMM",
+     "type": "tech"
+    },
+    {
+     "name": "LPDDR5x",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe Gen6",
+     "type": "tech"
+    },
+    {
+     "name": "NVMe SSD",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "BlueField-4 STX",
+     "label": "CPU核心数",
+     "value": 168.0,
+     "unit": "核"
+    },
+    {
+     "subject": "BlueField-4 STX",
+     "label": "PCIe Gen6通道数",
+     "value": 96.0,
+     "unit": "条"
+    },
+    {
+     "subject": "BlueField-4 STX",
+     "label": "直连NVMe SSD数量",
+     "value": 24.0,
+     "unit": "块"
+    },
+    {
+     "subject": "BlueField-4 STX",
+     "label": "内存带宽",
+     "value": 2.4,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "BlueField-4 STX",
+     "label": "供电功率下限",
+     "value": 450.0,
+     "unit": "W"
+    },
+    {
+     "subject": "BlueField-4 STX",
+     "label": "供电功率上限",
+     "value": 900.0,
+     "unit": "W"
+    }
+   ]
+  },
+  "2026-10-22|ai-inference-acceleration|business|0": {
+   "hash": "9d9643513007f784",
+   "date": "2026-10-22",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "绿色词元(Token)工厂技术白皮书",
+     "type": "paper"
+    },
+    {
+     "name": "TPW",
+     "type": "tech"
+    },
+    {
+     "name": "协创数据",
+     "type": "company"
+    },
+    {
+     "name": "电-算-Token五层体系",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "协创数据",
+     "label": "算力云服务框架协议金额",
+     "value": 374.9,
+     "unit": "亿元"
+    },
+    {
+     "subject": "协创数据",
+     "label": "协议期限",
+     "value": 60.0,
+     "unit": "个月"
+    },
+    {
+     "subject": "协创数据",
+     "label": "资产负债率",
+     "value": 86.8,
+     "unit": "%"
+    },
+    {
+     "subject": "协创数据",
+     "label": "公告日股价跌幅",
+     "value": 7.14,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|ai-inference-acceleration|technical|0": {
+   "hash": "9e50be91c273ceaa",
+   "date": "2026-10-22",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "3FS",
+     "type": "tech"
+    },
+    {
+     "name": "SWA Bounded Replay",
+     "type": "tech"
+    },
+    {
+     "name": "DSpark",
+     "type": "tech"
+    },
+    {
+     "name": "昇腾950",
+     "type": "product"
+    },
+    {
+     "name": "SM100",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepInfer",
+     "label": "KV缓存命中率",
+     "value": 96.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "单集群日处理token",
+     "value": 155.0,
+     "unit": "万亿"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "首字时延",
+     "value": 400.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "KV缓存外置容量",
+     "value": 100.0,
+     "unit": "PiB"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "SWA重算token数",
+     "value": 128.0,
+     "unit": "token"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "单卡Prefill吞吐差距",
+     "value": 25.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "DSpark",
+     "label": "吞吐提升",
+     "value": 6.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|ai-model-agent-rag|business|0": {
+   "hash": "0188071db63b716e",
+   "date": "2026-10-22",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "美国DHS",
+     "type": "institution"
+    },
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "昇腾950",
+     "type": "product"
+    },
+    {
+     "name": "Apache 2.0",
+     "type": "tech"
+    },
+    {
+     "name": "Token编解码组件",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "中国模型周调用量",
+     "value": 79.18,
+     "unit": "万亿token"
+    },
+    {
+     "subject": "行业",
+     "label": "美国模型周调用量",
+     "value": 17.36,
+     "unit": "万亿token"
+    },
+    {
+     "subject": "行业",
+     "label": "中美模型调用量倍数",
+     "value": 4.6,
+     "unit": "倍"
+    },
+    {
+     "subject": "行业",
+     "label": "中国模型调用量连续领先周数",
+     "value": 25.0,
+     "unit": "周"
+    }
+   ]
+  },
+  "2026-10-22|ai-model-agent-rag|technical|0": {
+   "hash": "b2cabcbd892bdf72",
+   "date": "2026-10-22",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "南洋理工",
+     "type": "institution"
+    },
+    {
+     "name": "Harness",
+     "type": "tech"
+    },
+    {
+     "name": "Claude Opus 5",
+     "type": "product"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "type": "product"
+    },
+    {
+     "name": "Bug Hunt Bench",
+     "type": "paper"
+    },
+    {
+     "name": "DSH",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek-V4.1-Flash",
+     "type": "product"
+    },
+    {
+     "name": "Claude Code",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "南洋理工",
+     "label": "评测轨迹数",
+     "value": 6204.0,
+     "unit": "条"
+    },
+    {
+     "subject": "DSH",
+     "label": "Bug Hunt Bench得分",
+     "value": 42.7,
+     "unit": "分"
+    },
+    {
+     "subject": "Claude Code",
+     "label": "Bug Hunt Bench得分",
+     "value": 39.1,
+     "unit": "分"
+    },
+    {
+     "subject": "DSH",
+     "label": "单任务成本增幅",
+     "value": 82.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Claude Opus 5",
+     "label": "换Harness后相对GPT-6 Astra的分差",
+     "value": 30.2,
+     "unit": "分"
+    }
+   ]
+  },
+  "2026-10-22|cost-effective-storage|business|0": {
+   "hash": "a2b24ba274e030a4",
+   "date": "2026-10-22",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "企业级SSD",
+     "type": "product"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    },
+    {
+     "name": "E1.S",
+     "type": "tech"
+    },
+    {
+     "name": "E3.S",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "企业级SSD",
+     "label": "全球前五厂商季度营收",
+     "value": 375.9,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "季度营收环比增幅",
+     "value": 103.6,
+     "unit": "%"
+    },
+    {
+     "subject": "美光",
+     "label": "企业级SSD营收季增",
+     "value": 126.3,
+     "unit": "%"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "Q4合约价涨幅",
+     "value": 17.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|cost-effective-storage|technical|0": {
+   "hash": "8c4a1ce7095c82d3",
+   "date": "2026-10-22",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "3FS",
+     "type": "tech"
+    },
+    {
+     "name": "SWA Bounded Replay",
+     "type": "tech"
+    },
+    {
+     "name": "DSpark",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepInfer",
+     "label": "单集群日处理token",
+     "value": 155.0,
+     "unit": "万亿"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "缓存命中率",
+     "value": 96.0,
+     "unit": "%"
+    },
+    {
+     "subject": "3FS",
+     "label": "KV缓存SSD容量",
+     "value": 100.0,
+     "unit": "PiB"
+    },
+    {
+     "subject": "SWA Bounded Replay",
+     "label": "重算token数",
+     "value": 128.0,
+     "unit": "token"
+    },
+    {
+     "subject": "SWA Bounded Replay",
+     "label": "Prefill算力节省",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DSpark",
+     "label": "吞吐提升",
+     "value": 5.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|high-capacity-storage|business|0": {
+   "hash": "eecb41b250dcd421",
+   "date": "2026-10-22",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "商务部",
+     "type": "institution"
+    },
+    {
+     "name": "科技部",
+     "type": "institution"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "3D闪存",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "拟纳入出口管制技术项数",
+     "value": 40.0,
+     "unit": "项"
+    },
+    {
+     "subject": "行业",
+     "label": "内存芯片设计管制线宽",
+     "value": 18.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "行业",
+     "label": "3D闪存密度管制阈值",
+     "value": 8.0,
+     "unit": "Gb/mm²"
+    },
+    {
+     "subject": "行业",
+     "label": "片间互连带宽管制阈值",
+     "value": 800.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "5日股价跌幅",
+     "value": 26.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "全球AI芯片股市值一周蒸发",
+     "value": 1.0,
+     "unit": "万亿美元"
+    }
+   ]
+  },
+  "2026-10-22|high-capacity-storage|technical|0": {
+   "hash": "7859b78ea759bf72",
+   "date": "2026-10-22",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "IEEE",
+     "type": "institution"
+    },
+    {
+     "name": "HAMR",
+     "type": "tech"
+    },
+    {
+     "name": "HDD",
+     "type": "product"
+    },
+    {
+     "name": "LTO磁带",
+     "type": "product"
+    },
+    {
+     "name": "DNA存储",
+     "type": "tech"
+    },
+    {
+     "name": "光存储",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HDD",
+     "label": "本十年末单盘容量",
+     "value": 100.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO磁带",
+     "label": "2030年代单盘容量",
+     "value": 1000.0,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-10-22|high-reliability-storage|business|0": {
+   "hash": "2c016cae38990661",
+   "date": "2026-10-22",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "Gartner",
+     "type": "institution"
+    },
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "Cyberstorage",
+     "type": "tech"
+    },
+    {
+     "name": "STaaS",
+     "type": "tech"
+    },
+    {
+     "name": "RAG",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Gartner",
+     "label": "企业存储平台魔力象限入选厂商数",
+     "value": 8.0,
+     "unit": "家"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "连续入围年数",
+     "value": 10.0,
+     "unit": "年"
+    },
+    {
+     "subject": "行业",
+     "label": "AI推理/RAG专用存储层级覆盖率(2029)",
+     "value": 70.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "统一存储平台承载本地非结构化数据占比",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "STaaS取代本地存储资本支出比例",
+     "value": 50.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "具备主动网络韧性产品占比(2029)",
+     "value": 100.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|high-reliability-storage|technical|0": {
+   "hash": "5d4ce0a08e4f3009",
+   "date": "2026-10-22",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "IEEE TDMR",
+     "type": "paper"
+    },
+    {
+     "name": "FSP",
+     "type": "tech"
+    },
+    {
+     "name": "LDPC",
+     "type": "tech"
+    },
+    {
+     "name": "TLC",
+     "type": "product"
+    },
+    {
+     "name": "CSB",
+     "type": "tech"
+    },
+    {
+     "name": "LSB",
+     "type": "tech"
+    },
+    {
+     "name": "WAF",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "FSP",
+     "label": "封装失败页占比上限",
+     "value": 14.12,
+     "unit": "%"
+    },
+    {
+     "subject": "FSP",
+     "label": "CSB页失败占比",
+     "value": 25.24,
+     "unit": "%"
+    },
+    {
+     "subject": "FSP",
+     "label": "LSB页失败占比",
+     "value": 0.2,
+     "unit": "%"
+    },
+    {
+     "subject": "FSP",
+     "label": "擦写寿命提升后倍数",
+     "value": 1.8,
+     "unit": "倍"
+    },
+    {
+     "subject": "FSP",
+     "label": "WAF降幅",
+     "value": 0.1,
+     "unit": null
+    },
+    {
+     "subject": "FSP",
+     "label": "TBW提升倍数",
+     "value": 1.9,
+     "unit": "倍"
+    },
+    {
+     "subject": "FSP",
+     "label": "QoS抖动",
+     "value": 5.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "FSP",
+     "label": "基准电压可调范围",
+     "value": 24.0,
+     "unit": "tick"
+    }
+   ]
+  },
+  "2026-10-22|model-benchmarking|business|0": {
+   "hash": "83d15585e482355a",
+   "date": "2026-10-22",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "SM100",
+     "type": "product"
+    },
+    {
+     "name": "昇腾950",
+     "type": "product"
+    },
+    {
+     "name": "3FS",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepInfer",
+     "label": "单集群日处理token",
+     "value": 155.0,
+     "unit": "万亿"
+    },
+    {
+     "subject": "3FS",
+     "label": "KV缓存SSD集群容量",
+     "value": 100.0,
+     "unit": "PiB"
+    },
+    {
+     "subject": "3FS",
+     "label": "峰值读带宽",
+     "value": 10.0,
+     "unit": "TiB/s"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "Prefill四卡吞吐",
+     "value": 90000.0,
+     "unit": "token/s"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "解码单位成本节约",
+     "value": 79.5,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-10-22|model-benchmarking|technical|0": {
+   "hash": "274144d96564ba3d",
+   "date": "2026-10-22",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "南洋理工",
+     "type": "institution"
+    },
+    {
+     "name": "安波",
+     "type": "person"
+    },
+    {
+     "name": "Harness",
+     "type": "tech"
+    },
+    {
+     "name": "Claude",
+     "type": "product"
+    },
+    {
+     "name": "GPT",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek 1017",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "南洋理工",
+     "label": "评测轨迹数",
+     "value": 6204.0,
+     "unit": "条"
+    },
+    {
+     "subject": "Claude",
+     "label": "换Harness后准确率",
+     "value": 30.2,
+     "unit": "%"
+    },
+    {
+     "subject": "GPT",
+     "label": "换Harness后准确率",
+     "value": 60.3,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepSeek 1017",
+     "label": "换Harness分差",
+     "value": 8.6,
+     "unit": "分"
+    }
+   ]
+  },
+  "2026-10-22|near-memory-computing|business|0": {
+   "hash": "3d51fd115e1688f8",
+   "date": "2026-10-22",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "应用材料",
+     "type": "company"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "product"
+    },
+    {
+     "name": "混合键合",
+     "type": "tech"
+    },
+    {
+     "name": "4F² DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "3D DRAM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "服务器CPU交期",
+     "value": 27.5,
+     "unit": "周"
+    },
+    {
+     "subject": "行业",
+     "label": "先进逻辑与高密度DRAM稼动率",
+     "value": 100.0,
+     "unit": "%"
+    },
+    {
+     "subject": "应用材料",
+     "label": "设备SAM扩容幅度",
+     "value": 40.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM4",
+     "label": "混合键合量产推迟年份",
+     "value": 2028.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-10-22|near-memory-computing|technical|0": {
+   "hash": "560067fddebd5e41",
+   "date": "2026-10-22",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "deepseek-recipe",
+     "type": "product"
+    },
+    {
+     "name": "DSpark",
+     "type": "tech"
+    },
+    {
+     "name": "SWA",
+     "type": "tech"
+    },
+    {
+     "name": "3FS",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepInfer",
+     "label": "Prefill部署卡数",
+     "value": 8.0,
+     "unit": "卡"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "Decode部署卡数上限",
+     "value": 128.0,
+     "unit": "卡"
+    },
+    {
+     "subject": "DSpark",
+     "label": "吞吐提升",
+     "value": 6.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SWA",
+     "label": "重算token数",
+     "value": 128.0,
+     "unit": "token"
+    },
+    {
+     "subject": "3FS",
+     "label": "KV缓存容量",
+     "value": 100.0,
+     "unit": "PiB"
+    },
+    {
+     "subject": "3FS",
+     "label": "缓存命中率",
+     "value": 96.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepInfer",
+     "label": "单集群日吞吐token",
+     "value": 155.0,
+     "unit": "万亿"
+    },
+    {
+     "subject": "3FS",
+     "label": "缓存留存天数上限",
+     "value": 7.0,
+     "unit": "天"
+    }
+   ]
+  },
+  "2026-10-22|new-media|business|0": {
+   "hash": "4166dcdc35a7ac81",
+   "date": "2026-10-22",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "商务部",
+     "type": "institution"
+    },
+    {
+     "name": "科技部",
+     "type": "institution"
+    },
+    {
+     "name": "3D闪存",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4e",
+     "type": "product"
+    },
+    {
+     "name": "企业级SSD",
+     "type": "product"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "拟纳入出口管制技术项数",
+     "value": 40.0,
+     "unit": "项"
+    },
+    {
+     "subject": "行业",
+     "label": "内存芯片设计管制线宽",
+     "value": 18.0,
+     "unit": "nm"
+    },
+    {
+     "subject": "行业",
+     "label": "3D闪存密度管制阈值",
+     "value": 8.0,
+     "unit": "Gb/mm²"
+    },
+    {
+     "subject": "行业",
+     "label": "片间互连带宽管制阈值",
+     "value": 800.0,
+     "unit": "GB/s"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "Q4合约价涨幅",
+     "value": 25.5,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "DRAM Q4合约价涨幅",
+     "value": 12.5,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "NAND Q4合约价涨幅",
+     "value": 17.5,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM",
+     "label": "2027年均价同比涨幅",
+     "value": 121.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM4e",
+     "label": "单价",
+     "value": 5.0,
+     "unit": "美元/Gb"
     }
    ]
   }

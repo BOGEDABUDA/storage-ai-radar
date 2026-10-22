@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-19T15:45:25+08:00",
+ "generated_at": "2026-10-22T09:23:53+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -30488,6 +30488,512 @@
    "title": "基准压缩综述",
    "kind": "method",
    "checked_at": "2026-10-19T15:45:25+08:00"
+  },
+  "id:2609.15779": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.15779",
+   "match": {
+    "arxiv_id": "2609.15779",
+    "version": "1",
+    "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+    "abstract": "Data agents aim to fulfill natural-language instructions over heterogeneous data, including tables, files, and databases. However, data agents face a challenging agent-data gap: heterogeneous data resides outside the agent, while the agent can access it (e.g., column names and file paths) only through generic tools. Existing approaches either let agents directly explore raw data sources or inject manually constructed semantic layers into prompts. However, neither scales well to large heterogeneous data sources nor adapts to different agent behaviors. In this paper, we introduce EvoOntology, a self-evolving ontology layer for data agents. EvoOntology encapsulates the ontology as an MCP server comprising a schema layer, a content layer, and a tool layer, enabling agents to actively query and interact with the ontology at runtime. To this end, we introduce a builder agent for autonomous ontology construction and a self-evolution loop that continuously refines the ontology through attribution-guided typed edits that are accepted only after a backbone-conditional paired evaluation. Experiments on three well-adopted data-agent benchmarks with four LLM backbones demonstrate that EvoOntology consistently outperforms strong baselines and existing semantic-layer approaches, effectively bridging the agent-data gap and enabling more effective interaction with heterogeneous data. Code: https://github.com/ruc-datalab/EvoOntology",
+    "published": "2026-09-14",
+    "updated": "2026-09-14",
+    "authors": [
+     "Meiduo Chong",
+     "Shaolei Zhang",
+     "Ju Fan",
+     "Xiaoyong Du"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.DB"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/ruc-datalab/EvoOntology"
+   },
+   "score": 1.0,
+   "title": "EvoOntology",
+   "kind": "id",
+   "checked_at": "2026-10-22T09:22:13+08:00"
+  },
+  "t:3d nand 闪存技术的未来": {
+   "status": "no_results",
+   "query": "ti:\"3D NAND 闪存技术的未来\"",
+   "match": null,
+   "title": "3D NAND 闪存技术的未来",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:22:18+08:00"
+  },
+  "t:adaflash": {
+   "status": "matched_by_title",
+   "query": "all:\"AdaFlash\"",
+   "match": {
+    "arxiv_id": "2607.19223",
+    "version": "3",
+    "title": "AdaFlash: Adaptive Speculative Decoding via On-Policy Distilled Diffusion Drafters",
+    "abstract": "Speculative decoding, in which a lightweight draft model first generates a draft sequence that is then verified by the target model, has become a prevalent paradigm for accelerating large language model inference. Recent work such as DFlash further boosts drafting efficiency by leveraging diffusion drafters, whose parallel denoising mechanism enables draft generation in a single forward pass. In this work, we uncover a central pitfall of diffusion drafters: the global dependency, arising from bidirectional attention and KV injection in diffusion drafters, is a double-edged sword. On one hand, it endows the model with parallel generation and global contextual modeling capabilities; on the other hand, this global dependency introduces high variance at both the domain-level and the token-level: acceptance rates fluctuate substantially across different domains, and the acceptance probability varies across draft positions. To tackle this issue, we propose the AdaFlash framework, comprising two components: (i) an on-policy distillation (OPD) algorithm with reverse-KL divergence tailored for diffusion drafters, which delivers stable convergence and continuously adapts the drafter to the deployment distribution; and (ii) an adaptive length head that dynamically adjusts the candidate length on the fly, substantially lowering the verification cost of the target model. Experiments demonstrate that AdaFlash consistently improves the speedup during deployment, with especially significant gains under high-concurrency, achieving up to 66% higher average throughput than previous state-of-the-art methods. Our code is available at https://github.com/ZinYY/AdaFlash.",
+    "published": "2026-07-21",
+    "updated": "2026-09-26",
+    "authors": [
+     "Yu-Yang Qian",
+     "Hao-Cong Wu",
+     "Chen Chen",
+     "Jiacheng Sun",
+     "Zhenhua Dong",
+     "Peng Zhao",
+     "Zhi-Hua Zhou"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "COLM'26 Workshop (Spotlight)"
+   },
+   "score": 0.95,
+   "title": "AdaFlash",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:22+08:00"
+  },
+  "t:agensh": {
+   "status": "matched_by_title",
+   "query": "all:\"Agensh\"",
+   "match": {
+    "arxiv_id": "2609.26781",
+    "version": "1",
+    "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+    "abstract": "A multi-agent system can reduce latency on complex tasks by executing work concurrently. Several pioneering harness frameworks support multi-agent systems. However, the scalability of current multi-agent harnesses is often constrained by a central orchestrator's capacity to allocate tasks and coordinate workers. To address this limitation, we introduce Agensh, a scalable self-organized multi-agent harness without a central orchestrator: concurrent workers execute a multi-agent cooperation loop, continuously gathering context, claiming and self-assigning sub-tasks, taking action and sharing findings, verifying results, and merging progress in an asynchronous manner. The loop is supported by the agentic organization infrastructure comprising three components: a shared workspace holds proposed, ongoing, and completed work; a message interface lets workers communicate; and shared context retains reusable findings and work intentions. To test the scalability of Agensh, we evaluate it on the five hardest ProgramBench tasks with GPT-5.6-sol (high). Scaling from 1 to 128 agents raises the mean final test-pass rate from 19.31% to 28.78%, an approximately 49% relative improvement. Larger organizations reach comparable test-pass rates earlier. On pandoc, scaling from 1 to 1,024 agents raises the final test-pass rate from 33.89% to 55.06%. Worker trajectories further show that different forms of self-organized cooperation gradually emerges and standardizes as the organization grows. These results reveal the number of agents as a new scaling dimension for multi-agent organizations to expand the frontier of general intelligence, offering a practical solution for complex tasks under hard latency constraints or time budgets.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Zhihao Zhan",
+     "Ting Song",
+     "Li Dong",
+     "Shaohan Huang",
+     "Jianxun Lian",
+     "Yan Xia",
+     "Furu Wei"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": "13 pages, 6 figures"
+   },
+   "score": 0.95,
+   "title": "Agensh",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:26+08:00"
+  },
+  "t:agentic ai在国际中文教育中的应用探索": {
+   "status": "no_results",
+   "query": "all:\"Agentic AI在国际中文教育中的应用探索\"",
+   "match": null,
+   "title": "Agentic AI在国际中文教育中的应用探索",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:30+08:00"
+  },
+  "t:bert pre training of deep bidirectional transformers for language understanding": {
+   "status": "matched_by_title",
+   "query": "ti:\"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\"",
+   "match": {
+    "arxiv_id": "1810.04805",
+    "version": "2",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "abstract": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+    "published": "2018-10-11",
+    "updated": "2019-05-24",
+    "authors": [
+     "Jacob Devlin",
+     "Ming-Wei Chang",
+     "Kenton Lee",
+     "Kristina Toutanova"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:22:34+08:00"
+  },
+  "t:cancer myth": {
+   "status": "matched_by_title",
+   "query": "all:\"Cancer-Myth\"",
+   "match": {
+    "arxiv_id": "2504.11373",
+    "version": "3",
+    "title": "Cancer-Myth: Evaluating Large Language Models on Patient Questions with False Presuppositions",
+    "abstract": "Cancer patients are increasingly turning to large language models (LLMs) for medical information, making it critical to assess how well these models handle complex, personalized questions. However, current medical benchmarks focus on medical exams or consumer-searched questions and do not evaluate LLMs on real patient questions with patient details. In this paper, we first have three hematology-oncology physicians evaluate cancer-related questions drawn from real patients. While LLM responses are generally accurate, the models frequently fail to recognize or address false presuppositions in the questions, posing risks to safe medical decision-making. To study this limitation systematically, we introduce Cancer-Myth, an expert-verified adversarial dataset of 585 cancer-related questions with false presuppositions. On this benchmark, no frontier LLM -- including GPT-5, Gemini-2.5-Pro, and Claude-4-Sonnet -- corrects these false presuppositions more than $43\\%$ of the time. To study mitigation strategies, we further construct a 150-question Cancer-Myth-NFP set, in which physicians confirm the absence of false presuppositions. We find typical mitigation strategies, such as adding precautionary prompts with GEPA optimization, can raise accuracy on Cancer-Myth to $80\\%$, but at the cost of misidentifying presuppositions in $41\\%$ of Cancer-Myth-NFP questions and causing a $10\\%$ relative performance drop on other medical benchmarks. These findings highlight a critical gap in the reliability of LLMs, show that prompting alone is not a reliable remedy for false presuppositions, and underscore the need for more robust safeguards in medical AI systems.",
+    "published": "2025-04-15",
+    "updated": "2025-10-30",
+    "authors": [
+     "Wang Bill Zhu",
+     "Tianqi Chen",
+     "Xinyan Velocity Yu",
+     "Ching Ying Lin",
+     "Jade Law",
+     "Mazen Jizzini",
+     "Jorge J. Nieva",
+     "Ruishan Liu",
+     "Robin Jia"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.CY"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Cancer-Myth",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:38+08:00"
+  },
+  "t:finding the right fit model harness interactions across agent tasks": {
+   "status": "matched_by_title",
+   "query": "ti:\"Finding the Right Fit: Model–Harness Interactions across Agent Tasks\"",
+   "match": {
+    "arxiv_id": "2610.00917",
+    "version": "1",
+    "title": "Finding the Right Fit: Model-Harness Interactions across Agent Tasks",
+    "abstract": "Choosing an agent system means choosing both a language model and the harness through which it acts. We ask whether a strong model, harness, or pairing stays strong when the setting changes. We evaluate 66 configurations: four configurable harnesses (OpenHands, DeepSeek Harness, PI, and openJiuwen) paired with five models on TUA-Bench, ALE-CLI, and Terminal-Bench 4, plus the native Codex-GPT and Claude Code-Claude pairings. Model rankings reverse across harnesses. On Terminal-Bench 4, Claude leads GPT by 7.94 points in OpenHands but trails it by 30.16 points in PI. For four of the five models, the best harness changes from one benchmark to another, yet some pairings hold: openJiuwen gives Kimi its highest score on all three benchmarks, by 5.61 to 11.11 points. A model's own vendor harness is not reliably its best, and higher cost does not reliably buy a higher score. On Terminal-Bench 4, GPT scores higher under PI than under DSH at less than a quarter of the cost per task. Matched trajectories suggest why fit varies. Models start almost all repairs themselves, so much depends on whether the harness hands failures back in a form the model can use. GPT does best with PI's lean scaffold, while Kimi, which often issues malformed tool calls, does best in openJiuwen. We argue that the model, the harness, and the task should be evaluated together, and we release the harness adapters, evaluation code, and all 6,204 scored trajectories at https://github.com/liyix/finding-the-right-fit and https://huggingface.co/datasets/yixuanli97/finding-the-right-fit.",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "authors": [
+     "Yixuan Li",
+     "Yiyun Zhou",
+     "Yao Long Teng",
+     "Fuchao Yang",
+     "Yanchen Deng",
+     "Zhiyi Lyu",
+     "Xuyu Dong",
+     "Feng Chen",
+     "Bo An"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.SE"
+    ],
+    "journal_ref": null,
+    "comment": "19 pages, 9 figures, 6 tables. Code: https://github.com/liyix/finding-the-right-fit. Data: https://huggingface.co/datasets/yixuanli97/finding-the-right-fit"
+   },
+   "score": 1.0,
+   "title": "Finding the Right Fit: Model–Harness Interactions across Agent Tasks",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:22:42+08:00"
+  },
+  "t:gdpevo": {
+   "status": "matched_by_title",
+   "query": "all:\"GDPevo\"",
+   "match": {
+    "arxiv_id": "2608.03764",
+    "version": "1",
+    "title": "GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks",
+    "abstract": "Agent self-evolution updates an agent's persistent state from prior experience and reuses it to solve related tasks more effectively. Evaluating self-evolution is difficult: existing benchmarks provide limited coverage of economically valuable task domains, do not always design training and test tasks such that test-time gains can be attributed to training experience, and remain vulnerable to data contamination. We present GDPevo, an evolution-native benchmark grounded in GDP-related enterprise workflows, together with the fully automated data pipeline that generates it. Its core mechanism, rule hybridization, decomposes each enterprise workflow into atomic business rules, distributes subsets of these rules across training tasks, and recombines them in held-out test tasks so that test-time gains are attributable. GDPevo spans CRM, ERP, finance, healthcare, legal, and data-centric workflows. Its V1 release contains 120 tasks in 12 groups, with five training and five held-out test tasks per group. Full automation enables the pipeline to expand the suite to 240 tasks in 24 groups (V2) within two days, providing a practical response to contamination. Using GDPevo, we evaluate four agents, each comprising a harness and a model, under four supervision types. Self-evolution consistently improves held-out accuracy by up to 16.44 percentage points. But the best evolved agents remain far below the fully informed oracle ceiling of 91.6%, indicating that the self-evolution ability of current agents remains far from fully realized. We publicly release the pipeline, benchmark, and full evaluation results at https://github.com/Prism-Shadow/GDPevo.",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "authors": [
+     "Leijun Zhou",
+     "Zhihao Liu",
+     "Xiang Qu",
+     "Chenxu Liu",
+     "Yifei Liu",
+     "Yanke Yu",
+     "Jingzhe Xu",
+     "Xuejun Wu",
+     "Buyue Qian",
+     "Xi Chen",
+     "Yaowei Zheng",
+     "Junhao Hu"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "GDPevo",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:46+08:00"
+  },
+  "t:geometric eigenmodes": {
+   "status": "rejected",
+   "query": "all:\"Geometric eigenmodes\"",
+   "match": null,
+   "best_candidate": "Temporally constraining source imaging estimates in an underdetermined neural system with eigenmodes of cortical geometry",
+   "best_score": 0.255,
+   "title": "Geometric eigenmodes",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:50+08:00"
+  },
+  "t:hydroaim": {
+   "status": "no_results",
+   "query": "all:\"HydroAIM\"",
+   "match": null,
+   "title": "HydroAIM",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:54+08:00"
+  },
+  "t:ktransformers finetune": {
+   "status": "no_results",
+   "query": "all:\"KTransformers-FineTune\"",
+   "match": null,
+   "title": "KTransformers-FineTune",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:22:57+08:00"
+  },
+  "t:llm gdsac": {
+   "status": "no_results",
+   "query": "all:\"LLM-GDSAC\"",
+   "match": null,
+   "title": "LLM-GDSAC",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:03+08:00"
+  },
+  "t:mass": {
+   "status": "rejected",
+   "query": "all:\"MASS\"",
+   "match": null,
+   "best_candidate": "Nuclear Masses and Neutron Stars",
+   "best_score": 0.222,
+   "title": "MASS",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:08+08:00"
+  },
+  "t:onevl": {
+   "status": "matched_by_title",
+   "query": "all:\"OneVL\"",
+   "match": {
+    "arxiv_id": "2604.18486",
+    "version": "3",
+    "title": "Xiaomi OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation",
+    "abstract": "Chain-of-Thought (CoT) reasoning has become a powerful driver of trajectory prediction in VLA-based autonomous driving, yet its autoregressive nature imposes a latency cost that is prohibitive for real-time deployment. Latent CoT methods attempt to close this gap by compressing reasoning into continuous hidden states, but consistently fall short of their explicit counterparts. We suggest that this is due to purely linguistic latent representations compressing a symbolic abstraction of the world, rather than the causal dynamics that actually govern driving. Thus, we present OneVL (One-step latent reasoning and planning with Vision-Language explanations), a unified VLA and World Model framework that routes reasoning through compact latent tokens supervised by dual auxiliary decoders. Alongside a language decoder that reconstructs text CoT, we introduce a visual world model decoder that predicts future-frame tokens, forcing the latent space to internalize the causal dynamics of road geometry, agent motion, and environmental change. A three-stage training pipeline progressively aligns these latents with trajectory, language, and visual objectives, ensuring stable joint optimization. In inference, the auxiliary decoders are discarded, and all latent tokens are prefilled in a single parallel pass, matching the speed of answer-only prediction. Across four benchmarks, OneVL becomes the first latent CoT method to surpass explicit CoT, delivering superior accuracy at answer-only latency. These results show that with world model supervision, latent CoT produces more generalizable representations than verbose token-by-token reasoning. Code has been open-sourced to the community. Project Page: https://xiaomi-embodied-intelligence.github.io/OneVL",
+    "published": "2026-04-20",
+    "updated": "2026-05-08",
+    "authors": [
+     "Jinghui Lu",
+     "Jiayi Guan",
+     "Zhijian Huang",
+     "Jinlong Li",
+     "Guang Li",
+     "Lingdong Kong",
+     "Yingyan Li",
+     "Han Wang",
+     "Shaoqing Xu",
+     "Yuechen Luo",
+     "Fang Li",
+     "Chenxu Dang"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.CL",
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": "Technical Report; 49 pages, 22 figures, 10 tables; Project Page at https://xiaomi-embodied-intelligence.github.io/OneVL GitHub at https://github.com/xiaomi-research/onevl"
+   },
+   "score": 0.95,
+   "title": "OneVL",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:12+08:00"
+  },
+  "t:provenance before prose claim locked reporting for statistical text generation": {
+   "status": "matched_by_title",
+   "query": "ti:\"Provenance Before Prose: Claim-Locked Reporting for Statistical Text Generation\"",
+   "match": {
+    "arxiv_id": "2608.25336",
+    "version": "2",
+    "title": "Provenance Before Prose: Claim-Locked Reporting for Statistical Text Generation",
+    "abstract": "Large language models (LLMs) can fluently verbalize statistical evidence, yet statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects. We frame these failures as a control problem: the evidence-bearing content of a scientific report should be fixed by structured statistical results rather than sampled during prose generation. We therefore use cross-run reproducibility to stress-test whether report-visible numbers and claims are bound before prose generation. Existing controls operate at the text or slot level; a deterministic hybrid template reproduces only 61.1% of report-visible numerical content across seeds because the LLM still selects which findings and numbers the template renders. We propose claim-locked reporting, a provenance-before-prose protocol that fixes the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose. Across fMRI functional-connectivity reporting and randomized controlled trial reporting on Evidence Inference 2.0, claim-locked reporting improves reproducibility over the hybrid template by 37.4 and 20.5 points, respectively. Blinded human audits support the observed direction-preservation and governance trends. In an fMRI cost analysis with DeepSeek, claim-locked reporting also yields the lowest observed token use and median generation latency.",
+    "published": "2026-08-26",
+    "updated": "2026-09-19",
+    "authors": [
+     "Xiao Fan",
+     "Jingyuan Li",
+     "Hongbin Guo",
+     "Yubo Han",
+     "Yi Zhang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Provenance Before Prose: Claim-Locked Reporting for Statistical Text Generation",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:23:16+08:00"
+  },
+  "t:rsi": {
+   "status": "matched_by_title",
+   "query": "all:\"RSI\"",
+   "match": {
+    "arxiv_id": "2610.13912",
+    "version": "1",
+    "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+    "abstract": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks govern the retention of updated policy-model pairs. Across diverse computational and scientific domains, RSI-Anything demonstrates substantial gains. In code repair, with the coder fixed, success increases from 26.3% with a static verifier to 29.2% through predictive selection and 31.2% after world-model adaptation, at comparable test usage. Graphical user interface (GUI) evaluations showed higher task completion, while average actions decrease by 39.4%. Across five successive policy versions, laboratory-planning scores more than double from 21.80% to 46.01%. In reaction optimization, RSI-Anything achieves 96.15% mean best observed yield versus 82.16% for Bayesian optimization under the same 40-experiment budget. An end-to-end immune-science application further connects workflow evolution and predictive modeling with therapeutic hypothesis generation. These results demonstrate how predictive world models and retained system updates enable recursive improvement across diverse environments.",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Taoyong Cui",
+     "Pinxian Zeng",
+     "Wanghan Xu",
+     "Hao Xiao",
+     "Shuhan Xue",
+     "Qiang Gao",
+     "Wanli Ouyang",
+     "Pheng Ann Heng",
+     "Zhenfei Yin",
+     "Yingcheng Wu",
+     "Ling Yang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Code: https://github.com/Gen-Verse/RSI-Anything"
+   },
+   "score": 0.95,
+   "title": "RSI",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:20+08:00"
+  },
+  "t:tie": {
+   "status": "matched_by_title",
+   "query": "all:\"TIE\"",
+   "match": {
+    "arxiv_id": "2609.23880",
+    "version": "1",
+    "title": "Q-TIE: A Lightweight and Generalizable Re-ranking Framework for Temporal Information Retrieval",
+    "abstract": "Temporal Information Retrieval (TIR) has been increasingly critical given the rise of Retrieval-Augmented Generation (RAG). Since temporally mismatched evidence can be highly misleading, TIR aims to retrieve documents that are both semantically and temporally relevant to a query. Two TIR paradigms have emerged - temporal retrievers and temporal re-rankers - differing in how temporal relevance is modeled. While these paradigms provide complementary strengths, our analysis reveals that each alone falls short of robust TIR: temporal retrievers provide flexible query understanding via learned representations, but often fail to explicitly account for temporal constraints; temporal re-rankers can enforce such constraints more explicitly, but often rely on predefined re-ranking rules. To address this, we propose Q-TIE, a re-ranking framework based on learned Temporal Intent Extraction (TIE). By introducing a TIE model that maps each query's temporal constraint into a unified interval representation (i.e., $\\langle t_{start}, t_{end} \\rangle$), Q-TIE generalizes beyond predefined rules via model-based learning while explicitly modeling temporal constraints as a separate signal - jointly achieving what each paradigm typically trades off. Experiments demonstrate that Q-TIE consistently outperforms existing TIR methods with stronger generalizability across temporal query types, and provides a lightweight yet effective add-on for temporally-aware RAG pipelines. Code: https://github.com/ssoy0701/Q-TIE.",
+    "published": "2026-09-20",
+    "updated": "2026-09-20",
+    "authors": [
+     "Soyeon Kim",
+     "Hyunjin Kim",
+     "JinYeong Bak",
+     "Steven Euijong Whang"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to EMNLP 2026 (Main Conference). Code: https://github.com/ssoy0701/Q-TIE"
+   },
+   "score": 0.95,
+   "title": "TIE",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:27+08:00"
+  },
+  "t:terminal rsi": {
+   "status": "matched_by_title",
+   "query": "all:\"Terminal-RSI\"",
+   "match": {
+    "arxiv_id": "2610.22192",
+    "version": "1",
+    "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+    "abstract": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Junyao Yang",
+     "Zongxia Li",
+     "Yucheng Shi",
+     "Zhongzhi Li",
+     "Ruhan Wang",
+     "Ruiwen Zhou",
+     "Haitao Mi",
+     "Shuicheng Yan",
+     "Leowei Liang"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "28 pages, 16 figures, 5 tables"
+   },
+   "score": 0.95,
+   "title": "Terminal-RSI",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:30+08:00"
+  },
+  "t:trapo": {
+   "status": "matched_by_title",
+   "query": "all:\"TraPO\"",
+   "match": {
+    "arxiv_id": "2512.13106",
+    "version": "1",
+    "title": "TraPO: A Semi-Supervised Reinforcement Learning Framework for Boosting LLM Reasoning",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has proven effective in training large reasoning models (LRMs) by leveraging answer-verifiable signals to guide policy optimization, which, however, suffers from high annotation costs. To alleviate this problem, recent work has explored unsupervised RLVR methods that derive rewards solely from the model's internal consistency, such as through entropy and majority voting. While seemingly promising, these methods often suffer from model collapse in the later stages of training, which may arise from the reinforcement of incorrect reasoning patterns in the absence of external supervision. In this work, we investigate a novel semi-supervised RLVR paradigm that utilizes a small labeled set to guide RLVR training on unlabeled samples. Our key insight is that supervised rewards are essential for stabilizing consistency-based training on unlabeled samples, ensuring that only reasoning patterns verified on labeled instances are incorporated into RL training. Technically, we propose an effective policy optimization algorithm, TraPO, that identifies reliable unlabeled samples by matching their learning trajectory similarity to labeled ones. Building on this, TraPO achieves remarkable data efficiency and strong generalization on six widely used mathematical reasoning benchmarks (AIME24/25, AMC, MATH-500, Minerva, and Olympiad) and three out-of-distribution tasks (ARC-c, GPQA-diamond, and MMLU-pro). With only 1K labeled and 3K unlabeled samples, TraPO reaches 42.6% average accuracy, surpassing the best unsupervised method trained on 45K unlabeled samples (38.3%). Notably, when using 4K labeled and 12K unlabeled samples, TraPO even outperforms the fully supervised model trained on the full 45K labeled samples on all benchmarks, while using only 10% of the labeled data. The code is available via https://github.com/ShenzhiYang2000/TRAPO.",
+    "published": "2025-12-15",
+    "updated": "2025-12-15",
+    "authors": [
+     "Shenzhi Yang",
+     "Guangcheng Zhu",
+     "Xing Zheng",
+     "Yingfan MA",
+     "Zhongqi Chen",
+     "Bowen Song",
+     "Weiqiang Wang",
+     "Junbo Zhao",
+     "Gang Chen",
+     "Haobo Wang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "TraPO",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:36+08:00"
+  },
+  "t:wikihowagent": {
+   "status": "rejected",
+   "query": "all:\"WikiHowAgent\"",
+   "match": null,
+   "best_candidate": "Conversational Education at Scale: A Multi-LLM Agent Workflow for Procedural Learning and Pedagogic Quality Assessment",
+   "best_score": 0.124,
+   "title": "WikiHowAgent",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:40+08:00"
+  },
+  "t:基于 vt 漂移感知的闪存信号处理与先进 ecc 的 3d nand ssd 系统级寿命延长": {
+   "status": "no_results",
+   "query": "ti:\"基于 VT 漂移感知的闪存信号处理与先进 ECC 的 3D NAND SSD 系统级寿命延长\"",
+   "match": null,
+   "title": "基于 VT 漂移感知的闪存信号处理与先进 ECC 的 3D NAND SSD 系统级寿命延长",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:23:44+08:00"
+  },
+  "t:大型氨基酸转运体1型 lat1 表达在肺腺癌中的预后价值 一项组织微阵列研究": {
+   "status": "no_results",
+   "query": "ti:\"大型氨基酸转运体1型(LAT1)表达在肺腺癌中的预后价值:一项组织微阵列研究\"",
+   "match": null,
+   "title": "大型氨基酸转运体1型(LAT1)表达在肺腺癌中的预后价值:一项组织微阵列研究",
+   "kind": "title",
+   "checked_at": "2026-10-22T09:23:48+08:00"
+  },
+  "t:高带宽内存 hbm 功耗解析 实验分析与建模": {
+   "status": "no_results",
+   "query": "all:\"高带宽内存(HBM)功耗解析:实验分析与建模\"",
+   "match": null,
+   "title": "高带宽内存(HBM)功耗解析:实验分析与建模",
+   "kind": "method",
+   "checked_at": "2026-10-22T09:23:53+08:00"
   }
  }
 }
