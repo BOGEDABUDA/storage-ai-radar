@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-22T09:23:53+08:00",
+  "generated_at": "2026-10-26T08:13:43+08:00",
   "source_label": "Daily Report",
-  "report_count": 52,
-  "article_count": 19840,
-  "digest_count": 994,
-  "detail_count": 998,
-  "sources_attached": 994,
+  "report_count": 53,
+  "article_count": 20162,
+  "digest_count": 1014,
+  "detail_count": 1018,
+  "sources_attached": 1014,
   "empty_summaries": 32,
-  "duplicates_merged": 239,
+  "duplicates_merged": 241,
   "dates": [
     "2026-04-29",
     "2026-05-04",
@@ -60,97 +60,98 @@
     "2026-10-13",
     "2026-10-16",
     "2026-10-19",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-26"
   ],
   "categories": [
     {
       "key": "ai-inference-acceleration",
       "name": "AI推理加速优化技术",
-      "article_count": 1652,
-      "digest_count": 104,
+      "article_count": 1688,
+      "digest_count": 106,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "ai-model-agent-rag",
       "name": "AI模型及Agent_RAG等技术",
-      "article_count": 7560,
-      "digest_count": 100,
+      "article_count": 7686,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "near-memory-computing",
       "name": "近存加速_存内计算",
-      "article_count": 312,
-      "digest_count": 102,
+      "article_count": 319,
+      "digest_count": 104,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "new-media",
       "name": "新介质",
-      "article_count": 302,
-      "digest_count": 100,
+      "article_count": 309,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "storage-semantics-protocol",
       "name": "新存储设备语义_协议",
-      "article_count": 250,
-      "digest_count": 100,
+      "article_count": 251,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "high-capacity-storage",
       "name": "大容量存储设备",
-      "article_count": 361,
-      "digest_count": 100,
+      "article_count": 368,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "high-reliability-storage",
       "name": "高可靠性存储",
-      "article_count": 111,
-      "digest_count": 84,
+      "article_count": 114,
+      "digest_count": 86,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "cost-effective-storage",
       "name": "高性价比存储技术",
-      "article_count": 227,
-      "digest_count": 100,
+      "article_count": 236,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "model-benchmarking",
       "name": "模型性能的测评分析",
-      "article_count": 1166,
-      "digest_count": 100,
+      "article_count": 1192,
+      "digest_count": 102,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": false
     },
     {
       "key": "others",
       "name": "其他",
-      "article_count": 7899,
-      "digest_count": 104,
+      "article_count": 7999,
+      "digest_count": 106,
       "first_seen": "2026-04-29",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-26",
       "is_catch_all": true
     }
   ],
@@ -163,18 +164,18 @@
     "l"
   ],
   "graph": {
-    "digests": 994,
-    "entities_total": 2158,
-    "entities_in_graph": 628,
-    "edges": 1784,
+    "digests": 1014,
+    "entities_total": 2205,
+    "entities_in_graph": 642,
+    "edges": 1825,
     "min_mentions": 2,
     "min_cooccur": 2
   },
   "papers": {
-    "paper_entries": 2057,
-    "unique_papers": 1161,
-    "resolved": 620,
-    "with_abstract": 620,
-    "unmatched": 541
+    "paper_entries": 2085,
+    "unique_papers": 1173,
+    "resolved": 629,
+    "with_abstract": 629,
+    "unmatched": 544
   }
 }

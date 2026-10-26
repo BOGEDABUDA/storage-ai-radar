@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-22T09:23:53+08:00",
+ "generated_at": "2026-10-26T07:42:06+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -30994,6 +30994,369 @@
    "title": "高带宽内存(HBM)功耗解析:实验分析与建模",
    "kind": "method",
    "checked_at": "2026-10-22T09:23:53+08:00"
+  },
+  "id:2610.22588": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.22588",
+   "match": {
+    "arxiv_id": "2610.22588",
+    "version": "1",
+    "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+    "abstract": "Strong multi-hop retrieval should be practical to deploy without expensive corpus preparation or complex database infrastructure. We present SAG2, an embedding-free retrieval architecture built around a single SQLite database, BM25, and contextual evidence decisions from JEV. SAG2 follows the query-time association principle of SAG (SQL-Retrieval Augmented Generation), while replacing its event-entity and dense indexes with a lexical index over original passages. Selected passages supply terms for further retrieval, and newly retrieved evidence guides subsequent decisions. This moves semantic evidence selection to query time, eliminating offline embedding computation, LLM-based event-entity extraction, and dedicated database servers. The resulting system combines lightweight preparation with strong retrieval accuracy: on 1,000-question subsets of MuSiQue, 2WikiMultiHopQA, and HotpotQA, SAG2 achieves the highest Recall@5 and Recall@10 among the compared methods, with Recall@10 of 86.62%, 97.43%, and 99.00%. It also reaches 81.10% document Recall@10 over the 511,962-document EnterpriseRAG-Bench corpus. Indexing all 11,656 MuSiQue passages takes 2.36 seconds, produces a 25.87 MiB database, and requires no model calls. SAG2 demonstrates that accurate multi-hop evidence retrieval can be supported by compact, rapidly prepared infrastructure, making it a practical foundation for knowledge retrieval applications.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Yuchao Wu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "SAG2",
+   "kind": "id",
+   "checked_at": "2026-10-26T07:40:12+08:00"
+  },
+  "t:agent4sci": {
+   "status": "rejected",
+   "query": "all:\"Agent4Sci\"",
+   "match": null,
+   "best_candidate": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+   "best_score": 0.18,
+   "title": "Agent4Sci",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:40:16+08:00"
+  },
+  "t:are self evolving agents continual learners": {
+   "status": "matched_by_title",
+   "query": "ti:\"Are Self-Evolving Agents Continual Learners?\"",
+   "match": {
+    "arxiv_id": "2610.25858",
+    "version": "1",
+    "title": "Are Self-Evolving Agents Continual Learners?",
+    "abstract": "Large language model agents are often deployed in environments where new knowledge, tools, and workflows keep arriving. Such an agent is therefore expected to adapt continually, learning new tasks as they arrive without forgetting earlier ones. This resembles the continual learning problem, but at a pace that conventional gradient updates cannot sustain. Nonparametric self-evolving agents are a natural alternative: they adapt by rewriting their own harness, such as prompts, memory, and skills, from task feedback while the model weights stay frozen. We study whether such agents are effective continual learners across four drifting task streams that shift in topic, workflow, or domain (built from BIRD, BFCL, and ScienceWorld). Evaluating three representative methods spanning experience retrieval and self-modification (ReasoningBank, GEPA, and Meta-Harness), we find that although self-evolution improves aggregate performance on most streams, higher plasticity consistently comes at the cost of stability. Specifically, self-modifying methods apply global edits to a shared prompt or workspace, interfering with unseen tasks and overwriting earlier knowledge as the stream shifts. Conversely, similarity-based memory retrieval localizes updates across distant domains, but still retrieves foreign memories on unseen tasks and suffers from retrieval collision when similar queries require conflicting workflows. These findings show that current self-evolving agents remain incomplete continual learners.",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "authors": [
+     "Xiaoyin Chen",
+     "Yizheng Huang",
+     "Yinglun Xu",
+     "Ziyun Zhao",
+     "Emmett McQuinn",
+     "Julie Liu",
+     "Hope Yao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Are Self-Evolving Agents Continual Learners?",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:40:25+08:00"
+  },
+  "t:automating ml for science can frontier agents climb scientific hills in the wild": {
+   "status": "matched_by_title",
+   "query": "ti:\"Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?\"",
+   "match": {
+    "arxiv_id": "2610.28763",
+    "version": "1",
+    "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+    "abstract": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.4% to 20.1% and Codex from 4.4% to 8.1%, while yielding more diverse, domain-relevant interventions. Agent4Sci gives the community a way to track and push frontier agents from ML engineering toward domain insight on real-world ML-for-science problems. Code and data are available on GitHub (https://github.com/maszhongming/agent4sci) and Hugging Face (https://huggingface.co/datasets/MingZhong/agent4sci).",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "authors": [
+     "Ming Zhong",
+     "Stacy Li",
+     "Nicholas Carlini",
+     "Matthew Jagielski"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2026 E&D Track"
+   },
+   "score": 1.0,
+   "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:40:34+08:00"
+  },
+  "t:bizagentbench": {
+   "status": "matched_by_title",
+   "query": "all:\"BizAgentBench\"",
+   "match": {
+    "arxiv_id": "2610.20424",
+    "version": "2",
+    "title": "BizAgentBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+    "abstract": "Existing long-horizon agent benchmarks often emphasize final task success while providing limited assessment of intermediate execution validity. Yet real-world business operations require agents to navigate extensive, potentially outdated or conflicting policies while satisfying critical constraints throughout execution. These requirements are particularly consequential in high-stakes domains such as payments, where intermediate violations can incur financial losses or regulatory consequences regardless of the final outcome. To bridge this evaluation gap, we introduce BizAgentBench, a multi-turn benchmark grounded in real-world procedures from a leading payments company. Its executable environment integrates 789 knowledge documents and 601 discoverable business tools, with consistent policies, states, and tool behavior. The benchmark comprises 50 tasks involving resource constraints, temporal dependencies, prior commitments, and conflicting or outdated guidance. Each task is validated through reference execution, while deterministic checks assess both goal attainment and execution validity without prescribing a single solution path. Experiments reveal substantial limitations even among frontier models: Claude Opus 5 and GPT-6 Sol achieve strict success rates of only 64.0% and 61.3%, respectively. For Qwen3.8-27B, goal attainment reaches 42.0%, but strict success drops to 32.7%, demonstrating how outcome-based evaluation can mask invalid execution. Beyond success rates, DeepSeek-V4.1-Flash averages 191.3 tool calls per run, approximately 70% more than reference executions, revealing substantial execution overhead. Overall, BizAgentBench establishes a testbed for evaluating and advancing long-horizon agents beyond task completion, toward reliable and constraint-compliant execution in complex business environments.",
+    "published": "2026-10-14",
+    "updated": "2026-10-18",
+    "authors": [
+     "Enhan Zhao",
+     "Yongqi Tong",
+     "Xuejun Yu",
+     "Hang Wang",
+     "Pan Wang",
+     "Yichao Wang",
+     "Di He",
+     "Jianshe Li",
+     "Wei Wu"
+    ],
+    "categories": [
+     "cs.CE"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "BizAgentBench",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:40:46+08:00"
+  },
+  "t:dpda": {
+   "status": "matched_by_title",
+   "query": "all:\"DPDA\"",
+   "match": {
+    "arxiv_id": "1503.08847",
+    "version": "3",
+    "title": "On the Sizes of DPDAs, PDAs, LBAs",
+    "abstract": "There are languages A such that there is a Pushdown Automata (PDA) that recognizes A which is much smaller than any Deterministic Pushdown Automata (DPDA) that recognizes A. There are languages A such that there is a Linear Bounded Automata (Linear Space Turing Machine, henceforth LBA) that recognizes A which is much smaller than ny PDA that recognizes A. There are languages A such that both A and compliment(A) are recognizable by a PDA, but the PDA for A is much smaller than the PDA for compliment(A). There are languages A1, A2 such that A1,A2,A1 INTERSECT A_2 are recognizable by a PDA, but the PDA for A1 and A2 are much smaller than the PDA for A1 INTERSECT A2. We investigate these phenomenon and show that, in all these cases, the size difference is captured by a function whose Turing degree is on the second level of the arithmetic hierarchy. Our theorems lead to infinitely-often results. For example: for infinitely many $n$ there exists a language An recognized by a DPDA such that there is a small PDA for An, but any DPDA for An is large. We look at cases where we can get almost-all results, though with much smaller size differences.",
+    "published": "2015-03-30",
+    "updated": "2015-07-16",
+    "authors": [
+     "Richard Beigel",
+     "William Gasarch"
+    ],
+    "categories": [
+     "cs.FL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "DPDA",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:40:56+08:00"
+  },
+  "t:deepseek 88个神级润色指令": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek 88个神级润色指令\"",
+   "match": null,
+   "title": "DeepSeek 88个神级润色指令",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:41:06+08:00"
+  },
+  "t:duodiscover scaling autonomous discovery beyond the evaluation bottleneck": {
+   "status": "matched_by_title",
+   "query": "ti:\"DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck\"",
+   "match": {
+    "arxiv_id": "2610.17184",
+    "version": "1",
+    "title": "DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck",
+    "abstract": "Evaluation has been central to advances in AI, and it is equally critical to autonomous discovery. Yet scaling autonomous discovery to real-world engineering challenges faces a fundamental bottleneck: the cost of evaluating progress. In real settings, a single true evaluation, such as a full benchmark or serving trace, can take hours, so a search can afford only a handful of true evaluations. We present DuoDiscover, a search system that jointly discovers what to optimize and how to evaluate progress efficiently, through three mechanisms. First, each worker in a fleet of coding agents co-discovers an optimization target and a fast, tailored proxy evaluator, which we call a yardstick. The agent then hill-climbs the yardstick rather than the true evaluation. Second, since search can exploit gaps between a yardstick and the true objective, fidelity tests continually recheck each yardstick's ranking and invalidate any that drift. Third, the fleet is bottom-up, with no central decomposition of the problem. A lightweight orchestrator spawns and terminates agents, briefs running ones, and seeds new agents with others' confirmed work. DuoDiscover enables autonomous optimization from software to chip architecture. We demonstrate DuoDiscover on two repository-level benchmarks and four GPU and TPU kernel suites covering hundreds of kernels. On SWE-fficiency, it doubles the average speedup of human experts. On SOL-Exec, it ranks first on 121 of 235 kernels and in the top three on 212. On the heavily optimized vLLM and SQLite engines, DuoDiscover achieves 1.92$\\times$ and 1.38$\\times$ gains over the base code. On a CPU microarchitecture optimization task with evaluations of up to 28 hours, DuoDiscover surpasses both AlphaEvolve-based ArchAgent v2 and the best human design, with 1.65$\\times$ ArchAgent v2's gain in 16.7 days versus more than 40 days, advancing the frontier of autonomous chip design.",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "authors": [
+     "Shubham Agarwal",
+     "Akshat Gupta",
+     "Mike Heddes",
+     "Dilara Soylu",
+     "Rui Meng",
+     "Patrick Tser Jern Kon",
+     "Jiefeng Chen",
+     "Mert Cemri",
+     "Shu Liu",
+     "Abe Gonzalez",
+     "Akanksha Jain",
+     "Bhavana Dalvi Mishra"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Dilara*, Mike*, Akshat*, Shubham* contributed equally to this work"
+   },
+   "score": 1.0,
+   "title": "DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:41:16+08:00"
+  },
+  "t:gpt 6 astra lights up embodied navigation evaluation in zero shot vision and language navigation in continuous environments": {
+   "status": "matched_by_title",
+   "query": "ti:\"GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments\"",
+   "match": {
+    "arxiv_id": "2609.29861",
+    "version": "2",
+    "title": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+    "abstract": "We investigate whether GPT-6-Astra, a general-purpose foundation model, can navigate unfamiliar environments using its own perception, reasoning, and decision-making capabilities. Our evaluation focuses on zero-shot vision-and-language navigation in continuous environments (VLN-CE) through a minimal interface in the Codex harness, aiming to unleash GPT-6-Astra's full potential for navigation. Using monocular RGB, GPT-6-Astra decides when to observe, how to move, and when to stop, without navigation-specific fine-tuning, a trained waypoint predictor, or a pre-built scene map. Our evaluation yields four key findings and implications. First, GPT-6-Astra achieves strong zero-shot navigation performance using only monocular RGB observations. On R2R-CE-100, GPT-6-Astra (ultra reasoning) achieves a success rate of 81.3%, exceeding the strongest reported zero-shot and even train-based success rates by 15.3 and 9.2 percentage points, respectively. Second, GPT-6-Astra exhibits promising capabilities in interpreting multi-stage instructions, understanding the environment, and adjusting routes. Third, execution and goal-verification failures persist even with ultra reasoning. Fourth, these results motivate combining general-purpose model capabilities with navigation-specific expertise. Based on these findings, future VLN research should investigate which aspects of instruction interpretation, spatial understanding, and navigation decision-making general-purpose models can handle directly, and where navigation-specific learning can extend their capabilities. This includes exploring how spatial representations, navigation experience, and learned control skills can improve progress tracking, error recovery, and goal verification while preserving the flexibility to adjust routes.",
+    "published": "2026-09-24",
+    "updated": "2026-09-25",
+    "authors": [
+     "Guangzhao Dai",
+     "Qianru Sun",
+     "Qi Wu",
+     "Bin Zhu"
+    ],
+    "categories": [
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": "Technical report"
+   },
+   "score": 1.0,
+   "title": "GPT-6-Astra Lights Up Embodied Navigation: Evaluation in Zero-Shot Vision-and-Language Navigation in Continuous Environments",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:41:19+08:00"
+  },
+  "t:harnesspro": {
+   "status": "matched_by_title",
+   "query": "all:\"HarnessPro\"",
+   "match": {
+    "arxiv_id": "2610.26770",
+    "version": "2",
+    "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs",
+    "abstract": "Harness development plays a crucial role in building capable AI agents. Recent approaches improve harnesses through recursive self-improvement (RSI), but their performance gains often come with higher execution costs. We introduce HarnessPro, a label-free method for evolving harnesses to improve task performance while reducing execution cost. In this setting, candidate harnesses are evaluated using LLM-generated tests without access to ground-truth solutions or official tests. Specialized agents diagnose execution trajectories, plan updates with different performance-cost priorities, and implement them as candidate harnesses. Rather than returning a single harness, HarnessPro uses normalized weighted squared-distance selection to provide cost-focused (lite), balanced (medium), and performance-focused (heavy) harnesses for different deployment budgets. Selected harnesses enter the next iteration, where execution feedback guides further updates. Our experiments cover Terminal-Bench 2, SWE-Bench Pro, and ProgramBench, using GPT-5.5 with Codex and GLM-5.2 with Claude Code. Across these benchmarks using GPT-5.5 with Codex, the heavy mode of HarnessPro achieves an average pass-rate gain of 2.0 percentage points and an average per-task cost reduction of 26.1% relative to RHO. This advantage also holds when using GLM-5.2 with Claude Code. Code is available at https://github.com/pzs19/HarnessPro",
+    "published": "2026-10-19",
+    "updated": "2026-10-20",
+    "authors": [
+     "Zhuoshi Pan",
+     "ZhiYuan Feng",
+     "Yukuo Cen",
+     "Honglin Lin",
+     "Junru Lu",
+     "Zhongxia Chen",
+     "Shuo Yang",
+     "H. Vicky Zhao",
+     "Jie Tang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "41 pages, 4 figures, 4 tables, under review"
+   },
+   "score": 0.95,
+   "title": "HarnessPro",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:41:25+08:00"
+  },
+  "t:paht": {
+   "status": "rejected",
+   "query": "all:\"PAHT\"",
+   "match": null,
+   "best_candidate": "Panchromatic patterns by paths",
+   "best_score": 0.235,
+   "title": "PAHT",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:41:36+08:00"
+  },
+  "t:sag2": {
+   "status": "matched_by_title",
+   "query": "all:\"SAG2\"",
+   "match": {
+    "arxiv_id": "2610.22588",
+    "version": "1",
+    "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+    "abstract": "Strong multi-hop retrieval should be practical to deploy without expensive corpus preparation or complex database infrastructure. We present SAG2, an embedding-free retrieval architecture built around a single SQLite database, BM25, and contextual evidence decisions from JEV. SAG2 follows the query-time association principle of SAG (SQL-Retrieval Augmented Generation), while replacing its event-entity and dense indexes with a lexical index over original passages. Selected passages supply terms for further retrieval, and newly retrieved evidence guides subsequent decisions. This moves semantic evidence selection to query time, eliminating offline embedding computation, LLM-based event-entity extraction, and dedicated database servers. The resulting system combines lightweight preparation with strong retrieval accuracy: on 1,000-question subsets of MuSiQue, 2WikiMultiHopQA, and HotpotQA, SAG2 achieves the highest Recall@5 and Recall@10 among the compared methods, with Recall@10 of 86.62%, 97.43%, and 99.00%. It also reaches 81.10% document Recall@10 over the 511,962-document EnterpriseRAG-Bench corpus. Indexing all 11,656 MuSiQue passages takes 2.36 seconds, produces a 25.87 MiB database, and requires no model calls. SAG2 demonstrates that accurate multi-hop evidence retrieval can be supported by compact, rapidly prepared infrastructure, making it a practical foundation for knowledge retrieval applications.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Yuchao Wu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SAG2",
+   "kind": "method",
+   "checked_at": "2026-10-26T07:41:42+08:00"
+  },
+  "t:scaling online exploration for robot agents": {
+   "status": "matched_by_title",
+   "query": "ti:\"Scaling Online Exploration for Robot Agents\"",
+   "match": {
+    "arxiv_id": "2610.22496",
+    "version": "1",
+    "title": "Scaling Online Exploration for Robot Agents",
+    "abstract": "Robot learning has advanced by scaling demonstration datasets and model capacity; however, deploying a new robot embodiment or task typically necessitates a dedicated teleoperation corpus. The resulting policies remain bounded by their imitation distributions, limiting generalization and continual self-improvement. We introduce RAX (Robot Agent eXploration), an open-source framework for robot agents centered on scaling exploration: enabling agents to improve by acquiring online experience and synthesizing executable programs. In RAX, a general-purpose coding agent generates robot control code, operating without action demonstration data, hand-engineered action primitives, or value-function guidance. Through online exploration, the agent identifies decision sequences that achieve task goals and compiles them into modular programs encapsulating the full perception-planning-control loop. Using RAX, we present a systematic multi-embodiment study on scaling online exploration across precision and long-horizon manipulation tasks using single-arm, bimanual, dexterous, mobile, and humanoid systems in simulation and on real robots. Generalization performance on unseen environments improves consistently as exploration scales. In simulation, RAX outperforms top baseline models by +37.4% on average. On real robots, RAX autonomously learns memory-dependent, articulated, high-precision, deformable, and long-horizon mobile manipulation tasks without human demonstrations, continually improving performance by composing verified skills from prior exploration sessions. As exploration scales, we observe emergent capabilities including active perception, error recovery, safety guardrails, and human-robot collaboration. We open-source RAX as a generalist robot-agent platform in which new robot embodiments are integrated through their APIs alone, without teleoperated data collection or policy training.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Runhan Huang",
+     "Xiangcheng Zhang",
+     "Haoyu Chen",
+     "Yitong Li",
+     "Yen-Jen Wang",
+     "Bohan Lyu",
+     "Haotian Ye",
+     "Chuye Hong",
+     "Yixuan Wang",
+     "Chloe Su",
+     "Haoyu Xiong",
+     "Yangzhen Wu"
+    ],
+    "categories": [
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": "Project website is at https://robot-agent-exploration.com/"
+   },
+   "score": 1.0,
+   "title": "Scaling Online Exploration for Robot Agents",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:41:46+08:00"
+  },
+  "t:terminal rsi recursive self improving terminal agents via recursive self rewrite and policy refine": {
+   "status": "matched_by_title",
+   "query": "ti:\"Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine\"",
+   "match": {
+    "arxiv_id": "2610.22192",
+    "version": "1",
+    "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+    "abstract": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "authors": [
+     "Junyao Yang",
+     "Zongxia Li",
+     "Yucheng Shi",
+     "Zhongzhi Li",
+     "Ruhan Wang",
+     "Ruiwen Zhou",
+     "Haitao Mi",
+     "Shuicheng Yan",
+     "Leowei Liang"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "28 pages, 16 figures, 5 tables"
+   },
+   "score": 1.0,
+   "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:41:54+08:00"
+  },
+  "t:三星 2nm 嵌入式 dram 微型开关实现 3 倍密度": {
+   "status": "no_results",
+   "query": "ti:\"三星 2nm 嵌入式 DRAM:微型开关实现 3 倍密度\"",
+   "match": null,
+   "title": "三星 2nm 嵌入式 DRAM:微型开关实现 3 倍密度",
+   "kind": "title",
+   "checked_at": "2026-10-26T07:42:06+08:00"
   }
  }
 }
