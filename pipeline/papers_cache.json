@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-26T07:42:06+08:00",
+ "generated_at": "2026-10-29T09:07:09+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -31357,6 +31357,834 @@
    "title": "三星 2nm 嵌入式 DRAM:微型开关实现 3 倍密度",
    "kind": "title",
    "checked_at": "2026-10-26T07:42:06+08:00"
+  },
+  "id:2610.35866": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.35866",
+   "match": {
+    "arxiv_id": "2610.35866",
+    "version": "2",
+    "title": "Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling",
+    "abstract": "As autonomous research systems become more capable, benchmarks must both evaluate their performance and support meaningful research progress. We introduce Auto-Research Arena, a multi-target benchmark for evaluating autonomous research systems and discovering ideas in language modeling. Arena supports diverse research objectives within a shared experimental environment by separating admissibility from improvement: model quality and resource constraints determine whether a result qualifies, while the selected target measures progress among admissible results. We instantiate Arena in language model pretraining with nine targets spanning model, data, training, and inference efficiency, and evaluate seven research harnesses using two foundation models. Arena clearly differentiates existing harnesses across research objectives, with several sophisticated methods outperformed by our simple sequential search baseline, indicating substantial headroom in current auto-research systems. Beyond evaluation, Arena reveals a substantially broader frontier of model and system ideas aligned with active research directions. Reusing these discoveries in a new quality-driven search yields lower training loss under matched data and FLOPs and lower held-out BPB at the same model size. Together, Arena provides a common framework for benchmarking autonomous research and expanding its scope in language modeling. The code is available at https://github.com/Auto-Research-Arena/auto-research-arena",
+    "published": "2026-10-26",
+    "updated": "2026-10-27",
+    "authors": [
+     "Xi Chen",
+     "Chongjian Ge",
+     "Yiran Xu",
+     "Yiqun Mei",
+     "Henrik I. Christensen",
+     "Hao Tan",
+     "Ziwen Chen",
+     "Hanwen Jiang"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "The code is available at https://github.com/Auto-Research-Arena/auto-research-arena"
+   },
+   "score": 1.0,
+   "title": "今日AI热点:亚马逊全面战略收缩重组 AGI 部门、Auto-Rese…",
+   "kind": "id",
+   "checked_at": "2026-10-29T08:56:32+08:00"
+  },
+  "t:agi won t be a chatbot": {
+   "status": "no_results",
+   "query": "ti:\"AGI won't be a chatbot\"",
+   "match": null,
+   "title": "AGI won't be a chatbot",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:56:40+08:00"
+  },
+  "t:bagualu 2": {
+   "status": "matched_by_title",
+   "query": "all:\"BaGuaLu-2\"",
+   "match": {
+    "arxiv_id": "2610.23064",
+    "version": "1",
+    "title": "BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs",
+    "abstract": "Fine-grained Mixture-of-Experts (MoE) is the de facto architecture for scaling large language models. However, dynamic expert load imbalance causes severe memory fluctuations that degrade training efficiency. Existing systems rely on static memory provisioning: they either over-provision, leaving GPU memory idle during normal execution, or under- provision, inviting out-of-memory crashes and costly manual rollbacks when load spikes occur. To address these challenges, we propose BaGuaLu-2, a large-scale MoE training system that eliminates this dilemma through flexible provisioning. By transforming memory allocation from a static, one-time tuning choice into a continuous and fine-grained control. BaGuaLu-2 grants exact activation memory on demand for each training batch. Furthermore, it offsets any dynamic management overhead through system optimizations. BaGuaLu-2 demonstrates exceptional scalability, training a model with 1040 billion parameters across 12,288 GPUs while sustaining over 2 EFlops at 35% MFU. Compared with state-of-the-art systems, BaGuaLu-2 delivers 1.14x and 1.13x average throughput improvements over Megatron-Kuai and AdaPipe, respectively.",
+    "published": "2026-10-16",
+    "updated": "2026-10-16",
+    "authors": [
+     "Mingshu Zhai",
+     "Minkun Guo",
+     "Hongrui Lian",
+     "Shuangyu Li",
+     "Qi Zhang",
+     "Chen Hu",
+     "Xiawei Du",
+     "Yuyang Jin",
+     "Zan Zong",
+     "Jidong Zhai"
+    ],
+    "categories": [
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "BaGuaLu-2",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:56:52+08:00"
+  },
+  "t:co fabric": {
+   "status": "matched_by_title",
+   "query": "all:\"Co-Fabric\"",
+   "match": {
+    "arxiv_id": "2609.25560",
+    "version": "1",
+    "title": "Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection",
+    "abstract": "Large-model parameters have grown beyond the capacity of a single xPU, dispersing across multiple xPUs spanning distinct host domains, where xPU-to-xPU communication dominates overall system efficiency. Existing scale-up interconnect remains inadequate: network-based solutions built on Ethernet--such as RoCE (RDMA over Converged Ethernet)--introduce specific message-semantics and protocol-stack characteristics, and rely on fragmented per-host addressing, while conventional host-based fabrics are confined to a single host domain and lack cross-host unified addressing. This paper presents Co-Fabric, a bus-based interconnect that, unlike conventional bus designs, breaks host-domain boundaries to deliver unified xPU interconnection for scale-up superpods. Co-Fabric makes three contributions: a streamlined four-layer protocol stack achieving nanosecond-scale processing latency with native reliability; a cross-domain scaling and P2P mechanism that routes using port identifiers embedded in the packet header; and a unified address space built on shadow-device auto-enumeration. On a 64-xPU 3D-Mesh system, Co-Fabric cuts inter-node communication latency by over 50% and improves bandwidth by 2-5x over RoCE, accelerating DeepSeek R1 inference by 30%-80%. Moreover, since its streamlined four-layer protocol stack and higher data-communication efficiency reduce protocol and processing overhead relative to the Ethernet-based RoCE stack, Co-Fabric cuts the cost and power of the interconnect itself by up to 80% and 5%, respectively. These results demonstrate Co-Fabric's advantage for AI computing centers.",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "authors": [
+     "Zhen Peng",
+     "Jiaming Huang",
+     "Chaofan Chen",
+     "Zhao Zhang",
+     "An Wu",
+     "Baoyang Liu",
+     "Xinglong Wang",
+     "Tanlong Ci",
+     "Jinfeng Li",
+     "Xueke Duan",
+     "Hao Wang",
+     "Xi Chen"
+    ],
+    "categories": [
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Co-Fabric",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:56:58+08:00"
+  },
+  "t:co fabric融脉架构": {
+   "status": "no_results",
+   "query": "all:\"Co-Fabric融脉架构\"",
+   "match": null,
+   "title": "Co-Fabric融脉架构",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:07+08:00"
+  },
+  "t:configurable foundation models building llms from a modular perspective": {
+   "status": "matched_by_title",
+   "query": "ti:\"Configurable Foundation Models: Building LLMs from a Modular Perspective\"",
+   "match": {
+    "arxiv_id": "2409.02877",
+    "version": "1",
+    "title": "Configurable Foundation Models: Building LLMs from a Modular Perspective",
+    "abstract": "Advancements in LLMs have recently unveiled challenges tied to computational efficiency and continual scalability due to their requirements of huge parameters, making the applications and evolution of these models on devices with limited computation resources and scenarios requiring various abilities increasingly cumbersome. Inspired by modularity within the human brain, there is a growing tendency to decompose LLMs into numerous functional modules, allowing for inference with part of modules and dynamic assembly of modules to tackle complex tasks, such as mixture-of-experts. To highlight the inherent efficiency and composability of the modular approach, we coin the term brick to represent each functional module, designating the modularized structure as configurable foundation models. In this paper, we offer a comprehensive overview and investigation of the construction, utilization, and limitation of configurable foundation models. We first formalize modules into emergent bricks - functional neuron partitions that emerge during the pre-training phase, and customized bricks - bricks constructed via additional post-training to improve the capabilities and knowledge of LLMs. Based on diverse functional bricks, we further present four brick-oriented operations: retrieval and routing, merging, updating, and growing. These operations allow for dynamic configuration of LLMs based on instructions to handle complex tasks. To verify our perspective, we conduct an empirical analysis on widely-used LLMs. We find that the FFN layers follow modular patterns with functional specialization of neurons and functional neuron partitions. Finally, we highlight several open issues and directions for future research. Overall, this paper aims to offer a fresh modular perspective on existing LLM research and inspire the future creation of more efficient and scalable foundational models.",
+    "published": "2024-09-04",
+    "updated": "2024-09-04",
+    "authors": [
+     "Chaojun Xiao",
+     "Zhengyan Zhang",
+     "Chenyang Song",
+     "Dazhi Jiang",
+     "Feng Yao",
+     "Xu Han",
+     "Xiaozhi Wang",
+     "Shuo Wang",
+     "Yufei Huang",
+     "Guanyu Lin",
+     "Yingfa Chen",
+     "Weilin Zhao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Configurable Foundation Models: Building LLMs from a Modular Perspective",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:57:11+08:00"
+  },
+  "t:detectorscope": {
+   "status": "no_results",
+   "query": "all:\"DetectorScope\"",
+   "match": null,
+   "title": "DetectorScope",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:15+08:00"
+  },
+  "t:dexholdem": {
+   "status": "matched_by_title",
+   "query": "all:\"DexHoldem\"",
+   "match": {
+    "arxiv_id": "2605.18727",
+    "version": "3",
+    "title": "DexHoldem: An Agentic Robotics Benchmark for Dexterous Manipulation in Texas Hold'em",
+    "abstract": "Evaluating embodied systems with real dexterous hardware requires more than isolated motor-skill tests: an agent must perceive a changing scene (e.g. a tabletop), choose a context-appropriate action, execute it with a dexterous hand, and leave the scene usable for later decisions. We introduce DexHoldem, a comprehensive real-world benchmark evaluating Texas Hold'em related dexterous manipulations with a ShadowHand. DexHoldem provides 1,470 teleoperated demonstrations across 14 Texas Hold'em manipulation primitives, a standardized physical policy benchmark, and an agentic perception benchmark that tests whether agents can recover the structured game state needed for embodied decision making. On primitive execution, $π_{0.5}$ obtains the highest task completion rate ($61.2\\%$), while $π_{0.5}$ and $π_0$ tie on scene-preserving success rate ($47.5\\%$). On agentic perception, Opus 5.5 narrowly leads on both strict problem-level accuracy ($49.1\\%$) and average field-wise accuracy ($80.6\\%$); the gap between the two exposes the distance between isolated visual sub-capabilities and complete routing-relevant state recovery. Finally, we instantiate the full embodied-agent loop with one agent--policy pairing over 33 closed-loop hand-level rollouts, in which only $12.1\\%$ of hands complete; retries restore the failed primitive in 12 of 34 dispatches and resolve prolonged execution stalls in three of the four completed hands, which would otherwise have required manual termination. Only one hand completes with neither a retry nor a human-help request. DexHoldem therefore evaluates dexterous tabletop execution, agentic perception, and embodied decision routing in a shared physical setting. Project website: https://dexholdem.github.io/Dexholdem/",
+    "published": "2026-05-18",
+    "updated": "2026-10-01",
+    "authors": [
+     "Feng Chen",
+     "Tianzhe Chu",
+     "Li Sun",
+     "Pei Zhou",
+     "Zhuxiu Xu",
+     "Shenghua Gao",
+     "Yuexiang Zhai",
+     "Yanchao Yang",
+     "Yi Ma"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "35 Pages"
+   },
+   "score": 0.95,
+   "title": "DexHoldem",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:20+08:00"
+  },
+  "t:gpt 2": {
+   "status": "matched_by_title",
+   "query": "all:\"GPT-2\"",
+   "match": {
+    "arxiv_id": "2004.12506",
+    "version": "3",
+    "title": "Assessing Discourse Relations in Language Generation from GPT-2",
+    "abstract": "Recent advances in NLP have been attributed to the emergence of large-scale pre-trained language models. GPT-2, in particular, is suited for generation tasks given its left-to-right language modeling objective, yet the linguistic quality of its generated text has largely remain unexplored. Our work takes a step in understanding GPT-2's outputs in terms of discourse coherence. We perform a comprehensive study on the validity of explicit discourse relations in GPT-2's outputs under both organic generation and fine-tuned scenarios. Results show GPT-2 does not always generate text containing valid discourse relations; nevertheless, its text is more aligned with human expectation in the fine-tuned scenario. We propose a decoupled strategy to mitigate these problems and highlight the importance of explicitly modeling discourse information.",
+    "published": "2020-04-26",
+    "updated": "2020-10-31",
+    "authors": [
+     "Wei-Jen Ko",
+     "Junyi Jessy Li"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "INLG 2020"
+   },
+   "score": 0.95,
+   "title": "GPT-2",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:24+08:00"
+  },
+  "t:gpt 3": {
+   "status": "matched_by_title",
+   "query": "all:\"GPT-3\"",
+   "match": {
+    "arxiv_id": "2212.00857",
+    "version": "1",
+    "title": "a survey on GPT-3",
+    "abstract": "This paper provides an introductory survey to GPT-3. We cover some of the historical development behind this technology, some of the key features of GPT-3, and discuss the machine learning model and the datasets used. We survey both academic and commercial efforts applying GPT-3 in diverse domains such as developing conversational AI chatbots, software development, creative work, domain knowledge, and business productivity. We discuss some of the challenges that GPT-3 faces such as the problems of training complexity, bias, and hallucination/incorrect answers. We also discuss the future research opportunities in this area.",
+    "published": "2022-12-01",
+    "updated": "2022-12-01",
+    "authors": [
+     "Mingyu Zong",
+     "Bhaskar Krishnamachari"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "GPT-3",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:28+08:00"
+  },
+  "t:harnessdev can llms create and evolve their own agent harness": {
+   "status": "matched_by_title",
+   "query": "ti:\"HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?\"",
+   "match": {
+    "arxiv_id": "2609.01437",
+    "version": "1",
+    "title": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+    "abstract": "As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution infrastructure, commonly termed the agent harness. Changing this harness while holding model weights fixed can substantially alter task performance. Current agent evaluations typically report downstream performance under a chosen harness, leaving a model's ability to develop the harness itself comparatively underexplored. We introduce HarnessDev, a benchmark that shifts the unit of evaluation from task outputs to runnable infrastructure. HarnessDev covers two stages. In Creation, the agent starts from a minimal seed and a small number of cases, then builds a complete execution system. In Evolution, it starts from its own created harness and iteratively revises it using downstream execution feedback, with the goal of improving benchmark performance. We then evaluate each constructed harness on capability (task success on held-out benchmarks) and efficiency (execution-token cost). The reported Creation results cover six creator LLMs, four domains, and five downstream benchmarks totaling 2,207 unique downstream instances, with hidden evaluation tasks withheld from development. We find that generated harnesses remain substantially behind mature human-engineered references on code and on search and research, while matching or exceeding the selected references on writing and machine-learning experimentation, with large variation in execution cost. Evolution produces some performance gains, but they are unstable and transfer only partially to held-out tasks. Experiments with a fixed runtime model further show that the gains depend strongly on the model executing the harness, indicating limited transfer across models.",
+    "published": "2026-09-01",
+    "updated": "2026-09-01",
+    "authors": [
+     "Yuhao Wu",
+     "Jingyuan Zhang",
+     "Jiajun Shi",
+     "Xinping Lei",
+     "Qingshui Gu",
+     "Yuxuan Zhang",
+     "Zexuan Wang",
+     "Chen He",
+     "Chen Huang",
+     "Maojia Song",
+     "Zhiyuan Zeng",
+     "Shaowen Wang"
+    ],
+    "categories": [
+     "cs.SE",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://self-developing-agents.github.io/"
+   },
+   "score": 1.0,
+   "title": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:57:32+08:00"
+  },
+  "t:llmseg": {
+   "status": "matched_by_title",
+   "query": "all:\"LLMSeg\"",
+   "match": {
+    "arxiv_id": "2610.29409",
+    "version": "1",
+    "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
+    "abstract": "Promptable segmentation models such as SAM 3 achieve remarkable open-vocabulary performance but require dedicated architectures, large-scale annotation engines, and task-specific training. We ask a different question: can a general-purpose multimodal large language model (MLLM) segment images directly, without an added segmentation head, mask decoder, or training? We present LLMSeg, a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter. LLMSeg decomposes segmentation into three LLM-driven stages. First, detect localizes all instances matching a free-form text query and describes their coarse morphology. Next, segment traces each instance using closed periodic B-splines confined to its detected box. These splines define an outer boundary and optional hole loops. Finally, refine iteratively proposes focus boxes around residual errors and retraces confined splines. The process ends when the mask stabilizes or the pass budget is exhausted. The output is a binary mask with inspectable intermediate geometry. We evaluate LLMSeg across ten referring and reasoning segmentation splits (ReasonSeg and RefCOCO/+/g). We also evaluate open-vocabulary instance segmentation (LVIS, COCO, and SA-Co), semantic segmentation, and zero-shot detection (ODinW13 and RF-100VL). With an off-the-shelf Gemini-3.7-Flash backend, LLMSeg is competitive with and often surpasses the specialist SAM 3 model on identical items. It reaches 71.5 cIoU on ReasonSeg val without additional segmentation-specific training. Backend model updates can improve accuracy without retraining the pipeline. The code is available at https://abdullahamdi.com/llmseg .",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "authors": [
+     "Abdullah Hamdi"
+    ],
+    "categories": [
+     "cs.CV",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "preprint"
+   },
+   "score": 0.95,
+   "title": "LLMSeg",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:40+08:00"
+  },
+  "t:large language models for computational social science": {
+   "status": "matched_by_title",
+   "query": "ti:\"Large language models for computational social science\"",
+   "match": {
+    "arxiv_id": "2305.03514",
+    "version": "3",
+    "title": "Can Large Language Models Transform Computational Social Science?",
+    "abstract": "Large Language Models (LLMs) are capable of successfully performing many language processing tasks zero-shot (without training data). If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the Computational Social Science (CSS) pipeline in important ways. This work provides a road map for using LLMs as CSS tools. Towards this end, we contribute a set of prompting best practices and an extensive evaluation pipeline to measure the zero-shot performance of 13 language models on 25 representative English CSS benchmarks. On taxonomic labeling tasks (classification), LLMs fail to outperform the best fine-tuned models but still achieve fair levels of agreement with humans. On free-form coding tasks (generation), LLMs produce explanations that often exceed the quality of crowdworkers' gold references. We conclude that the performance of today's LLMs can augment the CSS research pipeline in two ways: (1) serving as zero-shot data annotators on human annotation teams, and (2) bootstrapping challenging creative generation tasks (e.g., explaining the underlying attributes of a text). In summary, LLMs are posed to meaningfully participate in social science analysis in partnership with humans.",
+    "published": "2023-04-12",
+    "updated": "2024-02-26",
+    "authors": [
+     "Caleb Ziems",
+     "William Held",
+     "Omar Shaikh",
+     "Jiaao Chen",
+     "Zhehao Zhang",
+     "Diyi Yang"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "To appear in \"Computational Linguistics\" (CL)"
+   },
+   "score": 0.915,
+   "title": "Large language models for computational social science",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:57:47+08:00"
+  },
+  "t:lora": {
+   "status": "matched_by_title",
+   "query": "all:\"LoRA\"",
+   "match": {
+    "arxiv_id": "2411.14961",
+    "version": "3",
+    "title": "LoRA-FAIR: Federated LoRA Fine-Tuning with Aggregation and Initialization Refinement",
+    "abstract": "Foundation models (FMs) achieve strong performance across diverse tasks with task-specific fine-tuning, yet full parameter fine-tuning is often computationally prohibitive for large models. Parameter-efficient fine-tuning (PEFT) methods like Low-Rank Adaptation (LoRA) reduce this cost by introducing low-rank matrices for tuning fewer parameters. While LoRA allows for efficient fine-tuning, it requires significant data for adaptation, making Federated Learning (FL) an appealing solution due to its privacy-preserving collaborative framework. However, combining LoRA with FL introduces two key challenges: the \\textbf{Server-Side Aggregation Bias}, where server-side averaging of LoRA matrices diverges from the ideal global update, and the \\textbf{Client-Side Initialization Lag}, emphasizing the need for consistent initialization across rounds. Existing approaches address these challenges individually, limiting their effectiveness. We propose LoRA-FAIR, a novel method that tackles both issues by introducing a correction term on the server, enhancing aggregation efficiency and accuracy. LoRA-FAIR maintains computational and communication efficiency, yielding superior performance over state-of-the-art methods. Experimental results on ViT and MLP-Mixer models across large-scale datasets demonstrate that LoRA-FAIR consistently achieves performance improvements in FL settings.",
+    "published": "2024-11-22",
+    "updated": "2025-10-12",
+    "authors": [
+     "Jieming Bian",
+     "Lei Wang",
+     "Letian Zhang",
+     "Jie Xu"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "ICCV 2025, Code is available: https://github.com/jmbian/LoRA-FAIR"
+   },
+   "score": 0.95,
+   "title": "LoRA",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:51+08:00"
+  },
+  "t:omni woodpecker": {
+   "status": "matched_by_title",
+   "query": "all:\"Omni-Woodpecker\"",
+   "match": {
+    "arxiv_id": "2610.27103",
+    "version": "1",
+    "title": "Omni-Woodpecker: Hallucination Correction via Evidence-Prior Rebalancing for Omni LLMs",
+    "abstract": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate at the output level, overlooking the entanglement of grounding evidence and learned priors within fused representations. To address this issue, we propose Omni-Woodpecker (OWP), a training-free framework that shifts hallucination mitigation from output-level manipulation to conflict-conditioned representation rebalancing. Specifically, OWP first identifies cross-modal conflicts from complementary modality-specific views. It then employs orthogonal decomposition to separate grounding evidence from competing priors within the hidden states. Finally, OWP adaptively rebalances fused representations by suppressing misleading priors and restoring ignored evidence before decoding. Extensive experiments demonstrate the effectiveness and strong cross-architecture generalization of OWP. Using Qwen2.5-Omni-7B as the backbone, OWP improves performance by 12.9 and 8.6 points on CMM and AVHBench, respectively, while consistently achieving gains of 0.67-2.25 points across four general OLLM reasoning benchmarks. Furthermore, OWP generalizes effectively to VideoLLaMA2-AV, improving performance by 4.6 and 3.9 points on the same benchmarks. Code is publicly available at https://github.com/ZiiJianLiu/Omni-Woodpecker",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "authors": [
+     "Zijian Liu",
+     "Chaoyou Fu",
+     "Yan Yang",
+     "Caifeng Shan",
+     "Ran He"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.CV",
+     "cs.MM"
+    ],
+    "journal_ref": null,
+    "comment": "10 pages, 4 figures, 6 tables. Code: https://github.com/ZiiJianLiu/Omni-Woodpecker"
+   },
+   "score": 0.95,
+   "title": "Omni-Woodpecker",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:57:58+08:00"
+  },
+  "t:paht 面向高容量3d nand ssd快速读重试的工艺感知历史追踪": {
+   "status": "no_results",
+   "query": "ti:\"PAHT:面向高容量3D NAND SSD快速读重试的工艺感知历史追踪\"",
+   "match": null,
+   "title": "PAHT:面向高容量3D NAND SSD快速读重试的工艺感知历史追踪",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:58:03+08:00"
+  },
+  "t:prompt2act mapping prompts into sequence of robotic actions with large foundation models": {
+   "status": "no_results",
+   "query": "ti:\"Prompt2Act: Mapping prompts into sequence of robotic actions with large foundation models\"",
+   "match": null,
+   "title": "Prompt2Act: Mapping prompts into sequence of robotic actions with large foundation models",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:58:09+08:00"
+  },
+  "t:qchunker": {
+   "status": "matched_by_title",
+   "query": "all:\"QChunker\"",
+   "match": {
+    "arxiv_id": "2603.11650",
+    "version": "1",
+    "title": "QChunker: Learning Question-Aware Text Chunking for Domain RAG via Multi-Agent Debate",
+    "abstract": "The effectiveness upper bound of retrieval-augmented generation (RAG) is fundamentally constrained by the semantic integrity and information granularity of text chunks in its knowledge base. To address these challenges, this paper proposes QChunker, which restructures the RAG paradigm from retrieval-augmentation to understanding-retrieval-augmentation. Firstly, QChunker models the text chunking as a composite task of text segmentation and knowledge completion to ensure the logical coherence and integrity of text chunks. Drawing inspiration from Hal Gregersen's \"Questions Are the Answer\" theory, we design a multi-agent debate framework comprising four specialized components: a question outline generator, text segmenter, integrity reviewer, and knowledge completer. This framework operates on the principle that questions serve as catalysts for profound insights. Through this pipeline, we successfully construct a high-quality dataset of 45K entries and transfer this capability to small language models. Additionally, to handle long evaluation chains and low efficiency in existing chunking evaluation methods, which overly rely on downstream QA tasks, we introduce a novel direct evaluation metric, ChunkScore. Both theoretical and experimental validations demonstrate that ChunkScore can directly and efficiently discriminate the quality of text chunks. Furthermore, during the text segmentation phase, we utilize document outlines for multi-path sampling to generate multiple candidate chunks and select the optimal solution employing ChunkScore. Extensive experimental results across four heterogeneous domains exhibit that QChunker effectively resolves aforementioned issues by providing RAG with more logically coherent and information-rich text chunks.",
+    "published": "2026-03-12",
+    "updated": "2026-03-12",
+    "authors": [
+     "Jihao Zhao",
+     "Daixuan Li",
+     "Pengfei Li",
+     "Shuaishuai Zu",
+     "Biao Qin",
+     "Hongyan Liu"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "QChunker",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:58:16+08:00"
+  },
+  "t:rl让大模型产生路径依赖": {
+   "status": "no_results",
+   "query": "all:\"RL让大模型产生路径依赖\"",
+   "match": null,
+   "title": "RL让大模型产生路径依赖",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:58:21+08:00"
+  },
+  "t:rsihub": {
+   "status": "matched_by_title",
+   "query": "all:\"RSIHub\"",
+   "match": {
+    "arxiv_id": "2610.32253",
+    "version": "1",
+    "title": "RSIHub: A Composable Framework for Agent-Evolution Methods",
+    "abstract": "Agent-evolution methods use execution feedback to improve prompts, skills, tools, and orchestration, but their implementations often rebuild the same experimental machinery. We present RSIHub, an open-source framework for building, comparing, and extending these methods on shared infrastructure. Recipes compose reusable operators and declare mutable resources; RSIHub supplies execution, evaluation, recovery, and lineage. Researchers can focus on evolution policy while evaluation stays outside the mutable surface and results remain tied to candidates and evaluation conditions. We instantiate AHE, Hyperagents, A-Evolve, and GEPA without modifying the framework core, keeping method-specific logic in recipes and operators. We evaluate them with MiniSWE and Codex on Terminal Bench 2 and $τ^3$ Banking under fixed model and evaluator configurations. The largest observed overall pass@1 gain is 13.5 percentage points, while method rankings vary across settings and optimization gains do not always transfer to held-out tasks. RSIHub provides a common protocol for comparing evolution policies, inspectable candidate histories, and reusable components for developing new methods.",
+    "published": "2026-10-23",
+    "updated": "2026-10-23",
+    "authors": [
+     "Zimu Wang",
+     "Xiaobo Wang",
+     "Siyu Ye",
+     "Jiaqi Li",
+     "Silin Chen",
+     "Yuling Shi",
+     "Ruobing Wang",
+     "Jingjing Zhang",
+     "Chaofan Wang",
+     "Kai Wu",
+     "Mengnan Qi",
+     "Kai Cai"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "NeurIPS 2026 Meta-Agents Workshop"
+   },
+   "score": 0.95,
+   "title": "RSIHub",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:58:26+08:00"
+  },
+  "t:random attention": {
+   "status": "matched_by_title",
+   "query": "all:\"Random Attention\"",
+   "match": {
+    "arxiv_id": "2606.13694",
+    "version": "1",
+    "title": "Efficient Temporal Modeling for Mobile Sleep Staging via Lightweight Random Attention",
+    "abstract": "Mobile sleep staging serves as a foundational infrastructure for in-home sleep monitoring and closed-loop modulation. But existing sequential models such as RNNs and Transformers are computationally expensive for mobile deployment. In this paper, we propose Random Attention (RA), a lightweight temporal modeling module based on fixed random projections, which replaces learnable sequence modeling with similarity-based aggregation. RA introduces little additional parameters beyond the epoch encoder while enabling effective temporal smoothing. We further provide a theoretical interpretation via the Random Attention Prior Kernel (RAPK), which decomposes RA into a global smoothing term and a feature similarity term, offering an interpretable view of temporal sleep structure. Experiments on Sleep-EDF-20 and Sleep-EDF-78 show that RA consistently improves epoch-wise baselines by 1-3\\% in accuracy and F1 score, while achieving competitive performance compared with LSTM, GRU, and Transformer models. RA also demonstrates strong generalization across different backbone encoders and improved robustness over conventional temporal smoothing methods. These results indicate that efficient sleep staging can be achieved through lightweight similarity-based temporal aggregation, making RA suitable for real-time wearable applications.",
+    "published": "2026-05-31",
+    "updated": "2026-05-31",
+    "authors": [
+     "Guisong Liu",
+     "Pengfei Wei",
+     "Jainsong Zhang",
+     "Martin Dresler"
+    ],
+    "categories": [
+     "eess.SP",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "7 pages, 1 figures, 5 tables"
+   },
+   "score": 0.95,
+   "title": "Random Attention",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:58:30+08:00"
+  },
+  "t:random attention rethinking kv cache eviction for efficient reasoning": {
+   "status": "matched_by_title",
+   "query": "ti:\"Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning\"",
+   "match": {
+    "arxiv_id": "2609.03430",
+    "version": "2",
+    "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "abstract": "Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-scoring ones. We show that the selection signal contributes almost nothing. Random Attention keeps the prompt and evicts uniformly at random within each attention head, computing no score at all; across four models and six reasoning tasks, it matches the strongest baseline in task performance while delivering 32-43% higher throughput than that method when deployed with vLLM. Controlled experiments explain this by showing that 1) the prompt is the fragile part of the cache, and most of the gap between selectors is just whether their selection signal happened to keep it; 2) the reasoning trace protects itself against eviction with redundancy at two levels, in the text (the model restates what it still needs as it works) and across attention heads (each keeps its own copy of the trace), so once the prompt is safe, a random draw retains enough copies of what the model still needs, and no score is required to pick them. Our code is publicly available at https://github.com/SalesforceAIResearch/Random-Attention.",
+    "published": "2026-09-03",
+    "updated": "2026-09-28",
+    "authors": [
+     "Heng Wang",
+     "Jielin Qiu",
+     "Wenting Zhao",
+     "Cheng Qian",
+     "Liangwei Yang",
+     "Weizhi Zhang",
+     "Jiawei Han",
+     "Heng Ji",
+     "Silvio Savarese",
+     "Shelby Heinecke",
+     "Huan Wang"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:58:34+08:00"
+  },
+  "t:renewal stopping maxwise conformal stopping": {
+   "status": "no_results",
+   "query": "ti:\"Renewal stopping / Maxwise conformal stopping\"",
+   "match": null,
+   "title": "Renewal stopping / Maxwise conformal stopping",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:58:41+08:00"
+  },
+  "t:sgdcr": {
+   "status": "no_results",
+   "query": "all:\"SGDCR\"",
+   "match": null,
+   "title": "SGDCR",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:58:54+08:00"
+  },
+  "t:sequential diagnosis with language models": {
+   "status": "matched_by_title",
+   "query": "ti:\"Sequential diagnosis with language models\"",
+   "match": {
+    "arxiv_id": "2506.22405",
+    "version": "2",
+    "title": "Sequential Diagnosis with Language Models",
+    "abstract": "Artificial intelligence holds great promise for expanding access to expert medical knowledge and reasoning. However, most evaluations of language models rely on static vignettes and multiple-choice questions that fail to reflect the complexity and nuance of evidence-based medicine in real-world settings. In clinical practice, physicians iteratively formulate and revise diagnostic hypotheses, adapting each subsequent question and test to what they've just learned, and weigh the evolving evidence before committing to a final diagnosis. To emulate this iterative process, we introduce the Sequential Diagnosis Benchmark, which transforms 304 diagnostically challenging New England Journal of Medicine clinicopathological conference (NEJM-CPC) cases into stepwise diagnostic encounters. A physician or AI begins with a short case abstract and must iteratively request additional details from a gatekeeper model that reveals findings only when explicitly queried. Performance is assessed not just by diagnostic accuracy but also by the cost of physician visits and tests performed. We also present the MAI Diagnostic Orchestrator (MAI-DxO), a model-agnostic orchestrator that simulates a panel of physicians, proposes likely differential diagnoses and strategically selects high-value, cost-effective tests. When paired with OpenAI's o3 model, MAI-DxO achieves 80% diagnostic accuracy--four times higher than the 20% average of generalist physicians. MAI-DxO also reduces diagnostic costs by 20% compared to physicians, and 70% compared to off-the-shelf o3. When configured for maximum accuracy, MAI-DxO achieves 85.5% accuracy. These performance gains with MAI-DxO generalize across models from the OpenAI, Gemini, Claude, Grok, DeepSeek, and Llama families. We highlight how AI systems, when guided to think iteratively and act judiciously, can advance diagnostic precision and cost-effectiveness in clinical care.",
+    "published": "2025-06-27",
+    "updated": "2025-07-02",
+    "authors": [
+     "Harsha Nori",
+     "Mayank Daswani",
+     "Christopher Kelly",
+     "Scott Lundberg",
+     "Marco Tulio Ribeiro",
+     "Marc Wilson",
+     "Xiaoxuan Liu",
+     "Viknesh Sounderajah",
+     "Jonathan Carlson",
+     "Matthew P Lungren",
+     "Bay Gross",
+     "Peter Hames"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "23 pages, 10 figures"
+   },
+   "score": 1.0,
+   "title": "Sequential diagnosis with language models",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:59:09+08:00"
+  },
+  "t:superai": {
+   "status": "matched_by_title",
+   "query": "all:\"SuperAI\"",
+   "match": {
+    "arxiv_id": "2610.15322",
+    "version": "2",
+    "title": "SuperAI: Merging Capabilities Across Heterogeneous Foundation Models",
+    "abstract": "Enabling the reuse and composition of knowledge and capabilities distributed across foundation models is an important step toward building scalable artificial intelligence (AI) systems. However, architectural differences and incompatible representations make it difficult to transfer and integrate these capabilities through a unified cross-model interface. To address this challenge, we propose SuperAI, a cross-architecture multi-model fusion framework that integrates complementary capabilities from multiple source models into a host model through orthogonal alignment of low-dimensional task-relevant representations. Specifically, we first extract task-relevant representations from the source models and the host model using shared anchor samples, and apply principal component analysis (PCA) to construct low-dimensional functional subspaces with the same dimensionality. Next, we use orthogonal Procrustes mappings to align the source and host coordinate systems, establishing cross-model correspondences while preserving the internal geometry of each source subspace. Finally, we train a lightweight residual multilayer perceptron (MLP) with joint supervision on task outputs and source-model increments, learning input-dependent residual increments that are injected into the host model for multi-model capability fusion. Experiments on three host models across 15 capability domains show that SuperAI achieves higher average domain scores than the evaluated cross-architecture fusion methods and better preserves general capabilities as the number of source models increases. Ablation studies further support the effectiveness of orthogonal alignment, nonlinear residual mapping, and joint supervision.",
+    "published": "2026-10-11",
+    "updated": "2026-10-14",
+    "authors": [
+     "Jingtong Dou",
+     "Chuancheng Shi",
+     "Wenhua Wu",
+     "Wei Bao",
+     "Fei Shen",
+     "Zhiyong Wang",
+     "Tat-Seng Chua"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SuperAI",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:15+08:00"
+  },
+  "t:t5": {
+   "status": "matched_by_title",
+   "query": "all:\"T5\"",
+   "match": {
+    "arxiv_id": "2412.05845",
+    "version": "1",
+    "title": "Are Clinical T5 Models Better for Clinical Text?",
+    "abstract": "Large language models with a transformer-based encoder/decoder architecture, such as T5, have become standard platforms for supervised tasks. To bring these technologies to the clinical domain, recent work has trained new or adapted existing models to clinical data. However, the evaluation of these clinical T5 models and comparison to other models has been limited. Are the clinical T5 models better choices than FLAN-tuned generic T5 models? Do they generalize better to new clinical domains that differ from the training sets? We comprehensively evaluate these models across several clinical tasks and domains. We find that clinical T5 models provide marginal improvements over existing models, and perform worse when evaluated on different domains. Our results inform future choices in developing clinical LLMs.",
+    "published": "2024-12-08",
+    "updated": "2024-12-08",
+    "authors": [
+     "Yahan Li",
+     "Keith Harrigian",
+     "Ayah Zirikly",
+     "Mark Dredze"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "Proceedings of Machine Learning for Health (ML4H) Symposium 2024, December 15th, 2024, Vancouver, Canada, 32 pages"
+   },
+   "score": 0.95,
+   "title": "T5",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:19+08:00"
+  },
+  "t:traces": {
+   "status": "matched_by_title",
+   "query": "all:\"TRACES\"",
+   "match": {
+    "arxiv_id": "1902.02907",
+    "version": "1",
+    "title": "Source Traces for Temporal Difference Learning",
+    "abstract": "This paper motivates and develops source traces for temporal difference (TD) learning in the tabular setting. Source traces are like eligibility traces, but model potential histories rather than immediate ones. This allows TD errors to be propagated to potential causal states and leads to faster generalization. Source traces can be thought of as the model-based, backward view of successor representations (SR), and share many of the same benefits. This view, however, suggests several new ideas. First, a TD($λ$)-like source learning algorithm is proposed and its convergence is proven. Then, a novel algorithm for learning the source map (or SR matrix) is developed and shown to outperform the previous algorithm. Finally, various approaches to using the source/SR model are explored, and it is shown that source traces can be effectively combined with other model-based methods like Dyna and experience replay.",
+    "published": "2019-02-08",
+    "updated": "2019-02-08",
+    "authors": [
+     "Silviu Pitis"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI",
+     "stat.ML"
+    ],
+    "journal_ref": null,
+    "comment": "8 pages. In proceedings of AAAI 2018. Slides and bibtex available at https://silviupitis.com/#source-traces-for-temporal-difference-learning"
+   },
+   "score": 0.95,
+   "title": "TRACES",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:32+08:00"
+  },
+  "t:tsllm": {
+   "status": "matched_by_title",
+   "query": "all:\"TsLLM\"",
+   "match": {
+    "arxiv_id": "2510.01111",
+    "version": "2",
+    "title": "TsLLM: Augmenting LLMs for General Time Series Understanding and Prediction",
+    "abstract": "Time series data is fundamental to decision-making across many domains including healthcare, finance, power systems, and logistics. However, analyzing this data correctly often requires incorporating unstructured contextual information, answering domain-specific questions, and generating natural language explanations - capabilities that traditional time series models lack. While Large Language Models (LLMs) excel at contextual reasoning and knowledge integration, they struggle with numerical time series due to inefficient text-based representations and limited exposure to numerical data during pretraining. We address this gap by augmenting an LLM with specialized time series perception through a patch-based encoder-decoder architecture. We train this Time Series augmented LLM (TsLLM) on a large corpus of over 25 billion tokens of interleaved time series and text spanning diverse tasks: forecasting with contextual information, question-answering, anomaly detection, classification, report generation, and more, all unified as next token prediction. This training enables TsLLM to leverage both its language understanding and newly acquired temporal reasoning capabilities. While not designed to surpass specialized models on traditional benchmarks, TsLLM demonstrates strong performance on tasks requiring the integration of time series analysis with natural language - capabilities that existing approaches cannot provide. It also exhibits strong zero-shot and few-shot performance, showing it can adapt to new data without additional training.",
+    "published": "2025-10-01",
+    "updated": "2026-03-14",
+    "authors": [
+     "Felix Parker",
+     "Nimeesha Chan",
+     "Chi Zhang",
+     "Kimia Ghobadi"
+    ],
+    "categories": [
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "TsLLM",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:37+08:00"
+  },
+  "t:userarena": {
+   "status": "matched_by_title",
+   "query": "all:\"UserArena\"",
+   "match": {
+    "arxiv_id": "2610.30932",
+    "version": "1",
+    "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+    "abstract": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation.",
+    "published": "2026-10-22",
+    "updated": "2026-10-22",
+    "authors": [
+     "Jujia Zhao",
+     "Jiakai Tang",
+     "Jing Yu",
+     "Wen Chen",
+     "Jian Wu",
+     "Han Zhu",
+     "Fei Sun",
+     "Suzan Verberne",
+     "Zhaochun Ren"
+    ],
+    "categories": [
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "UserArena",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:43+08:00"
+  },
+  "t:what do rtl repair benchmarks actually measure": {
+   "status": "matched_by_title",
+   "query": "ti:\"What Do RTL Repair Benchmarks Actually Measure?\"",
+   "match": {
+    "arxiv_id": "2610.28595",
+    "version": "1",
+    "title": "What Do RTL Repair Benchmarks Actually Measure?",
+    "abstract": "RTL repair benchmarks should measure whether a model can fix broken RTL given a specification. To this end, we construct and hash-bind RTLRepairDataset, 5,784 (broken, fixed) training pairs; RTLRepairBench, 459 held-out cases with 374 syntactic and 85 behavioral mutations; and an evaluation harness supporting simulation and formal equivalence. We then use this infrastructure to identify two measurement confounds. First, simulation and formal scoring give opposite signs for the apparent effect of providing a specification in one evaluated cohort; reset-aware rescoring attributes almost all of the simulation-formal disagreement to reset and first-cycle comparison semantics. Second, on 274 mined model failures, the specification-only minus specification-conditioned recovery point estimate ranges from -8.5 to +18.3 percentage points across six models. Thus, a conventional repair score need not isolate whether the model used the faulty RTL. We translate these findings into evaluation controls: report initialization, reset, first-cycle, and unknown-value semantics; disclose oracle coverage and undecided cases; and include a specification-only baseline. Together, the resources and audit provide both a benchmark for behavioral repair and a protocol for diagnosing what contributes to its measured score. We release the benchmark, the training set, construction code, sanitized aggregate evidence, and reproduction materials at https://github.com/Evaaaz/RTLRepairBench.",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "authors": [
+     "Yeyin Eva Zhu",
+     "Rishabh Ranawat"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "What Do RTL Repair Benchmarks Actually Measure?",
+   "kind": "title",
+   "checked_at": "2026-10-29T08:59:54+08:00"
+  },
+  "t:关掉思考开关 大模型99 仍在偷偷推理": {
+   "status": "no_results",
+   "query": "all:\"关掉思考开关,大模型99%仍在偷偷推理\"",
+   "match": null,
+   "title": "关掉思考开关,大模型99%仍在偷偷推理",
+   "kind": "method",
+   "checked_at": "2026-10-29T08:59:58+08:00"
+  },
+  "t:图智能体概念与研究进展": {
+   "status": "no_results",
+   "query": "all:\"图智能体概念与研究进展\"",
+   "match": null,
+   "title": "图智能体概念与研究进展",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:00:13+08:00"
+  },
+  "t:大模型辅助数论猜想自动验证与lean4形式化证明系统研究": {
+   "status": "no_results",
+   "query": "ti:\"大模型辅助数论猜想自动验证与Lean4形式化证明系统研究\"",
+   "match": null,
+   "title": "大模型辅助数论猜想自动验证与Lean4形式化证明系统研究",
+   "kind": "title",
+   "checked_at": "2026-10-29T09:00:26+08:00"
+  },
+  "t:生成社会学 利用大语言模型理解社会复杂性": {
+   "status": "network_error",
+   "query": "all:\"生成社会学:利用大语言模型理解社会复杂性\"",
+   "match": null,
+   "title": "生成社会学:利用大语言模型理解社会复杂性",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:02:03+08:00"
+  },
+  "t:绿电直连视角下电 碳 算协同控制技术探究": {
+   "status": "no_results",
+   "query": "all:\"绿电直连视角下电-碳-算协同控制技术探究\"",
+   "match": null,
+   "title": "绿电直连视角下电-碳-算协同控制技术探究",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:03:43+08:00"
+  },
+  "t:视频世界模型综述": {
+   "status": "no_results",
+   "query": "all:\"视频世界模型综述\"",
+   "match": null,
+   "title": "视频世界模型综述",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:05:18+08:00"
+  },
+  "t:面向有限元方法的大语言模型": {
+   "status": "network_error",
+   "query": "all:\"面向有限元方法的大语言模型\"",
+   "match": null,
+   "title": "面向有限元方法的大语言模型",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:05:58+08:00"
+  },
+  "t:面向科学计量学的大语言模型伦理评估 多维视角": {
+   "status": "no_results",
+   "query": "all:\"面向科学计量学的大语言模型伦理评估:多维视角\"",
+   "match": null,
+   "title": "面向科学计量学的大语言模型伦理评估:多维视角",
+   "kind": "method",
+   "checked_at": "2026-10-29T09:07:09+08:00"
   }
  }
 }
