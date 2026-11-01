@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-29T09:07:09+08:00",
+ "generated_at": "2026-11-02T07:24:09+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -32185,6 +32185,278 @@
    "title": "面向科学计量学的大语言模型伦理评估:多维视角",
    "kind": "method",
    "checked_at": "2026-10-29T09:07:09+08:00"
+  },
+  "t:a 2 o n time algorithm for 3 sat": {
+   "status": "no_results",
+   "query": "ti:\"A 2^o(n) Time Algorithm for 3-SAT\"",
+   "match": null,
+   "title": "A 2^o(n) Time Algorithm for 3-SAT",
+   "kind": "title",
+   "checked_at": "2026-11-02T07:22:12+08:00"
+  },
+  "t:ai native研发范式实践手册": {
+   "status": "no_results",
+   "query": "ti:\"AI Native研发范式实践手册\"",
+   "match": null,
+   "title": "AI Native研发范式实践手册",
+   "kind": "title",
+   "checked_at": "2026-11-02T07:22:16+08:00"
+  },
+  "t:benchfill": {
+   "status": "rejected",
+   "query": "all:\"BenchFill\"",
+   "match": null,
+   "best_candidate": "Your Benchmark Is an Empirical Measure Over Difficulty",
+   "best_score": 0.254,
+   "title": "BenchFill",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:22:36+08:00"
+  },
+  "t:co design bench": {
+   "status": "matched_by_title",
+   "query": "all:\"Co-Design Bench\"",
+   "match": {
+    "arxiv_id": "2610.35138",
+    "version": "1",
+    "title": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
+    "abstract": "Evaluating human-AI co-design requires testing whether coding agents can translate real users' multimodal requests into working application revisions. We introduce Co-Design Bench, a reference-free benchmark of 273 tasks curated from 37,463 deduplicated queries across 26,314 real user coding sessions. Its two tracks, Multimodal Editing (ME) and Repository Editing (RE), cover localized edits with optional image, audio, video, or document inputs and coordinated repository revisions. Tasks span three capability dimensions: Grounded Understanding, UI Transformation, and Functional Implementation. The tasks pair normalized requests and runnable pre-edit applications with 2,331 hidden expert-authored acceptance criteria. Our judge-then-refute protocol grades criteria using source and browser evidence, challenges positive verdicts with a separate LLM verifier, and audits visual and interaction claims without gold code or target screenshots. Under a shared agentic harness, the strongest of ten model endpoints passes an average of 69.9% of criteria per task but fully satisfies only 26.4% of tasks. All ten endpoints achieve lower criterion completion on repository edits spanning three or four change types than on those spanning one or two. Co-Design Bench provides a testbed for studying the gap between partial requirement satisfaction and complete task success under agentic execution for real-user application revisions.",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "authors": [
+     "Xilin Wei",
+     "Shengyuan Ding",
+     "Xinyu Fang",
+     "Tiancheng Gu",
+     "Yuchi Wang",
+     "Zhixun Li",
+     "Ziyu Liu",
+     "Yuhang Zang",
+     "Weixiang Yu",
+     "Cheng Lu",
+     "Chonggao Sun",
+     "Tong Zhou"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "Project page: https://codesignbench.github.io/"
+   },
+   "score": 0.95,
+   "title": "Co-Design Bench",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:22:46+08:00"
+  },
+  "t:dynaflow": {
+   "status": "matched_by_title",
+   "query": "all:\"DynaFlow\"",
+   "match": {
+    "arxiv_id": "2605.21603",
+    "version": "1",
+    "title": "DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling",
+    "abstract": "Intra-device parallelism addresses resource under-utilization in ML inference and training by overlapping the execution of operators with different resource usage. However, its wide adoption is hindered by a fundamental conflict with the static, sequential programming model of existing frameworks. Integrating these strategies requires invasive, model-specific code overhauls, representing an intractable engineering cost. This is further amplified by the high sensitivity of strategies to execution contexts (e.g., workload, model architecture, hardware), forcing developers to implement and maintain multiple specialized solutions. To address this, we propose DynaFlow, a framework that enables the transparent and flexible integration of intra-device parallelism by decoupling the logical model definition from the physical execution schedule. DynaFlow introduces a flexible frontend with annotations for graph partitioning and a programmable interface for defining custom intra-device parallelism strategies. Its efficient backend manages complex control/data-flow asynchronously, uses custom memory management to eliminate copy overheads, and preserves compatibility with optimizations like CUDA Graphs and TorchInductor. We demonstrate that DynaFlow can integrate representative parallelism strategies into 6 state-of-the-art ML systems with minimal code changes, achieving up to a 1.29x throughput improvement. DynaFlow is publicly available at https://github.com/uw-syfi/DynaFlow.",
+    "published": "2026-05-20",
+    "updated": "2026-05-20",
+    "authors": [
+     "Yi Pan",
+     "Yile Gu",
+     "Jinbin Luo",
+     "Yibo Wu",
+     "Ziren Wang",
+     "Hongtao Zhang",
+     "Ziyi Xu",
+     "Shengkai Lin",
+     "Baris Kasikci",
+     "Stephanie Wang"
+    ],
+    "categories": [
+     "cs.DC",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "16 pages, 15 figures, to appear in the 9th Annual Conference on Machine Learning and Systems (MLSys 2026)"
+   },
+   "score": 0.95,
+   "title": "DynaFlow",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:22:55+08:00"
+  },
+  "t:firm": {
+   "status": "matched_by_title",
+   "query": "all:\"FiRM\"",
+   "match": {
+    "arxiv_id": "2509.18633",
+    "version": "4",
+    "title": "Modelling Cascading Physical Climate Risk in Supply Chains with Adaptive Firms: A Spatial Agent-Based Framework",
+    "abstract": "We present an open-source Python framework for modelling cascading physical climate risk in a spatial supply-chain economy. The framework integrates geospatial flood hazards with an agent-based model of firms and households, enabling simulation of both direct asset losses and indirect disruptions propagated through economic networks. Firms adapt endogenously through two channels: capital hardening, which reduces direct damage, and backup-supplier search, which mitigates input disruptions. In an illustrative global network, capital hardening reduces direct losses by 26%, while backup-supplier search reduces supplier disruption by 48%, with both partially stabilizing production and consumption. Notably, firms that are never directly flooded still bear a substantial share of disruption, highlighting the importance of indirect cascade effects. The framework provides a reproducible platform for analyzing systemic physical climate risk and adaptation in economic networks.",
+    "published": "2025-09-23",
+    "updated": "2026-04-07",
+    "authors": [
+     "Yara Mohajerani"
+    ],
+    "categories": [
+     "cs.MA",
+     "econ.EM",
+     "q-fin.RM"
+    ],
+    "journal_ref": null,
+    "comment": "V1 presented at NeurIPS 2025 Tackling Climate Change with Machine Learning workshop. V4 replaces evolutionary learning with explicit firm continuity adaptation, adds stock-flow consistency, matched-se"
+   },
+   "score": 0.95,
+   "title": "FiRM",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:03+08:00"
+  },
+  "t:gputhor": {
+   "status": "matched_by_title",
+   "query": "all:\"GPUThor\"",
+   "match": {
+    "arxiv_id": "2609.16546",
+    "version": "1",
+    "title": "GPUThor: Amplifying Rowhammer Attacks via Non-Uniform Patterns to Exploit ECC-Protected GPUs",
+    "abstract": "GDDR memory in GPUs is vulnerable to Rowhammer attacks, where rapid memory accesses induce bit flips in adjacent cells, enabling data tampering and privilege escalation. However, prior GPU Rowhammer attacks trigger only tens to hundreds of bit flips, orders of magnitude fewer than CPU attacks, severely limiting their practical impact. This gap stems from the reliance of existing GPU Rowhammer attacks on uniform hammering patterns that activate aggressor and decoy rows equally, which results in low hammering intensity for aggressor rows. We present GPUThor, a high-intensity Rowhammer attack on NVIDIA GPUs leveraging non-uniform hammering. GPUThor reverse engineers GPU memory-access coalescing behavior to enable non-uniform hammering patterns on GPUs, that activate aggressor rows more intensely than decoy rows. Additionally, by identifying refresh instances when in-DRAM mitigations are applied, it constructs longer attack patterns that escape mitigation across refresh intervals, further increasing hammering intensity. Together, these techniques yield 500X to 23,500X more bit flips than prior GPU Rowhammer attacks, across several NVIDIA GPUs (A4000, A4500, A5000, A6000), reaching bit flip rates close to state-of-the-art CPU Rowhammer attacks. GPUThor also enables the first Rowhammer exploits on ECC-protected GPUs, inducing uncorrectable double and triple bit flips, making denial-of-service and privilege-escalation attacks practical even on GPUs with ECC enabled.",
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "authors": [
+     "Chris S. Lin",
+     "Joyce Qu",
+     "Aditya Rajeev",
+     "Gururaj Saileshwar"
+    ],
+    "categories": [
+     "cs.CR"
+    ],
+    "journal_ref": null,
+    "comment": "17 pages, including appendices. The paper will appear in CCS'26"
+   },
+   "score": 0.95,
+   "title": "GPUThor",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:12+08:00"
+  },
+  "t:mascot": {
+   "status": "matched_by_title",
+   "query": "all:\"MASCOT\"",
+   "match": {
+    "arxiv_id": "2601.14230",
+    "version": "3",
+    "title": "MASCOT: Multi-Agent Socio-Collaborative Companion Systems",
+    "abstract": "Multi-agent systems (MAS) are emerging as promising socio-collaborative companions for emotional and cognitive support. However, existing systems frequently suffer from persona collapse, where agents revert to generic, homogenized assistant behaviors, and social sycophancy, where agents produce redundant, non-constructive dialogue. We propose MASCOT, a multi-agent framework for multi-perspective socio-collaborative companions. MASCOT introduces a novel bi-level optimization strategy to harmonize individual and collective behaviors: 1) Persona-Aware Behavioral Alignment, an RLAIF-driven pipeline that finetunes individual agents for agent-specific identities; and 2) Collaborative Dialogue Optimization, a group-level adaptation process that promotes complementary, diverse, and productive discourse. We evaluate MASCOT using human-grounded contexts drawn across both in-domain and out-of-domain (OOD) settings against state-of-the-art baselines. MASCOT improves persona consistency by up to +14.1 and social contribution by up to +10.6. A broad evaluation suite, including human evaluation, multiple LLM judges, three-way comparisons, and automatic metrics, further shows that MASCOT produces more role-consistent and less redundant multi-agent dialogue.",
+    "published": "2026-01-20",
+    "updated": "2026-09-14",
+    "authors": [
+     "Yiyang Wang",
+     "Yiqiao Jin",
+     "Alex Cabral",
+     "Josiah Hester"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.HC"
+    ],
+    "journal_ref": null,
+    "comment": "21 pages, 12 figures. https://hello-diana.github.io/MASCOT/. EMNLP 2026 Main"
+   },
+   "score": 0.95,
+   "title": "MASCOT",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:16+08:00"
+  },
+  "t:plaw bench": {
+   "status": "no_results",
+   "query": "all:\"PLaw Bench\"",
+   "match": null,
+   "title": "PLaw Bench",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:20+08:00"
+  },
+  "t:qwen3 8 flash next": {
+   "status": "matched_by_title",
+   "query": "all:\"Qwen3.8-Flash-Next\"",
+   "match": {
+    "arxiv_id": "2610.28998",
+    "version": "1",
+    "title": "FlashNext-RL: A System Optimization Study for Long-Horizon Agentic RL of Qwen3.8-Flash-Next",
+    "abstract": "Long-horizon agentic reinforcement learning (RL) requires both efficient rollout generation and training on long sequences. However, the memory requirements and model-specific operators of Qwen3.8-Flash-Next make this difficult with existing open-source implementations. To resolve these limitations, we introduce FlashNext-RL, a model-specific RL training optimization framework based on prime-rl, with vLLM for software engineering (SWE) rollout generation. Our main focus is BF16 training of the full 48-layer model on a single 8xB200 node, with the first two layers, the n-gram table, the sparse-attention indexer and the multi-token prediction head frozen. We optimize host offload, gradient accumulation and the kernels for mixture-of-experts, sparse attention and the gated residual stream. In the full-model development study, non-padding training throughput increases from approximately 395 tokens/s/GPU in the initial 32K-token configuration to 4,438 tokens/s/GPU in the optimized 131K-token configuration, with hardware matmul throughput (aka without considering the cost of attention components) increasing from approximately 20 to 213 TFLOPs/GPU. A controlled cumulative study on an 8-layer model further quantifies the contributions of individual optimizations. Together with three inference nodes, the system supports a live SWE RL run with a target batch of 1,024 trainable rollouts and a 131,072-token context limit. Over steps 5-15, an iteration takes 22.4 minutes on average, with bounded entropy and trainer-sampler mismatch KL. These results highlight the importance of tailoring RL training to the model's architecture, memory layout and kernel requirements, rather than relying only on general-purpose RL infrastructure.",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "authors": [
+     "Zhewei Yao",
+     "Yuxiong He"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "24 pages, 5 figures, 16 tables"
+   },
+   "score": 0.95,
+   "title": "Qwen3.8-Flash-Next",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:24+08:00"
+  },
+  "t:tracetrial bench": {
+   "status": "rejected",
+   "query": "all:\"TraceTrial-Bench\"",
+   "match": null,
+   "best_candidate": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
+   "best_score": 0.216,
+   "title": "TraceTrial-Bench",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:33+08:00"
+  },
+  "t:vibegame": {
+   "status": "matched_by_title",
+   "query": "all:\"VibeGame\"",
+   "match": {
+    "arxiv_id": "2610.33106",
+    "version": "1",
+    "title": "VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team",
+    "abstract": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
+    "published": "2026-10-22",
+    "updated": "2026-10-22",
+    "authors": [
+     "Wenbo Hu",
+     "Ken Li",
+     "Jiazhe Wei",
+     "Yukang Cao",
+     "Weiyi Hong",
+     "Jiayi Dai",
+     "Chenjun Bai",
+     "Jiajun Liang",
+     "Yucheng Liao",
+     "Ruichuan An",
+     "Zeyu Lou",
+     "Haofan Wang"
+    ],
+    "categories": [
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "VibeGame",
+   "kind": "method",
+   "checked_at": "2026-11-02T07:23:49+08:00"
+  },
+  "t:从pue到tpw aidc迈入算电协同运营新时代": {
+   "status": "no_results",
+   "query": "ti:\"从PUE到TPW——AIDC迈入算电协同运营新时代\"",
+   "match": null,
+   "title": "从PUE到TPW——AIDC迈入算电协同运营新时代",
+   "kind": "title",
+   "checked_at": "2026-11-02T07:23:56+08:00"
+  },
+  "t:只读也会写坏闪存 hbf跑大模型推理 读回收如何拖短其寿命": {
+   "status": "no_results",
+   "query": "ti:\"只读也会写坏闪存?——HBF跑大模型推理,读回收如何拖短其寿命\"",
+   "match": null,
+   "title": "只读也会写坏闪存?——HBF跑大模型推理,读回收如何拖短其寿命",
+   "kind": "title",
+   "checked_at": "2026-11-02T07:24:09+08:00"
   }
  }
 }

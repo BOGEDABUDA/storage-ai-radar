@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-10-29T08:50:47+08:00",
+ "generated_at": "2026-11-02T07:16:36+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -50801,6 +50801,1079 @@
      "subject": "SK海力士",
      "label": "净利润环比降幅",
      "value": 58.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-02|new-media|technical|0": {
+   "hash": "8ee7bf8b85d33566",
+   "date": "2026-11-02",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "Z2RAM",
+     "type": "tech"
+    },
+    {
+     "name": "2T0C无电容结构",
+     "type": "tech"
+    },
+    {
+     "name": "W-IWO氧化物沟道",
+     "type": "tech"
+    },
+    {
+     "name": "SRAM",
+     "type": "tech"
+    },
+    {
+     "name": "300mm DUV后道工艺",
+     "type": "tech"
+    },
+    {
+     "name": "EUV",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Z2RAM",
+     "label": "漏电流密度",
+     "value": 1.0,
+     "unit": "fA/μm"
+    },
+    {
+     "subject": "Z2RAM",
+     "label": "免刷新数据保持时间",
+     "value": 300.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "Z2RAM",
+     "label": "读写时延下限",
+     "value": 1.0,
+     "unit": "ns"
+    },
+    {
+     "subject": "Z2RAM",
+     "label": "写能耗",
+     "value": 1.0,
+     "unit": "pJ/bit"
+    },
+    {
+     "subject": "Z2RAM",
+     "label": "相对2nm SRAM密度倍数（6层堆叠）",
+     "value": 5.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-02|others|business|0": {
+   "hash": "b436a47ab52f8417",
+   "date": "2026-11-02",
+   "category": "others",
+   "entities": [
+    {
+     "name": "Marvell",
+     "type": "company"
+    },
+    {
+     "name": "Lumentum",
+     "type": "company"
+    },
+    {
+     "name": "InP激光器",
+     "type": "tech"
+    },
+    {
+     "name": "硅光",
+     "type": "tech"
+    },
+    {
+     "name": "DSP",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Marvell",
+     "label": "并购Lumentum交易金额",
+     "value": 830.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Lumentum",
+     "label": "消息后盘后涨幅下限",
+     "value": 11.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Marvell",
+     "label": "消息后股价跌幅下限",
+     "value": 8.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-02|others|technical|0": {
+   "hash": "38beacfd3d5b5e9b",
+   "date": "2026-11-02",
+   "category": "others",
+   "entities": [
+    {
+     "name": "英伟达",
+     "type": "company"
+    },
+    {
+     "name": "CPO",
+     "type": "tech"
+    },
+    {
+     "name": "CIO",
+     "type": "tech"
+    },
+    {
+     "name": "硅光",
+     "type": "tech"
+    },
+    {
+     "name": "2.5D集成光学",
+     "type": "tech"
+    },
+    {
+     "name": "玻璃中介层",
+     "type": "tech"
+    },
+    {
+     "name": "可插拔光模块",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "英伟达",
+     "label": "200Tb/s交换芯片可插拔I/O总功耗",
+     "value": 4000.0,
+     "unit": "W"
+    },
+    {
+     "subject": "英伟达",
+     "label": "200Tb/s交换芯片CPO方案I/O总功耗",
+     "value": 1200.0,
+     "unit": "W"
+    },
+    {
+     "subject": "英伟达",
+     "label": "200Tb/s交换芯片2.5D集成光学I/O总功耗",
+     "value": 600.0,
+     "unit": "W"
+    },
+    {
+     "subject": "DSP",
+     "label": "链路能耗",
+     "value": 15.0,
+     "unit": "pJ/bit"
+    },
+    {
+     "subject": "CPO",
+     "label": "链路能耗",
+     "value": 6.0,
+     "unit": "pJ/bit"
+    },
+    {
+     "subject": "CIO",
+     "label": "链路能耗",
+     "value": 4.0,
+     "unit": "pJ/bit"
+    },
+    {
+     "subject": "硅光",
+     "label": "链路能耗",
+     "value": 3.8,
+     "unit": "pJ/bit"
+    }
+   ]
+  },
+  "2026-11-02|storage-semantics-protocol|business|0": {
+   "hash": "7be7fbabe6fb9800",
+   "date": "2026-11-02",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "Co-Fabric",
+     "type": "tech"
+    },
+    {
+     "name": "SD200 Ultra",
+     "type": "product"
+    },
+    {
+     "name": "Kimi K3",
+     "type": "product"
+    },
+    {
+     "name": "RoCE",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "SD200 Ultra",
+     "label": "紧耦合本土AI芯片数量",
+     "value": 128.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "SD200 Ultra",
+     "label": "单机可运行模型参数规模",
+     "value": 2.8,
+     "unit": "万亿参数"
+    },
+    {
+     "subject": "SD200 Ultra",
+     "label": "单用户生成速度",
+     "value": 170.0,
+     "unit": "tokens/s"
+    },
+    {
+     "subject": "Co-Fabric",
+     "label": "互连TCO相对RoCE基线最大降幅",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Co-Fabric",
+     "label": "互连功耗降幅",
+     "value": 5.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-02|storage-semantics-protocol|technical|0": {
+   "hash": "917848a05b1025a7",
+   "date": "2026-11-02",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "四层精简协议栈",
+     "type": "tech"
+    },
+    {
+     "name": "Port-ID硬件路由",
+     "type": "tech"
+    },
+    {
+     "name": "影子设备",
+     "type": "tech"
+    },
+    {
+     "name": "AllReduce",
+     "type": "tech"
+    },
+    {
+     "name": "arXiv:2609.25560",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "AllReduce",
+     "label": "通信时间降低倍数",
+     "value": 3.5,
+     "unit": "倍"
+    },
+    {
+     "subject": "四层精简协议栈",
+     "label": "Token生成时延",
+     "value": 5.85,
+     "unit": "毫秒"
+    }
+   ]
+  },
+  "2026-11-02|ai-inference-acceleration|business|0": {
+   "hash": "faff859e72da919a",
+   "date": "2026-11-02",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "绿算技术",
+     "type": "company"
+    },
+    {
+     "name": "中国信通院",
+     "type": "institution"
+    },
+    {
+     "name": "ODCC",
+     "type": "institution"
+    },
+    {
+     "name": "先进存力实验室",
+     "type": "institution"
+    },
+    {
+     "name": "沐曦",
+     "type": "company"
+    },
+    {
+     "name": "博通",
+     "type": "company"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "G3.5级量产KV Cache平台",
+     "type": "product"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-11-02|ai-inference-acceleration|technical|0": {
+   "hash": "3e194027120e83d2",
+   "date": "2026-11-02",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "MI355X",
+     "type": "product"
+    },
+    {
+     "name": "B200",
+     "type": "product"
+    },
+    {
+     "name": "Vera Rubin NVL72",
+     "type": "product"
+    },
+    {
+     "name": "Vera Rubin NVL8",
+     "type": "product"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "MXFP4",
+     "type": "tech"
+    },
+    {
+     "name": "SemiAnalysis",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MI355X",
+     "label": "单节点HBM容量",
+     "value": 2304.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "MI355X",
+     "label": "单GPU解码吞吐",
+     "value": 10918.0,
+     "unit": "tokens/s"
+    },
+    {
+     "subject": "B200",
+     "label": "单GPU解码吞吐",
+     "value": 6223.0,
+     "unit": "tokens/s"
+    },
+    {
+     "subject": "MI355X",
+     "label": "TCO",
+     "value": 1.5,
+     "unit": "美元/芯片小时"
+    },
+    {
+     "subject": "B200",
+     "label": "TCO",
+     "value": 1.73,
+     "unit": "美元/芯片小时"
+    },
+    {
+     "subject": "Vera Rubin NVL72",
+     "label": "HBM容量",
+     "value": 20.7,
+     "unit": "TB"
+    },
+    {
+     "subject": "Vera Rubin NVL72",
+     "label": "HBM带宽",
+     "value": 19.2,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "Vera Rubin NVL8",
+     "label": "HBM容量",
+     "value": 2.0,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-11-02|ai-model-agent-rag|business|0": {
+   "hash": "fa34e2048e7949a7",
+   "date": "2026-11-02",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "苹果",
+     "type": "company"
+    },
+    {
+     "name": "阿里",
+     "type": "company"
+    },
+    {
+     "name": "千问",
+     "type": "product"
+    },
+    {
+     "name": "Apple 智能",
+     "type": "product"
+    },
+    {
+     "name": "Siri",
+     "type": "product"
+    },
+    {
+     "name": "iOS 27.3",
+     "type": "product"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-11-02|ai-model-agent-rag|technical|0": {
+   "hash": "2e73ac539cda488e",
+   "date": "2026-11-02",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "Super-agent",
+     "type": "product"
+    },
+    {
+     "name": "Router",
+     "type": "tech"
+    },
+    {
+     "name": "Worker",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Super-agent",
+     "label": "模拟负载p95时延",
+     "value": 15.7,
+     "unit": "分钟"
+    },
+    {
+     "subject": "Super-agent",
+     "label": "缓存token相对单会话倍数",
+     "value": 3.8,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-02|cost-effective-storage|business|0": {
+   "hash": "7e4101210f7a4918",
+   "date": "2026-11-02",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "长鑫存储",
+     "type": "company"
+    },
+    {
+     "name": "苹果",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "DRAM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "苹果",
+     "label": "单机存储成本增幅上限",
+     "value": 100.0,
+     "unit": "美元"
+    },
+    {
+     "subject": "苹果",
+     "label": "整机售价提价上限",
+     "value": 200.0,
+     "unit": "美元"
+    }
+   ]
+  },
+  "2026-11-02|cost-effective-storage|technical|0": {
+   "hash": "bce707e78cec7074",
+   "date": "2026-11-02",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "Fujifilm",
+     "type": "company"
+    },
+    {
+     "name": "LTO-10",
+     "type": "product"
+    },
+    {
+     "name": "LTO",
+     "type": "tech"
+    },
+    {
+     "name": "BaFe",
+     "type": "tech"
+    },
+    {
+     "name": "SrFe",
+     "type": "tech"
+    },
+    {
+     "name": "HDD",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Fujifilm",
+     "label": "磁带产能提升倍数",
+     "value": 5.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Fujifilm",
+     "label": "投资额",
+     "value": 100.0,
+     "unit": "亿日元"
+    },
+    {
+     "subject": "LTO-10",
+     "label": "原生容量",
+     "value": 40.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO-10",
+     "label": "压缩容量",
+     "value": 100.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO-10",
+     "label": "传输速率",
+     "value": 400.0,
+     "unit": "MB/s"
+    },
+    {
+     "subject": "LTO",
+     "label": "单卷容量路线图目标",
+     "value": 365.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO",
+     "label": "单位成本相对HDD",
+     "value": 0.25,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-02|high-capacity-storage|business|0": {
+   "hash": "ca8905afe860d41f",
+   "date": "2026-11-02",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "Fujifilm",
+     "type": "company"
+    },
+    {
+     "name": "LTO-10",
+     "type": "product"
+    },
+    {
+     "name": "LTO",
+     "type": "tech"
+    },
+    {
+     "name": "HDD",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Fujifilm",
+     "label": "磁带产能提升倍数",
+     "value": 5.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "Fujifilm",
+     "label": "投资额",
+     "value": 100.0,
+     "unit": "亿日元"
+    },
+    {
+     "subject": "LTO-10",
+     "label": "原生容量",
+     "value": 40.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO-10",
+     "label": "传输速率",
+     "value": 400.0,
+     "unit": "MB/s"
+    },
+    {
+     "subject": "LTO",
+     "label": "单卷容量路线图目标",
+     "value": 365.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "LTO",
+     "label": "单位成本相对HDD",
+     "value": 0.25,
+     "unit": "倍"
+    },
+    {
+     "subject": "LTO",
+     "label": "出货量同比增速",
+     "value": 57.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-02|high-capacity-storage|technical|0": {
+   "hash": "c725d926fb23da4a",
+   "date": "2026-11-02",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "读回收",
+     "type": "tech"
+    },
+    {
+     "name": "读干扰",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBF",
+     "label": "8GPU×8堆栈配置下寿命",
+     "value": 2.3,
+     "unit": "年"
+    },
+    {
+     "subject": "HBF",
+     "label": "满足5年保修所需读干扰阈值",
+     "value": 4000000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "HBF",
+     "label": "满足5年保修所需P/E次数",
+     "value": 400000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "HBF",
+     "label": "p99 TBT放大倍数",
+     "value": 1.75,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-02|high-reliability-storage|business|0": {
+   "hash": "85b3c6ef36701537",
+   "date": "2026-11-02",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "PCIe 5.0",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "大普微",
+     "label": "2026H1营收",
+     "value": 47.22,
+     "unit": "亿元"
+    },
+    {
+     "subject": "大普微",
+     "label": "营收同比增速",
+     "value": 531.0,
+     "unit": "%"
+    },
+    {
+     "subject": "大普微",
+     "label": "净利润",
+     "value": 13.34,
+     "unit": "亿元"
+    },
+    {
+     "subject": "大普微",
+     "label": "经营现金流",
+     "value": -8.71,
+     "unit": "亿元"
+    },
+    {
+     "subject": "大普微",
+     "label": "存货",
+     "value": 30.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "大普微",
+     "label": "QLC SSD容量",
+     "value": 122.0,
+     "unit": "TB"
+    }
+   ]
+  },
+  "2026-11-02|high-reliability-storage|technical|0": {
+   "hash": "d17e203eaafba643",
+   "date": "2026-11-02",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "Rowhammer",
+     "type": "tech"
+    },
+    {
+     "name": "Sigries",
+     "type": "tech"
+    },
+    {
+     "name": "GPUThor",
+     "type": "tech"
+    },
+    {
+     "name": "FiRM",
+     "type": "tech"
+    },
+    {
+     "name": "A5000",
+     "type": "product"
+    },
+    {
+     "name": "A6000",
+     "type": "product"
+    },
+    {
+     "name": "ECC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Sigries",
+     "label": "可累计绕过激活次数",
+     "value": 4000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "GPUThor",
+     "label": "位翻转放大倍数",
+     "value": 6.6,
+     "unit": "倍"
+    },
+    {
+     "subject": "A5000",
+     "label": "24小时位翻转次数",
+     "value": 94000.0,
+     "unit": "次"
+    },
+    {
+     "subject": "A6000",
+     "label": "24小时DUE次数",
+     "value": 11.0,
+     "unit": "次"
+    }
+   ]
+  },
+  "2026-11-02|model-benchmarking|business|0": {
+   "hash": "929e8600e5e10292",
+   "date": "2026-11-02",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "英伟达",
+     "type": "company"
+    },
+    {
+     "name": "Hugging Face",
+     "type": "company"
+    },
+    {
+     "name": "Alphabet",
+     "type": "company"
+    },
+    {
+     "name": "美国司法部",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "英伟达",
+     "label": "收购Hugging Face交易金额",
+     "value": 129.3,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Alphabet",
+     "label": "盘后股价跌幅",
+     "value": 10.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-02|model-benchmarking|technical|0": {
+   "hash": "77206ca99e8c4eed",
+   "date": "2026-11-02",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "UC Berkeley",
+     "type": "institution"
+    },
+    {
+     "name": "字节跳动",
+     "type": "company"
+    },
+    {
+     "name": "RSIHub",
+     "type": "product"
+    },
+    {
+     "name": "AHE",
+     "type": "tech"
+    },
+    {
+     "name": "GEPA",
+     "type": "tech"
+    },
+    {
+     "name": "MiniSWE",
+     "type": "product"
+    },
+    {
+     "name": "RSI Arena",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "MiniSWE",
+     "label": "改造前评测得分",
+     "value": 56.2,
+     "unit": "分"
+    },
+    {
+     "subject": "MiniSWE",
+     "label": "自进化后评测得分",
+     "value": 69.7,
+     "unit": "分"
+    },
+    {
+     "subject": "RSIHub",
+     "label": "框架自身开销中位占比",
+     "value": 0.02,
+     "unit": "%"
+    },
+    {
+     "subject": "RSIHub",
+     "label": "基础模型参数量",
+     "value": 30.0,
+     "unit": "B"
+    }
+   ]
+  },
+  "2026-11-02|near-memory-computing|business|0": {
+   "hash": "6394e76259369178",
+   "date": "2026-11-02",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "微纳核芯",
+     "type": "company"
+    },
+    {
+     "name": "趋境科技",
+     "type": "company"
+    },
+    {
+     "name": "3D-CIM",
+     "type": "tech"
+    },
+    {
+     "name": "存算一体",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "微纳核芯",
+     "label": "C轮融资金额",
+     "value": 10.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "微纳核芯",
+     "label": "两个月累计融资金额",
+     "value": 20.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "B轮融资金额",
+     "value": 13.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "趋境科技",
+     "label": "年内累计融资金额",
+     "value": 24.0,
+     "unit": "亿元"
+    }
+   ]
+  },
+  "2026-11-02|near-memory-computing|technical|0": {
+   "hash": "266c9aadeacd12fa",
+   "date": "2026-11-02",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "先进存力实验室",
+     "type": "institution"
+    },
+    {
+     "name": "中国信通院",
+     "type": "institution"
+    },
+    {
+     "name": "ODCC",
+     "type": "institution"
+    },
+    {
+     "name": "绿算技术",
+     "type": "company"
+    },
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "沐曦",
+     "type": "company"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "G3.5级量产KV Cache平台",
+     "type": "product"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-11-02|new-media|business|0": {
+   "hash": "04b829bdd87bc92f",
+   "date": "2026-11-02",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "Rubin Ultra",
+     "type": "product"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4E",
+     "type": "tech"
+    },
+    {
+     "name": "HGX NVL8",
+     "type": "product"
+    },
+    {
+     "name": "12-Hi",
+     "type": "tech"
+    },
+    {
+     "name": "8-Hi",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Rubin Ultra",
+     "label": "GPU带宽",
+     "value": 19.2,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "Rubin Ultra",
+     "label": "GPU带宽降幅",
+     "value": 13.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HGX NVL8",
+     "label": "带宽降幅",
+     "value": 26.1,
+     "unit": "%"
+    },
+    {
+     "subject": "HGX NVL8",
+     "label": "容量降幅",
+     "value": 13.0,
      "unit": "%"
     }
    ]
