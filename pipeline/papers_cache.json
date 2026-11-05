@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-02T07:24:09+08:00",
+ "generated_at": "2026-11-05T18:45:07+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -32457,6 +32457,952 @@
    "title": "只读也会写坏闪存?——HBF跑大模型推理,读回收如何拖短其寿命",
    "kind": "title",
    "checked_at": "2026-11-02T07:24:09+08:00"
+  },
+  "id:2608.01896": {
+   "status": "matched_by_id",
+   "query": "id_list=2608.01896",
+   "match": {
+    "arxiv_id": "2608.01896",
+    "version": "1",
+    "title": "GeoCore-9B: Towards Geo-Aware Generative Foundation Models in Earth Observation",
+    "abstract": "Existing generative models for earth observation (EO) predominantly rely on fine-tuning natural image priors, which limits their scalability and introduces perspective biases that conflict with geospatial constraints. To address this, we introduce GeoCore-9B, a 9-billion-parameter generative foundation model, which is the first of its scale to be trained from scratch exclusively on EO data. Unlike previous EO foundation models, GeoCore-9B is built upon a Flow Matching-based Diffusion Transformer (DiT) and natively conditions generation on text descriptions and continuous geospatial metadata, including ground sample distances, latitudes, and longitudes. To overcome the convergence and spatial disorientation challenges of training at this scale, we propose a Geospatial Semantic Alignment loss. This objective distills structural Earth surface priors (e.g., terrain and urban areas) from a frozen specialist teacher network, constraining the diffusion latent trajectory during training without adding inference overhead. Pre-trained on the global-scale Git-10M dataset, GeoCore-9B demonstrates strong downstream versatility. Beyond standard proxy generative tasks, we show that GeoCore-9B can be effectively adapted for practical EO applications, including highly challenging tasks such as cloud removal and SAR-to-optical cross-modal translation. Extensive evaluations confirm that GeoCore-9B establishes new state-of-the-art performance in both visual fidelity and geographic structural accuracy.",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "authors": [
+     "Jeonghyeok Do",
+     "Munchurl Kim"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Please visit our project page at https://kaist-viclab.github.io/GeoCore-9B_site/"
+   },
+   "score": 1.0,
+   "title": "GeoCore-9B",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:38:44+08:00"
+  },
+  "id:2610.23541": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.23541",
+   "match": {
+    "arxiv_id": "2610.23541",
+    "version": "1",
+    "title": "Humanity's Last Choice: A Common Evaluation Standard for Generative Engine Optimization",
+    "abstract": "Humanity's Last Choice describes the idea that the last choice people need to make is which AI system they entrust with the decisions that follow. These systems rely on external sources that content providers can edit through generative engine optimization (GEO) to increase source visibility and influence recommendations. Choosing among these systems therefore requires comparable evidence of how well they carry out user requests when exposed to GEO. Benchmarks have made progress in standardizing tasks, models, and metrics, but they often define their own spaces of GEO strategies and use different editing constraints. These differences can conflate gains from better optimization algorithms with those from greater freedom to edit sources, while making evaluation coverage difficult to compare across benchmarks. We therefore call for a common evaluation standard and propose a meta-taxonomy that describes where sources are edited, how they are edited, and what signals those edits target. Drawing on representative literature, we map existing strategies into a searchable space and outline a protocol for controlled comparisons with explicit coverage reporting. This provides a foundation for common leaderboards that can inform which systems people choose to rely on.",
+    "published": "2026-10-16",
+    "updated": "2026-10-16",
+    "authors": [
+     "Qianfeng Wen",
+     "Yifan Simon Liu",
+     "Difan Jiao",
+     "Junda Wu",
+     "Di Bai",
+     "Jintao Liu",
+     "Xidong Wu",
+     "Zhenwei Tang"
+    ],
+    "categories": [
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": "19 pages, 2 figures. Project website: https://humanitylastchoice.org"
+   },
+   "score": 1.0,
+   "title": "Humanity's Last Choice: A Common Evaluation Standard for Generative Engine Optimization",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:38:49+08:00"
+  },
+  "id:2610.39302": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.39302",
+   "match": {
+    "arxiv_id": "2610.39302",
+    "version": "1",
+    "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+    "abstract": "Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a \\emph{Platonic Representation Theorem}: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--\\emph{good views}--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with \\emph{bad views}, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP's image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP's text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\\% against at most 56\\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.",
+    "published": "2026-10-29",
+    "updated": "2026-10-29",
+    "authors": [
+     "Randall Balestriero",
+     "Yann LeCun"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CV",
+     "stat.ML"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Platonic Representation Theorem",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:38:52+08:00"
+  },
+  "id:2608.15191": {
+   "status": "matched_by_id",
+   "query": "id_list=2608.15191",
+   "match": {
+    "arxiv_id": "2608.15191",
+    "version": "1",
+    "title": "When Deep Research Agents Stagnate: Enhancing Reasoning with Retrieval-Aware Agent Control",
+    "abstract": "In this paper, we analyze the reasoning trajectories of a variety of DRAs and show that existing agents often suffer from reasoning stagnation: the majority of iterations contribute little or no improvement to final performance, while agents lack awareness of their trajectories and are therefore ineffective at adapting their search strategies or determining when to terminate. To address this issue, we introduce a set of unsupervised signals and a Retrieval-Aware Agent Controller (RAAC), which assists the agent in selecting optimal actions at each stage of the research process. RAAC incorporates key information retrieval principles, namely search novelty and information coverage, resulting in more effective reasoning trajectories that improve overall performance while reducing unnecessary iterations, and consequently cost and latency. Specifically on BrowseComp-Plus and across a large set of DRAs, adding RAAC reduces the number of search calls by an average of 14, significantly improves the best-performing DRA on recall and accuracy, and achieves an accuracy gain of up to 10% (3% on average).",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "authors": [
+     "Heydar Soudani",
+     "Elizabeth Lingg",
+     "Faegheh Hasibi",
+     "Navid Rekabsaz"
+    ],
+    "categories": [
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "RAAC",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:38:56+08:00"
+  },
+  "id:2610.14625": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.14625",
+   "match": {
+    "arxiv_id": "2610.14625",
+    "version": "1",
+    "title": "From Existing Methods to New Research Ideas: Two Perspectives on Recursive Self-Improvement",
+    "abstract": "Recursive self-improvement (RSI) offers a route to AI systems that participate in their own continued development. Recent methods allow language agents to retain changes to their parameters, memory, skills, and code for subsequent execution and improvement. We examine how these methods can inform new research ideas through two complementary perspectives. First, we introduce a unified taxonomy with nine design dimensions organized into four groups: update targets, update organization, update schedule and scope, feedback and selection. This taxonomy places existing methods in a shared design space, where examining individual dimensions and their interactions can inspire new research ideas. Second, we examine how existing RSI methods draw on traditional deep learning, for example through optimization, regularization, data augmentation, continual learning, and adversarial learning. We develop further ideas by examining more specific learning mechanisms and drawing on evolutionary computation. We also review how existing benchmarks assess self-improvement under online, offline, and offline-to-online settings. Together, these perspectives help researchers develop new RSI research ideas from existing designs and learning mechanisms. RSI papers and resources are available at https://prism-shadow.github.io/awesome-rsi/.",
+    "published": "2026-10-10",
+    "updated": "2026-10-10",
+    "authors": [
+     "Leijun Zhou",
+     "Yanke Yu",
+     "Zhihao Liu",
+     "Qu Xiang",
+     "Tiancheng Hu",
+     "Yiru Dong",
+     "Yihan Wu",
+     "Yangxi Xiang",
+     "Xuejun Wu",
+     "Xi Chen",
+     "Buyue Qian",
+     "Yaowei Zheng"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "RSI研讨会来了,面壁智能智能进化首席科学家与LlamaFactory作者已就位!",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:39:02+08:00"
+  },
+  "id:2609.37695": {
+   "status": "matched_by_id",
+   "query": "id_list=2609.37695",
+   "match": {
+    "arxiv_id": "2609.37695",
+    "version": "3",
+    "title": "Codimension-one holomorphic Anosov diffeomorphisms",
+    "abstract": "We prove that every codimension-one holomorphic Anosov diffeomorphism of a compact connected complex manifold is biholomorphically conjugate to a hyperbolic automorphism of a complex torus. This verifies a conjecture of Ghys in the codimension-one case and, in particular, in complex dimension three.",
+    "published": "2026-09-29",
+    "updated": "2026-10-13",
+    "authors": [
+     "Jiesong Zhang"
+    ],
+    "categories": [
+     "math.DS",
+     "math.CV",
+     "math.DG"
+    ],
+    "journal_ref": null,
+    "comment": "Added a declaration of AI use, a statement on proof formalisation, and acknowledgements. 19 pages"
+   },
+   "score": 1.0,
+   "title": "余维一全纯 Anosov 微分同胚",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:39:07+08:00"
+  },
+  "id:2610.40541": {
+   "status": "matched_by_id",
+   "query": "id_list=2610.40541",
+   "match": {
+    "arxiv_id": "2610.40541",
+    "version": "1",
+    "title": "On the Fundamental Limits of Prefill-Based Decoding Length Prediction",
+    "abstract": "Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling. We show that current benchmarks conflate predictor quality with task hardness: when the target model, dataset, or sampling configuration changes, reported accuracy collapses even though the predictor is unchanged. We trace this instability to an overlooked error source---the inherent stochasticity of autoregressive decoding---and derive bounds that every prefill-side method must obey. Our analysis treats decoding as a stopped stochastic process. The per-step stopping probability of a response is not constant but ramps up over hundreds of steps, so the decode length inherits a central limit theorem from the many local decisions that determine where a response ends; this yields per-prompt normality with an explicit error term, together with an affine variance law $σ=αμ+b$ whose slope is the coefficient of variation of the number of response segments. Empirically, the normal law reproduces the per-prompt MAE and the central mass of the decode-length distribution to within a few percent, and the residual departures from normality (mild right skew, slight excess kurtosis) are the ones predicted by the sampling-noise correction. Under fixed model, data, and sampling conditions, a broad design space of predictors (MLP, EGTP, FiLM, soft-label, and Mixture-of-Experts variants) converges to similar performance close to the bound, confirming that \\emph{system error dominates model error}. We argue for a benchmarking protocol that fixes the model, data, and sampling parameters and that reports relative-error metrics alongside absolute ones. Code and analysis tools are available at https://github.com/ShwStone/DecodingPredict.",
+    "published": "2026-10-29",
+    "updated": "2026-10-29",
+    "authors": [
+     "Haowen Shi",
+     "Xuzhe Yan",
+     "Fahao Chen",
+     "Peng Li"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.IT"
+    ],
+    "journal_ref": null,
+    "comment": "26 pages, 4 figures"
+   },
+   "score": 1.0,
+   "title": "大模型推理最新动态:框架继续静默,理论侧把「预测」这条路画到了尽头",
+   "kind": "id",
+   "checked_at": "2026-11-05T18:39:12+08:00"
+  },
+  "t:2 211at aamp": {
+   "status": "no_results",
+   "query": "all:\"2-[211At]AAMP\"",
+   "match": null,
+   "title": "2-[211At]AAMP",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:16+08:00"
+  },
+  "t:801 30b": {
+   "status": "no_results",
+   "query": "all:\"801-30B\"",
+   "match": null,
+   "title": "801-30B",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:21+08:00"
+  },
+  "t:applace": {
+   "status": "matched_by_title",
+   "query": "all:\"APPlace\"",
+   "match": {
+    "arxiv_id": "2610.39515",
+    "version": "1",
+    "title": "APPlace: Co-Optimizing Device Locations and Access Points for Routing-Aware Analog Placement",
+    "abstract": "Analog layout automation remains challenging in Analog/Mixed-Signal circuit design, because parasitics and mismatches introduced during layout strongly affect circuit performance. Placement is especially critical among the layout stages, as it constrains the routing solution space and the achievable post-layout performance. Existing analytical placement methods optimize device coordinates under center-based wirelength proxies and leave access point (AP) selection to routing. In analog circuits, however, a routing pin is an extended piece of terminal metal rather than a fixed point, and the best AP on it depends on where the other connected devices are placed, so a coordinate-only placement optimizes for connection points that the router will not use. We present APPlace, a routing-aware analog placement framework that co-optimizes device locations and AP selections during global placement, followed by a legalization stage that preserves the structure established by global placement. Experimental results on four real-world analog benchmarks show that APPlace achieves better overall post-layout performance than representative baselines at comparable layout area. Ablation studies further show that removing AP co-optimization causes up to a 13 dB CMRR loss among the OTA benchmarks and a 23% increase in comparator delay.",
+    "published": "2026-10-29",
+    "updated": "2026-10-29",
+    "authors": [
+     "Bingyang Liu",
+     "Xiaohan Gao",
+     "Souradip Poddar",
+     "David Z. Pan"
+    ],
+    "categories": [
+     "cs.AR"
+    ],
+    "journal_ref": null,
+    "comment": "Accepted to ASP-DAC 2027. 8 pages, 6 figures, 4 tables. Code: https://github.com/bingyang1132/applace"
+   },
+   "score": 0.95,
+   "title": "APPlace",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:26+08:00"
+  },
+  "t:areal rsi": {
+   "status": "matched_by_title",
+   "query": "all:\"AReaL-RSI\"",
+   "match": {
+    "arxiv_id": "2610.18083",
+    "version": "1",
+    "title": "AReaL-RSI: Adaptive Scaling and Coordination of Recursive Self-Improvement",
+    "abstract": "Scaling recursive self-improvement requires additional computation to produce useful research progress in reaching persistent objectives. Intuitively, more researcher agents can explore more hypotheses, but early evaluation scores might misrepresent their promise, shared findings could lose their applicability conditions, and useful procedures could remain confined to completed investigations. In this paper, we present AReaL-RSI, a framework for organizing a persistent research team of agents without updating backbone LLM weights. We formulate the scaling problem in terms of evaluated outcomes and whole-system resource expenditure. Concretely, a leader agent selects task-appropriate research orientations and guides ongoing investigations; conditional memory sharing distinguishes unresolved problems from supported findings and enables recipient adaptation. During recursive evolution, after each campaign, evidence-based review revises researcher orientation, knowledge, and skills for later campaigns. Experiments compare AReaL-RSI with Codex-Goal on downstream harness optimization, GPU kernel optimization, and AI research tasks using two backbones. Under the reported resource allocations, AReaL-RSI improves Terminal Bench performance by 2.2 percentage points for each backbone and increases mean KernelBench speedup by 32.2-36.8%; further scalability comparisons favor the design of AReaL-RSI over native scaling: combining experience sharing with specialized researcher roles yields 1.9-27.5% lower kernel latency than independent exploration and 1.3-33.9% lower latency than sharing alone across all seven comparable task-backbone pairs.",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "authors": [
+     "Wenhao Zhou",
+     "Jiajun Song",
+     "Haitao Wang",
+     "Zipeng Qiu",
+     "Yingqi Peng",
+     "Ruida Xu",
+     "Jiale Li",
+     "Wenshuang Li",
+     "Shusheng Xu",
+     "Wei Dong",
+     "Hao Dai",
+     "Tongkai Yang"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "12 pages"
+   },
+   "score": 0.95,
+   "title": "AReaL-RSI",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:30+08:00"
+  },
+  "t:autorse": {
+   "status": "matched_by_title",
+   "query": "all:\"AutoRSE\"",
+   "match": {
+    "arxiv_id": "2610.37228",
+    "version": "1",
+    "title": "AutoRSE: Evaluating LLM Agents as Recommendation Engineers for Self-Evolving Recommender Systems",
+    "abstract": "Recommender Systems Engineer Agents (RSE-Agents), which use LLM-based agents to autonomously improve recommendation algorithms, are emerging as a promising paradigm. However, their capabilities and limitations remain poorly understood due to the lack of a unified, standardized evaluation framework and systematic trajectory-level analysis. To address this gap, we introduce AutoRSE, an evaluation framework spanning six representative industrial-grade recommendation tasks, and conduct a large-scale empirical study of three frontier LLMs across three widely used agent harnesses. Our results show that RSE-Agents consistently enhance the performance of backbones on five of the six tasks, with an average relative improvement of 16.1%, indicating that they can already autonomously improve recommendation performance. However, trajectory-level analysis also reveals that current RSE-Agents function primarily as engineering optimizers rather than algorithmic improvers: their gains are largely driven by hyperparameter tuning, training strategies, and model ensembling, while genuine algorithmic innovations are rare. Since the largest gains in recommender systems often stem from algorithmic advances, this behavior underscores a fundamental limitation of current RSE-Agents. To probe this limitation, we perform idea-injection experiments and show that agents equipped with innovative ideas from frontier research or human experts achieve substantially larger improvements than those relying on self-generated ideas. These results suggest that idea generation is a central bottleneck of current RSE-Agents, highlights a key direction for the future recommendation system research. Our implementation is publicly available on GitHub: https://github.com/Ray-Tiann/AutoRSE.",
+    "published": "2026-10-27",
+    "updated": "2026-10-27",
+    "authors": [
+     "Rui Tian",
+     "Yi Fang",
+     "Yejin Hua",
+     "Du Wang",
+     "Yuzhe Wang",
+     "Minxuan Shan",
+     "Zirui Ren",
+     "Xinyu Lin",
+     "Chongming Gao",
+     "Wenjie Wang",
+     "Fuli Feng"
+    ],
+    "categories": [
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": "12 pages, 7 figures. Code: https://github.com/Ray-Tiann/AutoRSE"
+   },
+   "score": 0.95,
+   "title": "AutoRSE",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:33+08:00"
+  },
+  "t:cepo": {
+   "status": "matched_by_title",
+   "query": "all:\"CEPO\"",
+   "match": {
+    "arxiv_id": "2610.34722",
+    "version": "1",
+    "title": "CEPO: A General Framework for Improving Prompt Optimization in Multi-Agent Systems",
+    "abstract": "Multi-agent systems (MAS) require both effective coordination and specialized task execution. Existing prompt optimization approaches typically couple these functions within agent-specific prompts. We introduce Coordinator-Executor Prompt Optimization (CEPO), a general framework for improving prompt optimization in MAS. CEPO separates system-level coordination from agent-level execution through a shared coordinator prompt and agent-specific executor prompts, and guides their updates according to their respective roles. This structure allows shared coordination rules to be refined consistently across agents while keeping execution instructions separately adjustable. CEPO provides the prompt structure and optimization guidance, while existing prompt optimizers perform the underlying search. Extensive experiments spanning 11 benchmarks across four domains demonstrate that applying CEPO to four existing prompt optimizers consistently improves their performance. Ablations and qualitative analyses support the proposed design, while controlled studies on a document-understanding MAS further demonstrate improved optimization budget efficiency and performance scaling with the number of agents.",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "authors": [
+     "Jongha Kim",
+     "Seohyun Lee",
+     "Jonathan Minho Chung",
+     "Jinsung Yoon",
+     "Hyunwoo J. Kim"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "CEPO",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:37+08:00"
+  },
+  "t:coworkos": {
+   "status": "matched_by_title",
+   "query": "all:\"CoworkOS\"",
+   "match": {
+    "arxiv_id": "2611.03178",
+    "version": "1",
+    "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+    "abstract": "Rapid advances in cowork agents are shifting human-AI collaboration toward real-world automation, delivering software, designs, and other artifacts. However, such productivity work demands both high-quality delivery on complex productivity tasks and continued monitoring and decision-making over long horizons, a combination that remains an open challenge. We introduce CoworkOS, a general-purpose harness for long-horizon work that separates task strategy from execution management: the model decides actions, delegation, and acceptance, while the runtime maintains state and feedback. Its three-layer architecture enables direct execution or delegation to Subagents, synchronously or asynchronously, under stable responsibilities. Through a shared application layer, humans and agents inspect and revise the same evolving documents, presentations, CAD models, and Blender scenes, so human-in-the-loop participation can enter both through conversation and through direct modification of the work itself. To sustain continuity across agents and sessions, CoworkOS further introduces hierarchical workspaces and persistent semantic memory, so working files, key decisions, and long-running Job logs remain shareable, reusable, and resumable after interruption. Across 12 benchmarks and 6 categories of real-world applications, CoworkOS proves highly competitive with frontier agent applications such as Codex and DeepSeek Harness. As a sustained-work case study, CoworkOS uses GLM-5.3 as its backbone to conduct RSI-driven automated post-training on Qwen3.6-35B-A3B. Over five rounds, the model's average score across eight benchmarks rose from 33.19 to 42.95 (+9.76). Looking ahead, we believe CoworkOS opens a meaningful path toward general cowork-agent intelligence.",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "authors": [
+     "Jiajie Jin",
+     "Guanting Dong",
+     "Chengjun Pan",
+     "Xin Deng",
+     "Zhuohui Sheng",
+     "Guoqiang Wang",
+     "Tao Gui",
+     "Yutao Zhu",
+     "Yujia Chen",
+     "Shihong Yi",
+     "Binze Hu",
+     "Zhixiong Yang"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "34 pages"
+   },
+   "score": 0.95,
+   "title": "CoworkOS",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:42+08:00"
+  },
+  "t:decisionrag": {
+   "status": "rejected",
+   "query": "all:\"DecisionRAG\"",
+   "match": null,
+   "best_candidate": "Retriever-Free Retrieval: Navigating Documents with Decision Models",
+   "best_score": 0.208,
+   "title": "DecisionRAG",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:48+08:00"
+  },
+  "t:deepseek 技术报告": {
+   "status": "no_results",
+   "query": "all:\"DeepSeek 技术报告\"",
+   "match": null,
+   "title": "DeepSeek 技术报告",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:53+08:00"
+  },
+  "t:diffrouter v2": {
+   "status": "no_results",
+   "query": "all:\"DiffRouter v2\"",
+   "match": null,
+   "title": "DiffRouter v2",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:39:57+08:00"
+  },
+  "t:geocore 9b": {
+   "status": "matched_by_title",
+   "query": "all:\"GeoCore-9B\"",
+   "match": {
+    "arxiv_id": "2608.01896",
+    "version": "1",
+    "title": "GeoCore-9B: Towards Geo-Aware Generative Foundation Models in Earth Observation",
+    "abstract": "Existing generative models for earth observation (EO) predominantly rely on fine-tuning natural image priors, which limits their scalability and introduces perspective biases that conflict with geospatial constraints. To address this, we introduce GeoCore-9B, a 9-billion-parameter generative foundation model, which is the first of its scale to be trained from scratch exclusively on EO data. Unlike previous EO foundation models, GeoCore-9B is built upon a Flow Matching-based Diffusion Transformer (DiT) and natively conditions generation on text descriptions and continuous geospatial metadata, including ground sample distances, latitudes, and longitudes. To overcome the convergence and spatial disorientation challenges of training at this scale, we propose a Geospatial Semantic Alignment loss. This objective distills structural Earth surface priors (e.g., terrain and urban areas) from a frozen specialist teacher network, constraining the diffusion latent trajectory during training without adding inference overhead. Pre-trained on the global-scale Git-10M dataset, GeoCore-9B demonstrates strong downstream versatility. Beyond standard proxy generative tasks, we show that GeoCore-9B can be effectively adapted for practical EO applications, including highly challenging tasks such as cloud removal and SAR-to-optical cross-modal translation. Extensive evaluations confirm that GeoCore-9B establishes new state-of-the-art performance in both visual fidelity and geographic structural accuracy.",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "authors": [
+     "Jeonghyeok Do",
+     "Munchurl Kim"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": "Please visit our project page at https://kaist-viclab.github.io/GeoCore-9B_site/"
+   },
+   "score": 0.95,
+   "title": "GeoCore-9B",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:40:02+08:00"
+  },
+  "t:harmony harness": {
+   "status": "matched_by_title",
+   "query": "all:\"Harmony Harness\"",
+   "match": {
+    "arxiv_id": "2610.15150",
+    "version": "1",
+    "title": "Harmony Harness: Multi-Objective Self-Evolution of Agent Harnesses",
+    "abstract": "Recent work on self-evolving LLM agents treats the agent harness as an optimization target that can be iteratively improved through execution feedback. Existing approaches, however, largely optimize a single objective and evolve the harness as a monolithic artifact, limiting their ability to handle competing goals and to separate transferable design from environment-specific adaptation. We introduce Harmony Harness, a framework for multi-objective, compositional harness evolution. Harmony Harness formulates harness evolution as a multi-objective optimization problem and uses decomposition-based evolutionary search to maintain solutions across different regions of the Pareto frontier, avoiding reliance on a hand-designed structural diversity metric for repository-scale harnesses. In parallel, we introduce factorized evolution operators that separately refine general-purpose harness mechanisms and benchmark-specific adaptations, together with a dynamic composition workflow that integrates them at inference time. Across SecRepoBench and BaxBench, Harmony Harness consistently outperforms strong harness-evolution baselines, with gains exceeding 10% on both benchmarks. Our results show that explicitly modeling both objective trade-offs and harness structure yields substantially stronger and more transferable agent evolution than existing single-objective, monolithic approaches.",
+    "published": "2026-10-10",
+    "updated": "2026-10-10",
+    "authors": [
+     "Weichen Yu",
+     "Lesly Miculicich",
+     "Bhavana Dalvi Mishra",
+     "Jiefeng Chen",
+     "Shuo Li",
+     "Matt Fredrikson",
+     "Tomas Pfister",
+     "Long T. Le"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Harmony Harness",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:40:09+08:00"
+  },
+  "t:humanity s last choice a common evaluation standard for generative engine optimization": {
+   "status": "matched_by_title",
+   "query": "ti:\"Humanity's Last Choice: A Common Evaluation Standard for Generative Engine Optimization\"",
+   "match": {
+    "arxiv_id": "2610.23541",
+    "version": "1",
+    "title": "Humanity's Last Choice: A Common Evaluation Standard for Generative Engine Optimization",
+    "abstract": "Humanity's Last Choice describes the idea that the last choice people need to make is which AI system they entrust with the decisions that follow. These systems rely on external sources that content providers can edit through generative engine optimization (GEO) to increase source visibility and influence recommendations. Choosing among these systems therefore requires comparable evidence of how well they carry out user requests when exposed to GEO. Benchmarks have made progress in standardizing tasks, models, and metrics, but they often define their own spaces of GEO strategies and use different editing constraints. These differences can conflate gains from better optimization algorithms with those from greater freedom to edit sources, while making evaluation coverage difficult to compare across benchmarks. We therefore call for a common evaluation standard and propose a meta-taxonomy that describes where sources are edited, how they are edited, and what signals those edits target. Drawing on representative literature, we map existing strategies into a searchable space and outline a protocol for controlled comparisons with explicit coverage reporting. This provides a foundation for common leaderboards that can inform which systems people choose to rely on.",
+    "published": "2026-10-16",
+    "updated": "2026-10-16",
+    "authors": [
+     "Qianfeng Wen",
+     "Yifan Simon Liu",
+     "Difan Jiao",
+     "Junda Wu",
+     "Di Bai",
+     "Jintao Liu",
+     "Xidong Wu",
+     "Zhenwei Tang"
+    ],
+    "categories": [
+     "cs.IR"
+    ],
+    "journal_ref": null,
+    "comment": "19 pages, 2 figures. Project website: https://humanitylastchoice.org"
+   },
+   "score": 1.0,
+   "title": "Humanity's Last Choice: A Common Evaluation Standard for Generative Engine Optimization",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:40:49+08:00"
+  },
+  "t:ibdseek": {
+   "status": "no_results",
+   "query": "all:\"IBDseek\"",
+   "match": null,
+   "title": "IBDseek",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:40:53+08:00"
+  },
+  "t:jepa": {
+   "status": "matched_by_title",
+   "query": "all:\"JEPA\"",
+   "match": {
+    "arxiv_id": "2610.00727",
+    "version": "1",
+    "title": "CF-JEPA: Improving Robustness of JEPA World Models via Controllability Factorization",
+    "abstract": "Controlling an agent with vision requires being able to separate useful information from irrelevant background information. JEPA-style latent world models seem like a natural approach for this, as they do not perform pixel-level reconstruction; however, they are still sensitive to these distractor signals and experience latent collapse. In this work, we introduce Controllability Factorized JEPA (CF-JEPA), a JEPA-style world model which splits the latent space into controllable and uncontrollable subspaces. This factorization allows us to capture all the distractor information into the uncontrollable region, while we use the control-relevant latent information for our task. With this, we show comparable performance across 2D and 3D control tasks under nominal conditions and improved performance under distracted conditions, where CF-JEPA is the only model that does not experience latent collapse. We also validate our model under distracted conditions for a simulated robot task, highlighting the practical application of such a scheme.",
+    "published": "2026-09-30",
+    "updated": "2026-09-30",
+    "authors": [
+     "Morgan Byrd",
+     "Robert Wright",
+     "Sehoon Ha"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "Website: https://morganbyrd03.github.io/cf-jepa/"
+   },
+   "score": 0.95,
+   "title": "JEPA",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:41:19+08:00"
+  },
+  "t:jepa 跨模态表征研究": {
+   "status": "no_results",
+   "query": "all:\"JEPA 跨模态表征研究\"",
+   "match": null,
+   "title": "JEPA 跨模态表征研究",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:41:25+08:00"
+  },
+  "t:large language models and the freedom of expression": {
+   "status": "no_results",
+   "query": "ti:\"Large Language Models and the Freedom of Expression\"",
+   "match": null,
+   "title": "Large Language Models and the Freedom of Expression",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:41:29+08:00"
+  },
+  "t:lora low rank adaptation of large language models": {
+   "status": "matched_by_title",
+   "query": "ti:\"LoRA: Low-Rank Adaptation of Large Language Models\"",
+   "match": {
+    "arxiv_id": "2106.09685",
+    "version": "2",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.",
+    "published": "2021-06-17",
+    "updated": "2021-10-16",
+    "authors": [
+     "Edward J. Hu",
+     "Yelong Shen",
+     "Phillip Wallis",
+     "Zeyuan Allen-Zhu",
+     "Yuanzhi Li",
+     "Shean Wang",
+     "Lu Wang",
+     "Weizhu Chen"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": "Draft V2 includes better baselines, experiments on GLUE, and more on adapter latency"
+   },
+   "score": 1.0,
+   "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:41:34+08:00"
+  },
+  "t:on policy self distillation for large language models": {
+   "status": "rejected",
+   "query": "ti:\"On-Policy Self-Distillation for Large Language Models\"",
+   "match": null,
+   "best_candidate": "A Brief Overview: On-Policy Self-Distillation In Large Language Models",
+   "best_score": 0.82,
+   "title": "On-Policy Self-Distillation for Large Language Models",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:41:42+08:00"
+  },
+  "t:organizing intelligence": {
+   "status": "matched_by_title",
+   "query": "ti:\"Organizing Intelligence\"",
+   "match": {
+    "arxiv_id": "2611.05417",
+    "version": "1",
+    "title": "Organizing Intelligence",
+    "abstract": "When will advances in AI lead to economic transformation? We develop a model of how intelligence, the ability to achieve goals, matters for organizations, the key unit of economic production. Agents (human or AI) with multidimensional capabilities sort endogenously into competing firms. A firm's productivity depends on its agents' capabilities; we distinguish competence, which shifts productivity levels, from coordination, which governs how productivity scales with size. Two differences between AI and humans drive transformation: AI expertise is reproducible while humans' are in fixed supply, and AIs may not face the same human limits on coordination. We analyze how equilibrium market structure, productivity, employment, and wages evolve as AI capabilities improve. When AI is more capable than the average human, organizations of complementary humans can nonetheless outperform AI. Increases in AI competence can change the composition of workers within firms and decrease firm size. As AI coordination improves, however, this can break the Coasean ceiling on firm size and the market structure undergoes a phase transition toward large, concentrated AI-heavy firms. Changes in human employment are gradual when AI displaces workers within mixed human-AI firms, or sudden when AI firms outcompete human firms. We decompose wage changes into a technology effect, which changes the value of humans within existing firms, and a reorganization effect as firms adjust size and composition. Reorganization can reverse the technology effect on wages.",
+    "published": "2026-10-31",
+    "updated": "2026-10-31",
+    "authors": [
+     "Alex Imas",
+     "Andrew Koh",
+     "Shane Legg"
+    ],
+    "categories": [
+     "econ.TH"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Organizing Intelligence",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:41:47+08:00"
+  },
+  "t:platonic representation theorem": {
+   "status": "no_results",
+   "query": "ti:\"Platonic Representation Theorem\"",
+   "match": null,
+   "title": "Platonic Representation Theorem",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:41:54+08:00"
+  },
+  "t:raac": {
+   "status": "matched_by_title",
+   "query": "all:\"RAAC\"",
+   "match": {
+    "arxiv_id": "2505.06294",
+    "version": "1",
+    "title": "RAAC panels can suddenly collapse before any warning of corrosion-induced surface cracking",
+    "abstract": "The collapse of reinforced autoclaved aerated concrete (RAAC) panels has attracted considerable public and academic interest. As detailed experimental data are not yet available and replicating the natural corrosion process requires years or decades, computational modelling is essential to understand under which conditions corrosion remains concealed. The very high porosity of RAAC is widely suspected to be a major contributing factor. However, current corrosion-induced cracking models are known to struggle with capturing the role of concrete porosity. To remedy this critical deficiency, we propose to enrich corrosion-induced cracking modelling with the analytical solution of reactive transport equations governing the precipitation of rust and a porosity-dependent description of diffusivity. With this, the corrosion concealment in RAAC panels is studied computationally for the first time, revealing that RAAC panels can suddenly collapse before any warning of corrosion-induced surface cracking and allowing to map the conditions most likely to result in sudden collapse.",
+    "published": "2025-05-07",
+    "updated": "2025-05-07",
+    "authors": [
+     "E. Korec",
+     "P. Grassl",
+     "M. Jirasek",
+     "H. S. Wong",
+     "E. Martínez-Pañeda"
+    ],
+    "categories": [
+     "cs.CE",
+     "cond-mat.mtrl-sci"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "RAAC",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:42:17+08:00"
+  },
+  "t:rsi arena": {
+   "status": "matched_by_title",
+   "query": "all:\"RSI Arena\"",
+   "match": {
+    "arxiv_id": "2610.33624",
+    "version": "1",
+    "title": "RSI Arena: Towards Recursive Self-Improvement with Human Feedback",
+    "abstract": "Can AI agents autonomously train useful language models and improve them using feedback from users? We introduce RSI Arena, a two-stage study of autonomous post-training as a step toward recursive self-improvement. Ten frontier models act as training agents, each starting from NVIDIA Nemotron 3.5 Lightning 30B-A3B Base. During a six-day first stage, each agent has 1,000 GPU-hours and $300 in API credit on a shared 64-GPU cluster, independently selecting data, implementing training procedures, and choosing checkpoints. We evaluate their models on 20 benchmarks and through blind human evaluations. All ten agents produce working assistants, with the strongest model, trained by GPT-6 Astra, closing a median of 76% of the base-to-Instruct gap across 12 capability benchmarks. Its human-preference rating is also close to NVIDIA Instruct after statistical adjustment for answer length and formatting. In Stage 2, each agent receives the comparison records and votes involving its Stage 1 model and is given three additional days for further training. Using NVIDIA Instruct as a common reference across the two evaluation rounds, we observe an improvement from Stage 1 to Stage 2 in the style-adjusted relative rating of eight of the ten models. We show that benchmark gains were modest, with no clear link to preference gains, while some agents encouraged longer responses and one model showed increased harmful compliance on StrongREJECT. RSI Arena provides an auditable setting for studying how human feedback can guide autonomous model development. It takes a step toward recursive self-improvement with human feedback (RSIHF), in which people help define what improvement means for the AI systems they use.",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "authors": [
+     "Yue Huang",
+     "Yanbo Wang",
+     "Lichi Li",
+     "Yuanyuan Chen",
+     "Andreas Haupt",
+     "Xiaonan Luo",
+     "Zheyuan Liu",
+     "Jihye Choi",
+     "Felix Juefei-Xu",
+     "Xiangliang Zhang",
+     "Radha Poovendran",
+     "Misha Sra"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "39 pages. Project website: https://rsiarena.org"
+   },
+   "score": 0.95,
+   "title": "RSI Arena",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:42:21+08:00"
+  },
+  "t:rtl 自动修复 llm sva jaspergold 闭环": {
+   "status": "no_results",
+   "query": "ti:\"RTL 自动修复（LLM + SVA + JasperGold 闭环）\"",
+   "match": null,
+   "title": "RTL 自动修复（LLM + SVA + JasperGold 闭环）",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:42:26+08:00"
+  },
+  "t:rv32i": {
+   "status": "matched_by_title",
+   "query": "all:\"RV32I\"",
+   "match": {
+    "arxiv_id": "2507.19009",
+    "version": "1",
+    "title": "RV32I in ACL2",
+    "abstract": "We present a simple ACL2 simulator for the RISC-V 32-bit base instruction set architecture, written in the operational semantics style. Like many other ISA models, our RISC-V state object is a single-threaded object and we prove read-over-write, write-over-write, writing-the-read, and state well-formedness theorems. Unlike some other models, we separate the instruction decoding functions from their semantic counterparts. Accordingly, we verify encoding / decoding functions for each RV32I instruction, the proofs for which are entirely automatic.",
+    "published": "2025-07-25",
+    "updated": "2025-07-25",
+    "authors": [
+     "Carl Kwan"
+    ],
+    "categories": [
+     "cs.LO"
+    ],
+    "journal_ref": "EPTCS 423, 2025, pp. 46-50",
+    "comment": "In Proceedings ACL2 2025, arXiv:2507.18567"
+   },
+   "score": 0.95,
+   "title": "RV32I",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:42:49+08:00"
+  },
+  "t:robocolosseum": {
+   "status": "matched_by_title",
+   "query": "all:\"RoboColosseum\"",
+   "match": {
+    "arxiv_id": "2611.02497",
+    "version": "1",
+    "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
+    "abstract": "General-purpose robot policies must work across robots, tasks, and environments, yet the variation that makes physical trials informative also makes them difficult to reproduce. We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments. Our initial study evaluates five vision-language-action (VLA) policies and three frontier AI agents across four embodiments (SO-101, Franka, Bimanual-YAM, and G1 Humanoid). The Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. The Fine-tune Track measures how well VLA policies adapt to 20 tasks across all four embodiments when each policy receives the same 100 demonstrations per task. Across 5,699 pairwise Open Track comparisons at 124 sites, frontier agents rival specialized VLA policies, while all systems struggle to complete open-world tasks reliably. After fine-tuning, GR00T N1.7 leads on SO-101 and pi0.5 leads on Franka and Bimanual-YAM. Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks. Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies. Open Track rankings stabilize as trials accumulate, and active matchmaking achieves comparable ranking agreement with substantially fewer physical trials than uniform sampling. These results show how distributed physical evaluation can reveal where robot policies generalize, how well they adapt to new tasks, and how far they progress on tasks they fail to complete.",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "authors": [
+     "Tan Sang Nguyen",
+     "Yi Ru Wang",
+     "Shailesh Shailesh",
+     "Gang Yang",
+     "Jiamo Hu",
+     "Jianuo Jiang",
+     "Haoquan Fang",
+     "Zhongzheng Ren",
+     "Zhongyi Luo",
+     "Ian Chong",
+     "Aaron Tung",
+     "Santiago Pravisani"
+    ],
+    "categories": [
+     "cs.RO",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "34 Pages, project page: https://robocolosseum.ai/"
+   },
+   "score": 0.95,
+   "title": "RoboColosseum",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:43:29+08:00"
+  },
+  "t:swe mem": {
+   "status": "matched_by_title",
+   "query": "all:\"SWE-MeM\"",
+   "match": {
+    "arxiv_id": "2606.28434",
+    "version": "1",
+    "title": "SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents",
+    "abstract": "Long-horizon software engineering agents often need to manage lengthy and noisy interaction histories under limited context budgets. Existing memory management methods typically rely on static compression workflows or impose rigid constraints on compression timing and granularity. Moreover, these approaches fail to jointly optimize memory management and issue resolution capabilities to improve performance while reducing token usage. We present SWE-MeM, a training framework for proactive and on-demand memory management in software engineering agents. SWE-MeM provides a flexible memory tool that lets agents decide when, what, and how to compress based on trajectory state, task progress, and remaining context budget. We train agents with synthesized proactive memory-management trajectories and Memory-aware GRPO, which jointly optimizes memory management and issue resolution through memory-aware trajectory splitting and step-level credit assignment. On SWE-Bench Verified, SWE-MeM achieves 43.4% and 60.2% resolve rate with 4B and 30B models, respectively, outperforming existing memory management baselines in both performance and efficiency.",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "authors": [
+     "Shuzheng Gao",
+     "Wenhao Zeng",
+     "Zhaojian Yu",
+     "Jianqiao Wangni",
+     "Chaozheng Wang",
+     "Kai Cai",
+     "Shilin He",
+     "Michael R. Lyu"
+    ],
+    "categories": [
+     "cs.SE",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SWE-MeM",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:43:34+08:00"
+  },
+  "t:super agent": {
+   "status": "matched_by_title",
+   "query": "all:\"Super-agent\"",
+   "match": {
+    "arxiv_id": "2504.10519",
+    "version": "2",
+    "title": "Toward Super Agent System with Hybrid AI Routers",
+    "abstract": "AI Agents powered by Large Language Models are transforming the world through enormous applications. A super agent has the potential to fulfill diverse user needs, such as summarization, coding, and research, by accurately understanding user intent and leveraging the appropriate tools to solve tasks. However, to make such an agent viable for real-world deployment and accessible at scale, significant optimizations are required to ensure high efficiency and low cost. This position paper presents a design of the Super Agent System powered by the hybrid AI routers. Upon receiving a user prompt, the system first detects the intent of the user, then routes the request to specialized task agents with the necessary tools or automatically generates agentic workflows. In practice, most applications directly serve as AI assistants on edge devices such as phones and robots. As different language models vary in capability and cloud-based models often entail high computational costs, latency, and privacy concerns, we then explore the hybrid mode where the router dynamically selects between local and cloud models based on task complexity. Finally, we introduce the blueprint of an on-device super agent enhanced with cloud. With advances in multi-modality models and edge hardware, we envision that most computations can be handled locally, with cloud collaboration only as needed. Such architecture paves the way for super agents to be seamlessly integrated into everyday life in the near future.",
+    "published": "2025-04-11",
+    "updated": "2025-07-24",
+    "authors": [
+     "Yuhang Yao",
+     "Haixin Wang",
+     "Yibo Chen",
+     "Jiawen Wang",
+     "Min Chang Jordan Ren",
+     "Bosheng Ding",
+     "Salman Avestimehr",
+     "Chaoyang He"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL",
+     "cs.LG",
+     "cs.MA"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Super-agent",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:43:39+08:00"
+  },
+  "t:super agent 设计探索": {
+   "status": "no_results",
+   "query": "ti:\"Super-agent 设计探索\"",
+   "match": null,
+   "title": "Super-agent 设计探索",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:43:50+08:00"
+  },
+  "t:super agent设计探索 迈向更自主的agent系统": {
+   "status": "no_results",
+   "query": "ti:\"Super-agent设计探索：迈向更自主的Agent系统\"",
+   "match": null,
+   "title": "Super-agent设计探索：迈向更自主的Agent系统",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:43:55+08:00"
+  },
+  "t:system 1 and system 2 协同设计": {
+   "status": "no_results",
+   "query": "ti:\"System-1 and System-2 协同设计\"",
+   "match": null,
+   "title": "System-1 and System-2 协同设计",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:43:59+08:00"
+  },
+  "t:tra rag": {
+   "status": "no_results",
+   "query": "all:\"TRA-RAG\"",
+   "match": null,
+   "title": "TRA-RAG",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:44:02+08:00"
+  },
+  "t:weight space programming": {
+   "status": "rejected",
+   "query": "ti:\"Weight Space Programming\"",
+   "match": null,
+   "best_candidate": "Weight-space programming for auditing clinical decision networks",
+   "best_score": 0.545,
+   "title": "Weight Space Programming",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:08+08:00"
+  },
+  "t:余维一全纯 anosov 微分同胚": {
+   "status": "no_results",
+   "query": "ti:\"余维一全纯 Anosov 微分同胚\"",
+   "match": null,
+   "title": "余维一全纯 Anosov 微分同胚",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:12+08:00"
+  },
+  "t:利用大语言模型增强学术论文摘要与全文中的知识实体关系抽取": {
+   "status": "no_results",
+   "query": "ti:\"利用大语言模型增强学术论文摘要与全文中的知识实体关系抽取\"",
+   "match": null,
+   "title": "利用大语言模型增强学术论文摘要与全文中的知识实体关系抽取",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:17+08:00"
+  },
+  "t:地缘竞争时代的技术民族主义与跨境收购": {
+   "status": "no_results",
+   "query": "all:\"地缘竞争时代的技术民族主义与跨境收购\"",
+   "match": null,
+   "title": "地缘竞争时代的技术民族主义与跨境收购",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:44:23+08:00"
+  },
+  "t:基于大数据回归模型的包络对齐方法研究": {
+   "status": "no_results",
+   "query": "all:\"基于大数据回归模型的包络对齐方法研究\"",
+   "match": null,
+   "title": "基于大数据回归模型的包络对齐方法研究",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:44:27+08:00"
+  },
+  "t:多智能体通信": {
+   "status": "no_results",
+   "query": "all:\"多智能体通信\"",
+   "match": null,
+   "title": "多智能体通信",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:44:33+08:00"
+  },
+  "t:条件交互 conditional interaction": {
+   "status": "no_results",
+   "query": "ti:\"条件交互（Conditional Interaction）\"",
+   "match": null,
+   "title": "条件交互（Conditional Interaction）",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:38+08:00"
+  },
+  "t:猫态比特编译 shor 算法的端到端资源估计": {
+   "status": "no_results",
+   "query": "ti:\"猫态比特编译 Shor 算法的端到端资源估计\"",
+   "match": null,
+   "title": "猫态比特编译 Shor 算法的端到端资源估计",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:42+08:00"
+  },
+  "t:融合大语言模型的区块链开源项目主题挖掘与演化分析": {
+   "status": "no_results",
+   "query": "all:\"融合大语言模型的区块链开源项目主题挖掘与演化分析\"",
+   "match": null,
+   "title": "融合大语言模型的区块链开源项目主题挖掘与演化分析",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:44:51+08:00"
+  },
+  "t:视频生成综述 agent harness 视角": {
+   "status": "no_results",
+   "query": "ti:\"视频生成综述（Agent harness 视角）\"",
+   "match": null,
+   "title": "视频生成综述（Agent harness 视角）",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:44:57+08:00"
+  },
+  "t:论大模型幻觉治理技术的应用与实践": {
+   "status": "no_results",
+   "query": "all:\"论大模型幻觉治理技术的应用与实践\"",
+   "match": null,
+   "title": "论大模型幻觉治理技术的应用与实践",
+   "kind": "method",
+   "checked_at": "2026-11-05T18:45:03+08:00"
+  },
+  "t:贸易治理与问答基准 大语言模型理解国际贸易的能力 偏差与经济含义": {
+   "status": "no_results",
+   "query": "ti:\"贸易治理与问答基准：大语言模型理解国际贸易的能力、偏差与经济含义\"",
+   "match": null,
+   "title": "贸易治理与问答基准：大语言模型理解国际贸易的能力、偏差与经济含义",
+   "kind": "title",
+   "checked_at": "2026-11-05T18:45:07+08:00"
   }
  }
 }

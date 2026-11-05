@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-11-02T07:16:36+08:00",
+ "generated_at": "2026-11-05T18:33:05+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -51874,6 +51874,1049 @@
      "subject": "HGX NVL8",
      "label": "容量降幅",
      "value": 13.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|new-media|technical|0": {
+   "hash": "ed33291992b2908b",
+   "date": "2026-11-05",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "长鑫存储",
+     "type": "company"
+    },
+    {
+     "name": "4F²垂直沟道DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "VSG垂直环绕栅极",
+     "type": "tech"
+    },
+    {
+     "name": "混合键合",
+     "type": "tech"
+    },
+    {
+     "name": "DDR5 RDIMM",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "4F²垂直沟道DRAM",
+     "label": "单元面积",
+     "value": 4.0,
+     "unit": "F²"
+    },
+    {
+     "subject": "4F²垂直沟道DRAM",
+     "label": "存储密度提升",
+     "value": 50.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|others|business|0": {
+   "hash": "cecb46c7942835bd",
+   "date": "2026-11-05",
+   "category": "others",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "长鑫科技",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "季度营业利润",
+     "value": 107.4,
+     "unit": "万亿韩元"
+    },
+    {
+     "subject": "三星",
+     "label": "营业利润同比增速",
+     "value": 783.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "季度营业利润",
+     "value": 83.3,
+     "unit": "万亿韩元"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "营业利润率",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "前三季营收",
+     "value": 2690.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "长鑫科技",
+     "label": "前三季净利润",
+     "value": 1320.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球季度半导体销售额",
+     "value": 5177.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "行业",
+     "label": "全球半导体销售额环比增速",
+     "value": 24.1,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|others|technical|0": {
+   "hash": "6e31baba874071bb",
+   "date": "2026-11-05",
+   "category": "others",
+   "entities": [
+    {
+     "name": "KAIST",
+     "type": "institution"
+    },
+    {
+     "name": "SnSe2",
+     "type": "tech"
+    },
+    {
+     "name": "范德华隧穿注入器",
+     "type": "tech"
+    },
+    {
+     "name": "WSe2",
+     "type": "tech"
+    },
+    {
+     "name": "MoS2",
+     "type": "tech"
+    },
+    {
+     "name": "CMOS反相器",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "WSe2",
+     "label": "p型驱动电流提升倍数",
+     "value": 1000.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "MoS2",
+     "label": "n型开关比",
+     "value": 1000000000.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-05|storage-semantics-protocol|business|0": {
+   "hash": "837e583d7515e9d4",
+   "date": "2026-11-05",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "平头哥",
+     "type": "company"
+    },
+    {
+     "name": "磐脉920",
+     "type": "product"
+    },
+    {
+     "name": "PCIe 5.0",
+     "type": "tech"
+    },
+    {
+     "name": "112G PAM4",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe Switch",
+     "type": "tech"
+    },
+    {
+     "name": "阿里云",
+     "type": "company"
+    },
+    {
+     "name": "DPU",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "磐脉920",
+     "label": "网络吞吐",
+     "value": 400.0,
+     "unit": "Gbps"
+    },
+    {
+     "subject": "磐脉920",
+     "label": "收发包速率",
+     "value": 400.0,
+     "unit": "Mpps"
+    },
+    {
+     "subject": "磐脉920",
+     "label": "系统成本降低",
+     "value": 30.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|storage-semantics-protocol|technical|0": {
+   "hash": "48be5966a0c1ca35",
+   "date": "2026-11-05",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "磐脉920",
+     "type": "product"
+    },
+    {
+     "name": "多路径RDMA",
+     "type": "tech"
+    },
+    {
+     "name": "PCIe Switch",
+     "type": "tech"
+    },
+    {
+     "name": "拥塞控制算法",
+     "type": "tech"
+    },
+    {
+     "name": "细粒度网络感知",
+     "type": "tech"
+    }
+   ],
+   "metrics": []
+  },
+  "2026-11-05|ai-inference-acceleration|business|0": {
+   "hash": "74b7b0981e51f9d4",
+   "date": "2026-11-05",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "美团",
+     "type": "company"
+    },
+    {
+     "name": "LongCat-2.5",
+     "type": "product"
+    },
+    {
+     "name": "W4A4量化",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LongCat-2.5",
+     "label": "总参数",
+     "value": 1.6,
+     "unit": "万亿"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "每token激活参数",
+     "value": 480.0,
+     "unit": "亿"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "长上下文SFT单卡吞吐提升",
+     "value": 86.0,
+     "unit": "%"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "W4A4 prefill吞吐提升",
+     "value": 43.3,
+     "unit": "%"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "W4A4 decode吞吐提升",
+     "value": 42.77,
+     "unit": "%"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "TTFT降低",
+     "value": 15.91,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|ai-inference-acceleration|technical|0": {
+   "hash": "9d483ca823724ddf",
+   "date": "2026-11-05",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "谷歌",
+     "type": "company"
+    },
+    {
+     "name": "Project Suncatcher",
+     "type": "tech"
+    },
+    {
+     "name": "Trillium TPU",
+     "type": "product"
+    },
+    {
+     "name": "Gemma 4",
+     "type": "product"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Project Suncatcher",
+     "label": "太阳能阵列峰值功率",
+     "value": 1.0,
+     "unit": "kW"
+    },
+    {
+     "subject": "Project Suncatcher",
+     "label": "搭载TPU数量",
+     "value": 4.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "Project Suncatcher",
+     "label": "轨道高度",
+     "value": 650.0,
+     "unit": "km"
+    },
+    {
+     "subject": "Trillium TPU",
+     "label": "真空散热下连续工作时长",
+     "value": 15.0,
+     "unit": "分钟"
+    }
+   ]
+  },
+  "2026-11-05|ai-model-agent-rag|business|0": {
+   "hash": "24e93c61f3760abb",
+   "date": "2026-11-05",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "美团",
+     "type": "company"
+    },
+    {
+     "name": "LongCat-2.5",
+     "type": "product"
+    },
+    {
+     "name": "妙手",
+     "type": "product"
+    },
+    {
+     "name": "古茗",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LongCat-2.5",
+     "label": "总参数",
+     "value": 1.6,
+     "unit": "万亿"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "每token激活参数",
+     "value": 480.0,
+     "unit": "亿"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "长序列SFT单卡吞吐提升",
+     "value": 86.0,
+     "unit": "%"
+    },
+    {
+     "subject": "LongCat-2.5",
+     "label": "W4A4推理吞吐提升",
+     "value": 43.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|ai-model-agent-rag|technical|0": {
+   "hash": "382f34b0f853b420",
+   "date": "2026-11-05",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "MIT",
+     "type": "institution"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "type": "product"
+    },
+    {
+     "name": "Qwen3.5-0.8B",
+     "type": "product"
+    },
+    {
+     "name": "MATH-500",
+     "type": "paper"
+    },
+    {
+     "name": "GSM8K",
+     "type": "paper"
+    },
+    {
+     "name": "权重编辑",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Qwen3.5-0.8B",
+     "label": "被编辑参数占比",
+     "value": 0.016,
+     "unit": "%"
+    },
+    {
+     "subject": "Qwen3.5-0.8B",
+     "label": "MATH-500准确率",
+     "value": 48.1,
+     "unit": "%"
+    },
+    {
+     "subject": "Qwen3.5-0.8B",
+     "label": "GSM8K准确率",
+     "value": 67.1,
+     "unit": "%"
+    },
+    {
+     "subject": "Qwen3.5-0.8B",
+     "label": "指令遵循得分",
+     "value": 62.3,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|cost-effective-storage|business|0": {
+   "hash": "acee600460467efb",
+   "date": "2026-11-05",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "慧荣",
+     "type": "company"
+    },
+    {
+     "name": "Ferri",
+     "type": "product"
+    },
+    {
+     "name": "MonTitan",
+     "type": "product"
+    },
+    {
+     "name": "SSD控制器",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "慧荣",
+     "label": "季度营收",
+     "value": 5.602,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "慧荣",
+     "label": "营收同比增速",
+     "value": 131.0,
+     "unit": "%"
+    },
+    {
+     "subject": "慧荣",
+     "label": "营收环比增速",
+     "value": 24.0,
+     "unit": "%"
+    },
+    {
+     "subject": "慧荣",
+     "label": "非GAAP毛利率",
+     "value": 53.7,
+     "unit": "%"
+    },
+    {
+     "subject": "慧荣",
+     "label": "营业利润率",
+     "value": 32.1,
+     "unit": "%"
+    },
+    {
+     "subject": "Ferri",
+     "label": "营收同比增速",
+     "value": 25.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-05|cost-effective-storage|technical|0": {
+   "hash": "07b6bf231e70f6c6",
+   "date": "2026-11-05",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM3E",
+     "type": "product"
+    },
+    {
+     "name": "DDR5",
+     "type": "product"
+    },
+    {
+     "name": "CXL",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBM",
+     "label": "良率",
+     "value": 65.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DDR5",
+     "label": "良率",
+     "value": 92.0,
+     "unit": "%"
+    },
+    {
+     "subject": "HBM3E",
+     "label": "12层同尺寸晶圆产出（相对DDR5）",
+     "value": 0.33,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-05|high-capacity-storage|business|0": {
+   "hash": "342b319fdf0f9c50",
+   "date": "2026-11-05",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "铠侠",
+     "type": "company"
+    },
+    {
+     "name": "HBM4",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "季度营业利润",
+     "value": 107.4,
+     "unit": "万亿韩元"
+    },
+    {
+     "subject": "三星",
+     "label": "营业利润率",
+     "value": 55.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4收入环比增长",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "营业利润率",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "铠侠",
+     "label": "单季营收",
+     "value": 2.48,
+     "unit": "万亿日元"
+    },
+    {
+     "subject": "铠侠",
+     "label": "下季营收环比指引",
+     "value": 0.8,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|high-capacity-storage|technical|0": {
+   "hash": "fde13532d8e3d64a",
+   "date": "2026-11-05",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "长鑫存储",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "4F² DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBF",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "product"
+    },
+    {
+     "name": "伯恩斯坦",
+     "type": "institution"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBF",
+     "label": "每GB成本",
+     "value": 0.64,
+     "unit": "美元"
+    },
+    {
+     "subject": "HBF",
+     "label": "每GB成本（相对HBM4）",
+     "value": 0.1,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-05|high-reliability-storage|business|0": {
+   "hash": "50d67fa5cfb99546",
+   "date": "2026-11-05",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "谷歌",
+     "type": "company"
+    },
+    {
+     "name": "Project Suncatcher",
+     "type": "tech"
+    },
+    {
+     "name": "Trillium TPU",
+     "type": "product"
+    },
+    {
+     "name": "Gemma 4",
+     "type": "product"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Project Suncatcher",
+     "label": "搭载TPU数量",
+     "value": 4.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "Project Suncatcher",
+     "label": "太阳能功率",
+     "value": 1.0,
+     "unit": "kW"
+    },
+    {
+     "subject": "Project Suncatcher",
+     "label": "轨道高度",
+     "value": 650.0,
+     "unit": "km"
+    },
+    {
+     "subject": "Trillium TPU",
+     "label": "真空散热下连续工作时长",
+     "value": 15.0,
+     "unit": "分钟"
+    }
+   ]
+  },
+  "2026-11-05|high-reliability-storage|technical|0": {
+   "hash": "f24e7c4a5f28c11c",
+   "date": "2026-11-05",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "3D NAND",
+     "type": "tech"
+    },
+    {
+     "name": "TSPB",
+     "type": "tech"
+    },
+    {
+     "name": "DTT",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "TSPB",
+     "label": "峰值首秒写延迟降低（相对DTT 70%）",
+     "value": 33.67,
+     "unit": "%"
+    },
+    {
+     "subject": "TSPB",
+     "label": "温度阈值",
+     "value": 360.0,
+     "unit": "K"
+    }
+   ]
+  },
+  "2026-11-05|model-benchmarking|business|0": {
+   "hash": "14c14e0a8eb35333",
+   "date": "2026-11-05",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "腾讯",
+     "type": "company"
+    },
+    {
+     "name": "混元Hy4",
+     "type": "product"
+    },
+    {
+     "name": "WorkBuddy",
+     "type": "product"
+    },
+    {
+     "name": "Kimi K3.1 Pro",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "混元Hy4",
+     "label": "办公场景自评得分",
+     "value": 83.18,
+     "unit": "分"
+    },
+    {
+     "subject": "混元Hy4",
+     "label": "每任务成本",
+     "value": 0.55,
+     "unit": "美元"
+    },
+    {
+     "subject": "混元Hy4",
+     "label": "每任务成本相对Kimi K3.1 Pro降低",
+     "value": 62.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|model-benchmarking|technical|0": {
+   "hash": "5dd588d464b60d0a",
+   "date": "2026-11-05",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "Agent Harness",
+     "type": "tech"
+    },
+    {
+     "name": "HarnessPro",
+     "type": "product"
+    },
+    {
+     "name": "清华大学",
+     "type": "institution"
+    },
+    {
+     "name": "智谱",
+     "type": "company"
+    },
+    {
+     "name": "Terminal-Bench 2",
+     "type": "paper"
+    },
+    {
+     "name": "SWE-Bench Pro",
+     "type": "paper"
+    },
+    {
+     "name": "VISTA",
+     "type": "tech"
+    },
+    {
+     "name": "何恺明",
+     "type": "person"
+    },
+    {
+     "name": "ARC-AGI-3",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HarnessPro",
+     "label": "Terminal-Bench 2通过率",
+     "value": 80.8,
+     "unit": "%"
+    },
+    {
+     "subject": "HarnessPro",
+     "label": "每题成本降低",
+     "value": 33.9,
+     "unit": "%"
+    },
+    {
+     "subject": "HarnessPro",
+     "label": "SWE-Bench Pro成本节省",
+     "value": 53.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|near-memory-computing|business|0": {
+   "hash": "4a2a1b255c85e24d",
+   "date": "2026-11-05",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "凌川科技",
+     "type": "company"
+    },
+    {
+     "name": "快手",
+     "type": "company"
+    },
+    {
+     "name": "DiPU",
+     "type": "tech"
+    },
+    {
+     "name": "SL200",
+     "type": "product"
+    },
+    {
+     "name": "阿里云",
+     "type": "company"
+    },
+    {
+     "name": "百度云",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "凌川科技",
+     "label": "B轮融资金额",
+     "value": 10.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "DiPU",
+     "label": "本地访存延迟",
+     "value": 2.0,
+     "unit": "ns"
+    },
+    {
+     "subject": "SL200",
+     "label": "累计出货量",
+     "value": 10.0,
+     "unit": "万颗"
+    },
+    {
+     "subject": "快手",
+     "label": "直播转码覆盖率",
+     "value": 99.7,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-05|near-memory-computing|technical|0": {
+   "hash": "9dc75ab6b9651a70",
+   "date": "2026-11-05",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "KAIST",
+     "type": "institution"
+    },
+    {
+     "name": "HBM4",
+     "type": "product"
+    },
+    {
+     "name": "HBM5",
+     "type": "product"
+    },
+    {
+     "name": "HBM6",
+     "type": "product"
+    },
+    {
+     "name": "HBM8",
+     "type": "product"
+    },
+    {
+     "name": "NMC",
+     "type": "tech"
+    },
+    {
+     "name": "Crossbar",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "HBM4",
+     "label": "单堆栈带宽",
+     "value": 2.0,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "HBM8",
+     "label": "单堆栈带宽",
+     "value": 64.0,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "HBM8",
+     "label": "单堆栈容量",
+     "value": 240.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "HBM6",
+     "label": "Crossbar中介层交换带宽",
+     "value": 9.6,
+     "unit": "TB/s"
+    }
+   ]
+  },
+  "2026-11-05|new-media|business|0": {
+   "hash": "f6a8d9ac61793794",
+   "date": "2026-11-05",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "HBM4",
+     "type": "product"
+    },
+    {
+     "name": "HBM3E",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "三星",
+     "label": "季度营业利润",
+     "value": 107.4,
+     "unit": "万亿韩元"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "季度营业利润",
+     "value": 83.3,
+     "unit": "万亿韩元"
+    },
+    {
+     "subject": "三星",
+     "label": "营业利润率",
+     "value": 55.0,
+     "unit": "%"
+    },
+    {
+     "subject": "SK海力士",
+     "label": "营业利润率",
+     "value": 80.0,
+     "unit": "%"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4收入环比增长",
+     "value": 3.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "三星",
+     "label": "HBM4占HBM收入比重",
+     "value": 60.0,
      "unit": "%"
     }
    ]
