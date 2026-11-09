@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-05T18:45:07+08:00",
+ "generated_at": "2026-11-09T10:17:27+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -33403,6 +33403,405 @@
    "title": "贸易治理与问答基准：大语言模型理解国际贸易的能力、偏差与经济含义",
    "kind": "title",
    "checked_at": "2026-11-05T18:45:07+08:00"
+  },
+  "t:2 at aamp": {
+   "status": "no_results",
+   "query": "all:\"2-[²¹¹At]AAMP\"",
+   "match": null,
+   "title": "2-[²¹¹At]AAMP",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:00+08:00"
+  },
+  "t:a rsi": {
+   "status": "matched_by_title",
+   "query": "all:\"A-RSI\"",
+   "match": {
+    "arxiv_id": "2610.38568",
+    "version": "1",
+    "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+    "abstract": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
+    "published": "2026-10-28",
+    "updated": "2026-10-28",
+    "authors": [
+     "Yu Liu",
+     "Youxing Li",
+     "Yuedong Tan",
+     "Zhiwei Yang",
+     "Zihan Su",
+     "Hanqi Feng",
+     "Shaojie Zhang",
+     "Libin Liao",
+     "Zihao Wan",
+     "Chenxu Wu",
+     "Cong Cao",
+     "Fangfang Yuan"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "A-RSI",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:04+08:00"
+  },
+  "t:breakhammer": {
+   "status": "matched_by_title",
+   "query": "all:\"BreakHammer\"",
+   "match": {
+    "arxiv_id": "2404.13477",
+    "version": "2",
+    "title": "BreakHammer: Enhancing RowHammer Mitigations by Carefully Throttling Suspect Threads",
+    "abstract": "RowHammer is a major read disturbance mechanism in DRAM where repeatedly accessing (hammering) a row of DRAM cells (DRAM row) induces bitflips in other physically nearby DRAM rows. RowHammer solutions perform preventive actions (e.g., refresh neighbor rows of the hammered row) that mitigate such bitflips to preserve memory isolation, a fundamental building block of security and privacy in modern computing systems. However, preventive actions induce non-negligible memory request latency and system performance overheads as they interfere with memory requests. As shrinking technology node size over DRAM chip generations exacerbates RowHammer, the overheads of RowHammer solutions become prohibitively expensive. As a result, a malicious program can effectively hog the memory system and deny service to benign applications by causing many RowHammer-preventive actions. In this work, we tackle the performance overheads of RowHammer solutions by tracking and throttling the generators of memory accesses that trigger RowHammer solutions. To this end, we propose BreakHammer. BreakHammer 1) observes the time-consuming RowHammer-preventive actions of existing RowHammer mitigation mechanisms, 2) identifies hardware threads that trigger many of these actions, and 3) reduces the memory bandwidth usage of each identified thread. As such, BreakHammer significantly reduces the number of RowHammer-preventive actions performed, thereby improving 1) system performance and DRAM energy, and 2) reducing the maximum slowdown induced on a benign application, with near-zero area overhead. Our extensive evaluations demonstrate that BreakHammer effectively reduces the negative performance, energy, and fairness effects of eight RowHammer mitigation mechanisms. To foster further research we open-source our BreakHammer implementation and scripts at https://github.com/CMU-SAFARI/BreakHammer.",
+    "published": "2024-04-20",
+    "updated": "2024-10-04",
+    "authors": [
+     "Oğuzhan Canpolat",
+     "A. Giray Yağlıkçı",
+     "Ataberk Olgun",
+     "İsmail Emir Yüksel",
+     "Yahya Can Tuğrul",
+     "Konstantinos Kanellopoulos",
+     "Oğuz Ergin",
+     "Onur Mutlu"
+    ],
+    "categories": [
+     "cs.CR",
+     "cs.AR"
+    ],
+    "journal_ref": null,
+    "comment": "To appear in MICRO'24"
+   },
+   "score": 0.95,
+   "title": "BreakHammer",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:09+08:00"
+  },
+  "t:deepseek super agent 下 重启后怎么继续": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Super-agent 下:重启后怎么继续?\"",
+   "match": null,
+   "title": "DeepSeek Super-agent 下:重启后怎么继续?",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:12+08:00"
+  },
+  "t:deepseek super agent 带来的启发 让审计程序自主跑起来": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Super-agent 带来的启发,让审计程序自主跑起来\"",
+   "match": null,
+   "title": "DeepSeek Super-agent 带来的启发,让审计程序自主跑起来",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:16+08:00"
+  },
+  "t:deepseek super agent 的工程价值 藏在哪些细节里": {
+   "status": "no_results",
+   "query": "ti:\"DeepSeek Super-agent 的工程价值,藏在哪些细节里?\"",
+   "match": null,
+   "title": "DeepSeek Super-agent 的工程价值,藏在哪些细节里?",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:20+08:00"
+  },
+  "t:does scaling toward agi depend on what system 1 lets system 2 execute": {
+   "status": "matched_by_title",
+   "query": "ti:\"Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?\"",
+   "match": {
+    "arxiv_id": "2610.39497",
+    "version": "1",
+    "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+    "abstract": "Progress toward artificial general intelligence (AGI) has largely relied on scaling a resource-intensive executive, System-2, through larger models, more data and compute, longer reasoning, and more agents. We ask whether the next stage may come instead from co-designing it with System-1, a lightweight, semantically aware predictor that evaluates candidate interactions before execution, so that System-2 acts only on those worth their cost. Our answer is a qualified yes. We study \\textit{conditional interaction}, a predict--gate--execute--update loop: System-1 estimates each candidate's utility, System-2 executes those admitted by an adaptive threshold, and the outcomes update System-1. The loop spans training, test-time reasoning, adaptive decision-making, and agentic tool use, with utility and cost defined by the application. Under ideal screening and equal execution costs, execution compute falls by a factor approaching $1/ρ_u$, where $ρ_u$ is the density of utility-relevant interactions (cost-weighted when costs differ); prediction errors, exploration, and distribution shift reduce the saving. We bound selection regret by predictor error and the utility margin. These results motivate our central hypothesis: $ρ_u$ is a measurable coordinate of scaling efficiency and makes informative compute a better description of scaling than total compute.",
+    "published": "2026-10-29",
+    "updated": "2026-10-29",
+    "authors": [
+     "Qi Wang",
+     "Yun Qu",
+     "Lizhou Cai",
+     "Heming Zou",
+     "Haoang Chi",
+     "Yiqin Lv",
+     "Xiang Li",
+     "Haiyan Feng",
+     "Mengyu Ge",
+     "Yize Geng",
+     "Yuhang Jiang",
+     "Yixiu Mao"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Does Scaling Toward AGI Depend on What System-1 Lets System-2 Execute?",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:25+08:00"
+  },
+  "t:drex": {
+   "status": "matched_by_title",
+   "query": "all:\"Drex\"",
+   "match": {
+    "arxiv_id": "2512.15705",
+    "version": "1",
+    "title": "Dynamic Rebatching for Efficient Early-Exit Inference with DREX",
+    "abstract": "Early-Exit (EE) is a Large Language Model (LLM) architecture that accelerates inference by allowing easier tokens to be generated using only a subset of the model's layers. However, traditional batching frameworks are ill-suited for EE LLMs, as not all requests in a batch may be ready to exit at the same time. Existing solutions either force a uniform decision on the batch, which overlooks EE opportunities, or degrade output quality by forcing premature exits. We propose Dynamic Rebatching, a solution where we dynamically reorganize the batch at each early-exit point. Requests that meet the exit criteria are immediately processed, while those that continue are held in a buffer, re-grouped into a new batch, and forwarded to deeper layers. We introduce DREX, an early-exit inference system that implements Dynamic Rebatching with two key optimizations: 1) a copy-free rebatching buffer that avoids physical data movement, and 2) an EE and SLA-aware scheduler that analytically predicts whether a given rebatching operation will be profitable. DREX also efficiently handles the missing KV cache from skipped layers using memory-efficient state-copying. Our evaluation shows that DREX improves throughput by 2-12% compared to baseline approaches while maintaining output quality. Crucially, DREX completely eliminates involuntary exits, providing a key guarantee for preserving the output quality intended by the EE model.",
+    "published": "2025-12-17",
+    "updated": "2025-12-17",
+    "authors": [
+     "Xuting Liu",
+     "Daniel Alexander",
+     "Siva Kesava Reddy Kakarla",
+     "Behnaz Arzani",
+     "Vincent Liu"
+    ],
+    "categories": [
+     "cs.DC",
+     "cs.LG"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Drex",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:29+08:00"
+  },
+  "t:frontierphysics": {
+   "status": "matched_by_title",
+   "query": "all:\"FrontierPhysics\"",
+   "match": {
+    "arxiv_id": "2611.06910",
+    "version": "1",
+    "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+    "abstract": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+    "published": "2026-11-04",
+    "updated": "2026-11-04",
+    "authors": [
+     "Bingran You",
+     "Wenjun Ke",
+     "Ria Rosenauer",
+     "Bo Liu",
+     "Wenbo Chen",
+     "Min Chen",
+     "Shuqi Xu",
+     "Yue Ma",
+     "Jiechao Feng",
+     "Bo Chen",
+     "Xiangkai Sun",
+     "Jiarui Liu"
+    ],
+    "categories": [
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": "41 pages (10 pages main text), 19 figures, 11 tables"
+   },
+   "score": 0.95,
+   "title": "FrontierPhysics",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:33+08:00"
+  },
+  "t:ideataste": {
+   "status": "matched_by_title",
+   "query": "all:\"IdeaTaste\"",
+   "match": {
+    "arxiv_id": "2611.03424",
+    "version": "1",
+    "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+    "abstract": "Research taste, the judgment of what to read, which problems to pursue, and which methods to try, increasingly shapes the work of AI scientists, yet it remains far less understood than their ability to execute research. We introduce IdeaTaste, a benchmark that scores an LLM by how closely the research proposals it writes from a literature snapshot frozen at 2025 match the work the same communities published in 2026. Our experiments span six contemporary language models and four research areas from established to emerging fields, covering more than 90{,}000 proposals in total. LLM agents fall well short of human communities in both the literature they cite and the ideas they state, reaching about 26\\% of the human level on citation matching and only 18\\% on idea matching. Their populations can cite as diversely as a community and take up its tasks and methods, yet rarely arrive at the concrete approaches and research plans it pursues. Neither richer field context nor larger populations substantially close this gap. In blinded expert review, AI proposals trail the 2026 papers least in presentation and most in expected success, echoing their gap in concrete approaches, and those whose ideas no human paper shares fare worst, suggesting weaker directions rather than overlooked opportunities. These results indicate that the main bottleneck in AI research taste lies less in finding the directions a community works on than in turning them into the concrete approaches it goes on to pursue. We release IdeaTaste as an open, continuously updated leaderboard (https://cxcscmu.github.io/IdeaTaste) that benchmarks contemporary AI proposals against future publication cycles.",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "authors": [
+     "Shanshan Zhong",
+     "Chen Xu",
+     "Jingjie Ning",
+     "Zhengzhong Liu",
+     "Aviral Kumar",
+     "Chenyan Xiong"
+    ],
+    "categories": [
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "IdeaTaste",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:37+08:00"
+  },
+  "t:kling mllm": {
+   "status": "rejected",
+   "query": "all:\"Kling-MLLM\"",
+   "match": null,
+   "best_candidate": "Behind Video Generation: Observations and Insights on Multimodal Understanding from Kling",
+   "best_score": 0.102,
+   "title": "Kling-MLLM",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:41+08:00"
+  },
+  "t:multi stage contrastive multi modal clustering with consistency retained": {
+   "status": "no_results",
+   "query": "ti:\"Multi-stage contrastive multi-modal clustering with consistency retained\"",
+   "match": null,
+   "title": "Multi-stage contrastive multi-modal clustering with consistency retained",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:46+08:00"
+  },
+  "t:reinforce zero": {
+   "status": "no_results",
+   "query": "all:\"REINFORCE Zero\"",
+   "match": null,
+   "title": "REINFORCE Zero",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:50+08:00"
+  },
+  "t:route anything": {
+   "status": "matched_by_title",
+   "query": "all:\"Route Anything\"",
+   "match": {
+    "arxiv_id": "2611.05275",
+    "version": "1",
+    "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
+    "abstract": "Artificial general intelligence (AGI) requires a method that can understand, generate, reason, and act across diverse domains and modalities. Rather than relying on a single model to master every capability, a promising path toward AGI now is to orchestrate a heterogeneous ecosystem of specialized models, tools, and policies (candidates) into a unified AI system. At the heart of this vision lies a fundamental question: how can an AI system dynamically select and coordinate the most capable candidate for each task while balancing performance and computational cost? In this work, we present Route Anything, a unified framework for studying model and policy routing across general-purpose AI systems. We develop a unified theoretical foundation that characterizes optimal routing under quality--cost trade-offs and establishes how the information available to a router determines its attainable performance. To systematically investigate routing across diverse capabilities, we first construct an omni-modal trajectory matrix spanning 25 benchmarks across language understanding, image, video, and speech generation, coding and workplace agents, and robotic manipulation, comprising 374,401 scored runs from 452 candidate configurations. Building on this framework, we train and test different routers to investigate the potential of omni-modal model routing, the capabilities of learned routers, and the conditions under which routing improves efficiency. Our results reveal substantial opportunities for capability orchestration: per-input oracle routing outperforms the best fixed candidate by 5.4 points, and learned routers outperform it by 0.3 points across 16 benchmarks, by 2.1 points on video generation, and by 1.1 points on robot manipulation while using 24% less policy time. More importantly, routing raises efficiency by 8.82x on average compared with the reference model.",
+    "published": "2026-11-03",
+    "updated": "2026-11-03",
+    "authors": [
+     "Pengfei Zhou",
+     "Yixing Ma",
+     "Hexin Wang",
+     "Weidong Tang",
+     "Zhenglin Wan",
+     "Wangbo Zhao",
+     "Yang You"
+    ],
+    "categories": [
+     "cs.CV"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Route Anything",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:16:54+08:00"
+  },
+  "t:super agent 设计探索 迈向更自主的 agent 系统": {
+   "status": "no_results",
+   "query": "ti:\"Super-agent 设计探索：迈向更自主的 Agent 系统\"",
+   "match": null,
+   "title": "Super-agent 设计探索：迈向更自主的 Agent 系统",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:16:58+08:00"
+  },
+  "t:super agent 设计探索 迈向更自主的agent系统": {
+   "status": "no_results",
+   "query": "ti:\"Super-agent 设计探索：迈向更自主的Agent系统\"",
+   "match": null,
+   "title": "Super-agent 设计探索：迈向更自主的Agent系统",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:17:02+08:00"
+  },
+  "t:tcsexam": {
+   "status": "matched_by_title",
+   "query": "all:\"TCSExam\"",
+   "match": {
+    "arxiv_id": "2611.07962",
+    "version": "1",
+    "title": "TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research",
+    "abstract": "Can large language models (LLMs) advance theoretical computer science and resolve its long-standing open conjectures? To study progress toward this goal, we introduce TCSExam, a unified framework and benchmark covering the full range of TCS research. It evaluates theorem proving, solver engineering, and constructions alongside direct attempts to resolve open conjectures, capturing both concrete research accomplishments and progress toward long-standing research goals. TCSExam-Full contains 100 expert-reviewed tasks, with submissions checked by the Lean kernel or an executable task checker. TCSExam-Lite selects 20 tasks, five per track, reducing the number of task attempts by 80% at the same per-attempt budget. We evaluate eight agents on Full and nine on Lite. The TCSExam Index combines all four tracks: GPT-6 Astra leads Full (71.9), and Opus 5.5 leads Lite (72.3). Full and Lite rankings are strongly aligned across eight shared agents (Spearman's $ρ=0.93$), supporting Lite as a compact, discriminative benchmark. The evaluations yield improved solver outputs and mathematical constructions, together with independently verified special cases and bounds from open-conjecture attempts. TCSExam provides an extensible framework with task sources, Docker build recipes, and evaluation tools for reproducible use.",
+    "published": "2026-11-05",
+    "updated": "2026-11-05",
+    "authors": [
+     "Yifan Luo",
+     "Zhengying Liu",
+     "Yang Yuan",
+     "Zhilin Yang",
+     "Andrew Chi-Chih Yao"
+    ],
+    "categories": [
+     "cs.AI",
+     "cs.CL"
+    ],
+    "journal_ref": null,
+    "comment": "52 pages, 15 figures. Project website: https://moonshotai.github.io/TCSExam/ Code: https://github.com/MoonshotAI/TCSExam"
+   },
+   "score": 0.95,
+   "title": "TCSExam",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:17:06+08:00"
+  },
+  "t:the moltbook illusion": {
+   "status": "rejected",
+   "query": "ti:\"The Moltbook Illusion\"",
+   "match": null,
+   "best_candidate": "The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies",
+   "best_score": 0.368,
+   "title": "The Moltbook Illusion",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:17:10+08:00"
+  },
+  "t:towards agentic robots model data environment and harness": {
+   "status": "matched_by_title",
+   "query": "ti:\"Towards Agentic Robots: Model, Data, Environment, and Harness\"",
+   "match": {
+    "arxiv_id": "2610.20442",
+    "version": "1",
+    "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+    "abstract": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models. We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness. Across these domains, we examine how agents shape model learning and robot decisions, collect and curate robot data, construct worlds, tasks, and tests for learning and evaluation, and organize capabilities for robot use. Finally, we discuss open challenges and outline directions for future research. Looking forward, we hope this work contributes to a clearer understanding of agentic robots and supports new approaches to making them more capable, reliable, and adaptive.",
+    "published": "2026-10-14",
+    "updated": "2026-10-14",
+    "authors": [
+     "Chonghan Qin",
+     "Dongming Wu",
+     "Kaituo Feng",
+     "Jiaxu Wang",
+     "Xinlei Yu",
+     "Peiwen Sun",
+     "Yijia Fan",
+     "Xilin He",
+     "Bingao Chen",
+     "Weitong Lian",
+     "Ryan Ji",
+     "Wenqi Ren"
+    ],
+    "categories": [
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 1.0,
+   "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:17:14+08:00"
+  },
+  "t:video generation meets agent harness": {
+   "status": "rejected",
+   "query": "ti:\"Video Generation Meets Agent Harness\"",
+   "match": null,
+   "best_candidate": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+   "best_score": 0.477,
+   "title": "Video Generation Meets Agent Harness",
+   "kind": "title",
+   "checked_at": "2026-11-09T10:17:18+08:00"
+  },
+  "t:我们不会被错过 agi 时代的工作与增长": {
+   "status": "no_results",
+   "query": "all:\"我们不会被错过:AGI 时代的工作与增长\"",
+   "match": null,
+   "title": "我们不会被错过:AGI 时代的工作与增长",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:17:23+08:00"
+  },
+  "t:条件交互": {
+   "status": "no_results",
+   "query": "all:\"条件交互\"",
+   "match": null,
+   "title": "条件交互",
+   "kind": "method",
+   "checked_at": "2026-11-09T10:17:27+08:00"
   }
  }
 }

@@ -1,7 +1,7 @@
 {
  "version": 1,
  "model": "deepseek-v4-flash",
- "generated_at": "2026-11-05T18:33:05+08:00",
+ "generated_at": "2026-11-09T10:15:28+08:00",
  "entries": {
   "2026-04-29|ai-inference-acceleration|topic|0": {
    "hash": "8f509c3178836746",
@@ -52917,6 +52917,1252 @@
      "subject": "三星",
      "label": "HBM4占HBM收入比重",
      "value": 60.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-09|new-media|technical|0": {
+   "hash": "b01e74b0c25bd621",
+   "date": "2026-11-09",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "SanDisk",
+     "type": "company"
+    },
+    {
+     "name": "UltraQLC",
+     "type": "product"
+    },
+    {
+     "name": "Direct Write QLC",
+     "type": "tech"
+    },
+    {
+     "name": "BiCS8",
+     "type": "tech"
+    },
+    {
+     "name": "CBA",
+     "type": "tech"
+    },
+    {
+     "name": "U.2",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "UltraQLC",
+     "label": "单盘容量",
+     "value": 256.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "BiCS8",
+     "label": "堆叠层数",
+     "value": 218.0,
+     "unit": "层"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "顺序读性能提升",
+     "value": 7.0,
+     "unit": "%"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "随机写性能提升",
+     "value": 55.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-09|others|business|0": {
+   "hash": "a2ad67874559d5b5",
+   "date": "2026-11-09",
+   "category": "others",
+   "entities": [
+    {
+     "name": "Oracle",
+     "type": "company"
+    },
+    {
+     "name": "腾讯",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Oracle",
+     "label": "AI算力租约金额",
+     "value": 70.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Oracle",
+     "label": "租约芯片数量",
+     "value": 10.0,
+     "unit": "万颗"
+    },
+    {
+     "subject": "Oracle",
+     "label": "租约期限",
+     "value": 5.0,
+     "unit": "年"
+    },
+    {
+     "subject": "行业",
+     "label": "受阻规划算力",
+     "value": 52.0,
+     "unit": "GW"
+    },
+    {
+     "subject": "行业",
+     "label": "审批暂停算力",
+     "value": 37.5,
+     "unit": "GW"
+    },
+    {
+     "subject": "行业",
+     "label": "2026年CapEx",
+     "value": 7400.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-11-09|others|technical|0": {
+   "hash": "bcf6f678bbd72257",
+   "date": "2026-11-09",
+   "category": "others",
+   "entities": [
+    {
+     "name": "英特尔",
+     "type": "company"
+    },
+    {
+     "name": "EMIB-T",
+     "type": "tech"
+    },
+    {
+     "name": "TSV",
+     "type": "tech"
+    },
+    {
+     "name": "DTC深沟槽电容",
+     "type": "tech"
+    },
+    {
+     "name": "HBM5",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "EMIB-T",
+     "label": "封装边长",
+     "value": 120.0,
+     "unit": "mm"
+    },
+    {
+     "subject": "EMIB-T",
+     "label": "单封装HBM堆叠数",
+     "value": 12.0,
+     "unit": "颗"
+    },
+    {
+     "subject": "EMIB-T",
+     "label": "晶圆利用率",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DTC深沟槽电容",
+     "label": "与芯片核心距离",
+     "value": 40.0,
+     "unit": "μm"
+    },
+    {
+     "subject": "DTC深沟槽电容",
+     "label": "等效串联电感上限",
+     "value": 10.0,
+     "unit": "pH"
+    },
+    {
+     "subject": "HBM5",
+     "label": "堆叠层数",
+     "value": 20.0,
+     "unit": "层"
+    },
+    {
+     "subject": "HBM5",
+     "label": "单堆栈带宽",
+     "value": 4.0,
+     "unit": "TB/s"
+    }
+   ]
+  },
+  "2026-11-09|storage-semantics-protocol|business|0": {
+   "hash": "e0e9871a9a9216ff",
+   "date": "2026-11-09",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "英伟达",
+     "type": "company"
+    },
+    {
+     "name": "Marvell",
+     "type": "company"
+    },
+    {
+     "name": "Lumentum",
+     "type": "company"
+    },
+    {
+     "name": "联发科",
+     "type": "company"
+    },
+    {
+     "name": "博通",
+     "type": "company"
+    },
+    {
+     "name": "NVLink Fusion",
+     "type": "tech"
+    },
+    {
+     "name": "NVHBM",
+     "type": "tech"
+    },
+    {
+     "name": "磷化铟激光器",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "英伟达",
+     "label": "生态绑定投入金额",
+     "value": 75.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "Marvell",
+     "label": "并购Lumentum金额",
+     "value": 1150.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-11-09|storage-semantics-protocol|technical|0": {
+   "hash": "7ef52527ffb59815",
+   "date": "2026-11-09",
+   "category": "storage-semantics-protocol",
+   "entities": [
+    {
+     "name": "JEDEC",
+     "type": "institution"
+    },
+    {
+     "name": "LPDDR6",
+     "type": "tech"
+    },
+    {
+     "name": "SOCAMM2",
+     "type": "product"
+    },
+    {
+     "name": "PRAC",
+     "type": "tech"
+    },
+    {
+     "name": "片上ECC",
+     "type": "tech"
+    },
+    {
+     "name": "x6窄位宽裸片接口",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "LPDDR6",
+     "label": "单模块容量",
+     "value": 512.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "LPDDR6",
+     "label": "最大向量传输粒度",
+     "value": 256.0,
+     "unit": "B"
+    }
+   ]
+  },
+  "2026-11-09|ai-inference-acceleration|business|0": {
+   "hash": "81a6f6a5c1c15a9f",
+   "date": "2026-11-09",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "浪潮信息",
+     "type": "company"
+    },
+    {
+     "name": "Agent DataSpace",
+     "type": "product"
+    },
+    {
+     "name": "A9000",
+     "type": "product"
+    },
+    {
+     "name": "GDR",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "浪潮信息",
+     "label": "支撑用户数",
+     "value": 7000.0,
+     "unit": "名"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "覆盖部门数",
+     "value": 41.0,
+     "unit": "个"
+    },
+    {
+     "subject": "浪潮信息",
+     "label": "月Token消耗",
+     "value": 1000.0,
+     "unit": "亿tokens"
+    },
+    {
+     "subject": "A9000",
+     "label": "TTFT优化幅度",
+     "value": 98.0,
+     "unit": "%"
+    },
+    {
+     "subject": "A9000",
+     "label": "TPS提升倍数",
+     "value": 65.0,
+     "unit": "倍"
+    }
+   ]
+  },
+  "2026-11-09|ai-inference-acceleration|technical|0": {
+   "hash": "5812fa156db4137e",
+   "date": "2026-11-09",
+   "category": "ai-inference-acceleration",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "DeepInfer",
+     "type": "product"
+    },
+    {
+     "name": "FlashMLA",
+     "type": "tech"
+    },
+    {
+     "name": "DeepGEMM",
+     "type": "tech"
+    },
+    {
+     "name": "SM100",
+     "type": "tech"
+    },
+    {
+     "name": "昇腾950",
+     "type": "product"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepInfer",
+     "label": "单卡prefill吞吐",
+     "value": 90000.0,
+     "unit": "tokens/s"
+    }
+   ]
+  },
+  "2026-11-09|ai-model-agent-rag|business|0": {
+   "hash": "f2f711d9957fb93f",
+   "date": "2026-11-09",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "苹果",
+     "type": "company"
+    },
+    {
+     "name": "阿里巴巴",
+     "type": "company"
+    },
+    {
+     "name": "通义千问",
+     "type": "product"
+    },
+    {
+     "name": "Apple Intelligence",
+     "type": "product"
+    },
+    {
+     "name": "Siri",
+     "type": "product"
+    },
+    {
+     "name": "iPhone 15 Pro",
+     "type": "product"
+    },
+    {
+     "name": "iOS 27.3",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "苹果",
+     "label": "合作年限",
+     "value": 5.0,
+     "unit": "年"
+    }
+   ]
+  },
+  "2026-11-09|ai-model-agent-rag|technical|0": {
+   "hash": "5b73e7d1b9714ae5",
+   "date": "2026-11-09",
+   "category": "ai-model-agent-rag",
+   "entities": [
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "Harness",
+     "type": "product"
+    },
+    {
+     "name": "Super-agent",
+     "type": "tech"
+    },
+    {
+     "name": "Router",
+     "type": "tech"
+    },
+    {
+     "name": "Worker",
+     "type": "tech"
+    },
+    {
+     "name": "Watchdog",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Harness",
+     "label": "合成负载任务完成p95",
+     "value": 15.7,
+     "unit": "分钟"
+    },
+    {
+     "subject": "Harness",
+     "label": "单会话+Subagent任务完成p95",
+     "value": 29.5,
+     "unit": "分钟"
+    },
+    {
+     "subject": "Harness",
+     "label": "生态日活",
+     "value": 154.0,
+     "unit": "万"
+    },
+    {
+     "subject": "Harness",
+     "label": "公开插件数",
+     "value": 35000.0,
+     "unit": "个"
+    }
+   ]
+  },
+  "2026-11-09|cost-effective-storage|business|0": {
+   "hash": "ef53f235e9814708",
+   "date": "2026-11-09",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "企业级SSD",
+     "type": "product"
+    },
+    {
+     "name": "NAND",
+     "type": "tech"
+    },
+    {
+     "name": "QLC",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "行业",
+     "label": "2027笔记本出货同比",
+     "value": -4.7,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "2027服务器出货同比",
+     "value": 12.4,
+     "unit": "%"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "2027出货量下限",
+     "value": 4500.0,
+     "unit": "万块"
+    },
+    {
+     "subject": "企业级SSD",
+     "label": "2027出货量上限",
+     "value": 7500.0,
+     "unit": "万块"
+    },
+    {
+     "subject": "行业",
+     "label": "服务器占NAND位元需求",
+     "value": 40.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "九大云厂资本开支",
+     "value": 1.5,
+     "unit": "万亿美元"
+    }
+   ]
+  },
+  "2026-11-09|cost-effective-storage|technical|0": {
+   "hash": "8216a6ce891b6412",
+   "date": "2026-11-09",
+   "category": "cost-effective-storage",
+   "entities": [
+    {
+     "name": "中兴",
+     "type": "company"
+    },
+    {
+     "name": "OEX",
+     "type": "product"
+    },
+    {
+     "name": "DPU",
+     "type": "tech"
+    },
+    {
+     "name": "KV Cache",
+     "type": "tech"
+    },
+    {
+     "name": "智能盘框",
+     "type": "product"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "OEX",
+     "label": "单机柜GPU集成数",
+     "value": 128.0,
+     "unit": "个"
+    },
+    {
+     "subject": "OEX",
+     "label": "最大扩展卡数",
+     "value": 16000.0,
+     "unit": "卡"
+    },
+    {
+     "subject": "DPU",
+     "label": "特定场景KV缓存命中率",
+     "value": 90.0,
+     "unit": "%"
+    },
+    {
+     "subject": "OEX",
+     "label": "整机上市周期下限",
+     "value": 3.0,
+     "unit": "月"
+    },
+    {
+     "subject": "OEX",
+     "label": "整机上市周期上限",
+     "value": 6.0,
+     "unit": "月"
+    }
+   ]
+  },
+  "2026-11-09|high-capacity-storage|business|0": {
+   "hash": "de730e6fe67b24f8",
+   "date": "2026-11-09",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "台积电",
+     "type": "company"
+    },
+    {
+     "name": "英伟达",
+     "type": "company"
+    },
+    {
+     "name": "3D DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "美光",
+     "type": "company"
+    },
+    {
+     "name": "HBM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM3E",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "美光",
+     "label": "扩产投资额",
+     "value": 1000.0,
+     "unit": "亿美元"
+    },
+    {
+     "subject": "美光",
+     "label": "新加坡HBM封测投资",
+     "value": 70.0,
+     "unit": "亿美元"
+    }
+   ]
+  },
+  "2026-11-09|high-capacity-storage|technical|0": {
+   "hash": "46402e78d000d403",
+   "date": "2026-11-09",
+   "category": "high-capacity-storage",
+   "entities": [
+    {
+     "name": "UltraQLC",
+     "type": "product"
+    },
+    {
+     "name": "Direct Write",
+     "type": "tech"
+    },
+    {
+     "name": "SLC Cache",
+     "type": "tech"
+    },
+    {
+     "name": "BiCS8 QLC",
+     "type": "tech"
+    },
+    {
+     "name": "CBA",
+     "type": "tech"
+    },
+    {
+     "name": "U.2",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "UltraQLC",
+     "label": "容量",
+     "value": 256.0,
+     "unit": "TB"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "顺序读提升",
+     "value": 7.0,
+     "unit": "%"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "顺序写提升",
+     "value": 27.0,
+     "unit": "%"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "随机读提升",
+     "value": 68.0,
+     "unit": "%"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "随机写提升",
+     "value": 55.0,
+     "unit": "%"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "IU下限",
+     "value": 16.0,
+     "unit": "KB"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "IU上限",
+     "value": 32.0,
+     "unit": "KB"
+    },
+    {
+     "subject": "UltraQLC",
+     "label": "4KB小写写放大",
+     "value": 4.0,
+     "unit": "倍"
+    },
+    {
+     "subject": "BiCS8 QLC",
+     "label": "单die容量",
+     "value": 2.0,
+     "unit": "Tb"
+    },
+    {
+     "subject": "BiCS8 QLC",
+     "label": "层数",
+     "value": 218.0,
+     "unit": "层"
+    }
+   ]
+  },
+  "2026-11-09|high-reliability-storage|business|0": {
+   "hash": "258e004b839b1bc4",
+   "date": "2026-11-09",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "大普微",
+     "type": "company"
+    },
+    {
+     "name": "J5101",
+     "type": "product"
+    },
+    {
+     "name": "DP600",
+     "type": "product"
+    },
+    {
+     "name": "PCIe Gen4",
+     "type": "tech"
+    },
+    {
+     "name": "M.2 2280",
+     "type": "tech"
+    },
+    {
+     "name": "PLP",
+     "type": "tech"
+    },
+    {
+     "name": "E2E",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "J5101",
+     "label": "容量下限",
+     "value": 480.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "J5101",
+     "label": "容量上限",
+     "value": 1.92,
+     "unit": "TB"
+    },
+    {
+     "subject": "J5101",
+     "label": "耐久度",
+     "value": 1.0,
+     "unit": "DWPD"
+    },
+    {
+     "subject": "J5101",
+     "label": "顺序读带宽",
+     "value": 3800.0,
+     "unit": "MB/s"
+    },
+    {
+     "subject": "J5101",
+     "label": "空闲功耗",
+     "value": 2.0,
+     "unit": "W"
+    },
+    {
+     "subject": "J5101",
+     "label": "工作功耗下限",
+     "value": 4.5,
+     "unit": "W"
+    },
+    {
+     "subject": "J5101",
+     "label": "工作功耗上限",
+     "value": 6.5,
+     "unit": "W"
+    },
+    {
+     "subject": "行业",
+     "label": "主流同类空闲功耗",
+     "value": 3.5,
+     "unit": "W"
+    },
+    {
+     "subject": "行业",
+     "label": "主流同等工作功耗",
+     "value": 8.9,
+     "unit": "W"
+    }
+   ]
+  },
+  "2026-11-09|high-reliability-storage|technical|0": {
+   "hash": "47d44ff616478007",
+   "date": "2026-11-09",
+   "category": "high-reliability-storage",
+   "entities": [
+    {
+     "name": "BreakHammer",
+     "type": "paper"
+    },
+    {
+     "name": "MICRO 2024",
+     "type": "paper"
+    },
+    {
+     "name": "RowHammer",
+     "type": "tech"
+    },
+    {
+     "name": "Ramulator 2",
+     "type": "product"
+    },
+    {
+     "name": "DDR5",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "BreakHammer",
+     "label": "绝对门槛",
+     "value": 32.0,
+     "unit": "次"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "相对门槛",
+     "value": 1.65,
+     "unit": "倍"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "限流检测窗口",
+     "value": 64.0,
+     "unit": "毫秒"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "含攻击场景正常应用平均性能提升",
+     "value": 90.1,
+     "unit": "%"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "防护动作减少",
+     "value": 71.6,
+     "unit": "%"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "DRAM能耗降低",
+     "value": 55.4,
+     "unit": "%"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "无攻击场景性能提升",
+     "value": 0.7,
+     "unit": "%"
+    },
+    {
+     "subject": "BreakHammer",
+     "label": "误标率",
+     "value": 2.2,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-09|model-benchmarking|business|0": {
+   "hash": "59acf5df063e9ba8",
+   "date": "2026-11-09",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "DeepSeek V4.1 Pro",
+     "type": "product"
+    },
+    {
+     "name": "LobeBench Hard 50",
+     "type": "paper"
+    },
+    {
+     "name": "OpenRouter",
+     "type": "product"
+    },
+    {
+     "name": "DeepSeek",
+     "type": "company"
+    },
+    {
+     "name": "Kimi",
+     "type": "product"
+    },
+    {
+     "name": "MiniMax",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "DeepSeek V4.1 Pro",
+     "label": "LobeBench Hard 50通过率（灰度前）",
+     "value": 48.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepSeek V4.1 Pro",
+     "label": "LobeBench Hard 50通过率（灰度后）",
+     "value": 64.0,
+     "unit": "%"
+    },
+    {
+     "subject": "DeepSeek",
+     "label": "OpenRouter前十模型Token份额",
+     "value": 56.4,
+     "unit": "%"
+    },
+    {
+     "subject": "Kimi",
+     "label": "中文榜国内排名",
+     "value": 1.0,
+     "unit": "名"
+    },
+    {
+     "subject": "行业",
+     "label": "中国最好模型相对美国顶尖性能",
+     "value": 95.0,
+     "unit": "%"
+    },
+    {
+     "subject": "行业",
+     "label": "中国最好模型成本占比",
+     "value": 10.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-09|model-benchmarking|technical|0": {
+   "hash": "26fa27ae4f062e0c",
+   "date": "2026-11-09",
+   "category": "model-benchmarking",
+   "entities": [
+    {
+     "name": "伯克利",
+     "type": "institution"
+    },
+    {
+     "name": "FrontierPhysics",
+     "type": "paper"
+    },
+    {
+     "name": "Opus 5.5",
+     "type": "product"
+    },
+    {
+     "name": "清华",
+     "type": "institution"
+    },
+    {
+     "name": "Kimi",
+     "type": "product"
+    },
+    {
+     "name": "TCSExam",
+     "type": "paper"
+    },
+    {
+     "name": "Agents' Last Exam v1.1",
+     "type": "paper"
+    },
+    {
+     "name": "IdeaTaste",
+     "type": "paper"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "FrontierPhysics",
+     "label": "评测物理学家数",
+     "value": 42.0,
+     "unit": "位"
+    },
+    {
+     "subject": "FrontierPhysics",
+     "label": "真实课题数",
+     "value": 56.0,
+     "unit": "个"
+    },
+    {
+     "subject": "FrontierPhysics",
+     "label": "评测模型数",
+     "value": 22.0,
+     "unit": "个"
+    },
+    {
+     "subject": "Opus 5.5",
+     "label": "FrontierPhysics通过率",
+     "value": 27.4,
+     "unit": "%"
+    },
+    {
+     "subject": "TCSExam",
+     "label": "最高分",
+     "value": 71.9,
+     "unit": "分"
+    },
+    {
+     "subject": "Agents' Last Exam v1.1",
+     "label": "头名通过率",
+     "value": 45.9,
+     "unit": "%"
+    },
+    {
+     "subject": "IdeaTaste",
+     "label": "AI研究想法匹配人类比例",
+     "value": 18.0,
+     "unit": "%"
+    }
+   ]
+  },
+  "2026-11-09|near-memory-computing|business|0": {
+   "hash": "862c05dfaff8ed49",
+   "date": "2026-11-09",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "凌川科技",
+     "type": "company"
+    },
+    {
+     "name": "快手",
+     "type": "company"
+    },
+    {
+     "name": "亦庄国投",
+     "type": "company"
+    },
+    {
+     "name": "启明创投",
+     "type": "company"
+    },
+    {
+     "name": "朝晖资本",
+     "type": "company"
+    },
+    {
+     "name": "3D堆叠芯片",
+     "type": "tech"
+    },
+    {
+     "name": "SL200",
+     "type": "product"
+    },
+    {
+     "name": "阿里云",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "凌川科技",
+     "label": "B轮融资额",
+     "value": 10.0,
+     "unit": "亿元"
+    },
+    {
+     "subject": "SL200",
+     "label": "累计销量",
+     "value": 100000.0,
+     "unit": "颗"
+    }
+   ]
+  },
+  "2026-11-09|near-memory-computing|technical|0": {
+   "hash": "ec357db02897aa54",
+   "date": "2026-11-09",
+   "category": "near-memory-computing",
+   "entities": [
+    {
+     "name": "d-Matrix",
+     "type": "company"
+    },
+    {
+     "name": "Raptor",
+     "type": "product"
+    },
+    {
+     "name": "3D堆叠DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "HBM4",
+     "type": "tech"
+    },
+    {
+     "name": "Tensor Engine",
+     "type": "tech"
+    },
+    {
+     "name": "Micro-bank",
+     "type": "tech"
+    },
+    {
+     "name": "Logic Die",
+     "type": "tech"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "Raptor",
+     "label": "互连传输功耗",
+     "value": 0.37,
+     "unit": "pJ/bit"
+    },
+    {
+     "subject": "Raptor",
+     "label": "单封装DRAM容量",
+     "value": 32.0,
+     "unit": "GB"
+    },
+    {
+     "subject": "Raptor",
+     "label": "带宽",
+     "value": 100.0,
+     "unit": "TB/s"
+    },
+    {
+     "subject": "Raptor",
+     "label": "Tensor Engine数量",
+     "value": 256.0,
+     "unit": "个"
+    },
+    {
+     "subject": "Raptor",
+     "label": "Micro-bank数量",
+     "value": 768.0,
+     "unit": "个"
+    },
+    {
+     "subject": "Raptor",
+     "label": "冗余比例下限",
+     "value": 8.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Raptor",
+     "label": "冗余比例上限",
+     "value": 9.0,
+     "unit": "%"
+    },
+    {
+     "subject": "Raptor",
+     "label": "DRAM温度上限",
+     "value": 95.0,
+     "unit": "°C"
+    },
+    {
+     "subject": "HBM4",
+     "label": "HBM4+GPU系统互连传输功耗",
+     "value": 5.0,
+     "unit": "pJ/bit"
+    }
+   ]
+  },
+  "2026-11-09|new-media|business|0": {
+   "hash": "3373db0f1c7cb428",
+   "date": "2026-11-09",
+   "category": "new-media",
+   "entities": [
+    {
+     "name": "台积电",
+     "type": "company"
+    },
+    {
+     "name": "英伟达",
+     "type": "company"
+    },
+    {
+     "name": "3D DRAM",
+     "type": "tech"
+    },
+    {
+     "name": "The Information",
+     "type": "company"
+    },
+    {
+     "name": "三星",
+     "type": "company"
+    },
+    {
+     "name": "SK海力士",
+     "type": "company"
+    },
+    {
+     "name": "美光",
+     "type": "company"
+    }
+   ],
+   "metrics": [
+    {
+     "subject": "台积电",
+     "label": "ADR盘前涨幅",
+     "value": 7.0,
      "unit": "%"
     }
    ]
