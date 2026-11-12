@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-09T10:17:27+08:00",
+ "generated_at": "2026-11-12T08:27:46+08:00",
  "queries": {
   "id:2607.24493": {
    "status": "matched_by_id",
@@ -33802,6 +33802,280 @@
    "title": "条件交互",
    "kind": "method",
    "checked_at": "2026-11-09T10:17:27+08:00"
+  },
+  "t:1 09 亿小模型换训练方式赢了 720 亿大模型": {
+   "status": "no_results",
+   "query": "ti:\"1.09 亿小模型换训练方式赢了 720 亿大模型\"",
+   "match": null,
+   "title": "1.09 亿小模型换训练方式赢了 720 亿大模型",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:25:12+08:00"
+  },
+  "t:agentic robots": {
+   "status": "matched_by_title",
+   "query": "all:\"Agentic Robots\"",
+   "match": {
+    "arxiv_id": "2610.20442",
+    "version": "1",
+    "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+    "abstract": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models. We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness. Across these domains, we examine how agents shape model learning and robot decisions, collect and curate robot data, construct worlds, tasks, and tests for learning and evaluation, and organize capabilities for robot use. Finally, we discuss open challenges and outline directions for future research. Looking forward, we hope this work contributes to a clearer understanding of agentic robots and supports new approaches to making them more capable, reliable, and adaptive.",
+    "published": "2026-10-14",
+    "updated": "2026-10-14",
+    "authors": [
+     "Chonghan Qin",
+     "Dongming Wu",
+     "Kaituo Feng",
+     "Jiaxu Wang",
+     "Xinlei Yu",
+     "Peiwen Sun",
+     "Yijia Fan",
+     "Xilin He",
+     "Bingao Chen",
+     "Weitong Lian",
+     "Ryan Ji",
+     "Wenqi Ren"
+    ],
+    "categories": [
+     "cs.RO"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "Agentic Robots",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:25:31+08:00"
+  },
+  "t:damr": {
+   "status": "matched_by_title",
+   "query": "all:\"DAMR\"",
+   "match": {
+    "arxiv_id": "2508.00719",
+    "version": "4",
+    "title": "DAMR: Efficient and Adaptive Context-Aware Knowledge Graph Question Answering with LLM-Guided MCTS",
+    "abstract": "Knowledge Graph Question Answering (KGQA) aims to interpret natural language queries and perform structured reasoning over knowledge graphs by leveraging their relational and semantic structures to retrieve accurate answers. Existing methods primarily follow either the retrieve-then-reason paradigm, which relies on Graph Neural Networks or heuristic rules to extract static candidate paths, or dynamic path generation strategies that employ LLMs with prompting to jointly perform retrieval and reasoning. However, the former lacks adaptability due to static path extraction and the absence of contextual refinement, while the latter suffers from high computational costs and limited evaluation accuracy because of their dependence on fixed scoring functions and repeated LLM calls. To address these issues, this paper proposes Dynamically Adaptive MCTS-based Reasoning (DAMR), a novel framework that integrates LLM-guided Monte Carlo Tree Search (MCTS) with adaptive path evaluation to enable efficient and context-aware KGQA. DAMR leverages MCTS as a backbone, where an LLM-based planner selects the top-$k$ semantically relevant relations at each expansion step to effectively reduce the search space. To enhance evaluation accuracy, we introduce a lightweight Transformer-based scorer that performs context-aware plausibility estimation by jointly encoding the question and relation sequence through cross-attention, thereby capturing fine-grained semantic shifts during multi-hop reasoning. Furthermore, to mitigate the scarcity of high-quality supervision, DAMR incorporates a dynamic pseudo-path refinement mechanism that periodically generates training signals from partial paths explored during search, enabling the scorer to continually adapt to the evolving distribution of reasoning trajectories. Extensive experiments on multiple KGQA benchmarks show that DAMR significantly outperforms SOTA methods.",
+    "published": "2025-08-01",
+    "updated": "2025-09-25",
+    "authors": [
+     "Yingxu Wang",
+     "Shiqi Fan",
+     "Mengzhu Wang",
+     "Siyang Gao",
+     "Chao Wang",
+     "Nan Yin"
+    ],
+    "categories": [
+     "cs.CL",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "DAMR",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:25:42+08:00"
+  },
+  "t:evirepair": {
+   "status": "matched_by_title",
+   "query": "all:\"EviRepair\"",
+   "match": {
+    "arxiv_id": "2610.13491",
+    "version": "1",
+    "title": "EviRepair: Evidence-Driven Agents for Reliable Vulnerability Repair",
+    "abstract": "Recent advances in large language models (LLMs) have enabled agent-based approaches for repository-level automated vulnerability repair (AVR), showing promising repair capabilities. However, an important issue has received limited attention: how can we ensure that the evidence generated during the repair process is reliable enough to support accurate vulnerability understanding and patch generation? In this paper, we propose EviRepair, an evidence-driven multi-agent framework for repository-level AVR. EviRepair introduces evidence review into the repair process by enabling agents to collaboratively collect vulnerability evidence, verify evidence consistency, and construct a reviewed vulnerability model for patch synthesis and validation. Extensive experiments on PatchEval and SecBench benchmarks with multiple agent frameworks and LLMs demonstrate that EviRepair consistently outperforms existing agent-based baselines, achieving average improvements of 16.37% and 40.33% in resolved rates on PatchEval and SecBench, respectively. Codes are available at https://github.com/lly-s/EviRepair",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "authors": [
+     "Yilian Shi",
+     "Qingyu Liu",
+     "Tianyi Zhou",
+     "Wende Tan",
+     "Chenyang Si",
+     "Yueming Lyu",
+     "Xia Hu",
+     "Dongrui Liu"
+    ],
+    "categories": [
+     "cs.CR"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "EviRepair",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:00+08:00"
+  },
+  "t:fastserve": {
+   "status": "rejected",
+   "query": "all:\"FastServe\"",
+   "match": null,
+   "best_candidate": "Fast Distributed Inference Serving for Large Language Models",
+   "best_score": 0.261,
+   "title": "FastServe",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:12+08:00"
+  },
+  "t:geoseg sam": {
+   "status": "no_results",
+   "query": "all:\"GeoSeg-SAM\"",
+   "match": null,
+   "title": "GeoSeg-SAM",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:18+08:00"
+  },
+  "t:pillm": {
+   "status": "rejected",
+   "query": "all:\"PiLLM\"",
+   "match": null,
+   "best_candidate": "Physics-Informed Large Language Models for HVAC Anomaly Detection with Autonomous Rule Generation",
+   "best_score": 0.098,
+   "title": "PiLLM",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:25+08:00"
+  },
+  "t:sagesched": {
+   "status": "matched_by_title",
+   "query": "all:\"SageSched\"",
+   "match": {
+    "arxiv_id": "2603.07917",
+    "version": "2",
+    "title": "SageSched: Efficient LLM Scheduling Confronting Demand Uncertainty and Hybridity",
+    "abstract": "Efficient LLM inference scheduling is crucial for user experience. However, LLM inferences exhibit remarkable demand uncertainty (with unknown output length beforehand) and hybridity (being both compute and memory intensive). Existing LLM schedulers rely on simple heuristics or focus purely on compute resource, suffering suboptimal performance. In this work, we propose SageSched, an efficient LLM scheduler that properly handles demand uncertainty and hybridity of inference workloads. SageSched combines prompt contents with the past inference results to predict output-length distribution in a light-weight and also accurate manner. Meanwhile, it models the true service cost of an inference request with both compute and memory aspects considered. Finally, SageSched employs an uncertainty-aware scheduling policy that can yield the best overall efficiency given the request cost distributions. Testbed experiments over diverse setups confirm that SageSched can attain an efficiency improvement of over 28.7%.",
+    "published": "2026-03-09",
+    "updated": "2026-03-13",
+    "authors": [
+     "Zhenghao Gan",
+     "Yichen Bao",
+     "Yifei Liu",
+     "Chen Chen",
+     "Quan Chen",
+     "Minyi Guo"
+    ],
+    "categories": [
+     "cs.DC"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "SageSched",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:35+08:00"
+  },
+  "t:sparsely gated moe": {
+   "status": "rejected",
+   "query": "all:\"Sparsely-Gated MoE\"",
+   "match": null,
+   "best_candidate": "Handling Trade-Offs in Speech Separation with Sparsely-Gated Mixture of Experts",
+   "best_score": 0.371,
+   "title": "Sparsely-Gated MoE",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:41+08:00"
+  },
+  "t:utilitybench": {
+   "status": "matched_by_title",
+   "query": "all:\"UtilityBench\"",
+   "match": {
+    "arxiv_id": "2610.25924",
+    "version": "1",
+    "title": "UtilityBench: Measuring Language Model Utility When Errors Have Different Costs",
+    "abstract": "As language models are increasingly deployed in real-world scenarios with important outcomes, the impact of their mistakes often extends far beyond what correctness can capture. In domains like medicine, a single error can lead to serious consequences and put patient safety at risk. However, mainstream evaluation protocols still treat all errors as equal, overlooking the spectrum of real-world costs. To address this, we propose a utility-based evaluation paradigm that explicitly incorporates the varying consequences of errors. Guided by this principle, we develop UtilityBench, a large-scale benchmark of 15,000 instances with verifiable answers, quantifying error severity using Best-Worst Scaling to elicit meaningful, data-driven cost estimates. These quantified utilities shape when a model should answer or abstain, guiding it to make decisions that align with the true importance of each scenario. As another merit, we introduce UtilityAUC, a metric that measures the area under the utility curve determined by a model's response ordering, thereby enabling utility preference alignment beyond error frequency. Our theoretical analysis demonstrates that UtilityAUC can distinguish between models where standard accuracy and AURC fall short. Empirically, evaluating 20 state-of-the-art models, we find that greater accuracy or more advanced architectures do not reliably translate to higher UtilityAUC, highlighting a gap between problem-solving ability and responsible decision-making in language model evaluation.",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "authors": [
+     "Qifeng Lei",
+     "Zhiyong Yang",
+     "Zitai Wang",
+     "Shilong Bao",
+     "Linchao Zhang",
+     "Qianqian Xu",
+     "Qingming Huang"
+    ],
+    "categories": [
+     "cs.LG",
+     "cs.AI"
+    ],
+    "journal_ref": null,
+    "comment": null
+   },
+   "score": 0.95,
+   "title": "UtilityBench",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:26:48+08:00"
+  },
+  "t:validpoc": {
+   "status": "no_results",
+   "query": "all:\"ValidPoC\"",
+   "match": null,
+   "title": "ValidPoC",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:27:04+08:00"
+  },
+  "t:基于大语言模型和多特征融合策略的消防规范条文智能去重方法研究": {
+   "status": "no_results",
+   "query": "ti:\"基于大语言模型和多特征融合策略的消防规范条文智能去重方法研究\"",
+   "match": null,
+   "title": "基于大语言模型和多特征融合策略的消防规范条文智能去重方法研究",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:27:08+08:00"
+  },
+  "t:心算模式": {
+   "status": "no_results",
+   "query": "all:\"心算模式\"",
+   "match": null,
+   "title": "心算模式",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:27:13+08:00"
+  },
+  "t:框场学习 地学主动轮廓": {
+   "status": "no_results",
+   "query": "all:\"框场学习+地学主动轮廓\"",
+   "match": null,
+   "title": "框场学习+地学主动轮廓",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:27:18+08:00"
+  },
+  "t:置信度自适应训练": {
+   "status": "no_results",
+   "query": "all:\"置信度自适应训练\"",
+   "match": null,
+   "title": "置信度自适应训练",
+   "kind": "method",
+   "checked_at": "2026-11-12T08:27:22+08:00"
+  },
+  "t:论文浅尝 damr 基于大语言模型引导蒙特卡洛树搜索的高效自适应上下文感知知识图谱问答 iclr 2026": {
+   "status": "no_results",
+   "query": "ti:\"论文浅尝 | DAMR:基于大语言模型引导蒙特卡洛树搜索的高效自适应上下文感知知识图谱问答(ICLR 2026)\"",
+   "match": null,
+   "title": "论文浅尝 | DAMR:基于大语言模型引导蒙特卡洛树搜索的高效自适应上下文感知知识图谱问答(ICLR 2026)",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:27:31+08:00"
+  },
+  "t:论文解读 llm gdsac 大语言模型增强的扩散强化学习船舶路径跟踪控制": {
+   "status": "no_results",
+   "query": "ti:\"论文解读——LLM-GDSAC:大语言模型增强的扩散强化学习船舶路径跟踪控制\"",
+   "match": null,
+   "title": "论文解读——LLM-GDSAC:大语言模型增强的扩散强化学习船舶路径跟踪控制",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:27:37+08:00"
+  },
+  "t:论文速递 让分割大模型读懂地质 geoseg sam提升复杂地质遥感影像解译能力": {
+   "status": "no_results",
+   "query": "ti:\"论文速递|让分割大模型读懂地质:GeoSeg-SAM提升复杂地质遥感影像解译能力\"",
+   "match": null,
+   "title": "论文速递|让分割大模型读懂地质:GeoSeg-SAM提升复杂地质遥感影像解译能力",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:27:42+08:00"
+  },
+  "t:论文速递丨validpoc 基于大语言模型的 poc nuclei 模板生成与漏洞复现验证方法": {
+   "status": "no_results",
+   "query": "ti:\"论文速递丨ValidPoC:基于大语言模型的 PoC-Nuclei 模板生成与漏洞复现验证方法\"",
+   "match": null,
+   "title": "论文速递丨ValidPoC:基于大语言模型的 PoC-Nuclei 模板生成与漏洞复现验证方法",
+   "kind": "title",
+   "checked_at": "2026-11-12T08:27:46+08:00"
   }
  }
 }
